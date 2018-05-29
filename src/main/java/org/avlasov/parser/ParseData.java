@@ -84,6 +84,7 @@ public class ParseData {
         }
         long end = System.currentTimeMillis();
         LOGGER.info(String.format("Parsing platoons data completed in %d seconds", ((end - start) / 1000)));
+        phantomJSDriver.close();
         return allMatches
                 .stream()
                 .sorted(Comparator.comparing(Match::getMatchDate))
@@ -103,14 +104,16 @@ public class ParseData {
             }
         }
         LOGGER.info(String.format("%d matches links found for the user %s.", links.size(), username));
-        return links.stream()
+        List<Match> collect = links.stream()
                 .map(link -> parseMatch(link, platoonData))
                 .filter(Objects::nonNull)
                 .sorted(Comparator.comparing(Match::getMatchDate))
                 .collect(Collectors.toList());
+        phantomJSDriver.close();
+        return collect;
     }
 
-    public Match parseMatch(String matchLink, PlatoonData platoonData) {
+    private Match parseMatch(String matchLink, PlatoonData platoonData) {
         validateMatchLink(matchLink);
         String[] split = matchLink.split("#");
         Document data = getData(split[0]);
