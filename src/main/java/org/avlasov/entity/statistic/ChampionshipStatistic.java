@@ -15,8 +15,8 @@ public class ChampionshipStatistic {
     private MatchesStatistic matchesStatistic;
     private Match bestMatch;
     private Match worstMatch;
-    private Map<DrawGroup, PlayerStatistic> bestDrawGroupsPlayer;
-    private Map<DrawGroup, PlayerStatistic> worstDrawGroupsPlayers;
+    private Map<DrawGroup, DrawGroupPlayerStatistic> bestDrawGroupsPlayer;
+    private Map<DrawGroup, DrawGroupPlayerStatistic> worstDrawGroupsPlayers;
     private PlatoonStatistic bestPlatoon;
     private PlatoonStatistic worstPlatoon;
     private PlayerStatistic bestPlayer;

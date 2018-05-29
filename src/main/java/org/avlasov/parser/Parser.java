@@ -6,10 +6,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.type.TypeFactory;
 import org.avlasov.entity.match.Match;
 import org.avlasov.entity.match.enums.DrawGroup;
-import org.avlasov.entity.statistic.ChampionshipStatistic;
-import org.avlasov.entity.statistic.PlatoonStatistic;
-import org.avlasov.entity.statistic.PlayerStatistic;
-import org.avlasov.entity.statistic.VehicleStatistic;
+import org.avlasov.entity.statistic.*;
 import org.avlasov.utils.DataUtils;
 import org.avlasov.utils.PlatoonStatisticUtils;
 import org.avlasov.utils.PlayerStatisticUtils;
@@ -105,7 +102,7 @@ public class Parser {
         List<VehicleStatistic> vehicleStatistics = writeVehicleStatistics(matches);
         List<PlatoonStatistic> platoonStatistics = writePlatoonStatistics(matches);
         List<PlayerStatistic> playerStatistics = writePlayerStatistics(matches);
-        Map<DrawGroup, List<PlayerStatistic>> drawGroupListMap = writeDrawGroupPlayerStatistic(playerStatistics);
+        Map<DrawGroup, List<DrawGroupPlayerStatistic>> drawGroupListMap = writeDrawGroupPlayerStatistic(playerStatistics);
         ChampionshipStatistic build = ChampionshipStatistic.builder()
                 .matchesStatistic(calculateMatchesStatistic(matches))
                 .bestMatch(findBestMatch(matches))
@@ -121,8 +118,8 @@ public class Parser {
         writeData("championship_statistic.json", build);
     }
 
-    private Map<DrawGroup, List<PlayerStatistic>> writeDrawGroupPlayerStatistic(List<PlayerStatistic> playerStatistics) throws IOException {
-        Map<DrawGroup, List<PlayerStatistic>> drawGroupListMap = collectDrawGroupPlayers(playerStatistics);
+    private Map<DrawGroup, List<DrawGroupPlayerStatistic>> writeDrawGroupPlayerStatistic(List<PlayerStatistic> playerStatistics) throws IOException {
+        Map<DrawGroup, List<DrawGroupPlayerStatistic>> drawGroupListMap = collectDrawGroupPlayers(playerStatistics);
         writeData("draw_group_players_statistics.json", drawGroupListMap);
         return drawGroupListMap;
     }

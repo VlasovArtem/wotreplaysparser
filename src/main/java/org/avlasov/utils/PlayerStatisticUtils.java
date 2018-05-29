@@ -3,6 +3,7 @@ package org.avlasov.utils;
 import org.avlasov.entity.match.Match;
 import org.avlasov.entity.match.Player;
 import org.avlasov.entity.match.PlayerMatch;
+import org.avlasov.entity.statistic.AbstractStatistic;
 import org.avlasov.entity.statistic.PlayerStatistic;
 
 import java.util.*;
@@ -26,7 +27,7 @@ public class PlayerStatisticUtils {
                 });
             }
         }
-        List<PlayerStatistic> list = new ArrayList<>();
+        List<PlayerStatistic> playerStatistics = new ArrayList<>();
         for (Map.Entry<Player, List<Match>> playerListEntry : playerListMap.entrySet()) {
             List<PlayerMatch> playerMatches = playerListEntry.getValue()
                     .parallelStream()
@@ -38,7 +39,7 @@ public class PlayerStatisticUtils {
             int totalPlayerDamageDealt = playerMatches.stream().mapToInt(PlayerMatch::getDamage).sum();
             int totalPlayerFrags = playerMatches.stream().mapToInt(PlayerMatch::getFrags).sum();
             int totalPlayerScore = totalPlayerDamageDealt + (totalPlayerFrags * 300);
-            list.add(PlayerStatistic.builder()
+            playerStatistics.add(PlayerStatistic.builder()
                     .matches(playerListEntry.getValue())
                     .platoon(playerListEntry.getValue().get(0).getPlatoon())
                     .player(playerListEntry.getKey())
@@ -47,7 +48,8 @@ public class PlayerStatisticUtils {
                     .totalScore(totalPlayerScore)
                     .build());
         }
-        return list;
+        playerStatistics.sort(Comparator.comparing(AbstractStatistic::getTotalScore).reversed());
+        return playerStatistics;
     }
 
 }

@@ -4,6 +4,7 @@ import org.avlasov.entity.match.Match;
 import org.avlasov.entity.match.Platoon;
 import org.avlasov.entity.match.Player;
 import org.avlasov.entity.match.PlayerMatch;
+import org.avlasov.entity.statistic.AbstractStatistic;
 import org.avlasov.entity.statistic.PlatoonPlayerStatistic;
 import org.avlasov.entity.statistic.PlatoonStatistic;
 
@@ -41,6 +42,7 @@ public class PlatoonStatisticUtils {
                             .totalPlatoonPlayedMatches(platoonListEntry.getValue().size())
                             .build());
         }
+        platoonStatistics.sort(Comparator.comparing(AbstractStatistic::getTotalScore).reversed());
         return platoonStatistics;
     }
 
@@ -62,7 +64,9 @@ public class PlatoonStatisticUtils {
                 });
             }
         }
-        return new ArrayList<>(platoonPlayerStatisticMap.values());
+        List<PlatoonPlayerStatistic> platoonPlayerStatistics = new ArrayList<>(platoonPlayerStatisticMap.values());
+        platoonPlayerStatistics.sort(Comparator.comparing(AbstractStatistic::getTotalScore).reversed());
+        return platoonPlayerStatistics;
     }
 
     private static int calculateTotalPlatoonDamageDealt(List<Match> matches) {

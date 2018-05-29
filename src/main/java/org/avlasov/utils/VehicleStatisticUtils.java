@@ -2,6 +2,7 @@ package org.avlasov.utils;
 
 import org.avlasov.entity.match.Match;
 import org.avlasov.entity.match.PlayerMatch;
+import org.avlasov.entity.statistic.AbstractStatistic;
 import org.avlasov.entity.statistic.VehicleStatistic;
 
 import java.util.*;
@@ -40,6 +41,7 @@ public class VehicleStatisticUtils {
                             .totalScore(totalVehicleDamageDealt + (totalVehicleFrags * 300))
                             .build());
         }
+        vehicleStatistics.sort(Comparator.comparing(AbstractStatistic::getTotalScore).reversed());
         return vehicleStatistics;
     }
 
