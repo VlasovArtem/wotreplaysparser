@@ -1,1 +1,278 @@
-{"SECOND":[{"totalDamageDealt":167753,"totalFrags":87,"totalScore":193853,"player":{"name":"SILIK_","drawGroup":"SECOND"}},{"totalDamageDealt":147955,"totalFrags":81,"totalScore":172255,"player":{"name":"Extreme_arm","drawGroup":"SECOND"}},{"totalDamageDealt":141832,"totalFrags":86,"totalScore":167632,"player":{"name":"RhinoII","drawGroup":"SECOND"}},{"totalDamageDealt":145736,"totalFrags":72,"totalScore":167336,"player":{"name":"MeeGo","drawGroup":"SECOND"}},{"totalDamageDealt":141052,"totalFrags":81,"totalScore":165352,"player":{"name":"GodLikeII","drawGroup":"SECOND"}},{"totalDamageDealt":132147,"totalFrags":79,"totalScore":155847,"player":{"name":"FC_DYNAMO","drawGroup":"SECOND"}},{"totalDamageDealt":135683,"totalFrags":65,"totalScore":155183,"player":{"name":"The_Invoker","drawGroup":"SECOND"}},{"totalDamageDealt":126260,"totalFrags":69,"totalScore":146960,"player":{"name":"Stelseries","drawGroup":"SECOND"}},{"totalDamageDealt":129686,"totalFrags":55,"totalScore":146186,"player":{"name":"TheMontiablo","drawGroup":"SECOND"}},{"totalDamageDealt":86012,"totalFrags":44,"totalScore":99212,"player":{"name":"19CaHTuMeTPoB","drawGroup":"SECOND"}}],"THIRD":[{"totalDamageDealt":156277,"totalFrags":58,"totalScore":173677,"player":{"name":"FlaberTV","drawGroup":"THIRD"}},{"totalDamageDealt":145017,"totalFrags":82,"totalScore":169617,"player":{"name":"LeBwa","drawGroup":"THIRD"}},{"totalDamageDealt":146505,"totalFrags":71,"totalScore":167805,"player":{"name":"Draizer","drawGroup":"THIRD"}},{"totalDamageDealt":140657,"totalFrags":88,"totalScore":167057,"player":{"name":"TheAnatolich","drawGroup":"THIRD"}},{"totalDamageDealt":142321,"totalFrags":64,"totalScore":161521,"player":{"name":"Coca_Cola","drawGroup":"THIRD"}},{"totalDamageDealt":132077,"totalFrags":68,"totalScore":152477,"player":{"name":"Insight","drawGroup":"THIRD"}},{"totalDamageDealt":126457,"totalFrags":63,"totalScore":145357,"player":{"name":"Liezell","drawGroup":"THIRD"}},{"totalDamageDealt":121156,"totalFrags":67,"totalScore":141256,"player":{"name":"SlayerPro","drawGroup":"THIRD"}},{"totalDamageDealt":106787,"totalFrags":59,"totalScore":124487,"player":{"name":"rulez1k","drawGroup":"THIRD"}},{"totalDamageDealt":102511,"totalFrags":52,"totalScore":118111,"player":{"name":"Bullkin","drawGroup":"THIRD"}}],"FIRST":[{"totalDamageDealt":204995,"totalFrags":73,"totalScore":226895,"player":{"name":"BEOWULF422","drawGroup":"FIRST"}},{"totalDamageDealt":197660,"totalFrags":78,"totalScore":221060,"player":{"name":"Iiquidator","drawGroup":"FIRST"}},{"totalDamageDealt":192465,"totalFrags":93,"totalScore":220365,"player":{"name":"ISERVERI","drawGroup":"FIRST"}},{"totalDamageDealt":185346,"totalFrags":94,"totalScore":213546,"player":{"name":"EviL_GrannY","drawGroup":"FIRST"}},{"totalDamageDealt":175875,"totalFrags":74,"totalScore":198075,"player":{"name":"Sh0tnik","drawGroup":"FIRST"}},{"totalDamageDealt":158682,"totalFrags":85,"totalScore":184182,"player":{"name":"Wilf_","drawGroup":"FIRST"}},{"totalDamageDealt":154027,"totalFrags":84,"totalScore":179227,"player":{"name":"Straik","drawGroup":"FIRST"}},{"totalDamageDealt":156003,"totalFrags":63,"totalScore":174903,"player":{"name":"__NIDIN__","drawGroup":"FIRST"}},{"totalDamageDealt":132747,"totalFrags":84,"totalScore":157947,"player":{"name":"Inspirer","drawGroup":"FIRST"}},{"totalDamageDealt":133371,"totalFrags":61,"totalScore":151671,"player":{"name":"Cresp1ks","drawGroup":"FIRST"}}]}
+{
+  "SECOND": [
+    {
+      "totalDamageDealt": 167753,
+      "totalFrags": 87,
+      "totalScore": 193853,
+      "player": {
+        "name": "SILIK_",
+        "drawGroup": "SECOND"
+      }
+    },
+    {
+      "totalDamageDealt": 147955,
+      "totalFrags": 81,
+      "totalScore": 172255,
+      "player": {
+        "name": "Extreme_arm",
+        "drawGroup": "SECOND"
+      }
+    },
+    {
+      "totalDamageDealt": 141832,
+      "totalFrags": 86,
+      "totalScore": 167632,
+      "player": {
+        "name": "RhinoII",
+        "drawGroup": "SECOND"
+      }
+    },
+    {
+      "totalDamageDealt": 145736,
+      "totalFrags": 72,
+      "totalScore": 167336,
+      "player": {
+        "name": "MeeGo",
+        "drawGroup": "SECOND"
+      }
+    },
+    {
+      "totalDamageDealt": 141052,
+      "totalFrags": 81,
+      "totalScore": 165352,
+      "player": {
+        "name": "GodLikeII",
+        "drawGroup": "SECOND"
+      }
+    },
+    {
+      "totalDamageDealt": 132147,
+      "totalFrags": 79,
+      "totalScore": 155847,
+      "player": {
+        "name": "FC_DYNAMO",
+        "drawGroup": "SECOND"
+      }
+    },
+    {
+      "totalDamageDealt": 135683,
+      "totalFrags": 65,
+      "totalScore": 155183,
+      "player": {
+        "name": "The_Invoker",
+        "drawGroup": "SECOND"
+      }
+    },
+    {
+      "totalDamageDealt": 126260,
+      "totalFrags": 69,
+      "totalScore": 146960,
+      "player": {
+        "name": "Stelseries",
+        "drawGroup": "SECOND"
+      }
+    },
+    {
+      "totalDamageDealt": 129686,
+      "totalFrags": 55,
+      "totalScore": 146186,
+      "player": {
+        "name": "TheMontiablo",
+        "drawGroup": "SECOND"
+      }
+    },
+    {
+      "totalDamageDealt": 86012,
+      "totalFrags": 44,
+      "totalScore": 99212,
+      "player": {
+        "name": "19CaHTuMeTPoB",
+        "drawGroup": "SECOND"
+      }
+    }
+  ],
+  "THIRD": [
+    {
+      "totalDamageDealt": 156277,
+      "totalFrags": 58,
+      "totalScore": 173677,
+      "player": {
+        "name": "FlaberTV",
+        "drawGroup": "THIRD"
+      }
+    },
+    {
+      "totalDamageDealt": 145017,
+      "totalFrags": 82,
+      "totalScore": 169617,
+      "player": {
+        "name": "LeBwa",
+        "drawGroup": "THIRD"
+      }
+    },
+    {
+      "totalDamageDealt": 146505,
+      "totalFrags": 71,
+      "totalScore": 167805,
+      "player": {
+        "name": "Draizer",
+        "drawGroup": "THIRD"
+      }
+    },
+    {
+      "totalDamageDealt": 140657,
+      "totalFrags": 88,
+      "totalScore": 167057,
+      "player": {
+        "name": "TheAnatolich",
+        "drawGroup": "THIRD"
+      }
+    },
+    {
+      "totalDamageDealt": 142321,
+      "totalFrags": 64,
+      "totalScore": 161521,
+      "player": {
+        "name": "Coca_Cola",
+        "drawGroup": "THIRD"
+      }
+    },
+    {
+      "totalDamageDealt": 132077,
+      "totalFrags": 68,
+      "totalScore": 152477,
+      "player": {
+        "name": "Insight",
+        "drawGroup": "THIRD"
+      }
+    },
+    {
+      "totalDamageDealt": 126457,
+      "totalFrags": 63,
+      "totalScore": 145357,
+      "player": {
+        "name": "Liezell",
+        "drawGroup": "THIRD"
+      }
+    },
+    {
+      "totalDamageDealt": 121156,
+      "totalFrags": 67,
+      "totalScore": 141256,
+      "player": {
+        "name": "SlayerPro",
+        "drawGroup": "THIRD"
+      }
+    },
+    {
+      "totalDamageDealt": 106787,
+      "totalFrags": 59,
+      "totalScore": 124487,
+      "player": {
+        "name": "rulez1k",
+        "drawGroup": "THIRD"
+      }
+    },
+    {
+      "totalDamageDealt": 102511,
+      "totalFrags": 52,
+      "totalScore": 118111,
+      "player": {
+        "name": "Bullkin",
+        "drawGroup": "THIRD"
+      }
+    }
+  ],
+  "FIRST": [
+    {
+      "totalDamageDealt": 204995,
+      "totalFrags": 73,
+      "totalScore": 226895,
+      "player": {
+        "name": "BEOWULF422",
+        "drawGroup": "FIRST"
+      }
+    },
+    {
+      "totalDamageDealt": 197660,
+      "totalFrags": 78,
+      "totalScore": 221060,
+      "player": {
+        "name": "Iiquidator",
+        "drawGroup": "FIRST"
+      }
+    },
+    {
+      "totalDamageDealt": 192465,
+      "totalFrags": 93,
+      "totalScore": 220365,
+      "player": {
+        "name": "ISERVERI",
+        "drawGroup": "FIRST"
+      }
+    },
+    {
+      "totalDamageDealt": 185346,
+      "totalFrags": 94,
+      "totalScore": 213546,
+      "player": {
+        "name": "EviL_GrannY",
+        "drawGroup": "FIRST"
+      }
+    },
+    {
+      "totalDamageDealt": 175875,
+      "totalFrags": 74,
+      "totalScore": 198075,
+      "player": {
+        "name": "Sh0tnik",
+        "drawGroup": "FIRST"
+      }
+    },
+    {
+      "totalDamageDealt": 158682,
+      "totalFrags": 85,
+      "totalScore": 184182,
+      "player": {
+        "name": "Wilf_",
+        "drawGroup": "FIRST"
+      }
+    },
+    {
+      "totalDamageDealt": 154027,
+      "totalFrags": 84,
+      "totalScore": 179227,
+      "player": {
+        "name": "Straik",
+        "drawGroup": "FIRST"
+      }
+    },
+    {
+      "totalDamageDealt": 156003,
+      "totalFrags": 63,
+      "totalScore": 174903,
+      "player": {
+        "name": "__NIDIN__",
+        "drawGroup": "FIRST"
+      }
+    },
+    {
+      "totalDamageDealt": 132747,
+      "totalFrags": 84,
+      "totalScore": 157947,
+      "player": {
+        "name": "Inspirer",
+        "drawGroup": "FIRST"
+      }
+    },
+    {
+      "totalDamageDealt": 133371,
+      "totalFrags": 61,
+      "totalScore": 151671,
+      "player": {
+        "name": "Cresp1ks",
+        "drawGroup": "FIRST"
+      }
+    }
+  ]
+}
