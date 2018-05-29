@@ -1,0 +1,25 @@
+group 'org.avlasov'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+
+sourceCompatibility = 1.9
+targetCompatibility = 1.9
+
+ext.jackson = '2.9.5'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+    compile group: 'org.jsoup', name: 'jsoup', version: '1.11.3'
+    compile group: 'org.apache.logging.log4j', name: 'log4j-core', version: '2.11.0'
+    compile group: 'org.yaml', name: 'snakeyaml', version: '1.21'
+    compile group: 'com.codeborne', name: 'phantomjsdriver', version: '1.4.4'
+    compile group: 'org.projectlombok', name: 'lombok', version: '1.16.20'
+    compile group: 'com.fasterxml.jackson.core', name: 'jackson-core', version: jackson
+    compile group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: jackson
+    compile group: 'com.fasterxml.jackson.datatype', name: 'jackson-datatype-jsr310', version: '2.9.5'
+}
