@@ -8,6 +8,7 @@ import org.avlasov.entity.match.Match;
 import org.avlasov.entity.match.enums.DrawGroup;
 import org.avlasov.entity.statistic.*;
 import org.avlasov.utils.DataUtils;
+import org.avlasov.utils.MatchStatisticUtils;
 import org.avlasov.utils.PlatoonStatisticUtils;
 import org.avlasov.utils.PlayerStatisticUtils;
 
@@ -21,7 +22,7 @@ import java.util.logging.Handler;
 import java.util.logging.Logger;
 
 import static org.avlasov.utils.DrawGroupPlayerStatisticUtils.*;
-import static org.avlasov.utils.MatchStatisticUtils.*;
+import static org.avlasov.utils.MatchesStatisticUtils.*;
 import static org.avlasov.utils.StatisticUtils.findBestByScore;
 import static org.avlasov.utils.StatisticUtils.findWorstByScore;
 import static org.avlasov.utils.VehicleStatisticUtils.getVehicleStatistics;
@@ -114,6 +115,7 @@ public class Parser {
                 .bestPlayer(findBestByScore(playerStatistics))
                 .worstPlayer(findWorstByScore(playerStatistics))
                 .bestVehicle(findBestByScore(vehicleStatistics))
+                .matchStatistic(writeMatchStatistics(matches))
                 .build();
         writeData("championship_statistic.json", build);
     }
@@ -140,6 +142,12 @@ public class Parser {
         List<PlayerStatistic> playerStatistics = PlayerStatisticUtils.getPlayerStatistics(matches);
         writeData("player_statistics.json", playerStatistics);
         return playerStatistics;
+    }
+
+    private MatchStatistic writeMatchStatistics(List<Match> matches) throws IOException {
+        MatchStatistic matchStatistic = MatchStatisticUtils.calculateMatchStatistic(matches);
+        writeData("match_statistics.json", matchStatistic);
+        return matchStatistic;
     }
 
     private <T> void writeData(String fileName, T statistic) throws IOException {

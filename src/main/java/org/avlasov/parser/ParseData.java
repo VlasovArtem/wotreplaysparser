@@ -3,7 +3,7 @@ package org.avlasov.parser;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.avlasov.config.PlatoonConfig;
-import org.avlasov.config.PlatoonConfigReader;
+import org.avlasov.config.reader.PlatoonConfigReader;
 import org.avlasov.config.entity.PlatoonData;
 import org.avlasov.entity.match.*;
 import org.avlasov.entity.match.enums.Result;
@@ -182,10 +182,11 @@ public class ParseData {
             String username = element.getElementsByClass("team-table__username").get(0).text();
             username = username.replace("[KOPM2]", "").trim();
             Player player = new Player(username, DataUtils.getDrawGroup(username));
+            Integer frags = getClassIntegerValue(element, "team-table__frags");
             return new PlayerMatch(player,
                     getClassStringValue(element, "team-table__tank"),
                     getClassIntegerValue(element, "team-table__damageDealt"),
-                    getClassIntegerValue(element, "team-table__frags"));
+                    frags < 0 ? 0 : frags);
         };
     }
 
@@ -291,6 +292,7 @@ public class ParseData {
 
     private List<String> getMatchesLinks(String username, Integer page) {
         String link = String.format("http://wotreplays.ru/site/index/version/63/player/%s/sort/uploaded_at.desc/page/%d/", username, page);
+        //http://wotreplays.ru/site/index/version/63/members/The_Invoker/sort/uploaded_at.desc/page/3/
         Document data = getData(link);
         LOGGER.info(String.format("Start collecting links for the user %s with link %s", username, link));
         return data.getElementsByClass("link--pale_orange")

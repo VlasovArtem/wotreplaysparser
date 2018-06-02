@@ -1,66 +1,72 @@
 package org.avlasov.utils;
 
 import org.avlasov.entity.match.Match;
-import org.avlasov.entity.match.enums.Result;
-import org.avlasov.entity.statistic.MatchesStatistic;
+import org.avlasov.entity.match.PlayerMatch;
+import org.avlasov.entity.statistic.MatchStatistic;
 
 import java.util.Comparator;
 import java.util.List;
+import java.util.stream.Collectors;
 
 /**
- * Created By artemvlasov on 22/05/2018
+ * Created By artemvlasov on 01/06/2018
  **/
 public class MatchStatisticUtils {
 
-    public static MatchesStatistic calculateMatchesStatistic(List<Match> matches) {
-        int totalPlayedMatches = matches.size();
-        long totalPlayedTimeInMilliseconds = matches.parallelStream()
-                .mapToLong(Match::getMatchDurationInSeconds)
-                .sum();
-        int totalDamageDealt = matches.parallelStream()
-                .mapToInt(match -> match.getResult().getMatchPlatoonDamageDealt())
-                .sum();
-        int totalFrags = matches.parallelStream()
-                .mapToInt(match -> match.getResult().getMatchPlatoonFrags())
-                .sum();
-        int totalWins = calculateTotalWins(matches);
-        int totalScore = calculateTotalScoreGained(matches);
-        return MatchesStatistic.builder()
-                .totalPlayedMatches(totalPlayedMatches)
-                .totalPlayedTimeInSeconds(totalPlayedTimeInMilliseconds)
-                .totalDamageDealt(totalDamageDealt)
-                .totalFrags(totalFrags)
-                .totalWins(totalWins)
-                .totalScore(totalScore)
+    public static MatchStatistic calculateMatchStatistic(List<Match> matches) {
+        return MatchStatistic.builder()
+                .top10PlatoonMaxDamageDealtMatches(calculateTop10PlatoonMaxDamageDealtMatches(matches))
+                .top10PlatoonMaxFragsMatches(calculateTop10PlatoonMaxFragsMatches(matches))
+                .top10PlatoonMaxScoreMatches(calculateTop10PlatoonMaxScoreMatches(matches))
+                .top10FragsPlayerMatch(calculateTop10FragsPlayerMatch(matches))
+                .top10DamageDealtPlayerMatch(calculateTop10DamageDealtPlayerMatch(matches))
                 .build();
     }
 
-    public static Match findBestMatch(List<Match> matches) {
+    private static List<PlayerMatch> calculateTop10DamageDealtPlayerMatch(List<Match> matches) {
         return matches.parallelStream()
-                .max(Comparator.comparingInt(m -> m.getResult().getMatchScore()))
-                .get();
+                .flatMap(match -> match.getPlayerMatches().stream())
+                .sorted(Comparator.comparingInt(PlayerMatch::getDamage).reversed())
+                .limit(10)
+                .collect(Collectors.toList());
     }
 
-    public static Match findWorstMatch(List<Match> matches) {
+    private static List<PlayerMatch> calculateTop10FragsPlayerMatch(List<Match> matches) {
         return matches.parallelStream()
-                .min(Comparator.comparingInt(m -> m.getResult().getMatchScore()))
-                .get();
+                .flatMap(match -> match.getPlayerMatches().stream())
+                .sorted(Comparator.comparingInt(PlayerMatch::getFrags).reversed())
+                .limit(10)
+                .collect(Collectors.toList());
     }
 
-    private static int calculateTotalScoreGained(List<Match> matches) {
-        int totalScore = 0;
-        totalScore += calculateTotalWins(matches) * 3000;
-        totalScore += matches.parallelStream()
-                .mapToInt(match -> match.getResult().getMatchPlatoonDamageDealt() + (match.getResult().getMatchPlatoonFrags() * 300))
-                .sum();
-        return totalScore;
+    private static List<Match> calculateTop10PlatoonMaxScoreMatches(List<Match> matches) {
+        return calculateTopNPlatoonMaxData(matches,
+                Comparator.comparingInt(match -> match.getResult().getMatchPlatoonFrags()),
+                10,
+                true);
     }
 
-    private static int calculateTotalWins(List<Match> matches) {
-        return (int) matches.parallelStream()
-                .filter(match -> Result.WIN.equals(match.getResult().getResult()))
-                .count();
+    private static List<Match> calculateTop10PlatoonMaxFragsMatches(List<Match> matches) {
+        return calculateTopNPlatoonMaxData(matches,
+                Comparator.comparingInt(match -> match.getResult().getMatchPlatoonFrags()),
+                10,
+                true);
     }
 
+    private static List<Match> calculateTop10PlatoonMaxDamageDealtMatches(List<Match> matches) {
+        return calculateTopNPlatoonMaxData(matches,
+                Comparator.comparingInt(match -> match.getResult().getMatchPlatoonDamageDealt()),
+                10,
+                true);
+    }
+
+    private static <T> List<T> calculateTopNPlatoonMaxData(List<T> matches, Comparator<T> matchComparator, int nResults, boolean reversed) {
+        matchComparator = reversed ? matchComparator.reversed() : matchComparator;
+        return matches
+                .parallelStream()
+                .sorted(matchComparator)
+                .limit(nResults)
+                .collect(Collectors.toList());
+    }
 
 }

@@ -13,6 +13,7 @@ import java.util.Map;
 public class ChampionshipStatistic {
 
     private MatchesStatistic matchesStatistic;
+    private MatchStatistic matchStatistic;
     private Match bestMatch;
     private Match worstMatch;
     private Map<DrawGroup, DrawGroupPlayerStatistic> bestDrawGroupsPlayer;

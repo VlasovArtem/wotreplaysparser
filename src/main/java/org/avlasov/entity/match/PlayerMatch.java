@@ -68,7 +68,6 @@ public class PlayerMatch {
 
     @Override
     public int hashCode() {
-
         return Objects.hash(player, vehicleName, damage, frags);
     }
 }

@@ -1,5 +1,6 @@
-package org.avlasov.config;
+package org.avlasov.config.reader;
 
+import org.avlasov.config.PlatoonConfig;
 import org.avlasov.config.entity.PlatoonData;
 import org.avlasov.entity.match.Player;
 import org.avlasov.entity.match.enums.DrawGroup;

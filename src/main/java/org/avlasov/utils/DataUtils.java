@@ -1,7 +1,7 @@
 package org.avlasov.utils;
 
 import org.avlasov.config.PlatoonConfig;
-import org.avlasov.config.PlatoonConfigReader;
+import org.avlasov.config.reader.PlatoonConfigReader;
 import org.avlasov.config.entity.PlatoonData;
 import org.avlasov.entity.match.Player;
 import org.avlasov.entity.match.PlayerMatch;

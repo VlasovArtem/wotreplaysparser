@@ -10,7 +10,7 @@ import lombok.Setter;
 @AllArgsConstructor
 @Getter
 @Setter
-public class AbstractStatistic {
+public abstract class AbstractStatistic {
 
     protected int totalDamageDealt;
     protected int totalFrags;

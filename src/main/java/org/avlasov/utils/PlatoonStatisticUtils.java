@@ -4,6 +4,7 @@ import org.avlasov.entity.match.Match;
 import org.avlasov.entity.match.Platoon;
 import org.avlasov.entity.match.Player;
 import org.avlasov.entity.match.PlayerMatch;
+import org.avlasov.entity.match.enums.Result;
 import org.avlasov.entity.statistic.AbstractStatistic;
 import org.avlasov.entity.statistic.PlatoonPlayerStatistic;
 import org.avlasov.entity.statistic.PlatoonStatistic;
@@ -40,6 +41,7 @@ public class PlatoonStatisticUtils {
                             .totalFrags(totalPlatoonFrags)
                             .totalScore(totalPlatoonScore)
                             .totalPlatoonPlayedMatches(platoonListEntry.getValue().size())
+                            .totalPlatoonMatchesWins(calculateTotalPlatoonWins(matches))
                             .build());
         }
         platoonStatistics.sort(Comparator.comparing(AbstractStatistic::getTotalScore).reversed());
@@ -85,6 +87,12 @@ public class PlatoonStatisticUtils {
         return matches.parallelStream()
                 .mapToInt(match -> match.getResult().getMatchScore())
                 .sum();
+    }
+
+    private static int calculateTotalPlatoonWins(List<Match> matches) {
+        return (int) matches.parallelStream()
+                .filter(match -> Result.WIN.equals(match.getResult().getResult()))
+                .count();
     }
 
 }
