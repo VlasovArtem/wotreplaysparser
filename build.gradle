@@ -7,6 +7,7 @@ sourceCompatibility = 1.9
 targetCompatibility = 1.9
 
 ext.jackson = '2.9.5'
+ext.powermock = '2.0.0-beta.5'
 
 repositories {
     mavenCentral()
@@ -22,4 +23,9 @@ dependencies {
     compile group: 'com.fasterxml.jackson.core', name: 'jackson-core', version: jackson
     compile group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: jackson
     compile group: 'com.fasterxml.jackson.datatype', name: 'jackson-datatype-jsr310', version: '2.9.5'
+    testCompile group: 'org.mockito', name: 'mockito-core', version: '2.18.3'
+    testCompile group: 'org.powermock', name: 'powermock-module-junit4', version: powermock
+    testCompile group: 'org.powermock', name: 'powermock-core', version: powermock
+    testCompile group: 'org.powermock', name: 'powermock-api-mockito2', version: powermock
+
 }
