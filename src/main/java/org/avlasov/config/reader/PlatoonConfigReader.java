@@ -4,7 +4,7 @@ import org.avlasov.config.PlatoonConfig;
 import org.avlasov.config.entity.PlatoonData;
 import org.avlasov.entity.match.Player;
 import org.avlasov.entity.match.enums.DrawGroup;
-import org.avlasov.parser.Parser;
+import org.avlasov.parser.site.Parser;
 import org.yaml.snakeyaml.Yaml;
 
 import java.util.ArrayList;
