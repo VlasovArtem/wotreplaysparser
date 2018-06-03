@@ -1,4 +1,4 @@
-package org.avlasov.parser;
+package org.avlasov.parser.site;
 
 import com.fasterxml.jackson.annotation.JsonAutoDetect;
 import com.fasterxml.jackson.annotation.PropertyAccessor;
@@ -53,18 +53,18 @@ public class Parser {
     }
 
     public void parseDataAll() throws IOException {
-        parseData(ParseData::parseAllPlatoonsMatches);
+        parseData(ParseSiteData::parseAllPlatoonsMatches);
     }
 
     public void parseData(String username) throws IOException {
         parseData(pd -> pd.parseMatches(username, DataUtils.getPlatoonDataFromUser(username).get()));
     }
 
-    private void parseData(Function<ParseData, List<Match>> parserDataListFunction) throws IOException {
+    private void parseData(Function<ParseSiteData, List<Match>> parserDataListFunction) throws IOException {
         File dataFolder = getDataFolder();
         List<Match> matches = parseSavedMatches(dataFolder);
         if (matches.isEmpty()) {
-            matches = parserDataListFunction.apply(new ParseData());
+            matches = parserDataListFunction.apply(new ParseSiteData());
             File matchesData = new File(dataFolderPath + "/" + matchesDataFileName);
             if (matchesData.exists())
                 matchesData.delete();

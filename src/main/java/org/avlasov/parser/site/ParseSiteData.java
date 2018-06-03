@@ -1,4 +1,4 @@
-package org.avlasov.parser;
+package org.avlasov.parser.site;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -29,14 +29,14 @@ import static java.time.temporal.ChronoField.*;
 /**
  * Created By artemvlasov on 21/05/2018
  **/
-public class ParseData {
+public class ParseSiteData {
 
-    private final static Logger LOGGER = LogManager.getLogger(ParseData.class);
+    private final static Logger LOGGER = LogManager.getLogger(ParseSiteData.class);
     private final int maxPlatoonPlayers = 3;
     private DateTimeFormatter dateTimeFormatter;
     private final PhantomJSDriver phantomJSDriver;
 
-    public ParseData() {
+    public ParseSiteData() {
         System.setProperty("phantomjs.binary.path", "libs/phantomjs");
         DesiredCapabilities dcap = new DesiredCapabilities();
         String[] phantomArgs = new String[]{
