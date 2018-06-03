@@ -7,6 +7,7 @@ import lombok.Getter;
 import org.avlasov.deserializer.WotReplayPlayersDeserializer;
 import org.avlasov.deserializer.WotReplayVehiclesDeserializer;
 
+import java.math.BigInteger;
 import java.util.List;
 
 /**
@@ -17,6 +18,7 @@ import java.util.List;
 @Getter
 public class WotReplayMatch {
 
+    private BigInteger arenaUniqueID;
     private WotReplayCommon common;
     @JsonDeserialize(using = WotReplayPlayersDeserializer.class)
     private List<WotReplayPlayer> players;
