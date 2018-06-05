@@ -1,7 +1,5 @@
 package org.avlasov.parser.site;
 
-import com.fasterxml.jackson.annotation.JsonAutoDetect;
-import com.fasterxml.jackson.annotation.PropertyAccessor;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.type.TypeFactory;
 import org.avlasov.entity.match.Match;
@@ -11,6 +9,7 @@ import org.avlasov.utils.DataUtils;
 import org.avlasov.utils.MatchStatisticUtils;
 import org.avlasov.utils.PlatoonStatisticUtils;
 import org.avlasov.utils.PlayerStatisticUtils;
+import org.springframework.stereotype.Component;
 
 import java.io.File;
 import java.io.IOException;
@@ -18,8 +17,6 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 import java.util.function.Function;
-import java.util.logging.Handler;
-import java.util.logging.Logger;
 
 import static org.avlasov.utils.DrawGroupPlayerStatisticUtils.*;
 import static org.avlasov.utils.MatchesStatisticUtils.*;
@@ -30,26 +27,21 @@ import static org.avlasov.utils.VehicleStatisticUtils.getVehicleStatistics;
 /**
  * Created By artemvlasov on 21/05/2018
  **/
+@Component
 public class Parser {
 
     private final String dataFolderPath;
     private final String matchesDataFileName;
     private final ObjectMapper objectMapper;
+    private final DataUtils dataUtils;
+    private final ParseSiteData parseSiteData;
 
-    public Parser() {
+    public Parser(ObjectMapper objectMapper, DataUtils dataUtils, ParseSiteData parseSiteData) {
+        this.objectMapper = objectMapper;
+        this.dataUtils = dataUtils;
+        this.parseSiteData = parseSiteData;
         matchesDataFileName = "matches_data.json";
         dataFolderPath = "./data";
-        objectMapper = new ObjectMapper();
-        objectMapper.setVisibility(PropertyAccessor.FIELD, JsonAutoDetect.Visibility.ANY);
-        disableDefaultLogger();
-    }
-
-    private void disableDefaultLogger() {
-        Logger globalLogger = Logger.getLogger("");
-        Handler[] handlers = globalLogger.getHandlers();
-        for (Handler handler : handlers) {
-            globalLogger.removeHandler(handler);
-        }
     }
 
     public void parseDataAll() throws IOException {
@@ -57,14 +49,14 @@ public class Parser {
     }
 
     public void parseData(String username) throws IOException {
-        parseData(pd -> pd.parseMatches(username, DataUtils.getPlatoonDataFromUser(username).get()));
+        parseData(pd -> pd.parseMatches(username, dataUtils.getPlatoonDataFromUser(username).get()));
     }
 
     private void parseData(Function<ParseSiteData, List<Match>> parserDataListFunction) throws IOException {
         File dataFolder = getDataFolder();
         List<Match> matches = parseSavedMatches(dataFolder);
         if (matches.isEmpty()) {
-            matches = parserDataListFunction.apply(new ParseSiteData());
+            matches = parserDataListFunction.apply(parseSiteData);
             File matchesData = new File(dataFolderPath + "/" + matchesDataFileName);
             if (matchesData.exists())
                 matchesData.delete();
@@ -157,11 +149,6 @@ public class Parser {
         else
             file.createNewFile();
         objectMapper.writeValue(file, statistic);
-    }
-
-    public static void main(String[] args) throws IOException {
-        Parser parser = new Parser();
-        parser.parseDataAll();
     }
 
 }
