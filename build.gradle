@@ -1,28 +1,46 @@
+buildscript {
+    repositories {
+        jcenter()
+    }
+    dependencies {
+        classpath "io.spring.gradle:dependency-management-plugin:1.0.5.RELEASE"
+    }
+}
+
 group 'org.avlasov'
 version '1.0-SNAPSHOT'
 
 apply plugin: 'java'
+apply plugin: 'io.spring.dependency-management'
 
 sourceCompatibility = 1.9
 targetCompatibility = 1.9
 
-ext.jackson = '2.9.5'
 ext.powermock = '2.0.0-beta.5'
 
 repositories {
     mavenCentral()
 }
 
+dependencyManagement {
+    imports {
+        mavenBom 'io.spring.platform:platform-bom:Cairo-SR1'
+        mavenBom 'com.fasterxml.jackson:jackson-bom:2.9.5'
+    }
+}
+
 dependencies {
     testCompile group: 'junit', name: 'junit', version: '4.12'
+    compile group: 'org.springframework', name: 'spring-core'
+    compile group: 'org.springframework', name: 'spring-context'
     compile group: 'org.jsoup', name: 'jsoup', version: '1.11.3'
-    compile group: 'org.apache.logging.log4j', name: 'log4j-core', version: '2.11.0'
-    compile group: 'org.yaml', name: 'snakeyaml', version: '1.21'
+    compile group: 'org.apache.logging.log4j', name: 'log4j-core'
     compile group: 'com.codeborne', name: 'phantomjsdriver', version: '1.4.4'
+    compile group: 'com.google.guava', name: 'guava', version: '23.0'
     compile group: 'org.projectlombok', name: 'lombok', version: '1.16.20'
-    compile group: 'com.fasterxml.jackson.core', name: 'jackson-core', version: jackson
-    compile group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: jackson
-    compile group: 'com.fasterxml.jackson.datatype', name: 'jackson-datatype-jsr310', version: '2.9.5'
+    compile group: 'com.fasterxml.jackson.core', name: 'jackson-core'
+    compile group: 'com.fasterxml.jackson.core', name: 'jackson-databind'
+    compile group: 'com.fasterxml.jackson.datatype', name: 'jackson-datatype-jsr310'
     testCompile group: 'org.mockito', name: 'mockito-core', version: '2.18.3'
     testCompile group: 'org.powermock', name: 'powermock-module-junit4', version: powermock
     testCompile group: 'org.powermock', name: 'powermock-core', version: powermock
