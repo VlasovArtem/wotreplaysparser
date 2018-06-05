@@ -1,0 +1,174 @@
+{
+  "platoons": [
+    {
+      "platoonName": "Жижа",
+      "players": [
+        {
+          "nickname": "Wilf_",
+          "drawGroup": "FIRST"
+        },
+        {
+          "nickname": "SILIK_",
+          "drawGroup": "SECOND"
+        },
+        {
+          "nickname": "Coca_Cola",
+          "drawGroup": "THIRD"
+        }
+      ]
+    },
+    {
+      "platoonName": "Опорники",
+      "players": [
+        {
+          "nickname": "Inspirer",
+          "drawGroup": "FIRST"
+        },
+        {
+          "nickname": "GodLikeII",
+          "drawGroup": "SECOND"
+        },
+        {
+          "nickname": "FlaberTV",
+          "drawGroup": "THIRD"
+        }
+      ]
+    },
+    {
+      "platoonName": "Царь Булка",
+      "players": [
+        {
+          "nickname": "__NIDIN__",
+          "drawGroup": "FIRST"
+        },
+        {
+          "nickname": "RhinoII",
+          "drawGroup": "SECOND"
+        },
+        {
+          "nickname": "Bullkin",
+          "drawGroup": "THIRD"
+        }
+      ]
+    },
+    {
+      "platoonName": "Бабкин якорь",
+      "players": [
+        {
+          "nickname": "EviL_GrannY",
+          "drawGroup": "FIRST"
+        },
+        {
+          "nickname": "MeeGo",
+          "drawGroup": "SECOND"
+        },
+        {
+          "nickname": "Bullkin",
+          "drawGroup": "THIRD"
+        }
+      ]
+    },
+    {
+      "platoonName": "СКС",
+      "players": [
+        {
+          "nickname": "Iiquidator",
+          "drawGroup": "FIRST"
+        },
+        {
+          "nickname": "Stelseries",
+          "drawGroup": "SECOND"
+        },
+        {
+          "nickname": "Liezell",
+          "drawGroup": "THIRD"
+        }
+      ]
+    },
+    {
+      "platoonName": "Псевдо",
+      "players": [
+        {
+          "nickname": "Straik",
+          "drawGroup": "FIRST"
+        },
+        {
+          "nickname": "FC_DYNAMO",
+          "drawGroup": "SECOND"
+        },
+        {
+          "nickname": "Insight",
+          "drawGroup": "THIRD"
+        }
+      ]
+    },
+    {
+      "platoonName": "МДК",
+      "players": [
+        {
+          "nickname": "Cresp1ks",
+          "drawGroup": "FIRST"
+        },
+        {
+          "nickname": "TheMontiablo",
+          "drawGroup": "SECOND"
+        },
+        {
+          "nickname": "Draizer",
+          "drawGroup": "THIRD"
+        }
+      ]
+    },
+    {
+      "platoonName": "19+2",
+      "players": [
+        {
+          "nickname": "ISERVERI",
+          "drawGroup": "FIRST"
+        },
+        {
+          "nickname": "19CaHTuMeTPoB",
+          "drawGroup": "SECOND"
+        },
+        {
+          "nickname": "SlayerPro",
+          "drawGroup": "THIRD"
+        }
+      ]
+    },
+    {
+      "platoonName": "Извинись",
+      "players": [
+        {
+          "nickname": "Sh0tnik",
+          "drawGroup": "FIRST"
+        },
+        {
+          "nickname": "The_Invoker",
+          "drawGroup": "SECOND"
+        },
+        {
+          "nickname": "rulez1k",
+          "drawGroup": "THIRD"
+        }
+      ]
+    },
+    {
+      "platoonName": "Эбба",
+      "players": [
+        {
+          "nickname": "BEOWULF422",
+          "drawGroup": "FIRST"
+        },
+        {
+          "nickname": "Extreme_arm",
+          "drawGroup": "SECOND"
+        },
+        {
+          "nickname": "TheAnatolich",
+          "drawGroup": "THIRD"
+        }
+      ]
+    }
+  ]
+}
