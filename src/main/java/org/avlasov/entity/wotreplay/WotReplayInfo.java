@@ -17,16 +17,8 @@ public class WotReplayInfo {
         return replayOwnerInfo;
     }
 
-    public void setReplayOwnerInfo(WotReplayOwnerInfo replayOwnerInfo) {
-        this.replayOwnerInfo = replayOwnerInfo;
-    }
-
     public WotReplayMatch getReplayMatch() {
         return replayMatch;
-    }
-
-    public void setReplayMatch(WotReplayMatch replayMatch) {
-        this.replayMatch = replayMatch;
     }
 
 }

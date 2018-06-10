@@ -3,7 +3,7 @@ package org.avlasov.entity.statistic;
 import lombok.Builder;
 import lombok.Getter;
 
-import static org.avlasov.utils.AverageStatisticUtils.calculateAverage;
+import static org.avlasov.utils.statistic.AverageStatisticUtils.calculateAverage;
 
 /**
  * Created By artemvlasov on 22/05/2018
@@ -24,5 +24,7 @@ public class VehicleStatistic extends AbstractAverageStatistic {
         this.vehicleName = vehicleName;
         this.numberOfMatches = numberOfMatches;
     }
+
+
 
 }

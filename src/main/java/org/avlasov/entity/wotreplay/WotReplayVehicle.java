@@ -2,6 +2,7 @@ package org.avlasov.entity.wotreplay;
 
 import com.fasterxml.jackson.annotation.JsonAutoDetect;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -12,6 +13,7 @@ import lombok.Setter;
 @JsonAutoDetect(fieldVisibility = JsonAutoDetect.Visibility.ANY)
 @Getter
 @Setter
+@EqualsAndHashCode
 public class WotReplayVehicle {
 
     private int vehicleMatchId;

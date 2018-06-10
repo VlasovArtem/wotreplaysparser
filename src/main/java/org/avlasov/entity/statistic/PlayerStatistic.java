@@ -8,7 +8,7 @@ import org.avlasov.entity.match.Player;
 
 import java.util.List;
 
-import static org.avlasov.utils.AverageStatisticUtils.calculateAverage;
+import static org.avlasov.utils.statistic.AverageStatisticUtils.calculateAverage;
 
 /**
  * Created By artemvlasov on 22/05/2018
