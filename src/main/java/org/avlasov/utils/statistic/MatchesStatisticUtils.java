@@ -5,7 +5,6 @@ import org.avlasov.entity.match.enums.Result;
 import org.avlasov.entity.statistic.MatchesStatistic;
 import org.springframework.stereotype.Component;
 
-import java.util.Comparator;
 import java.util.List;
 import java.util.Optional;
 
@@ -40,18 +39,6 @@ public class MatchesStatisticUtils extends AbstractStatisticUtils<Optional<Match
                     .build());
         }
         return Optional.empty();
-    }
-
-    public Match findBestMatch(List<Match> matches) {
-        return matches.parallelStream()
-                .max(Comparator.comparingInt(m -> m.getResult().getMatchScore()))
-                .orElse(null);
-    }
-
-    public Match findWorstMatch(List<Match> matches) {
-        return matches.parallelStream()
-                .min(Comparator.comparingInt(m -> m.getResult().getMatchScore()))
-                .orElse(null);
     }
 
     private int calculateTotalScoreGained(List<Match> matches) {
