@@ -1,6 +1,8 @@
 package org.avlasov.parser.file;
 
-import org.avlasov.entity.wotreplay.WotReplayInfo;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import org.avlasov.PowerMockTestCase;
+import org.avlasov.entity.wotreplay.*;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -10,7 +12,9 @@ import org.powermock.modules.junit4.PowerMockRunner;
 
 import java.io.FileInputStream;
 import java.io.IOException;
+import java.io.InputStream;
 import java.math.BigInteger;
+import java.util.List;
 import java.util.Optional;
 
 import static org.junit.Assert.*;
@@ -21,10 +25,8 @@ import static org.powermock.api.mockito.PowerMockito.spy;
 /**
  * Created By artemvlasov on 03/06/2018
  **/
-@RunWith(PowerMockRunner.class)
 @PrepareForTest(value = {WotReplayFileParser.class})
-@PowerMockIgnore({"com.sun.org.apache.xerces.*", "javax.xml.parsers.*", "org.apache.logging.*"})
-public class WotReplayFileParserTest {
+public class WotReplayFileParserTest extends PowerMockTestCase  {
 
     private WotReplayFileParser wotReplayFileParser;
 
@@ -38,9 +40,17 @@ public class WotReplayFileParserTest {
         String path = WotReplayFileParserTest.class.getResource("./15272867730864_ussr_R149_Object_268_4_murovanka.wotreplay").getFile();
         Optional<WotReplayInfo> wotReplayInfo = wotReplayFileParser.parseWotReplay(path);
         assertTrue(wotReplayInfo.isPresent());
-        assertEquals(new BigInteger("11951349323822650"), wotReplayInfo.get().getReplayMatch().getArenaUniqueID());
-        assertEquals("Sh0tnik", wotReplayInfo.get().getReplayOwnerInfo().getPlayerName());
-        assertEquals(365, wotReplayInfo.get().getReplayMatch().getCommon().getDuration());
+        WotReplayInfo replayInfo = wotReplayInfo.get();
+        WotReplayMatch replayMatch = replayInfo.getReplayMatch();
+        WotReplayOwnerInfo ownerInfo = replayInfo.getReplayOwnerInfo();
+        verifyWotReplayInfo(ownerInfo);
+        assertEquals(new BigInteger("11951349323822650"), replayMatch.getArenaUniqueID());
+        assertEquals(365, replayMatch.getCommon().getDuration());
+        assertEquals(1, replayMatch.getCommon().getWinnerTeam());
+        assertFalse(replayMatch.getPlayers().isEmpty());
+        assertFalse(replayMatch.getVehicles().isEmpty());
+        verifyWotReplayPlayer(replayMatch.getPlayers().get(0));
+        verifyWotReplayVehicle(replayMatch.getVehicles());
     }
 
     @Test
@@ -77,5 +87,57 @@ public class WotReplayFileParserTest {
         assertEquals(365, wotReplayInfo.get().getReplayMatch().getCommon().getDuration());
     }
 
+    private void verifyWotReplayInfo(WotReplayOwnerInfo replayOwnerInfo) {
+        assertNotNull(replayOwnerInfo);
+        assertEquals("Sh0tnik", replayOwnerInfo.getPlayerName());
+        assertFalse(replayOwnerInfo.getClientVersionFromXml().isEmpty());
+        assertEquals("1.0.1.0", replayOwnerInfo.getClientVersionFromExe());
+        assertEquals("Мурованка", replayOwnerInfo.getMapDisplayName());
+        assertFalse(replayOwnerInfo.isHasMods());
+        assertEquals("RU", replayOwnerInfo.getRegionCode());
+        assertEquals(32437801, replayOwnerInfo.getPlayerID());
+        assertEquals("WOT RU1", replayOwnerInfo.getServerName());
+        assertNotNull(replayOwnerInfo.getDateTime());
+        assertEquals("11_murovanka", replayOwnerInfo.getMapName());
+        assertEquals(1, replayOwnerInfo.getBattleType());
+        assertEquals("ussr-R149_Object_268_4", replayOwnerInfo.getPlayerVehicle());
+    }
+
+    private void verifyWotReplayPlayer(WotReplayPlayer wotReplayPlayer) {
+        assertNotNull(wotReplayPlayer);
+        assertNotEquals(0, wotReplayPlayer.getPlayerId());
+        assertNotEquals("", wotReplayPlayer.getName());
+        assertNotEquals(0, wotReplayPlayer.getPrebattleID());
+        if (wotReplayPlayer.getClanAbbrev().isEmpty()) {
+            assertEquals("", wotReplayPlayer.getClanAbbrev());
+            assertEquals(0, wotReplayPlayer.getClanDBID());
+        } else {
+            assertNotEquals("", wotReplayPlayer.getClanAbbrev());
+            assertNotEquals(0, wotReplayPlayer.getClanDBID());
+        }
+        assertNotEquals(0, wotReplayPlayer.getTeam());
+    }
+
+    private void verifyWotReplayVehicle(List<WotReplayVehicle> wotReplayVehicles) {
+        assertNotNull(wotReplayVehicles);
+        WotReplayVehicle testWotReplayVehicle = readJsonTestObject();
+        assertNotNull(testWotReplayVehicle);
+        Optional<WotReplayVehicle> wotReplayVehicle = wotReplayVehicles.parallelStream()
+                .filter(wrv -> wrv.getVehicleMatchId() == testWotReplayVehicle.getVehicleMatchId())
+                .findFirst();
+        assertTrue(wotReplayVehicle.isPresent());
+        assertEquals(testWotReplayVehicle, wotReplayVehicle.get());
+    }
+
+    private WotReplayVehicle readJsonTestObject() {
+        ObjectMapper objectMapper = new ObjectMapper();
+        try (InputStream resourceAsStream = WotReplayFileParserTest.class.getResourceAsStream("./wotReplayVehicle.json")) {
+            WotReplayVehicle wotReplayVehicle = objectMapper.readValue(resourceAsStream, WotReplayVehicle.class);
+            wotReplayVehicle.setVehicleMatchId(9827913);
+            return wotReplayVehicle;
+        } catch (IOException e) {
+            throw new IllegalArgumentException(e);
+        }
+    }
 
 }
