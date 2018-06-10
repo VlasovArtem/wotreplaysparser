@@ -17,19 +17,22 @@ import java.util.stream.Collectors;
 public class DrawGroupPlayerStatisticUtils {
 
     public Map<DrawGroup, List<DrawGroupPlayerStatistic>> collectDrawGroupPlayers(List<PlayerStatistic> playerStatistics) {
-        Map<DrawGroup, List<DrawGroupPlayerStatistic>> data = new HashMap<>();
-        for (PlayerStatistic playerStatistic : playerStatistics) {
-            data.compute(playerStatistic.getPlayer().getDrawGroup(), (drawGroup, playerStatistics1) -> {
-               if (playerStatistics1 == null)
-                   playerStatistics1 = new ArrayList<>();
-               playerStatistics1.add(new DrawGroupPlayerStatistic(playerStatistic));
-               return playerStatistics1;
-            });
+        if (playerStatistics != null && !playerStatistics.isEmpty()) {
+            Map<DrawGroup, List<DrawGroupPlayerStatistic>> data = new HashMap<>();
+            for (PlayerStatistic playerStatistic : playerStatistics) {
+                data.compute(playerStatistic.getPlayer().getDrawGroup(), (drawGroup, playerStatistics1) -> {
+                    if (playerStatistics1 == null)
+                        playerStatistics1 = new ArrayList<>();
+                    playerStatistics1.add(new DrawGroupPlayerStatistic(playerStatistic));
+                    return playerStatistics1;
+                });
+            }
+            for (List<DrawGroupPlayerStatistic> statistics : data.values()) {
+                statistics.sort(Comparator.comparingInt(AbstractStatistic::getTotalScore).reversed());
+            }
+            return data;
         }
-        for (List<DrawGroupPlayerStatistic> statistics : data.values()) {
-            statistics.sort(Comparator.comparingInt(AbstractStatistic::getTotalScore).reversed());
-        }
-        return data;
+        return Collections.emptyMap();
     }
 
     public Map<DrawGroup, DrawGroupPlayerStatistic> findWorstDrawGroupPlayer(Map<DrawGroup, List<DrawGroupPlayerStatistic>> data) {
@@ -41,9 +44,12 @@ public class DrawGroupPlayerStatisticUtils {
     }
 
     private Map<DrawGroup, DrawGroupPlayerStatistic> findDrawGroupPlayer(Map<DrawGroup, List<DrawGroupPlayerStatistic>> data, Function<Map.Entry<DrawGroup, List<DrawGroupPlayerStatistic>>, DrawGroupPlayerStatistic> valueExtractor) {
-        return data.entrySet()
-                .stream()
-                .collect(Collectors.toMap(Map.Entry::getKey, valueExtractor));
+        if (data != null && !data.isEmpty()) {
+            return data.entrySet()
+                    .stream()
+                    .collect(Collectors.toMap(Map.Entry::getKey, valueExtractor));
+        }
+        return Collections.emptyMap();
     }
 
 }
