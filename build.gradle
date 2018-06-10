@@ -45,5 +45,6 @@ dependencies {
     testCompile group: 'org.powermock', name: 'powermock-module-junit4', version: powermock
     testCompile group: 'org.powermock', name: 'powermock-core', version: powermock
     testCompile group: 'org.powermock', name: 'powermock-api-mockito2', version: powermock
+    testCompile group: 'org.hamcrest', name: 'hamcrest-all', version: '1.3'
 
 }
