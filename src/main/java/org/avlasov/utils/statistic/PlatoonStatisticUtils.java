@@ -20,35 +20,38 @@ public class PlatoonStatisticUtils extends AbstractStatisticUtils<List<PlatoonSt
 
     @Override
     public List<PlatoonStatistic> calculateStatistic(List<Match> matches) {
-        Map<Platoon, List<Match>> platoonListMap = new HashMap<>();
-        for (Match match : matches) {
-            platoonListMap.compute(match.getPlatoon(), (platoon, platoonMatches) -> {
-                if (platoonMatches == null) {
-                    platoonMatches = new ArrayList<>();
-                }
-                platoonMatches.add(match);
-                return platoonMatches;
-            });
+        if (matches != null && !matches.isEmpty()) {
+            Map<Platoon, List<Match>> platoonListMap = new HashMap<>();
+            for (Match match : matches) {
+                platoonListMap.compute(match.getPlatoon(), (platoon, platoonMatches) -> {
+                    if (platoonMatches == null) {
+                        platoonMatches = new ArrayList<>();
+                    }
+                    platoonMatches.add(match);
+                    return platoonMatches;
+                });
+            }
+            List<PlatoonStatistic> platoonStatistics = new ArrayList<>();
+            for (Map.Entry<Platoon, List<Match>> platoonListEntry : platoonListMap.entrySet()) {
+                int totalPlatoonDamageDealt = calculateTotalPlatoonDamageDealt(platoonListEntry.getValue());
+                int totalPlatoonFrags = calculateTotalPlatoonFrags(platoonListEntry.getValue());
+                int totalPlatoonScore = calculateTotalPlatoonScore(platoonListEntry.getValue());
+                platoonStatistics.add(
+                        PlatoonStatistic.builder()
+                                .matches(platoonListEntry.getValue())
+                                .platoon(platoonListEntry.getKey())
+                                .platoonPlayerStatistic(getPlatoonPlayersStatistics(platoonListEntry.getKey(), platoonListEntry.getValue()))
+                                .totalDamageDealt(totalPlatoonDamageDealt)
+                                .totalFrags(totalPlatoonFrags)
+                                .totalScore(totalPlatoonScore)
+                                .totalPlatoonPlayedMatches(platoonListEntry.getValue().size())
+                                .totalPlatoonMatchesWins(calculateTotalPlatoonWins(matches))
+                                .build());
+            }
+            platoonStatistics.sort(Comparator.comparing(AbstractStatistic::getTotalScore).reversed());
+            return platoonStatistics;
         }
-        List<PlatoonStatistic> platoonStatistics = new ArrayList<>();
-        for (Map.Entry<Platoon, List<Match>> platoonListEntry : platoonListMap.entrySet()) {
-            int totalPlatoonDamageDealt = calculateTotalPlatoonDamageDealt(platoonListEntry.getValue());
-            int totalPlatoonFrags = calculateTotalPlatoonFrags(platoonListEntry.getValue());
-            int totalPlatoonScore = calculateTotalPlatoonScore(platoonListEntry.getValue());
-            platoonStatistics.add(
-                    PlatoonStatistic.builder()
-                            .matches(platoonListEntry.getValue())
-                            .platoon(platoonListEntry.getKey())
-                            .platoonPlayerStatistic(getPlatoonPlayersStatistics(platoonListEntry.getKey(), platoonListEntry.getValue()))
-                            .totalDamageDealt(totalPlatoonDamageDealt)
-                            .totalFrags(totalPlatoonFrags)
-                            .totalScore(totalPlatoonScore)
-                            .totalPlatoonPlayedMatches(platoonListEntry.getValue().size())
-                            .totalPlatoonMatchesWins(calculateTotalPlatoonWins(matches))
-                            .build());
-        }
-        platoonStatistics.sort(Comparator.comparing(AbstractStatistic::getTotalScore).reversed());
-        return platoonStatistics;
+        return Collections.emptyList();
     }
 
     private List<PlatoonPlayerStatistic> getPlatoonPlayersStatistics(Platoon platoon, List<Match> matches) {
