@@ -8,10 +8,7 @@ import org.avlasov.config.entity.PlatoonConfig;
 import org.openqa.selenium.phantomjs.PhantomJSDriver;
 import org.openqa.selenium.phantomjs.PhantomJSDriverService;
 import org.openqa.selenium.remote.DesiredCapabilities;
-import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.ComponentScan;
-import org.springframework.context.annotation.Configuration;
-import org.springframework.context.annotation.DependsOn;
+import org.springframework.context.annotation.*;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -21,6 +18,7 @@ import java.io.InputStream;
  **/
 @Configuration
 @ComponentScan(basePackages = "org.avlasov")
+@PropertySource("classpath:project.properties")
 public class ApplicationConfig {
 
     @Bean
