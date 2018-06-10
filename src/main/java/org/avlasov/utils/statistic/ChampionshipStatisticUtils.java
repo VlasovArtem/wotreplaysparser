@@ -22,14 +22,16 @@ public class ChampionshipStatisticUtils extends AbstractStatisticUtils<Champions
     private final PlayerStatisticUtils playerStatisticUtils;
     private final MatchStatisticUtils matchStatisticUtils;
     private final MatchesStatisticUtils matchesStatisticUtils;
+    private final MatchUtils matchUtils;
     private final DrawGroupPlayerStatisticUtils drawGroupPlayerStatisticUtils;
 
-    public ChampionshipStatisticUtils(PlatoonStatisticUtils platoonStatisticUtils, VehicleStatisticUtils vehicleStatisticUtils, PlayerStatisticUtils playerStatisticUtils, MatchStatisticUtils matchStatisticUtils, MatchesStatisticUtils matchesStatisticUtils, DrawGroupPlayerStatisticUtils drawGroupPlayerStatisticUtils) {
+    public ChampionshipStatisticUtils(PlatoonStatisticUtils platoonStatisticUtils, VehicleStatisticUtils vehicleStatisticUtils, PlayerStatisticUtils playerStatisticUtils, MatchStatisticUtils matchStatisticUtils, MatchesStatisticUtils matchesStatisticUtils, MatchUtils matchUtils, DrawGroupPlayerStatisticUtils drawGroupPlayerStatisticUtils) {
         this.platoonStatisticUtils = platoonStatisticUtils;
         this.vehicleStatisticUtils = vehicleStatisticUtils;
         this.playerStatisticUtils = playerStatisticUtils;
         this.matchStatisticUtils = matchStatisticUtils;
         this.matchesStatisticUtils = matchesStatisticUtils;
+        this.matchUtils = matchUtils;
         this.drawGroupPlayerStatisticUtils = drawGroupPlayerStatisticUtils;
     }
 
@@ -41,8 +43,8 @@ public class ChampionshipStatisticUtils extends AbstractStatisticUtils<Champions
                                                                  MatchStatistic matchStatistic) {
         return ChampionshipStatistic.builder()
                 .matchesStatistic(matchesStatisticUtils.calculateStatistic(matches).orElse(null))
-                .bestMatch(matchesStatisticUtils.findBestMatch(matches))
-                .worstMatch(matchesStatisticUtils.findWorstMatch(matches))
+                .bestMatch(matchUtils.findBestMatch(matches).orElse(null))
+                .worstMatch(matchUtils.findWorstMatch(matches).orElse(null))
                 .bestPlatoon(findBestByScore(platoonStatistics))
                 .worstPlatoon(findWorstByScore(platoonStatistics))
                 .bestDrawGroupsPlayer(drawGroupPlayerStatisticUtils.findBestDrawGroupPlayer(drawGroupListMap))
