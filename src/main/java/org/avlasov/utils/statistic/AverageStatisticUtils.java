@@ -1,4 +1,4 @@
-package org.avlasov.utils;
+package org.avlasov.utils.statistic;
 
 import java.math.BigDecimal;
 import java.math.RoundingMode;

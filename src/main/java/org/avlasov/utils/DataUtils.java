@@ -16,46 +16,46 @@ import java.util.Optional;
 @Component
 public class DataUtils {
 
-    private final PlatoonConfig PLATOON_CONFIG;
+    private final PlatoonConfig platoonConfig;
 
-    public DataUtils(PlatoonConfig PLATOON_CONFIG) {
-        this.PLATOON_CONFIG = PLATOON_CONFIG;
+    public DataUtils(PlatoonConfig platoonConfig) {
+        this.platoonConfig = platoonConfig;
     }
 
     public DrawGroup getDrawGroup(PlayerMatch playerMatch) {
         return getDrawGroup(playerMatch.getPlayer().getName());
     }
 
-    public DrawGroup getDrawGroup(String username) {
-        Optional<Player> platoonPlayer = getPlayer(username);
+    public DrawGroup getDrawGroup(String playerName) {
+        Optional<Player> platoonPlayer = getPlayerFromPlatoon(playerName);
         return platoonPlayer
                 .map(Player::getDrawGroup)
                 .orElse(DrawGroup.FIRST);
     }
 
-    public Optional<Platoon> getPlatoonDataFromUser(PlayerMatch playerMatch) {
-        return getPlatoonDataFromUser(playerMatch.getPlayer().getName());
+    public Optional<Platoon> getPlatoonFromPlayer(PlayerMatch playerMatch) {
+        return getPlatoonFromPlayer(playerMatch.getPlayer().getName());
     }
 
-    public Optional<Platoon> getPlatoonDataFromUser(String name) {
-        List<Platoon> platoonDataList = PLATOON_CONFIG.getPlatoons();
+    public Optional<Platoon> getPlatoonFromPlayer(String playerName) {
+        List<Platoon> platoonDataList = platoonConfig.getPlatoons();
         for (Platoon platoon : platoonDataList) {
-            if (platoon.getPlayers().stream().anyMatch(player -> name.contains(player.getName())))
+            if (platoon.getPlayers().stream().anyMatch(player -> playerName.contains(player.getName())))
                 return Optional.of(platoon);
         }
         return Optional.empty();
     }
 
-    public Optional<Player> getPlayer(PlayerMatch playerMatch) {
-        return getPlayer(playerMatch.getPlayer().getName());
+    public Optional<Player> getPlayerFromPlatoon(PlayerMatch playerMatch) {
+        return getPlayerFromPlatoon(playerMatch.getPlayer().getName());
     }
 
-    public Optional<Player> getPlayer(String name) {
-        Optional<Platoon> platoonDataFromUser = getPlatoonDataFromUser(name);
+    public Optional<Player> getPlayerFromPlatoon(String playerName) {
+        Optional<Platoon> platoonDataFromUser = getPlatoonFromPlayer(playerName);
         if (platoonDataFromUser.isPresent()) {
             return platoonDataFromUser.get().getPlayers()
                     .stream()
-                    .filter(player -> name.contains(player.getName()))
+                    .filter(player -> playerName.contains(player.getName()))
                     .findFirst();
         }
         return Optional.empty();
@@ -65,8 +65,8 @@ public class DataUtils {
         return getPlatoonName(playerMatch.getPlayer().getName());
     }
 
-    public String getPlatoonName(String name) {
-        Optional<Platoon> platoonDataFromUser = getPlatoonDataFromUser(name);
+    public String getPlatoonName(String playerName) {
+        Optional<Platoon> platoonDataFromUser = getPlatoonFromPlayer(playerName);
         return platoonDataFromUser.
                 map(Platoon::getPlatoonName)
                 .orElse("");

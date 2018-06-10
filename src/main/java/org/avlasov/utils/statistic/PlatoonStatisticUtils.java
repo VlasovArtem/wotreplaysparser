@@ -1,4 +1,4 @@
-package org.avlasov.utils;
+package org.avlasov.utils.statistic;
 
 import org.avlasov.entity.match.Match;
 import org.avlasov.entity.match.Platoon;
@@ -8,15 +8,18 @@ import org.avlasov.entity.match.enums.Result;
 import org.avlasov.entity.statistic.AbstractStatistic;
 import org.avlasov.entity.statistic.PlatoonPlayerStatistic;
 import org.avlasov.entity.statistic.PlatoonStatistic;
+import org.springframework.stereotype.Component;
 
 import java.util.*;
 
 /**
  * Created By artemvlasov on 22/05/2018
  **/
-public class PlatoonStatisticUtils {
+@Component
+public class PlatoonStatisticUtils extends AbstractStatisticUtils<List<PlatoonStatistic>> {
 
-    public static List<PlatoonStatistic> getPlatoonStatistics(List<Match> matches) {
+    @Override
+    public List<PlatoonStatistic> calculateStatistic(List<Match> matches) {
         Map<Platoon, List<Match>> platoonListMap = new HashMap<>();
         for (Match match : matches) {
             platoonListMap.compute(match.getPlatoon(), (platoon, platoonMatches) -> {
@@ -48,7 +51,7 @@ public class PlatoonStatisticUtils {
         return platoonStatistics;
     }
 
-    private static List<PlatoonPlayerStatistic> getPlatoonPlayersStatistics(Platoon platoon, List<Match> matches) {
+    private List<PlatoonPlayerStatistic> getPlatoonPlayersStatistics(Platoon platoon, List<Match> matches) {
         Map<Player, PlatoonPlayerStatistic> platoonPlayerStatisticMap = new HashMap<>();
         for (Match match : matches) {
             for (PlayerMatch playerMatch : match.getPlayerMatches()) {
@@ -71,25 +74,25 @@ public class PlatoonStatisticUtils {
         return platoonPlayerStatistics;
     }
 
-    private static int calculateTotalPlatoonDamageDealt(List<Match> matches) {
+    private int calculateTotalPlatoonDamageDealt(List<Match> matches) {
         return matches.parallelStream()
                 .mapToInt(match -> match.getResult().getMatchPlatoonDamageDealt())
                 .sum();
     }
 
-    private static int calculateTotalPlatoonFrags(List<Match> matches) {
+    private int calculateTotalPlatoonFrags(List<Match> matches) {
         return matches.parallelStream()
                 .mapToInt(match -> match.getResult().getMatchPlatoonFrags())
                 .sum();
     }
 
-    private static int calculateTotalPlatoonScore(List<Match> matches) {
+    private int calculateTotalPlatoonScore(List<Match> matches) {
         return matches.parallelStream()
                 .mapToInt(match -> match.getResult().getMatchScore())
                 .sum();
     }
 
-    private static int calculateTotalPlatoonWins(List<Match> matches) {
+    private int calculateTotalPlatoonWins(List<Match> matches) {
         return (int) matches.parallelStream()
                 .filter(match -> Result.WIN.equals(match.getResult().getResult()))
                 .count();
