@@ -1,4 +1,4 @@
-package org.avlasov.utils.statistic;
+package org.avlasov.utils;
 
 import org.avlasov.entity.match.Match;
 import org.springframework.stereotype.Component;
