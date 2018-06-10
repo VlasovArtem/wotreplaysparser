@@ -14,7 +14,7 @@ import java.util.Optional;
 public class MatchUtils {
 
     public Optional<Match> findBestMatch(List<Match> matches) {
-        if (matches != null && matches.isEmpty()) {
+        if (matches != null && !matches.isEmpty()) {
             return matches.parallelStream()
                     .max(Comparator.comparingInt(m -> m.getResult().getMatchScore()));
         }
@@ -22,7 +22,7 @@ public class MatchUtils {
     }
 
     public Optional<Match> findWorstMatch(List<Match> matches) {
-        if (matches != null && matches.isEmpty()) {
+        if (matches != null && !matches.isEmpty()) {
             return matches.parallelStream()
                     .min(Comparator.comparingInt(m -> m.getResult().getMatchScore()));
         }
