@@ -2,7 +2,6 @@ package org.avlasov.parser.site;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import org.avlasov.config.entity.PlatoonConfig;
 import org.avlasov.entity.match.*;
 import org.avlasov.entity.match.enums.Result;
 import org.avlasov.utils.DataUtils;
@@ -32,12 +31,10 @@ public class ParseSiteData {
     private final static Logger LOGGER = LogManager.getLogger(ParseSiteData.class);
     private DateTimeFormatter dateTimeFormatter;
     private final PhantomJSDriver phantomJSDriver;
-    private final PlatoonConfig platoonConfig;
     private final DataUtils dataUtils;
 
-    public ParseSiteData(PhantomJSDriver phantomJSDriver, PlatoonConfig platoonConfig, DataUtils dataUtils) {
+    public ParseSiteData(PhantomJSDriver phantomJSDriver, DataUtils dataUtils) {
         this.phantomJSDriver = phantomJSDriver;
-        this.platoonConfig = platoonConfig;
         this.dataUtils = dataUtils;
         dateTimeFormatter = new DateTimeFormatterBuilder()
                 .appendValue(YEAR, 4)
@@ -52,56 +49,52 @@ public class ParseSiteData {
                 .toFormatter();
     }
 
-    public List<Match> parseAllPlatoonsMatches() {
-        long start = System.currentTimeMillis();
-        LOGGER.info("Start parsing all platoons matches");
-        Set<Match> allMatches = new HashSet<>();
-        for (Platoon platoon : platoonConfig.getPlatoons()) {
-            Set<Match> platoonMatches = new HashSet<>();
-            for (Player player : platoon.getPlayers()) {
-                LOGGER.info(String.format("Start parsing matches for the player %s in the platoon %s", player.getName(), platoon.getPlatoonName()));
-                List<Match> matches = parseMatches(player.getName(), platoon);
-                if (matches.size() < 40) {
-                    LOGGER.warn(String.format("Player with %s from the platoon %s has not all required matches links (40 is required - %d parsed)", player.getName(), platoon.getPlatoonName(), matches.size()));
-                } else if (matches.size() > 40) {
-                    LOGGER.warn(String.format("Player with %s from the platoon %s has more then 40 required matches links (40 is required - %d parsed)", player.getName(), platoon.getPlatoonName(), matches.size()));
-                }
-                platoonMatches.addAll(matches);
-                if (platoonMatches.size() == 40) {
-                    break;
-                }
-            }
-            allMatches.addAll(platoonMatches);
+    public List<Match> parseMatches(Platoon platoon, Set<String> matchesLinks) {
+        Objects.requireNonNull(platoon);
+        Set<Match> platoonMatches = new HashSet<>();
+        for (Player player : platoon.getPlayers()) {
+            LOGGER.info(String.format("Start parsing matches for the player %s in the platoon %s", player.getName(), platoon.getPlatoonName()));
+            platoonMatches.addAll(parseMatches(player.getName(), platoon, matchesLinks));
         }
-        long end = System.currentTimeMillis();
-        LOGGER.info(String.format("Parsing platoons data completed in %d seconds", ((end - start) / 1000)));
-        phantomJSDriver.close();
-        return allMatches
+        return platoonMatches
                 .stream()
                 .sorted(Comparator.comparing(Match::getMatchDate))
                 .collect(Collectors.toList());
     }
 
-    public List<Match> parseMatches(String username, Platoon platoon) {
-        Set<String> links = new HashSet<>();
-        for (int i = 0; i < 10; i++) {
-            List<String> matchesLinks = getMatchesLinks(username, i + 1);
-            if (links.stream().anyMatch(matchesLinks::contains)) {
-                break;
-            } else if (!matchesLinks.isEmpty()) {
-                links.addAll(matchesLinks);
-            } else if (!links.isEmpty()) {
-                break;
-            }
+    public List<Match> parseMatches(List<Platoon> platoons, Set<String> matchesLinks) {
+        if (platoons != null && !platoons.isEmpty()) {
+            long start = System.currentTimeMillis();
+            LOGGER.info("Start parsing platoons matches");
+            List<Match> collect = platoons.parallelStream()
+                    .flatMap(platoon -> parseMatches(platoon, matchesLinks).stream())
+                    .sorted(Comparator.comparing(Match::getMatchDate))
+                    .collect(Collectors.toList());
+
+            long end = System.currentTimeMillis();
+            LOGGER.info(String.format("Parsing platoons data completed in %d seconds", ((end - start) / 1000)));
+            return collect;
         }
-        LOGGER.info(String.format("%d matches links found for the user %s.", links.size(), username));
-        List<Match> collect = links.stream()
-                .map(link -> parseMatch(link, platoon))
-                .filter(Objects::nonNull)
-                .sorted(Comparator.comparing(Match::getMatchDate))
-                .collect(Collectors.toList());
-        phantomJSDriver.close();
-        return collect;
+        return Collections.emptyList();
+    }
+
+    public List<Match> parseMatches(String username, Platoon platoon, Set<String> matchesLinks) {
+        if (username != null && !username.isEmpty() && platoon != null && matchesLinks != null && !matchesLinks.isEmpty()) {
+            return matchesLinks.stream()
+                    .map(link -> parseMatch(link, platoon))
+                    .filter(Objects::nonNull)
+                    .sorted(Comparator.comparing(Match::getMatchDate))
+                    .collect(Collectors.toList());
+        }
+        return Collections.emptyList();
+    }
+
+    public List<String> parseMatchesLinks(List<Platoon> platoon) {
+        return null;
+    }
+
+    public List<String> parseMatchesLinks(Platoon platoon) {
+        return null;
     }
 
     private Match parseMatch(String matchLink, Platoon platoon) {
@@ -280,7 +273,6 @@ public class ParseSiteData {
 
     private List<String> getMatchesLinks(String username, Integer page) {
         String link = String.format("http://wotreplays.ru/site/index/version/63/player/%s/sort/uploaded_at.desc/page/%d/", username, page);
-        //http://wotreplays.ru/site/index/version/63/members/The_Invoker/sort/uploaded_at.desc/page/3/
         Document data = getData(link);
         LOGGER.info(String.format("Start collecting links for the user %s with link %s", username, link));
         return data.getElementsByClass("link--pale_orange")
