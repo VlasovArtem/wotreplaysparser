@@ -1,0 +1,2139 @@
+{
+  "playerVehicle": "france-F17_AMX_13_90",
+  "clientVersionFromXml": "World\u00a0of\u00a0Tanks v.1.4.1.1 #1245",
+  "vehicles": {
+    "5558808": {
+      "personalMissionIDs": [],
+      "vehicleType": "uk:GB81_FV4004",
+      "isAlive": true,
+      "name": "omaks301085",
+      "personalMissionInfo": {},
+      "forbidInBattleInvitations": false,
+      "igrType": 0,
+      "clanAbbrev": "UZMK",
+      "ranked": [
+        [
+          0,
+          0
+        ],
+        [
+          47
+        ]
+      ],
+      "team": 2,
+      "events": {},
+      "isTeamKiller": false
+    },
+    "5558809": {
+      "personalMissionIDs": [],
+      "vehicleType": "ussr:R45_IS-7",
+      "isAlive": true,
+      "name": "k_surma88",
+      "personalMissionInfo": {},
+      "forbidInBattleInvitations": false,
+      "igrType": 0,
+      "clanAbbrev": "DONBI",
+      "ranked": [
+        [
+          0,
+          0
+        ],
+        [
+          10
+        ]
+      ],
+      "team": 1,
+      "events": {},
+      "isTeamKiller": false
+    },
+    "5558804": {
+      "personalMissionIDs": [],
+      "vehicleType": "germany:G91_Pro_Ag_A",
+      "isAlive": true,
+      "name": "jeff68",
+      "personalMissionInfo": {},
+      "forbidInBattleInvitations": false,
+      "igrType": 0,
+      "clanAbbrev": "TADL",
+      "ranked": [
+        [
+          0,
+          0
+        ],
+        [
+          36
+        ]
+      ],
+      "team": 1,
+      "events": {},
+      "isTeamKiller": false
+    },
+    "5558805": {
+      "personalMissionIDs": [
+        158,
+        350
+      ],
+      "vehicleType": "france:F17_AMX_13_90",
+      "isAlive": true,
+      "name": "Beast04",
+      "personalMissionInfo": {
+        "158": [
+          0,
+          0
+        ],
+        "350": [
+          0,
+          0
+        ]
+      },
+      "forbidInBattleInvitations": false,
+      "igrType": 0,
+      "clanAbbrev": "_TOS",
+      "ranked": [
+        [
+          0,
+          0
+        ],
+        [
+          12
+        ]
+      ],
+      "team": 1,
+      "events": {},
+      "isTeamKiller": false
+    },
+    "5558806": {
+      "personalMissionIDs": [],
+      "vehicleType": "ussr:R93_Object263",
+      "isAlive": true,
+      "name": "BRODYGA_ZET",
+      "personalMissionInfo": {},
+      "forbidInBattleInvitations": false,
+      "igrType": 0,
+      "clanAbbrev": "",
+      "ranked": [
+        [
+          0,
+          0
+        ],
+        []
+      ],
+      "team": 1,
+      "events": {},
+      "isTeamKiller": false
+    },
+    "5558807": {
+      "personalMissionIDs": [],
+      "vehicleType": "germany:G72_JagdPz_E100",
+      "isAlive": true,
+      "name": "H_E_L_L_R_A_I_S_E_R_777",
+      "personalMissionInfo": {},
+      "forbidInBattleInvitations": false,
+      "igrType": 0,
+      "clanAbbrev": "EP0CH",
+      "ranked": [
+        [
+          0,
+          0
+        ],
+        [
+          38
+        ]
+      ],
+      "team": 2,
+      "events": {},
+      "isTeamKiller": false
+    },
+    "5558801": {
+      "personalMissionIDs": [],
+      "vehicleType": "uk:GB91_Super_Conqueror",
+      "isAlive": true,
+      "name": "_doktor_1946",
+      "personalMissionInfo": {},
+      "forbidInBattleInvitations": true,
+      "igrType": 0,
+      "clanAbbrev": "",
+      "ranked": [
+        [
+          0,
+          0
+        ],
+        [
+          12
+        ]
+      ],
+      "team": 2,
+      "events": {},
+      "isTeamKiller": false
+    },
+    "5558802": {
+      "personalMissionIDs": [],
+      "vehicleType": "france:F18_Bat_Chatillon25t",
+      "isAlive": true,
+      "name": "IvanNikolay1941",
+      "personalMissionInfo": {},
+      "forbidInBattleInvitations": false,
+      "igrType": 0,
+      "clanAbbrev": "",
+      "ranked": [
+        [
+          0,
+          0
+        ],
+        []
+      ],
+      "team": 1,
+      "events": {},
+      "isTeamKiller": false
+    },
+    "5558803": {
+      "personalMissionIDs": [],
+      "vehicleType": "czech:Cz02_TVP_T50",
+      "isAlive": true,
+      "name": "ENAKIEVSKII2",
+      "personalMissionInfo": {},
+      "forbidInBattleInvitations": false,
+      "igrType": 0,
+      "clanAbbrev": "",
+      "ranked": [
+        [
+          0,
+          0
+        ],
+        [
+          34
+        ]
+      ],
+      "team": 2,
+      "events": {},
+      "isTeamKiller": false
+    },
+    "5558819": {
+      "personalMissionIDs": [],
+      "vehicleType": "usa:A69_T110E5",
+      "isAlive": true,
+      "name": "steamza",
+      "personalMissionInfo": {},
+      "forbidInBattleInvitations": false,
+      "igrType": 0,
+      "clanAbbrev": "",
+      "ranked": [
+        [
+          0,
+          0
+        ],
+        [
+          10
+        ]
+      ],
+      "team": 1,
+      "events": {},
+      "isTeamKiller": false
+    },
+    "5558818": {
+      "personalMissionIDs": [],
+      "vehicleType": "poland:Pl15_60TP_Lewandowskiego",
+      "isAlive": true,
+      "name": "Pro100SashOk",
+      "personalMissionInfo": {},
+      "forbidInBattleInvitations": false,
+      "igrType": 0,
+      "clanAbbrev": "",
+      "ranked": [
+        [
+          0,
+          0
+        ],
+        []
+      ],
+      "team": 2,
+      "events": {},
+      "isTeamKiller": false
+    },
+    "5558817": {
+      "personalMissionIDs": [],
+      "vehicleType": "ussr:R40_T-54",
+      "isAlive": true,
+      "name": "hantervolg",
+      "personalMissionInfo": {},
+      "forbidInBattleInvitations": false,
+      "igrType": 0,
+      "clanAbbrev": "",
+      "ranked": [
+        [
+          0,
+          0
+        ],
+        [
+          10
+        ]
+      ],
+      "team": 1,
+      "events": {},
+      "isTeamKiller": false
+    },
+    "5558816": {
+      "personalMissionIDs": [],
+      "vehicleType": "germany:G105_T-55_NVA_DDR",
+      "isAlive": true,
+      "name": "Tyrist_87",
+      "personalMissionInfo": {},
+      "forbidInBattleInvitations": false,
+      "igrType": 0,
+      "clanAbbrev": "",
+      "ranked": [
+        [
+          0,
+          0
+        ],
+        [
+          14
+        ]
+      ],
+      "team": 1,
+      "events": {},
+      "isTeamKiller": false
+    },
+    "5558815": {
+      "personalMissionIDs": [],
+      "vehicleType": "ussr:R87_T62A",
+      "isAlive": true,
+      "name": "Vladuxaice",
+      "personalMissionInfo": {},
+      "forbidInBattleInvitations": false,
+      "igrType": 0,
+      "clanAbbrev": "",
+      "ranked": [
+        [
+          0,
+          0
+        ],
+        [
+          10
+        ]
+      ],
+      "team": 1,
+      "events": {},
+      "isTeamKiller": false
+    },
+    "5558814": {
+      "personalMissionIDs": [],
+      "vehicleType": "germany:G105_T-55_NVA_DDR",
+      "isAlive": true,
+      "name": "8GBS8",
+      "personalMissionInfo": {},
+      "forbidInBattleInvitations": false,
+      "igrType": 0,
+      "clanAbbrev": "",
+      "ranked": [
+        [
+          0,
+          0
+        ],
+        [
+          14
+        ]
+      ],
+      "team": 2,
+      "events": {},
+      "isTeamKiller": false
+    },
+    "5558813": {
+      "personalMissionIDs": [],
+      "vehicleType": "uk:GB83_FV4005",
+      "isAlive": true,
+      "name": "Salamandra1177",
+      "personalMissionInfo": {},
+      "forbidInBattleInvitations": false,
+      "igrType": 0,
+      "clanAbbrev": "S_TI",
+      "ranked": [
+        [
+          0,
+          0
+        ],
+        [
+          34
+        ]
+      ],
+      "team": 2,
+      "events": {},
+      "isTeamKiller": false
+    },
+    "5558812": {
+      "personalMissionIDs": [],
+      "vehicleType": "czech:Cz04_T50_51",
+      "isAlive": true,
+      "name": "Anton280592",
+      "personalMissionInfo": {},
+      "forbidInBattleInvitations": false,
+      "igrType": 0,
+      "clanAbbrev": "CTUM",
+      "ranked": [
+        [
+          0,
+          0
+        ],
+        []
+      ],
+      "team": 2,
+      "events": {},
+      "isTeamKiller": false
+    },
+    "5558811": {
+      "personalMissionIDs": [],
+      "vehicleType": "france:F71_AMX_30_prototype",
+      "isAlive": true,
+      "name": "Plyuxa69",
+      "personalMissionInfo": {},
+      "forbidInBattleInvitations": false,
+      "igrType": 0,
+      "clanAbbrev": "INSP",
+      "ranked": [
+        [
+          0,
+          0
+        ],
+        [
+          52
+        ]
+      ],
+      "team": 2,
+      "events": {},
+      "isTeamKiller": false
+    },
+    "5558810": {
+      "personalMissionIDs": [],
+      "vehicleType": "china:Ch12_111_1_2_3",
+      "isAlive": true,
+      "name": "vlad_888_777",
+      "personalMissionInfo": {},
+      "forbidInBattleInvitations": false,
+      "igrType": 0,
+      "clanAbbrev": "CORP-",
+      "ranked": [
+        [
+          0,
+          0
+        ],
+        [
+          3
+        ]
+      ],
+      "team": 2,
+      "events": {},
+      "isTeamKiller": false
+    },
+    "5394400": {
+      "personalMissionIDs": [],
+      "vehicleType": "uk:GB83_FV4005",
+      "isAlive": true,
+      "name": "Ibiza08",
+      "personalMissionInfo": {},
+      "forbidInBattleInvitations": false,
+      "igrType": 0,
+      "clanAbbrev": "MKLR",
+      "ranked": [
+        [
+          0,
+          0
+        ],
+        []
+      ],
+      "team": 1,
+      "events": {},
+      "isTeamKiller": false
+    },
+    "5558826": {
+      "personalMissionIDs": [],
+      "vehicleType": "ussr:R93_Object263",
+      "isAlive": true,
+      "name": "niko58",
+      "personalMissionInfo": {},
+      "forbidInBattleInvitations": false,
+      "igrType": 0,
+      "clanAbbrev": "",
+      "ranked": [
+        [
+          0,
+          0
+        ],
+        []
+      ],
+      "team": 2,
+      "events": {},
+      "isTeamKiller": false
+    },
+    "5558827": {
+      "personalMissionIDs": [],
+      "vehicleType": "uk:GB81_FV4004",
+      "isAlive": true,
+      "name": "ADVERSA_F0RTUNA",
+      "personalMissionInfo": {},
+      "forbidInBattleInvitations": false,
+      "igrType": 0,
+      "clanAbbrev": "",
+      "ranked": [
+        [
+          0,
+          0
+        ],
+        []
+      ],
+      "team": 1,
+      "events": {},
+      "isTeamKiller": false
+    },
+    "5558824": {
+      "personalMissionIDs": [],
+      "vehicleType": "ussr:R145_Object_705_A",
+      "isAlive": true,
+      "name": "razv_46ORB",
+      "personalMissionInfo": {},
+      "forbidInBattleInvitations": false,
+      "igrType": 0,
+      "clanAbbrev": "",
+      "ranked": [
+        [
+          0,
+          0
+        ],
+        []
+      ],
+      "team": 1,
+      "events": {},
+      "isTeamKiller": false
+    },
+    "5558825": {
+      "personalMissionIDs": [],
+      "vehicleType": "france:F17_AMX_13_90",
+      "isAlive": true,
+      "name": "TEHAS2",
+      "personalMissionInfo": {},
+      "forbidInBattleInvitations": false,
+      "igrType": 0,
+      "clanAbbrev": "V_D_1",
+      "ranked": [
+        [
+          0,
+          0
+        ],
+        [
+          12
+        ]
+      ],
+      "team": 2,
+      "events": {},
+      "isTeamKiller": false
+    },
+    "5558822": {
+      "personalMissionIDs": [],
+      "vehicleType": "sweden:S17_EMIL_1952_E2",
+      "isAlive": true,
+      "name": "serg_tan4ik",
+      "personalMissionInfo": {},
+      "forbidInBattleInvitations": false,
+      "igrType": 0,
+      "clanAbbrev": "",
+      "ranked": [
+        [
+          0,
+          0
+        ],
+        []
+      ],
+      "team": 1,
+      "events": {},
+      "isTeamKiller": false
+    },
+    "5558823": {
+      "personalMissionIDs": [],
+      "vehicleType": "ussr:R148_Object_430_U",
+      "isAlive": true,
+      "name": "GTRRRRRRR",
+      "personalMissionInfo": {},
+      "forbidInBattleInvitations": false,
+      "igrType": 0,
+      "clanAbbrev": "0LEWI",
+      "ranked": [
+        [
+          0,
+          0
+        ],
+        [
+          30
+        ]
+      ],
+      "team": 2,
+      "events": {},
+      "isTeamKiller": false
+    },
+    "5558820": {
+      "personalMissionIDs": [],
+      "vehicleType": "usa:A14_T30",
+      "isAlive": true,
+      "name": "Tankist_izverg",
+      "personalMissionInfo": {},
+      "forbidInBattleInvitations": false,
+      "igrType": 0,
+      "clanAbbrev": "",
+      "ranked": [
+        [
+          0,
+          0
+        ],
+        []
+      ],
+      "team": 2,
+      "events": {},
+      "isTeamKiller": false
+    },
+    "5558821": {
+      "personalMissionIDs": [],
+      "vehicleType": "usa:A14_T30",
+      "isAlive": true,
+      "name": "_VORON_86",
+      "personalMissionInfo": {},
+      "forbidInBattleInvitations": false,
+      "igrType": 0,
+      "clanAbbrev": "V-NOM",
+      "ranked": [
+        [
+          0,
+          0
+        ],
+        [
+          6
+        ]
+      ],
+      "team": 1,
+      "events": {},
+      "isTeamKiller": false
+    },
+    "5394399": {
+      "personalMissionIDs": [],
+      "vehicleType": "ussr:R45_IS-7",
+      "isAlive": true,
+      "name": "zagon555",
+      "personalMissionInfo": {},
+      "forbidInBattleInvitations": false,
+      "igrType": 0,
+      "clanAbbrev": "1VICI",
+      "ranked": [
+        [
+          0,
+          0
+        ],
+        [
+          47
+        ]
+      ],
+      "team": 2,
+      "events": {},
+      "isTeamKiller": false
+    },
+    "5558828": {
+      "personalMissionIDs": [],
+      "vehicleType": "uk:GB83_FV4005",
+      "isAlive": true,
+      "name": "tagirSaliam",
+      "personalMissionInfo": {},
+      "forbidInBattleInvitations": false,
+      "igrType": 0,
+      "clanAbbrev": "ODESI",
+      "ranked": [
+        [
+          0,
+          0
+        ],
+        [
+          3
+        ]
+      ],
+      "team": 1,
+      "events": {},
+      "isTeamKiller": false
+    }
+  },
+  "clientVersionFromExe": "1.4.1.0",
+  "regionCode": "RU",
+  "playerID": 46303555,
+  "serverName": "WOT RU6",
+  "mapDisplayName": "\u0425\u0430\u0439\u0432\u0435\u0439",
+  "serverSettings": {
+    "roaming": [
+      1,
+      1,
+      [
+        [
+          1,
+          1,
+          499999999,
+          "RU"
+        ]
+      ],
+      []
+    ],
+    "spgRedesignFeatures": {
+      "stunEnabled": true,
+      "markTargetAreaEnabled": true
+    },
+    "isPotapovQuestEnabled": false
+  },
+  "dateTime": "11.04.2019 14:40:01",
+  "mapName": "45_north_america",
+  "gameplayID": "ctf",
+  "battleType": 1,
+  "hasMods": true,
+  "xvm": {
+    "timing": [
+      {
+        "p": 1,
+        "m": "XMQP",
+        "t": 0,
+        "d": {
+          "data": {
+            "event": "xmqp_hola",
+            "capabilities": {
+              "sixthSense": true
+            }
+          },
+          "accountDBID": 46303555
+        }
+      },
+      {
+        "p": 1,
+        "m": "XMQP",
+        "t": 0,
+        "d": {
+          "data": {
+            "event": "xmqp_hola",
+            "capabilities": {
+              "sixthSense": true
+            }
+          },
+          "accountDBID": 20515677
+        }
+      },
+      {
+        "p": 1,
+        "m": "XMQP",
+        "t": 0,
+        "d": {
+          "data": {
+            "event": "xmqp_hola",
+            "capabilities": {
+              "sixthSense": false
+            }
+          },
+          "accountDBID": 33329419
+        }
+      },
+      {
+        "p": 1,
+        "m": "XMQP",
+        "t": 0,
+        "d": {
+          "data": {
+            "event": "xmqp_hola",
+            "capabilities": {
+              "sixthSense": true
+            }
+          },
+          "accountDBID": 16039145
+        }
+      },
+      {
+        "p": 3,
+        "m": "XMQP",
+        "t": 29.41,
+        "d": {
+          "data": {
+            "color": 65280,
+            "path": [
+              [
+                140,
+                141
+              ]
+            ],
+            "event": "xmqp_minimap_click"
+          },
+          "accountDBID": 46303555
+        }
+      },
+      {
+        "p": 3,
+        "m": "XMQP",
+        "t": 29.71,
+        "d": {
+          "data": {
+            "color": 65280,
+            "path": [
+              [
+                162,
+                136
+              ]
+            ],
+            "event": "xmqp_minimap_click"
+          },
+          "accountDBID": 46303555
+        }
+      },
+      {
+        "p": 3,
+        "m": "XMQP",
+        "t": 30.11,
+        "d": {
+          "data": {
+            "color": 65280,
+            "path": [
+              [
+                155,
+                154
+              ]
+            ],
+            "event": "xmqp_minimap_click"
+          },
+          "accountDBID": 46303555
+        }
+      },
+      {
+        "p": 3,
+        "m": "XMQP",
+        "t": 30.51,
+        "d": {
+          "data": {
+            "color": 65280,
+            "path": [
+              [
+                144,
+                161
+              ]
+            ],
+            "event": "xmqp_minimap_click"
+          },
+          "accountDBID": 46303555
+        }
+      },
+      {
+        "p": 3,
+        "m": "XMQP",
+        "t": 70.31,
+        "d": {
+          "data": {
+            "event": "xmqp_spotted"
+          },
+          "accountDBID": 46303555
+        }
+      },
+      {
+        "p": 3,
+        "m": "XMQP",
+        "t": 77.81,
+        "d": {
+          "data": {
+            "event": "xmqp_spotted"
+          },
+          "accountDBID": 16039145
+        }
+      },
+      {
+        "p": 3,
+        "m": "XMQP",
+        "t": 78.31,
+        "d": {
+          "data": {
+            "event": "xmqp_spotted"
+          },
+          "accountDBID": 23132086
+        }
+      },
+      {
+        "p": 3,
+        "m": "XMQP",
+        "t": 99.62,
+        "d": {
+          "data": {
+            "event": "xmqp_spotted"
+          },
+          "accountDBID": 23132086
+        }
+      },
+      {
+        "p": 3,
+        "m": "XMQP",
+        "t": 105.72,
+        "d": {
+          "data": {
+            "event": "xmqp_spotted"
+          },
+          "accountDBID": 32192113
+        }
+      },
+      {
+        "p": 3,
+        "m": "XMQP",
+        "t": 107.12,
+        "d": {
+          "data": {
+            "event": "xmqp_spotted"
+          },
+          "accountDBID": 46303555
+        }
+      },
+      {
+        "p": 3,
+        "m": "XMQP",
+        "t": 126.22,
+        "d": {
+          "data": {
+            "color": 65280,
+            "path": [
+              [
+                176,
+                135
+              ]
+            ],
+            "event": "xmqp_minimap_click"
+          },
+          "accountDBID": 16039145
+        }
+      },
+      {
+        "p": 3,
+        "m": "XMQP",
+        "t": 126.42,
+        "d": {
+          "data": {
+            "color": 65280,
+            "path": [
+              [
+                177,
+                135
+              ]
+            ],
+            "event": "xmqp_minimap_click"
+          },
+          "accountDBID": 16039145
+        }
+      },
+      {
+        "p": 3,
+        "m": "XMQP",
+        "t": 126.52,
+        "d": {
+          "data": {
+            "color": 65280,
+            "path": [
+              [
+                179,
+                132
+              ]
+            ],
+            "event": "xmqp_minimap_click"
+          },
+          "accountDBID": 16039145
+        }
+      },
+      {
+        "p": 3,
+        "m": "XMQP",
+        "t": 126.83,
+        "d": {
+          "data": {
+            "color": 65280,
+            "path": [
+              [
+                179,
+                131
+              ]
+            ],
+            "event": "xmqp_minimap_click"
+          },
+          "accountDBID": 16039145
+        }
+      },
+      {
+        "p": 3,
+        "m": "XMQP",
+        "t": 127.525,
+        "d": {
+          "data": {
+            "color": 65280,
+            "path": [
+              [
+                177,
+                131
+              ],
+              [
+                164,
+                131
+              ],
+              [
+                153,
+                130
+              ],
+              [
+                135,
+                128
+              ],
+              [
+                124,
+                126
+              ],
+              [
+                111,
+                122
+              ],
+              [
+                99,
+                119
+              ],
+              [
+                87,
+                114
+              ],
+              [
+                74,
+                110
+              ]
+            ],
+            "event": "xmqp_minimap_click"
+          },
+          "accountDBID": 16039145
+        }
+      },
+      {
+        "p": 3,
+        "m": "XMQP",
+        "t": 128.425,
+        "d": {
+          "data": {
+            "color": 65280,
+            "path": [
+              [
+                172,
+                123
+              ]
+            ],
+            "event": "xmqp_minimap_click"
+          },
+          "accountDBID": 16039145
+        }
+      },
+      {
+        "p": 3,
+        "m": "XMQP",
+        "t": 128.725,
+        "d": {
+          "data": {
+            "color": 65280,
+            "path": [
+              [
+                173,
+                124
+              ]
+            ],
+            "event": "xmqp_minimap_click"
+          },
+          "accountDBID": 16039145
+        }
+      },
+      {
+        "p": 3,
+        "m": "XMQP",
+        "t": 129.425,
+        "d": {
+          "data": {
+            "color": 65280,
+            "path": [
+              [
+                172,
+                122
+              ],
+              [
+                156,
+                123
+              ],
+              [
+                141,
+                120
+              ],
+              [
+                125,
+                118
+              ],
+              [
+                114,
+                117
+              ],
+              [
+                103,
+                115
+              ],
+              [
+                89,
+                113
+              ]
+            ],
+            "event": "xmqp_minimap_click"
+          },
+          "accountDBID": 16039145
+        }
+      },
+      {
+        "p": 3,
+        "m": "XMQP",
+        "t": 130.325,
+        "d": {
+          "data": {
+            "color": 65280,
+            "path": [
+              [
+                168,
+                128
+              ]
+            ],
+            "event": "xmqp_minimap_click"
+          },
+          "accountDBID": 16039145
+        }
+      },
+      {
+        "p": 3,
+        "m": "XMQP",
+        "t": 130.525,
+        "d": {
+          "data": {
+            "color": 65280,
+            "path": [
+              [
+                168,
+                128
+              ]
+            ],
+            "event": "xmqp_minimap_click"
+          },
+          "accountDBID": 16039145
+        }
+      },
+      {
+        "p": 3,
+        "m": "XMQP",
+        "t": 130.925,
+        "d": {
+          "data": {
+            "event": "xmqp_spotted"
+          },
+          "accountDBID": 32192113
+        }
+      },
+      {
+        "p": 3,
+        "m": "XMQP",
+        "t": 131.225,
+        "d": {
+          "data": {
+            "color": 65280,
+            "path": [
+              [
+                165,
+                128
+              ],
+              [
+                152,
+                127
+              ],
+              [
+                140,
+                125
+              ],
+              [
+                127,
+                121
+              ],
+              [
+                117,
+                119
+              ],
+              [
+                105,
+                117
+              ],
+              [
+                86,
+                111
+              ]
+            ],
+            "event": "xmqp_minimap_click"
+          },
+          "accountDBID": 16039145
+        }
+      },
+      {
+        "p": 3,
+        "m": "XMQP",
+        "t": 132.225,
+        "d": {
+          "data": {
+            "color": 65280,
+            "path": [
+              [
+                166,
+                131
+              ]
+            ],
+            "event": "xmqp_minimap_click"
+          },
+          "accountDBID": 16039145
+        }
+      },
+      {
+        "p": 3,
+        "m": "XMQP",
+        "t": 132.425,
+        "d": {
+          "data": {
+            "color": 65280,
+            "path": [
+              [
+                162,
+                133
+              ]
+            ],
+            "event": "xmqp_minimap_click"
+          },
+          "accountDBID": 16039145
+        }
+      },
+      {
+        "p": 3,
+        "m": "XMQP",
+        "t": 133.525,
+        "d": {
+          "data": {
+            "color": 65280,
+            "path": [
+              [
+                161,
+                133
+              ],
+              [
+                147,
+                132
+              ],
+              [
+                133,
+                126
+              ],
+              [
+                123,
+                121
+              ],
+              [
+                114,
+                116
+              ],
+              [
+                104,
+                112
+              ],
+              [
+                91,
+                108
+              ]
+            ],
+            "event": "xmqp_minimap_click"
+          },
+          "accountDBID": 16039145
+        }
+      },
+      {
+        "p": 3,
+        "m": "XMQP",
+        "t": 141.23,
+        "d": {
+          "data": {
+            "event": "xmqp_spotted"
+          },
+          "accountDBID": 23132086
+        }
+      },
+      {
+        "p": 3,
+        "m": "XMQP",
+        "t": 144.325,
+        "d": {
+          "data": {
+            "color": 65280,
+            "path": [
+              [
+                146,
+                165
+              ]
+            ],
+            "event": "xmqp_minimap_click"
+          },
+          "accountDBID": 16039145
+        }
+      },
+      {
+        "p": 3,
+        "m": "XMQP",
+        "t": 144.525,
+        "d": {
+          "data": {
+            "color": 65280,
+            "path": [
+              [
+                148,
+                165
+              ]
+            ],
+            "event": "xmqp_minimap_click"
+          },
+          "accountDBID": 16039145
+        }
+      },
+      {
+        "p": 3,
+        "m": "XMQP",
+        "t": 144.725,
+        "d": {
+          "data": {
+            "color": 65280,
+            "path": [
+              [
+                148,
+                163
+              ]
+            ],
+            "event": "xmqp_minimap_click"
+          },
+          "accountDBID": 16039145
+        }
+      },
+      {
+        "p": 3,
+        "m": "XMQP",
+        "t": 144.925,
+        "d": {
+          "data": {
+            "color": 65280,
+            "path": [
+              [
+                149,
+                163
+              ]
+            ],
+            "event": "xmqp_minimap_click"
+          },
+          "accountDBID": 16039145
+        }
+      },
+      {
+        "p": 3,
+        "m": "XMQP",
+        "t": 145.125,
+        "d": {
+          "data": {
+            "color": 65280,
+            "path": [
+              [
+                148,
+                168
+              ],
+              [
+                144,
+                178
+              ]
+            ],
+            "event": "xmqp_minimap_click"
+          },
+          "accountDBID": 16039145
+        }
+      },
+      {
+        "p": 3,
+        "m": "XMQP",
+        "t": 145.625,
+        "d": {
+          "data": {
+            "color": 65280,
+            "path": [
+              [
+                146,
+                172
+              ]
+            ],
+            "event": "xmqp_minimap_click"
+          },
+          "accountDBID": 16039145
+        }
+      },
+      {
+        "p": 3,
+        "m": "XMQP",
+        "t": 145.925,
+        "d": {
+          "data": {
+            "color": 65280,
+            "path": [
+              [
+                146,
+                173
+              ]
+            ],
+            "event": "xmqp_minimap_click"
+          },
+          "accountDBID": 16039145
+        }
+      },
+      {
+        "p": 3,
+        "m": "XMQP",
+        "t": 146.525,
+        "d": {
+          "data": {
+            "event": "xmqp_spotted"
+          },
+          "accountDBID": 46303555
+        }
+      },
+      {
+        "p": 3,
+        "m": "XMQP",
+        "t": 148.525,
+        "d": {
+          "data": {
+            "event": "xmqp_spotted"
+          },
+          "accountDBID": 20515677
+        }
+      },
+      {
+        "p": 3,
+        "m": "XMQP",
+        "t": 153.325,
+        "d": {
+          "data": {
+            "color": 65280,
+            "path": [
+              [
+                143,
+                195
+              ]
+            ],
+            "event": "xmqp_minimap_click"
+          },
+          "accountDBID": 16039145
+        }
+      },
+      {
+        "p": 3,
+        "m": "XMQP",
+        "t": 153.625,
+        "d": {
+          "data": {
+            "color": 65280,
+            "path": [
+              [
+                144,
+                195
+              ]
+            ],
+            "event": "xmqp_minimap_click"
+          },
+          "accountDBID": 16039145
+        }
+      },
+      {
+        "p": 3,
+        "m": "XMQP",
+        "t": 153.725,
+        "d": {
+          "data": {
+            "color": 65280,
+            "path": [
+              [
+                144,
+                195
+              ]
+            ],
+            "event": "xmqp_minimap_click"
+          },
+          "accountDBID": 16039145
+        }
+      },
+      {
+        "p": 3,
+        "m": "XMQP",
+        "t": 153.925,
+        "d": {
+          "data": {
+            "color": 65280,
+            "path": [
+              [
+                143,
+                193
+              ]
+            ],
+            "event": "xmqp_minimap_click"
+          },
+          "accountDBID": 16039145
+        }
+      },
+      {
+        "p": 3,
+        "m": "XMQP",
+        "t": 154.125,
+        "d": {
+          "data": {
+            "color": 65280,
+            "path": [
+              [
+                142,
+                194
+              ]
+            ],
+            "event": "xmqp_minimap_click"
+          },
+          "accountDBID": 16039145
+        }
+      },
+      {
+        "p": 3,
+        "m": "XMQP",
+        "t": 154.425,
+        "d": {
+          "data": {
+            "event": "xmqp_spotted"
+          },
+          "accountDBID": 32192113
+        }
+      },
+      {
+        "p": 3,
+        "m": "XMQP",
+        "t": 154.925,
+        "d": {
+          "data": {
+            "color": 65280,
+            "path": [
+              [
+                142,
+                194
+              ],
+              [
+                131,
+                184
+              ],
+              [
+                120,
+                166
+              ],
+              [
+                113,
+                154
+              ],
+              [
+                103,
+                138
+              ],
+              [
+                96,
+                128
+              ],
+              [
+                87,
+                118
+              ],
+              [
+                75,
+                110
+              ]
+            ],
+            "event": "xmqp_minimap_click"
+          },
+          "accountDBID": 16039145
+        }
+      },
+      {
+        "p": 3,
+        "m": "XMQP",
+        "t": 155.125,
+        "d": {
+          "data": {
+            "color": 65280,
+            "path": [
+              [
+                72,
+                108
+              ]
+            ],
+            "event": "xmqp_minimap_click"
+          },
+          "accountDBID": 16039145
+        }
+      },
+      {
+        "p": 3,
+        "m": "XMQP",
+        "t": 155.325,
+        "d": {
+          "data": {
+            "color": 65280,
+            "path": [
+              [
+                72,
+                108
+              ]
+            ],
+            "event": "xmqp_minimap_click"
+          },
+          "accountDBID": 16039145
+        }
+      },
+      {
+        "p": 3,
+        "m": "XMQP",
+        "t": 155.425,
+        "d": {
+          "data": {
+            "color": 65280,
+            "path": [
+              [
+                72,
+                109
+              ]
+            ],
+            "event": "xmqp_minimap_click"
+          },
+          "accountDBID": 16039145
+        }
+      },
+      {
+        "p": 3,
+        "m": "XMQP",
+        "t": 155.625,
+        "d": {
+          "data": {
+            "color": 65280,
+            "path": [
+              [
+                72,
+                108
+              ]
+            ],
+            "event": "xmqp_minimap_click"
+          },
+          "accountDBID": 16039145
+        }
+      },
+      {
+        "p": 3,
+        "m": "XMQP",
+        "t": 159.325,
+        "d": {
+          "data": {
+            "color": 65280,
+            "path": [
+              [
+                41,
+                38
+              ]
+            ],
+            "event": "xmqp_minimap_click"
+          },
+          "accountDBID": 16039145
+        }
+      },
+      {
+        "p": 3,
+        "m": "XMQP",
+        "t": 159.525,
+        "d": {
+          "data": {
+            "color": 65280,
+            "path": [
+              [
+                41,
+                38
+              ]
+            ],
+            "event": "xmqp_minimap_click"
+          },
+          "accountDBID": 16039145
+        }
+      },
+      {
+        "p": 3,
+        "m": "XMQP",
+        "t": 160.725,
+        "d": {
+          "data": {
+            "color": 65280,
+            "path": [
+              [
+                42,
+                38
+              ],
+              [
+                51,
+                49
+              ],
+              [
+                57,
+                61
+              ],
+              [
+                63,
+                74
+              ],
+              [
+                65,
+                84
+              ]
+            ],
+            "event": "xmqp_minimap_click"
+          },
+          "accountDBID": 16039145
+        }
+      },
+      {
+        "p": 3,
+        "m": "XMQP",
+        "t": 162.225,
+        "d": {
+          "data": {
+            "color": 65280,
+            "path": [
+              [
+                42,
+                30
+              ]
+            ],
+            "event": "xmqp_minimap_click"
+          },
+          "accountDBID": 16039145
+        }
+      },
+      {
+        "p": 3,
+        "m": "XMQP",
+        "t": 162.425,
+        "d": {
+          "data": {
+            "color": 65280,
+            "path": [
+              [
+                42,
+                30
+              ]
+            ],
+            "event": "xmqp_minimap_click"
+          },
+          "accountDBID": 16039145
+        }
+      },
+      {
+        "p": 3,
+        "m": "XMQP",
+        "t": 163.425,
+        "d": {
+          "data": {
+            "color": 65280,
+            "path": [
+              [
+                42,
+                28
+              ],
+              [
+                42,
+                40
+              ],
+              [
+                46,
+                52
+              ],
+              [
+                48,
+                64
+              ],
+              [
+                50,
+                75
+              ],
+              [
+                52,
+                85
+              ]
+            ],
+            "event": "xmqp_minimap_click"
+          },
+          "accountDBID": 16039145
+        }
+      },
+      {
+        "p": 3,
+        "m": "XMQP",
+        "t": 180.835,
+        "d": {
+          "data": {
+            "event": "xmqp_spotted"
+          },
+          "accountDBID": 20666104
+        }
+      },
+      {
+        "p": 3,
+        "m": "XMQP",
+        "t": 181.735,
+        "d": {
+          "data": {
+            "event": "xmqp_spotted"
+          },
+          "accountDBID": 20515677
+        }
+      },
+      {
+        "p": 3,
+        "m": "XMQP",
+        "t": 182.135,
+        "d": {
+          "data": {
+            "code": "ALL",
+            "enable": false,
+            "event": "xmqp_vehicle_timer"
+          },
+          "accountDBID": 33329419
+        }
+      },
+      {
+        "p": 3,
+        "m": "XMQP",
+        "t": 182.135,
+        "d": {
+          "data": {
+            "code": "ALL",
+            "enable": false,
+            "event": "xmqp_death_zone_timer"
+          },
+          "accountDBID": 33329419
+        }
+      },
+      {
+        "p": 3,
+        "m": "XMQP",
+        "t": 204.03,
+        "d": {
+          "data": {
+            "event": "xmqp_spotted"
+          },
+          "accountDBID": 20515677
+        }
+      },
+      {
+        "p": 3,
+        "m": "XMQP",
+        "t": 211.135,
+        "d": {
+          "data": {
+            "event": "xmqp_spotted"
+          },
+          "accountDBID": 20666104
+        }
+      },
+      {
+        "p": 3,
+        "m": "XMQP",
+        "t": 223.835,
+        "d": {
+          "data": {
+            "totalTime": 0,
+            "level": "warning",
+            "enable": true,
+            "event": "xmqp_vehicle_timer",
+            "code": 4
+          },
+          "accountDBID": 16039145
+        }
+      },
+      {
+        "p": 3,
+        "m": "XMQP",
+        "t": 224.235,
+        "d": {
+          "data": {
+            "code": 4,
+            "enable": false,
+            "event": "xmqp_vehicle_timer"
+          },
+          "accountDBID": 16039145
+        }
+      },
+      {
+        "p": 3,
+        "m": "XMQP",
+        "t": 238.335,
+        "d": {
+          "data": {
+            "event": "xmqp_spotted"
+          },
+          "accountDBID": 46303555
+        }
+      },
+      {
+        "p": 3,
+        "m": "XMQP",
+        "t": 244.135,
+        "d": {
+          "data": {
+            "event": "xmqp_spotted"
+          },
+          "accountDBID": 23132086
+        }
+      },
+      {
+        "p": 3,
+        "m": "XMQP",
+        "t": 244.235,
+        "d": {
+          "data": {
+            "color": 65280,
+            "path": [
+              [
+                71,
+                192
+              ]
+            ],
+            "event": "xmqp_minimap_click"
+          },
+          "accountDBID": 20666104
+        }
+      },
+      {
+        "p": 3,
+        "m": "XMQP",
+        "t": 248.735,
+        "d": {
+          "data": {
+            "enable": true,
+            "event": "xmqp_fire"
+          },
+          "accountDBID": 32192113
+        }
+      },
+      {
+        "p": 3,
+        "m": "XMQP",
+        "t": 248.935,
+        "d": {
+          "data": {
+            "event": "xmqp_spotted"
+          },
+          "accountDBID": 32192113
+        }
+      },
+      {
+        "p": 3,
+        "m": "XMQP",
+        "t": 253.135,
+        "d": {
+          "data": {
+            "event": "xmqp_spotted"
+          },
+          "accountDBID": 20666104
+        }
+      },
+      {
+        "p": 3,
+        "m": "XMQP",
+        "t": 256.035,
+        "d": {
+          "data": {
+            "event": "xmqp_spotted"
+          },
+          "accountDBID": 20515677
+        }
+      },
+      {
+        "p": 3,
+        "m": "XMQP",
+        "t": 256.635,
+        "d": {
+          "data": {
+            "enable": false,
+            "event": "xmqp_fire"
+          },
+          "accountDBID": 32192113
+        }
+      },
+      {
+        "p": 3,
+        "m": "XMQP",
+        "t": 262.135,
+        "d": {
+          "data": {
+            "code": "ALL",
+            "enable": false,
+            "event": "xmqp_vehicle_timer"
+          },
+          "accountDBID": 32192113
+        }
+      },
+      {
+        "p": 3,
+        "m": "XMQP",
+        "t": 262.135,
+        "d": {
+          "data": {
+            "code": "ALL",
+            "enable": false,
+            "event": "xmqp_death_zone_timer"
+          },
+          "accountDBID": 32192113
+        }
+      },
+      {
+        "p": 3,
+        "m": "XMQP",
+        "t": 263.635,
+        "d": {
+          "data": {
+            "event": "xmqp_spotted"
+          },
+          "accountDBID": 23132086
+        }
+      },
+      {
+        "p": 3,
+        "m": "XMQP",
+        "t": 281.035,
+        "d": {
+          "data": {
+            "event": "xmqp_spotted"
+          },
+          "accountDBID": 20666104
+        }
+      },
+      {
+        "p": 3,
+        "m": "XMQP",
+        "t": 290.935,
+        "d": {
+          "data": {
+            "event": "xmqp_spotted"
+          },
+          "accountDBID": 46303555
+        }
+      },
+      {
+        "p": 3,
+        "m": "XMQP",
+        "t": 293.535,
+        "d": {
+          "data": {
+            "event": "xmqp_spotted"
+          },
+          "accountDBID": 23132086
+        }
+      },
+      {
+        "p": 3,
+        "m": "XMQP",
+        "t": 311.14,
+        "d": {
+          "data": {
+            "event": "xmqp_spotted"
+          },
+          "accountDBID": 16039145
+        }
+      },
+      {
+        "p": 3,
+        "m": "XMQP",
+        "t": 315.14,
+        "d": {
+          "data": {
+            "event": "xmqp_spotted"
+          },
+          "accountDBID": 20515677
+        }
+      },
+      {
+        "p": 3,
+        "m": "XMQP",
+        "t": 345.94,
+        "d": {
+          "data": {
+            "event": "xmqp_spotted"
+          },
+          "accountDBID": 23132086
+        }
+      },
+      {
+        "p": 3,
+        "m": "XMQP",
+        "t": 353.14,
+        "d": {
+          "data": {
+            "event": "xmqp_spotted"
+          },
+          "accountDBID": 46303555
+        }
+      },
+      {
+        "p": 3,
+        "m": "XMQP",
+        "t": 355.935,
+        "d": {
+          "data": {
+            "event": "xmqp_spotted"
+          },
+          "accountDBID": 16039145
+        }
+      }
+    ],
+    "global": {
+      "minimap_circles": {
+        "base_gun_reload_time": 23,
+        "view_rammer": false,
+        "base_loaders_skill": 100,
+        "base_radio_distance": 750,
+        "view_commander_eagleEye": 80,
+        "view_radioman_finder": 0,
+        "base_radioman_skill": 100,
+        "view_stereoscope": false,
+        "view_ventilation": true,
+        "view_consumable": false,
+        "view_radioman_inventor": 0,
+        "view_camouflage": [
+          {
+            "skill": 0,
+            "name": "driver"
+          },
+          {
+            "skill": 66,
+            "name": "gunner"
+          },
+          {
+            "skill": 0,
+            "name": "commander"
+          }
+        ],
+        "view_brothers_in_arms": true,
+        "commander_sixthSense": true,
+        "view_coated_optics": true,
+        "is_full_crew": true,
+        "view_distance_vehicle": 380,
+        "artillery_range": 0,
+        "base_commander_skill": 100,
+        "vehCD": 4929,
+        "shell_range": 0
+      }
+    },
+    "ver": "1.0"
+  },
+  "playerName": "Beast04"
+}

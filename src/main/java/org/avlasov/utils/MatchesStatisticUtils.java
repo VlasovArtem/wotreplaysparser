@@ -1,8 +1,8 @@
 package org.avlasov.utils;
 
-import org.avlasov.entity.match.Match;
-import org.avlasov.entity.match.enums.Result;
-import org.avlasov.entity.statistic.MatchesStatistic;
+import org.avlasov.chucktournament.entity.match.Match;
+import org.avlasov.chucktournament.entity.match.enums.Result;
+import org.avlasov.parser.entity.statistic.MatchesStatistic;
 
 import java.util.Comparator;
 import java.util.List;

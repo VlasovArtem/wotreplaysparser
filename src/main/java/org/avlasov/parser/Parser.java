@@ -4,10 +4,14 @@ import com.fasterxml.jackson.annotation.JsonAutoDetect;
 import com.fasterxml.jackson.annotation.PropertyAccessor;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.type.TypeFactory;
-import org.avlasov.entity.match.Match;
-import org.avlasov.entity.match.enums.DrawGroup;
-import org.avlasov.entity.statistic.*;
-import org.avlasov.utils.DataUtils;
+import org.avlasov.chucktournament.entity.match.Match;
+import org.avlasov.chucktournament.entity.match.enums.DrawGroup;
+import org.avlasov.parser.entity.statistic.ChampionshipStatistic;
+import org.avlasov.parser.entity.statistic.DrawGroupPlayerStatistic;
+import org.avlasov.parser.entity.statistic.MatchStatistic;
+import org.avlasov.parser.entity.statistic.PlatoonStatistic;
+import org.avlasov.parser.entity.statistic.PlayerStatistic;
+import org.avlasov.parser.entity.statistic.VehicleStatistic;
 import org.avlasov.utils.MatchStatisticUtils;
 import org.avlasov.utils.PlatoonStatisticUtils;
 import org.avlasov.utils.PlayerStatisticUtils;
@@ -17,12 +21,15 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
-import java.util.function.Function;
 import java.util.logging.Handler;
 import java.util.logging.Logger;
 
-import static org.avlasov.utils.DrawGroupPlayerStatisticUtils.*;
-import static org.avlasov.utils.MatchesStatisticUtils.*;
+import static org.avlasov.utils.DrawGroupPlayerStatisticUtils.collectDrawGroupPlayers;
+import static org.avlasov.utils.DrawGroupPlayerStatisticUtils.findBestDrawGroupPlayer;
+import static org.avlasov.utils.DrawGroupPlayerStatisticUtils.findWorstDrawGroupPlayer;
+import static org.avlasov.utils.MatchesStatisticUtils.calculateMatchesStatistic;
+import static org.avlasov.utils.MatchesStatisticUtils.findBestMatch;
+import static org.avlasov.utils.MatchesStatisticUtils.findWorstMatch;
 import static org.avlasov.utils.StatisticUtils.findBestByScore;
 import static org.avlasov.utils.StatisticUtils.findWorstByScore;
 import static org.avlasov.utils.VehicleStatisticUtils.getVehicleStatistics;
@@ -53,25 +60,25 @@ public class Parser {
     }
 
     public void parseDataAll() throws IOException {
-        parseData(ParseData::parseAllPlatoonsMatches);
+//        parseData(ReplayParser::parseAllPlatoonsMatches);
     }
 
     public void parseData(String username) throws IOException {
-        parseData(pd -> pd.parseMatches(username, DataUtils.getPlatoonDataFromUser(username).get()));
+//        parseData(pd -> pd.parseMatches(username, DataUtils.getPlatoonDataFromUser(username).get()));
     }
 
-    private void parseData(Function<ParseData, List<Match>> parserDataListFunction) throws IOException {
-        File dataFolder = getDataFolder();
-        List<Match> matches = parseSavedMatches(dataFolder);
-        if (matches.isEmpty()) {
-            matches = parserDataListFunction.apply(new ParseData());
-            File matchesData = new File(dataFolderPath + "/" + matchesDataFileName);
-            if (matchesData.exists())
-                matchesData.delete();
-            objectMapper.writeValue(matchesData, matches);
-        }
-        parseData(matches);
-    }
+//    private void parseData(Function<ReplayParser, List<Match>> parserDataListFunction) throws IOException {
+//        File dataFolder = getDataFolder();
+//        List<Match> matches = parseSavedMatches(dataFolder);
+//        if (matches.isEmpty()) {
+//            matches = parserDataListFunction.apply(new ReplayParser(phantomJSDriver, matchDateTimeFormatter));
+//            File matchesData = new File(dataFolderPath + "/" + matchesDataFileName);
+//            if (matchesData.exists())
+//                matchesData.delete();
+//            wotApiObjectMapper.writeValue(matchesData, matches);
+//        }
+//        parseData(matches);
+//    }
 
     private void parseData(List<Match> matches) throws IOException {
         writeStatistic(matches);

@@ -1,0 +1,1220 @@
+<!DOCTYPE html>
+<html lang="ru">
+<!--[if lt IE 9 ]><html class="old-ie" lang="ru" ng-app="wotreplays"><![endif]-->
+<!--[if IE 9 ]><html class="old-ie" lang="ru" ng-app="wotreplays"><![endif]-->
+<head>
+    <link rel="stylesheet" type="text/css" href="/assets/6fbfcf85/wr.full.min.css" media="all" />
+<link rel="stylesheet" type="text/css" href="/assets/7c603215/replay-list.css" media="all" />
+<script type="text/javascript" src="/assets/cd74ad3a/ru.filters.js"></script>
+<script type="text/javascript" src="/assets/e2629cb9/wr.full.min.js"></script>
+<title>WoTReplays</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" /><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o||n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({1:[function(e,n,t){function r(){}function o(e,n,t){return function(){return i(e,[c.now()].concat(u(arguments)),n?null:this,t),n?void 0:this}}var i=e("handle"),a=e(3),u=e(4),f=e("ee").get("tracer"),c=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,n){s[n]=o(d+n,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,o="function"==typeof n;return i(l+"tracer",[c.now(),e,t],r),function(){if(f.emit((o?"":"no-")+"fn-start",[c.now(),r,o],t),o)try{return n.apply(this,arguments)}catch(e){throw f.emit("fn-err",[arguments,this,e],t),e}finally{f.emit("fn-end",[c.now()],t)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=o(l+n)}),newrelic.noticeError=function(e,n){"string"==typeof e&&(e=new Error(e)),i("err",[e,c.now(),!1,n])}},{}],2:[function(e,n,t){function r(e,n){if(!o)return!1;if(e!==o)return!1;if(!n)return!0;if(!i)return!1;for(var t=i.split("."),r=n.split("."),a=0;a<r.length;a++)if(r[a]!==t[a])return!1;return!0}var o=null,i=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var u=navigator.userAgent,f=u.match(a);f&&u.indexOf("Chrome")===-1&&u.indexOf("Chromium")===-1&&(o="Safari",i=f[1])}n.exports={agent:o,version:i,match:r}},{}],3:[function(e,n,t){function r(e,n){var t=[],r="",i=0;for(r in e)o.call(e,r)&&(t[i]=n(r,e[r]),i+=1);return t}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],4:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(o<0?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=r},{}],5:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function o(e){function n(e){return e&&e instanceof r?e:e?f(e,u,i):i()}function t(t,r,o,i){if(!d.aborted||i){e&&e(t,r,o);for(var a=n(o),u=v(t),f=u.length,c=0;c<f;c++)u[c].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function l(e,n){h[e]=v(e).concat(n)}function m(e,n){var t=h[e];if(t)for(var r=0;r<t.length;r++)t[r]===n&&t.splice(r,1)}function v(e){return h[e]||[]}function g(e){return p[e]=p[e]||o(t)}function w(e,n){c(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var h={},y={},b={on:l,addEventListener:l,removeEventListener:m,emit:t,get:g,listeners:v,context:n,buffer:w,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",f=e("gos"),c=e(3),s={},p={},d=n.exports=o();d.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(o.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){o.buffer([e],r),o.emit(e,n,t)}var o=e("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!E++){var e=x.info=NREUM.info,n=l.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();c(y,function(n,t){e[n]||(e[n]=t)}),f("mark",["onload",a()+x.offset],null,"api");var t=l.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function o(){"complete"===l.readyState&&i()}function i(){f("mark",["domContent",a()+x.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-x.offset}var u=(new Date).getTime(),f=e("handle"),c=e(3),s=e("ee"),p=e(2),d=window,l=d.document,m="addEventListener",v="attachEvent",g=d.XMLHttpRequest,w=g&&g.prototype;NREUM.o={ST:setTimeout,SI:d.setImmediate,CT:clearTimeout,XHR:g,REQ:d.Request,EV:d.Event,PR:d.Promise,MO:d.MutationObserver};var h=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1118.min.js"},b=g&&w&&w[m]&&!/CriOS/.test(navigator.userAgent),x=n.exports={offset:u,now:a,origin:h,features:{},xhrWrappable:b,userAgent:p};e(1),l[m]?(l[m]("DOMContentLoaded",i,!1),d[m]("load",r,!1)):(l[v]("onreadystatechange",o),d[v]("onload",r)),f("mark",["firstbyte",u],null,"api");var E=0,O=e(5)},{}]},{},["loader"]);</script>
+    <meta charset="UTF-8">
+    <meta name="title" content="Реплеи World of Tanks">
+    <meta name="description" content="Удобный поиск позволяет найти именно те реплеи, которые ищете. Тут вы сможете отправить свои неповторимые реплеи на передачу ЛРН или ВБР, а также посмотреть трансляции известных стримеров. Кроме того, КАЖДЫЙ, кто заливает реплей участвует в конкурсах и имеет шанс выиграть игровое золото.">
+    <meta name="keywords" content="реплеи, демки, вот, wot, world of tanks replays, replays wot replays">
+    <link rel="shortcut icon" href="/favicon.ico" />
+
+    <style type="text/css">
+        [ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {display: none !important;}
+        .ui-effects-transfer { border: 2px dotted gray; }
+    </style>
+
+</head>
+
+
+<body data-ng-app="wotreplays">
+
+<div class="hat" data-ng-controller="headerCtrl">
+    <div class="header">
+        <div class="header__menu">
+                            <div class="header__dropdown" data-ng-class="{ active: dropdown.active }">
+                    <a class="header__label header__text" data-ng-click="dropdown.toggle();">
+                        Мои ссылки                        <i class="header__arrow"></i>
+                    </a>
+
+                    <div class="header__dropdown_content">
+                        <div class="header__dropdown_loading" data-ng-if="!dropdown.links.length"></div>
+
+                        <a
+                            class="header__text"
+                            data-ng-repeat="link in dropdown.links"
+                            data-ng-href="{{ link.url }}"
+                            target="_self"
+                        >{{ link.title }}</a>
+                    </div>
+                </div>
+            
+        </div>
+
+        <div class="header__login">
+                            <a class="header__text header__profile-link" href="/profile/notifications">
+                    Martens                </a>
+                <span class="header__notify-counter"></span>
+                <a class="header__text" href="/site/logout" style="margin-left: 20px;" target="_self">Выход</a>
+                        <a href="http://vk.com/wotreplays_official" class="vk-link" data-tooltip="Наша группа VK" target="_blank"></a>
+        </div>
+    </div>
+
+    <a href="/" class="hat__link" target="_self"></a>
+
+
+    <div class="hat__replay_count text-lg-bold" ng-cloak>
+                <span>Уже </span>
+        <span ng-bind="'11054576' | number"></span>
+        <a target="_self" class="link--underline" href="/site/index">
+            реплеев        </a>
+    </div>
+</div>
+
+<div class="main clearfix" id="baseCtrl" ng-controller="baseCtrl">
+
+    <!--   *********************   -->
+    <!--         MAIN MENU         -->
+    <!--   *********************   -->
+
+    <div class="main-menu clearfix" data-ng-style="{marginBottom: (30 + public.searchMenuHeight) + 'px'}">
+        <!--   *********************   -->
+        <!--          FILTERS          -->
+        <!--   *********************   -->
+
+        <div id="search-dropdown" class="m-item_dropdown collapsed" data-ng-class="public.isShownSearchMenu ? 'expanded' : 'collapsed'">
+
+            <div class="m-item_title"
+                 ng-class="{active: routing.active.item === 'search'}"
+                 style="width: 175px;"
+                 ng-click="toggleSearchMenu();">
+                Найти реплей            </div>
+
+            <div id="search-container" class="m-item_container" data-ng-style="{height: public.searchMenuHeight + 'px'}" data-ng-cloak>
+
+                <div class="tabs clearfix">
+
+                    <div class="t_labels">
+
+                        <div class="t_label"  data-ng-class="public.activeSearchTab == 'tab_0' ? 'active' : ''" data-ng-click="setActiveSearchTab('tab_0')">
+                            <i class="i-24_tank"></i>
+                            Танки                        </div>
+                        <div class="t_label" data-ng-class="public.activeSearchTab == 'tab_1' ? 'active' : ''" data-ng-click="setActiveSearchTab('tab_1')">
+                            <i class="i-24_map"></i>
+                            Карты                        </div>
+                        <div class="t_label" data-ng-class="public.activeSearchTab == 'tab_2' ? 'active' : ''" data-ng-click="setActiveSearchTab('tab_2')">
+                            <i class="i-24_medal2"></i>
+                            Медали                        </div>
+                        <div class="t_label" data-ng-class="public.activeSearchTab == 'tab_3' ? 'active' : ''" data-ng-click="setActiveSearchTab('tab_3')">
+                            <i class="i-24_ppl"></i>
+                            Игрок/клан                        </div>
+                        <div class="t_label" data-ng-class="public.activeSearchTab == 'tab_4' ? 'active' : ''" data-ng-click="setActiveSearchTab('tab_4')">
+                            <i class="i-24_gear"></i>
+                            Другое                        </div>
+
+                    </div>
+
+                    <div class="t_containers">
+
+                        <div class="t_container clearfix" data-ng-class="public.activeSearchTab == 'tab_0' ? 'active' : ''" style="padding: 0;">
+
+                            <div class="tank-filter clearfix">
+
+                                <div class="m_search-descr">
+                                    Уточните, какой именно танк вы хотите выбрать, с помощью фильтров                                    <i class="icon-info" data-tooltip="Вы можете отфильтровать список танков, <br/>используя фильтры по нациям, уровням и типу техники"></i>
+                                </div>
+
+                                <div
+                                    class="tf_filters"
+                                    ng-repeat="(key, filterType) in filter.data.tank.filters | orderObjectBy: 'position'"
+                                    >
+
+                                    <div class="tf_title">
+                                        <div class="first-letter">{{$index+1}}</div>
+                                        <div>{{filterType.title}}</div>
+                                    </div>
+
+                                    <ul ng-class="{'two-column': filterType.key == 'level'}">
+                                        <li ng-repeat="cbx in filterType.checkboxes">
+                                            <input
+                                                type="checkbox"
+                                                class="cbx"
+                                                id="{{key}}{{cbx.id}}"
+                                                ng-model="cbx.checked"
+                                                />
+                                            <label for="{{key}}{{cbx.id}}" ng-click="$event.stopPropagation(); $event.preventDefault(); filter.filterTanks(cbx, filterType);">{{cbx.title}}</label>
+                                        </li>
+                                    </ul>
+
+                                </div>
+
+                            </div>
+
+                            <div class="tf_slider">
+
+                                <div class="tf_s__head">
+                                    <input class="m_search" type="text" ng-model="tankSearch" ng-change="filter.update();" placeholder="введите название танка"/>
+                                    <span style="color: #6e6e6e">Танков:</span>
+                                    {{(filter.data.tank.checkboxes | filter: {show: true}).length}}
+
+                                    <!--<span
+                                        class="tf_s__selectall"
+                                        ng-if="(filter.getChecked(filter.data.tank)).length > 0"
+                                        ng-click="$event.stopPropagation(); filter.select.all(filter.data.tank,'deselect')"
+                                    >Сбросить</span>-->
+
+                                </div>
+
+                                <div class="frame loadingTanks">
+                                    <ul class="slider">
+                                        <li ng-repeat="cbx in filter.data.tank.checkboxes" ng-show="cbx.show">
+                                            <input type="checkbox" class="cbx" id="tank{{cbx.id}}" ng-model="cbx.checked" ng-change="filter.update('prevent tank slider update');"/>
+                                            <label for="tank{{cbx.id}}">{{cbx.title}}</label>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="scrollbar" data-ng-show="(filter.data.tank.checkboxes | filter: {show: true}).length > 10">
+                                    <div class="handle">
+                                        <div class="mousearea"></div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="t_container"  data-ng-class="public.activeSearchTab == 'tab_1' ? 'active' : ''">
+                            <div class="t_title">{{filter.data.map.title}}</div>
+                            <div class="column-content" ng-init="this.maps.checkboxes = (filter.data.map.checkboxes | orderByFirstLetter)">
+                                <div ng-repeat="(group, checkboxes) in this.maps.checkboxes">
+                                    <div class="first-letter">{{group}}</div>
+                                    <ul>
+                                        <li ng-repeat="cbx in checkboxes">
+                                            <input type="checkbox" class="cbx" id="map{{cbx.id}}" ng-model="cbx.checked" ng-change="filter.update();"/>
+                                            <label for="map{{cbx.id}}">{{cbx.title}}</label>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="t_container"  data-ng-class="public.activeSearchTab == 'tab_2' ? 'active' : ''">
+                            <div class="column-content" ng-init="this.medals = (filter.data.medals.checkboxes | orderByMedalType)">
+<!--                                <div style="display: none">{{this.medals}}</div>-->
+                                <div ng-repeat="group in this.medals | orderBy: 'position'" class="groups_medal">
+                                    <div class="t_title">{{group.title}}</div>
+                                    <ul>
+                                        <li ng-repeat="cbx in group.checkboxes">
+                                            <input type="checkbox" class="cbx" id="medal{{cbx.id}}" ng-model="cbx.checked" ng-change="filter.update();"/>
+                                            <label for="medal{{cbx.id}}">{{cbx.title}}</label>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="t_container"  data-ng-class="public.activeSearchTab == 'tab_3' ? 'active' : ''">
+
+                            <div ng-click="filter.search.selectedField = 1" class="searchTextFieldDiv">
+                                <div style="width: 20px; position: absolute; margin-left: -30px;margin-top:35px;"><input type="radio" name="player" ng-value="1"  ng-model="filter.search.selectedField"  ng-ckecked="filter.search.selectedField==1"></div>
+                                <div class="t_title">По игроку</div>
+                                <div class="m_search-container search-player">
+                                    <input
+                                        name="playerField"
+                                        class="m_search"
+                                        type="text"
+                                        ng-model="filter.search.player.query"
+                                        data-ng-class="filter.search.player.loading ? 'waiting' : ''"
+                                        ng-change="changeUserSearchInput('player', ['ru'])"
+                                        data-ng-model-options="{debounce:300}"
+                                        placeholder="введите имя игрока"
+                                        />
+                                    <nick-autocomplite
+                                        id="nick-autocomplite-player"
+                                        class="m_search-dropdown"
+                                        data-model="filter.search.player.query"
+                                        data-result="filter.search.player.results"
+                                        data-click-fn="[filter.setTextParam, 'player']"
+                                        data-path="nickname"
+                                        ></nick-autocomplite>
+                                </div>
+                            </div>
+
+                            <div ng-click="filter.search.selectedField = 2" class="searchTextFieldDiv">
+                                <div style="width: 20px; position: absolute; margin-left: -30px;margin-top:35px;"><input type="radio" name="player" ng-value="2"  ng-model="filter.search.selectedField"  ng-ckecked="filter.search.selectedField==2"></div>
+                                <div class="t_title">По участнику боя</div>
+                                <div style="display: none">{{filter.search.members}}</div>
+                                <div class="m_search-container search-members">
+                                    <input
+                                        name="membersField"
+                                        class="m_search"
+                                        type="text"
+                                        data-ng-model="filter.search.members.query"
+                                        data-ng-class="filter.search.members.loading ? 'waiting' : ''"
+                                        data-ng-change="changeUserSearchInput('members', ['ru'])"
+                                        data-ng-model-options="{debounce:300}"
+                                        placeholder="введите имя игрока"
+                                        />
+                                    <nick-autocomplite
+                                        id="nick-autocomplite-members"
+                                        class="m_search-dropdown"
+                                        data-model="filter.search.members.query"
+                                        data-result="filter.search.members.results"
+                                        data-click-fn="[filter.setTextParam, 'members']"
+                                        data-path="nickname"
+                                        ></nick-autocomplite>
+                                </div>
+                            </div>
+
+                            <div ng-click="filter.search.selectedField = 3" class="searchTextFieldDiv">
+                                <div style="width: 20px; position: absolute; margin-left: -30px;margin-top:35px;"><input type="radio" name="player" ng-value="3"  ng-model="filter.search.selectedField"  ng-ckecked="filter.search.selectedField==3"></div>
+                                <div class="t_title">По клану</div>
+                                <div style="display: none">{{filter.search.clan}}</div>
+                                <div class="m_search-container search-clan">
+                                    <input name="clanField"
+                                           class="m_search"
+                                           type="text" ng-model="filter.search.clan.query"
+                                           data-ng-class="filter.search.clan.loading ? 'waiting' : ''"
+                                           ng-change="changeUserSearchInput('clan')"
+                                           data-ng-model-options="{debounce:300}"
+                                           placeholder="введите название клана"
+                                        />
+                                    <nick-autocomplite
+                                        id="nick-autocomplite-clan"
+                                        class="m_search-dropdown"
+                                        data-model="filter.search.clan.query"
+                                        data-result="filter.search.clan.results"
+                                        data-click-fn="[filter.setTextParam, 'clan']"
+                                        ></nick-autocomplite>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="t_container"  data-ng-class="public.activeSearchTab == 'tab_4' ? 'active' : ''">
+                            <div class="tf_filters">
+                                <div class="t_title">{{filter.data.battle_type.title}}</div>
+                                <ul class="two-column">
+                                    <li ng-repeat="cbx in filter.data.battle_type.checkboxes">
+                                        <input type="checkbox" class="cbx" id="battle_type{{cbx.id}}" ng-model="cbx.checked" ng-change="filter.update();"/>
+                                        <label for="battle_type{{cbx.id}}">{{cbx.title}}</label>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="tf_filters">
+                                <div class="t_title">{{filter.data.respawn.title}}</div>
+                                <ul>
+                                    <li ng-repeat="cbx in filter.data.respawn.checkboxes">
+                                        <input type="checkbox" class="cbx" id="resp{{cbx.id}}" ng-model="cbx.checked" ng-change="filter.update();"/>
+                                        <label for="resp{{cbx.id}}">{{cbx.title}}</label>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="tf_filters">
+                                <div class="t_title">{{filter.data.ace.title}}</div>
+                                <ul>
+                                    <li ng-repeat="cbx in filter.data.ace.checkboxes">
+                                        <input type="checkbox" class="cbx" id="ace{{cbx.id}}" ng-model="cbx.checked" ng-change="filter.update();"/>
+                                        <label for="ace{{cbx.id}}">{{cbx.title}}</label>
+                                    </li>
+                                </ul>
+                                <br /><br />
+                                <div class="t_title">{{filter.data.popular.title}}</div>
+                                <ul>
+                                    <li ng-repeat="cbx in filter.data.popular.checkboxes">
+                                        <input type="checkbox" class="cbx" id="popular{{cbx.id}}" ng-model="cbx.checked" ng-change="filter.update();"/>
+                                        <label for="popular{{cbx.id}}">{{cbx.title}}</label>
+                                    </li>
+                                    <li ng-repeat="cbx in filter.data.epicbattle.checkboxes" ng-cloak="true" ng-hide="true">
+                                        <input type="checkbox" class="cbx" id="epicbattle{{cbx.id}}" ng-model="cbx.checked" ng-change="filter.update();"/>
+                                        <label for="epicbattle{{cbx.id}}">{{cbx.title}}</label>
+                                    </li>
+                                    <li ng-repeat="cbx in filter.data.ironleague.checkboxes" ng-cloak="true" ng-hide="true">
+                                        <input type="checkbox" class="cbx" id="ironleague{{cbx.id}}" ng-model="cbx.checked" ng-change="filter.update();"/>
+                                        <label for="ironleague{{cbx.id}}">{{cbx.title}}</label>
+                                    </li>
+                                    <li ng-repeat="cbx in filter.data.progamer.checkboxes" ng-cloak="true" ng-hide="true">
+                                        <input type="checkbox" class="cbx" id="ironleague{{cbx.id}}" ng-model="cbx.checked" ng-change="filter.update();"/>
+                                        <label for="ironleague{{cbx.id}}">{{cbx.title}}</label>
+                                    </li>
+                                </ul>
+                            </div>
+
+
+
+                            <!--<div class="tf_filters">
+                                <div class="t_title">Знак классности</div>
+                                <ul>
+                                    <li>
+                                        <input type="checkbox" class="cbx" id="mastery" ng-checked="routing.compilation.link == 'aceTanker'" ng-click="routing.compilation.change('aceTanker')"/>
+                                        <label for="mastery">Мастер</label>
+                                    </li>
+                                </ul>
+                            </div>-->
+
+                        </div>
+
+                    </div>
+
+                    <div class="tabs-bottom">
+                        <div class="clearfix">
+
+                            <div class="version-filter">
+                                Сортировка:
+                                <div class="version-select sort-select expanded" style="width: 135px;">
+
+                                    <div class="vs_label">
+                                        <span>{{filter.sort[filter.selected.sort.type] || filter.sort.uploaded_at}}</span>
+                                    </div>
+
+                                    <div class="vs_slider">
+                                        <div class="frame">
+                                            <ul class="slider">
+                                                <li
+                                                    ng-repeat="(key, title) in filter.sort"
+                                                    ng-click="filter.selected.sort = {type: key, direction: true}; filter.update();"
+                                                    >
+                                                    <label>{{title}}</label>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="version-filter">
+                                {{filter.data.version.title}}:
+                                <div class="version-select expanded">
+
+                                    <div class="vs_label">
+                                        <span ng-if="filter.areAllSelected(filter.data.version)">Все версии</span>
+
+                                        <span ng-if="!filter.areAllSelected(filter.data.version)">
+                                            <span ng-repeat="cbx in filter.getChecked(filter.data.version)">
+                                                <span ng-if="$index > 0">, </span>{{cbx.title}}
+                                            </span>
+                                        </span>
+                                    </div>
+
+                                    <div id="vs_slider" class="vs_slider">
+                                        <div class="frame">
+                                            <ul class="slider">
+                                                <li>
+                                                    <input type="checkbox"/>
+                                                    <label
+                                                        ng-click="$event.stopPropagation(); filter.select.all(filter.data.version, (filter.areAllSelected(filter.data.version) ? 'deselect' : 'select'));"
+                                                        >
+                                                        {{ filter.areAllSelected(filter.data.version) ? 'Сбросить' : 'Выбрать все' }}
+                                                    </label>
+                                                </li>
+                                                <li ng-repeat="cbx in filter.data.version.checkboxes">
+                                                    <input type="checkbox" id="version{{cbx.id}}" ng-model="cbx.checked" ng-change="filter.update();"/>
+                                                    <label for="version{{cbx.id}}">{{cbx.title}}</label>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="scrollbar">
+                                            <div class="handle">
+                                                <div class="mousearea"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="version-filter my-replays-filter" ng-show="user_id!=0">
+                                <input id="myReplaysFilter" type="checkbox" ng-model="filter.myReplays" ng-checked="filter.myReplays">
+                                <label for="myReplaysFilter">Искать среди моих реплеев</label>
+                            </div>
+
+
+                            <div class="filters_apply clearfix">
+                                <a
+                                    class="btn_s-orange"
+                                    ng-click="replays.get()"
+                                    >Показать</a>
+                                <a
+                                    class="btn_s-orange vod-button"
+                                    ng-click="replays.get({compilation: 'vod'})"
+                                    >Показать реплеи с видео<span>{{searchButton.video.replayCount}}</span></a>
+                            </div>
+                        </div>
+
+
+                        <div class="selected-filters search-filters">
+
+                            <span class="tf_s__selectall" ng-click="filter.select.all('all','deselect');">Очистить все фильтры</span>
+
+                            <div ng-repeat="(key, filterType) in filter.data.tank.filters"
+                                 ng-if="filter.selected[key]"
+                                 ng-class="{'disabled': filterType.disabled}"
+                                 class="search_filter_button animate"
+                                >
+                                <small>{{filterType.title}}:</small>
+                                <span
+                                    ng-if="!filter.areAllSelected(filterType)"
+                                    >
+                                    <a
+                                        title="Удалить фильтр"
+                                        ng-repeat="cbx in filter.getChecked(filterType)"
+                                        ng-click="$event.stopPropagation(); $event.preventDefault(); filter.filterTanks(cbx, filterType);"
+                                        ng-class="{'disabled': cbx.disabled}"
+                                        class="search_filter_button animate"
+                                        >{{cbx.title}}</a>
+                                </span>
+                                <a
+                                    title="Удалить фильтр"
+                                    ng-if="filter.areAllSelected(filterType)"
+                                    ng-click="$event.stopPropagation(); filter.select.all(filterType, 'deselect');"
+                                    >Все</a>
+                            </div>
+
+
+                            <!-- other filter -->
+                            <div
+                                ng-repeat="(key, filterType) in filter.data"
+                                ng-if="filter.selected[key]"
+                                id="{{key}}-filter-item"
+                                class="search_filter_button animate"
+                                >
+                                <small>{{filterType.title}}:</small>
+
+                                <span ng-if="!filter.areAllSelected(filterType)">
+                                    <a class="tankFilter{{cbx.id}} search_filter_button animate"
+                                       title="Удалить фильтр"
+                                       ng-repeat="cbx in filter.getChecked(filterType)"
+                                       ng-click="$event.stopPropagation(); cbx.checked = false; filter.update();"
+                                        >{{cbx.title}}</a>
+                                </span>
+
+                                <a
+                                    title="Удалить фильтр"
+                                    ng-if="filter.areAllSelected(filterType)"
+                                    ng-click="$event.stopPropagation(); filter.select.all(filterType, 'deselect');"
+                                    >Все</a>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+        <div class="m-item" style="width: 171px; height: 41px;">
+            <a
+                target="_self"
+                ng-href="/contest"
+                ng-class="{active: routing.active.item === 'contest'}"
+                class="m-item_title"
+                style="width: 171px;"
+            >конкурсы</a>
+
+        </div>
+
+        <div class="m-item" style="width: 153px;">
+            <a
+                target="_self"
+                href="/wgleague#?league=gold"
+                ng-class="{active: routing.active.item === 'wgleague'}"
+                class="m-item_title"
+                style="width: 162px;"
+            >WG League</a>
+
+        </div>
+
+        <div class="m-item">
+
+            <a
+                target="_self"
+                href="/streams"
+                ng-class="{active: routing.active.item === 'streams'}"
+                class="m-item_title"
+                style="width: 162px;"
+            >Трансляции</a>
+
+        </div>
+
+        <div id="compilations-dropdown" class="m-item_dropdown compilations collapsed" data-ng-class="public.isShowCompilationsMenu ? 'expanded' : 'collapsed'">
+
+            <div
+                class="m-item_title"
+                style="width: 162px;"
+                ng-class="{active: routing.active.item === 'compilations'}"
+                data-ng-click="toggleCompilationsMenu()"
+                >Подборки</div>
+
+            <div class="m-item_container" data-ng-style="{height: '453px'}" data-ng-cloak>
+                <div>
+                                        <a target="_self" href="/site/index/video/1/version/75,74,73,71,72,70,69,68,64,67,66,65,63,62,61,60,59,58,56,55,54,53,52,51,50,49,48,45,46,44,43,42,41,40,38,22,37,36,35,34,33,31,30,29,28,27,26,25,24,23,21,19,17,16,14,13,7,6,5,4,1,2,3,39,57,47,18,20,32">Реплеи с видео</a>
+                    <a ng-href="{{replays.getCompilationUrl('ace')}}">Знак классности "Мастер"</a>
+                    <a target="_self" href="/clans">Реплеи кланов</a>
+                    <a target="_self" href="/site/index/popular/1/version/75,74,73">Популярные реплеи за неделю</a>
+                    <a target="_self" href="/site/master">График опыта мастеров</a>
+                    <a target="_self" href="/site/index/epicbattle/1/version/75,74,73,71,72,70,69,68,64,67,66,65,63,62,61,60,59,58,56,55,54,53,52,51,50,49,48,45,46,44,43,42,41,40,38,22,37,36,35,34,33,31,30,29,28,27,26,25,24,23,21,19,17,16,14,13,7,6,5,4,1,2,3,39,57,47,18,20,32">Epic Battle</a>
+                    <a target="_self" href="/site/index/iron_league/1/version/75,74,73,71,72,70,69,68,64,67,66,65,63,62,61,60,59,58,56,55,54,53,52,51,50,49,48,45,46,44,43,42,41,40,38,22,37,36,35,34,33,31,30,29,28,27,26,25,24,23,21,19,17,16,14,13,7,6,5,4,1,2,3,39,57,47,18,20,32">Железная Лига</a>
+                    <a target="_self" href="/site/index/pro/1/version/75,74,73,71,72,70,69,68,64,67,66,65,63,62,61,60,59,58,56,55,54,53,52,51,50,49,48,45,46,44,43,42,41,40,38,22,37,36,35,34,33,31,30,29,28,27,26,25,24,23,21,19,17,16,14,13,7,6,5,4,1,2,3,39,57,47,18,20,32">Реплеи pro-игроков</a>
+                    <a ng-click="filter.select.all('all', 'deselect'); replays.get({compilation: 'site/index', sort: 'inflicted_damage.desc'})">Максимум урона</a>
+                    <a ng-click="filter.select.all('all', 'deselect'); replays.get({compilation: 'site/index', sort: 'xp.desc'})">Максимум опыта</a>
+                    <a ng-click="filter.select.all('all', 'deselect'); replays.get({compilation: 'site/index', sort: 'credits.desc'})">Максимум кредитов</a>
+                    <a ng-click="filter.select.all('all', 'deselect'); replays.get({compilation: 'site/index', sort: 'frags.desc'})">Максимум фрагов</a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="m-item">
+            <a
+                data-replay-upload
+                style="width: 175px;"
+                class="m-item_title orange"
+                data-logged-in="1"
+                data-popup-url="/popup/upload/cache/1"
+            >Залить реплей</a>
+        </div>
+    </div>
+
+
+    <!--   *********************   -->
+    <!--          CONTENT          -->
+    <!--   *********************   -->
+
+    
+<!--   *********************   -->
+<!--           NEWS            -->
+<!--   *********************   -->
+
+<div class="news news-widget"> <!--ng-cloak-->
+
+    <div>
+        <h3 class="n_title">Новости</h3>
+        <a class="n_moar" href="/news"><h6>Все новости</h6></i></a>
+    </div>
+    
+        <a class="n_block" href="/news/557">
+            <div class="nb_image" style="background-image: url('/static/img/site/news/logo_wotreplays.jpg')"><div></div></div>
+            <div class="nb_title">
+                <div class="nbt_text text-lg">Мод Replays Manager для v.1.4.1.1</div>
+                <div class="nbt_vertical-justify"></div>
+            </div>
+        </a>
+
+    
+        <a class="n_block" href="/news/511">
+            <div class="nb_image" style="background-image: url('/static/img/site/news/mobile.png')"><div></div></div>
+            <div class="nb_title">
+                <div class="nbt_text text-lg">Мобильная версия сайта m.wotreplays.ru</div>
+                <div class="nbt_vertical-justify"></div>
+            </div>
+        </a>
+
+    
+        <a class="n_block" href="/news/563">
+            <div class="nb_image" style="background-image: url('/static/img/site/news/stats.jpg')"><div></div></div>
+            <div class="nb_title">
+                <div class="nbt_text text-lg">Мы удаляем старые файлы реплеев</div>
+                <div class="nbt_vertical-justify"></div>
+            </div>
+        </a>
+
+    </div>
+
+<div class="">
+
+    <div data-ng-init="dataInitial = true">
+
+
+        <div class="replay-list-header">
+            <h2 class="b-replays__title" data-ng-if="replays.list.getTitle()" data-ng-cloak ng-bind="replays.list.getTitle()"></h2>
+            <div class="sorter" data-ng-cloak>
+                <div class="sorter__label">Сортировать по</div>
+                <ul class="sorter__list" data-ng-cloak>
+                    <li
+                        data-ng-click="replays.get({ sort: key })"
+                        data-ng-repeat="(key, title) in filter.sort" class="sorter__item"
+                        data-ng-class="{ active: selected.filter.sort.type === key }"
+                    >
+                        <span class="sorter__label" ng-bind="title"></span>
+
+                        <span data-ng-if="selected.filter.sort.type === key">
+                            <ins class="sorter__direction" data-ng-if="selected.filter.sort.direction">↓</ins>
+                            <ins class="sorter__direction" data-ng-if="!selected.filter.sort.direction">↑</ins>
+                        </span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="selected-filters replays-filters" data-ng-cloak>
+                <span class="tf_s__selectall" ng-click="filter.select.all('all','deselect');replays.get();">Очистить все фильтры</span>
+                <div ng-repeat="(key, filterType) in selected.filter" ng-if="currentFilter.isExist(key)">
+                    <small ng-bind="currentFilter.getFilterName(key)"></small>
+                    <span ng-if="!currentFilter.areAllSelected(key)">
+                    <a
+                        title="Удалить фильтр"
+                        ng-repeat="cbx in currentFilter.getItems(key)"
+                        ng-if="!cbx.disabled"
+                        ng-click="$event.stopPropagation(); cbx.checked = false; currentFilter.update(key, cbx);replays.get();"
+                        ng-bind="cbx.title"></a>
+                    </span>
+                    <a
+                        title="Удалить фильтр"
+                        ng-if="currentFilter.areAllSelected(key)"
+                        ng-click="$event.stopPropagation(); currentFilter.selectAll(key, 'deselect');replays.get();"
+                        >Все</a>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div data-ng-if="dataInitial">
+            		<ul class="r_list initial">
+<li class="clearfix">
+
+            <a target="_self" class="r-map_85" href="/site/12109338#aerodrom-crysis20-amx_50_b" title="Аэродром, Стандартный бой" style="background-image: url('/static/img/wot/dynamic/mediaMaps/31_airfield.jpg');"></a>
+    
+    <div class="r-info">
+        <h3><a class="link--pale_orange" target="_self" href="/site/12109338#aerodrom-crysis20-amx_50_b">AMX 50 B, Аэродром, Стандартный бой</a></h3>
+        <ul class="r-info_ri">
+            <li><i class="i-16_frags"></i> 5</li>
+            <li><i class="i-16_exp"></i> 1187</li>
+            <li><i class="i-16_cr"></i> 57777</li>
+                            <li><i class="i-16_dmg"></i> 6220</li>
+                        <li><i class="i-16_assist"></i> 365</li>
+            <li><i class="i-16_block"></i> 1320</li>
+                            <li><i class="i-16_master"></i> Мастер</li>
+                    </ul>
+        <ul class="r-info_ci">
+            <li><b>Танк:</b> <a class="link--white" href="/site/index/tank/360/version/75">AMX 50 B</a></li>
+            <li><b>Карта:</b> <a class="link--white" href="/site/index/map/31/version/75">Аэродром</a>, Стандартный бой</li>
+            <li><b>Залит:</b> <span class="b-date">2019-04-11 09:28</span></li>
+            <li><b>Играл:</b> crysis20</li>
+                    </ul>
+    </div>
+    <div class="r-act">
+        <a target="_self" href="/site/download/12109338" class="btn_l-grey">Скачать реплей</a>
+        <div class="r-act_soc">
+                        <a class="r-act_soc-dl">
+                <ins></ins>
+                <span>1</span>
+            </a>
+                        <span>
+                <i class="i-24_like" data-target="12109338" data-ng-click="like($event)"></i>
+                <span>0</span>
+            </span>
+            <a target="_self" href="/site/12109338#aerodrom-crysis20-amx_50_b" class="r-act_soc-com"><ins></ins> 0</a>
+        </div>
+    </div>
+</li>
+<li class="clearfix">
+
+            <a target="_self" class="r-map_85" href="/site/12108761#zapolyar_e-blackvjack-amx_50_b" title="Заполярье, Стандартный бой" style="background-image: url('/static/img/wot/dynamic/mediaMaps/38_mannerheim_line.jpg');"></a>
+    
+    <div class="r-info">
+        <h3><a class="link--pale_orange" target="_self" href="/site/12108761#zapolyar_e-blackvjack-amx_50_b">AMX 50B / ПРОСТО МАСТЕРОС + основа</a></h3>
+        <ul class="r-info_ri">
+            <li><i class="i-16_frags"></i> 4</li>
+            <li><i class="i-16_exp"></i> 1190</li>
+            <li><i class="i-16_cr"></i> 59168</li>
+                            <li><i class="i-16_dmg"></i> 6231</li>
+                        <li><i class="i-16_assist"></i> 1048</li>
+            <li><i class="i-16_block"></i> 0</li>
+                            <li><i class="i-16_master"></i> Мастер</li>
+                    </ul>
+        <ul class="r-info_ci">
+            <li><b>Танк:</b> <a class="link--white" href="/site/index/tank/360/version/75">AMX 50 B</a></li>
+            <li><b>Карта:</b> <a class="link--white" href="/site/index/map/38/version/75">Заполярье</a>, Стандартный бой</li>
+            <li><b>Залит:</b> <span class="b-date">2019-04-10 22:49</span></li>
+            <li><b>Играл:</b> BLACKvJACK</li>
+                    </ul>
+    </div>
+    <div class="r-act">
+        <a target="_self" href="/site/download/12108761" class="btn_l-grey">Скачать реплей</a>
+        <div class="r-act_soc">
+                        <a class="r-act_soc-dl">
+                <ins></ins>
+                <span>2</span>
+            </a>
+                        <span>
+                <i class="i-24_like" data-target="12108761" data-ng-click="like($event)"></i>
+                <span>1</span>
+            </span>
+            <a target="_self" href="/site/12108761#zapolyar_e-blackvjack-amx_50_b" class="r-act_soc-com"><ins></ins> 0</a>
+        </div>
+    </div>
+</li>
+<li class="clearfix">
+
+            <a target="_self" class="r-map_85" href="/site/12100642#zateryannyy_gorod-u310m4uk-amx_50_b" title="Затерянный город, Стандартный бой" style="background-image: url('/static/img/wot/dynamic/mediaMaps/95_lost_city_ctf.jpg');"></a>
+    
+    <div class="r-info">
+        <h3><a class="link--pale_orange" target="_self" href="/site/12100642#zateryannyy_gorod-u310m4uk-amx_50_b">Всё пошло не по стандарту, а как обычно...</a></h3>
+        <ul class="r-info_ri">
+            <li><i class="i-16_frags"></i> 6</li>
+            <li><i class="i-16_exp"></i> 1378</li>
+            <li><i class="i-16_cr"></i> 75902</li>
+                            <li><i class="i-16_dmg"></i> 8902</li>
+                        <li><i class="i-16_assist"></i> 1077</li>
+            <li><i class="i-16_block"></i> 750</li>
+                            <li><i class="i-16_master"></i> Мастер</li>
+                    </ul>
+        <ul class="r-info_ci">
+            <li><b>Танк:</b> <a class="link--white" href="/site/index/tank/360/version/75">AMX 50 B</a></li>
+            <li><b>Карта:</b> <a class="link--white" href="/site/index/map/95/version/75">Затерянный город</a>, Стандартный бой</li>
+            <li><b>Залит:</b> <span class="b-date">2019-04-07 20:09</span></li>
+            <li><b>Играл:</b> _u310m4uk_</li>
+                    </ul>
+    </div>
+    <div class="r-act">
+        <a target="_self" href="/site/download/12100642" class="btn_l-grey">Скачать реплей</a>
+        <div class="r-act_soc">
+                        <a class="r-act_soc-dl">
+                <ins></ins>
+                <span>1</span>
+            </a>
+                        <span>
+                <i class="i-24_like" data-target="12100642" data-ng-click="like($event)"></i>
+                <span>1</span>
+            </span>
+            <a target="_self" href="/site/12100642#zateryannyy_gorod-u310m4uk-amx_50_b" class="r-act_soc-com"><ins></ins> 0</a>
+        </div>
+    </div>
+</li>
+<li class="clearfix">
+
+            <a target="_self" class="r-map_85" href="/site/12100094#zapolyar_e-nau1-amx_50_b" title="Заполярье, Стандартный бой" style="background-image: url('/static/img/wot/dynamic/mediaMaps/38_mannerheim_line.jpg');"></a>
+    
+    <div class="r-info">
+        <h3><a class="link--pale_orange" target="_self" href="/site/12100094#zapolyar_e-nau1-amx_50_b">AMX 50 B, Заполярье, Стандартный бой</a></h3>
+        <ul class="r-info_ri">
+            <li><i class="i-16_frags"></i> 6</li>
+            <li><i class="i-16_exp"></i> 1098</li>
+            <li><i class="i-16_cr"></i> 50756</li>
+                            <li><i class="i-16_dmg"></i> 5343</li>
+                        <li><i class="i-16_assist"></i> 665</li>
+            <li><i class="i-16_block"></i> 1140</li>
+                    </ul>
+        <ul class="r-info_ci">
+            <li><b>Танк:</b> <a class="link--white" href="/site/index/tank/360/version/75">AMX 50 B</a></li>
+            <li><b>Карта:</b> <a class="link--white" href="/site/index/map/38/version/75">Заполярье</a>, Стандартный бой</li>
+            <li><b>Залит:</b> <span class="b-date">2019-04-07 17:22</span></li>
+            <li><b>Играл:</b> nau1</li>
+                    </ul>
+    </div>
+    <div class="r-act">
+        <a target="_self" href="/site/download/12100094" class="btn_l-grey">Скачать реплей</a>
+        <div class="r-act_soc">
+                        <a class="r-act_soc-dl">
+                <ins></ins>
+                <span>1</span>
+            </a>
+                        <span>
+                <i class="i-24_like" data-target="12100094" data-ng-click="like($event)"></i>
+                <span>0</span>
+            </span>
+            <a target="_self" href="/site/12100094#zapolyar_e-nau1-amx_50_b" class="r-act_soc-com"><ins></ins> 0</a>
+        </div>
+    </div>
+</li>
+<li class="clearfix">
+
+            <a target="_self" class="r-map_85" href="/site/12095681#granica_imperii-vedro_s_bo1tamu-amx_50_b" title="Граница империи, Стандартный бой" style="background-image: url('/static/img/wot/dynamic/mediaMaps/59_asia_great_wall.jpg');"></a>
+    
+    <div class="r-info">
+        <h3><a class="link--pale_orange" target="_self" href="/site/12095681#granica_imperii-vedro_s_bo1tamu-amx_50_b">Мастер на AMX 50B</a></h3>
+        <ul class="r-info_ri">
+            <li><i class="i-16_frags"></i> 6</li>
+            <li><i class="i-16_exp"></i> 1177</li>
+            <li><i class="i-16_cr"></i> 56437</li>
+                            <li><i class="i-16_dmg"></i> 6274</li>
+                        <li><i class="i-16_assist"></i> 0</li>
+            <li><i class="i-16_block"></i> 0</li>
+                            <li><i class="i-16_master"></i> Мастер</li>
+                    </ul>
+        <ul class="r-info_ci">
+            <li><b>Танк:</b> <a class="link--white" href="/site/index/tank/360/version/75">AMX 50 B</a></li>
+            <li><b>Карта:</b> <a class="link--white" href="/site/index/map/59/version/75">Граница империи</a>, Стандартный бой</li>
+            <li><b>Залит:</b> <span class="b-date">2019-04-06 01:37</span></li>
+            <li><b>Играл:</b> vedro_s_bo1tamu</li>
+                    </ul>
+    </div>
+    <div class="r-act">
+        <a target="_self" href="/site/download/12095681" class="btn_l-grey">Скачать реплей</a>
+        <div class="r-act_soc">
+                        <a class="r-act_soc-dl">
+                <ins></ins>
+                <span>1</span>
+            </a>
+                        <span>
+                <i class="i-24_like" data-target="12095681" data-ng-click="like($event)"></i>
+                <span>0</span>
+            </span>
+            <a target="_self" href="/site/12095681#granica_imperii-vedro_s_bo1tamu-amx_50_b" class="r-act_soc-com"><ins></ins> 0</a>
+        </div>
+    </div>
+</li>
+<li class="clearfix">
+
+            <a target="_self" class="r-map_85" href="/site/12094250#zapolyar_e-starii_kaiot-amx_50_b" title="Заполярье, Стандартный бой" style="background-image: url('/static/img/wot/dynamic/mediaMaps/38_mannerheim_line.jpg');"></a>
+    
+    <div class="r-info">
+        <h3><a class="link--pale_orange" target="_self" href="/site/12094250#zapolyar_e-starii_kaiot-amx_50_b">8k дамага на AMX_50B</a></h3>
+        <ul class="r-info_ri">
+            <li><i class="i-16_frags"></i> 3</li>
+            <li><i class="i-16_exp"></i> 1153</li>
+            <li><i class="i-16_cr"></i> 70851</li>
+                            <li><i class="i-16_dmg"></i> 8461</li>
+                        <li><i class="i-16_assist"></i> 755</li>
+            <li><i class="i-16_block"></i> 400</li>
+                    </ul>
+        <ul class="r-info_ci">
+            <li><b>Танк:</b> <a class="link--white" href="/site/index/tank/360/version/75">AMX 50 B</a></li>
+            <li><b>Карта:</b> <a class="link--white" href="/site/index/map/38/version/75">Заполярье</a>, Стандартный бой</li>
+            <li><b>Залит:</b> <span class="b-date">2019-04-05 16:01</span></li>
+            <li><b>Играл:</b> Starii_Kaiot</li>
+                    </ul>
+    </div>
+    <div class="r-act">
+        <a target="_self" href="/site/download/12094250" class="btn_l-grey">Скачать реплей</a>
+        <div class="r-act_soc">
+                        <a class="r-act_soc-dl">
+                <ins></ins>
+                <span>3</span>
+            </a>
+                        <span>
+                <i class="i-24_like" data-target="12094250" data-ng-click="like($event)"></i>
+                <span>0</span>
+            </span>
+            <a target="_self" href="/site/12094250#zapolyar_e-starii_kaiot-amx_50_b" class="r-act_soc-com"><ins></ins> 0</a>
+        </div>
+    </div>
+</li>
+<li class="clearfix">
+
+            <a target="_self" class="r-map_85" href="/site/12088748#granica_imperii-mpx4000-amx_50_b" title="Граница империи, Стандартный бой" style="background-image: url('/static/img/wot/dynamic/mediaMaps/59_asia_great_wall.jpg');"></a>
+    
+    <div class="r-info">
+        <h3><a class="link--pale_orange" target="_self" href="/site/12088748#granica_imperii-mpx4000-amx_50_b">AMX 50B - без союзников никак!</a></h3>
+        <ul class="r-info_ri">
+            <li><i class="i-16_frags"></i> 7</li>
+            <li><i class="i-16_exp"></i> 1282</li>
+            <li><i class="i-16_cr"></i> 67191</li>
+                            <li><i class="i-16_dmg"></i> 7356</li>
+                        <li><i class="i-16_assist"></i> 1349</li>
+            <li><i class="i-16_block"></i> 540</li>
+                            <li><i class="i-16_master"></i> Мастер</li>
+                    </ul>
+        <ul class="r-info_ci">
+            <li><b>Танк:</b> <a class="link--white" href="/site/index/tank/360/version/75">AMX 50 B</a></li>
+            <li><b>Карта:</b> <a class="link--white" href="/site/index/map/59/version/75">Граница империи</a>, Стандартный бой</li>
+            <li><b>Залит:</b> <span class="b-date">2019-04-02 19:39</span></li>
+            <li><b>Играл:</b> MPX4000</li>
+                    </ul>
+    </div>
+    <div class="r-act">
+        <a target="_self" href="/site/download/12088748" class="btn_l-grey">Скачать реплей</a>
+        <div class="r-act_soc">
+                        <a class="r-act_soc-dl">
+                <ins></ins>
+                <span>2</span>
+            </a>
+                        <span>
+                <i class="i-24_like" data-target="12088748" data-ng-click="like($event)"></i>
+                <span>0</span>
+            </span>
+            <a target="_self" href="/site/12088748#granica_imperii-mpx4000-amx_50_b" class="r-act_soc-com"><ins></ins> 0</a>
+        </div>
+    </div>
+</li>
+<li class="clearfix">
+
+            <a target="_self" class="r-map_85" href="/site/12085179#granica_imperii-i_darkside_l-amx_50_b" title="Граница империи, Стандартный бой" style="background-image: url('/static/img/wot/dynamic/mediaMaps/59_asia_great_wall.jpg');"></a>
+    
+    <div class="r-info">
+        <h3><a class="link--pale_orange" target="_self" href="/site/12085179#granica_imperii-i_darkside_l-amx_50_b">AMX 50 B, Граница империи, Стандартный бой</a></h3>
+        <ul class="r-info_ri">
+            <li><i class="i-16_frags"></i> 5</li>
+            <li><i class="i-16_exp"></i> 1184</li>
+            <li><i class="i-16_cr"></i> 61231</li>
+                            <li><i class="i-16_dmg"></i> 5911</li>
+                        <li><i class="i-16_assist"></i> 1865</li>
+            <li><i class="i-16_block"></i> 0</li>
+                            <li><i class="i-16_master"></i> Мастер</li>
+                    </ul>
+        <ul class="r-info_ci">
+            <li><b>Танк:</b> <a class="link--white" href="/site/index/tank/360/version/75">AMX 50 B</a></li>
+            <li><b>Карта:</b> <a class="link--white" href="/site/index/map/59/version/75">Граница империи</a>, Стандартный бой</li>
+            <li><b>Залит:</b> <span class="b-date">2019-03-31 22:26</span></li>
+            <li><b>Играл:</b> TheAlu</li>
+                    </ul>
+    </div>
+    <div class="r-act">
+        <a target="_self" href="/site/download/12085179" class="btn_l-grey">Скачать реплей</a>
+        <div class="r-act_soc">
+                        <a class="r-act_soc-dl">
+                <ins></ins>
+                <span>2</span>
+            </a>
+                        <span>
+                <i class="i-24_like" data-target="12085179" data-ng-click="like($event)"></i>
+                <span>0</span>
+            </span>
+            <a target="_self" href="/site/12085179#granica_imperii-i_darkside_l-amx_50_b" class="r-act_soc-com"><ins></ins> 0</a>
+        </div>
+    </div>
+</li>
+<li class="clearfix">
+
+            <a target="_self" class="r-map_85" href="/site/12076383#aerodrom-papa_smurf_01-amx_50_b" title="Аэродром, Стандартный бой" style="background-image: url('/static/img/wot/dynamic/mediaMaps/31_airfield.jpg');"></a>
+    
+    <div class="r-info">
+        <h3><a class="link--pale_orange" target="_self" href="/site/12076383#aerodrom-papa_smurf_01-amx_50_b">всем привет танкисты и танкистки </a></h3>
+        <ul class="r-info_ri">
+            <li><i class="i-16_frags"></i> 2</li>
+            <li><i class="i-16_exp"></i> 662</li>
+            <li><i class="i-16_cr"></i> 22672</li>
+                            <li><i class="i-16_dmg"></i> 1723</li>
+                        <li><i class="i-16_assist"></i> 0</li>
+            <li><i class="i-16_block"></i> 750</li>
+                    </ul>
+        <ul class="r-info_ci">
+            <li><b>Танк:</b> <a class="link--white" href="/site/index/tank/360/version/75">AMX 50 B</a></li>
+            <li><b>Карта:</b> <a class="link--white" href="/site/index/map/31/version/75">Аэродром</a>, Стандартный бой</li>
+            <li><b>Залит:</b> <span class="b-date">2019-03-27 22:08</span></li>
+            <li><b>Играл:</b> Papa_smurf_01</li>
+                    </ul>
+    </div>
+    <div class="r-act">
+        <a target="_self" href="/site/download/12076383" class="btn_l-grey">Скачать реплей</a>
+        <div class="r-act_soc">
+                        <a class="r-act_soc-dl">
+                <ins></ins>
+                <span>2</span>
+            </a>
+                        <span>
+                <i class="i-24_like" data-target="12076383" data-ng-click="like($event)"></i>
+                <span>1</span>
+            </span>
+            <a target="_self" href="/site/12076383#aerodrom-papa_smurf_01-amx_50_b" class="r-act_soc-com"><ins></ins> 0</a>
+        </div>
+    </div>
+</li>
+<li class="clearfix">
+
+            <a target="_self" class="r-map_85" href="/site/12068847#granica_imperii-bumbazik-amx_50_b" title="Граница империи, Встречный бой" style="background-image: url('/static/img/wot/dynamic/mediaMaps/59_asia_great_wall.jpg');"></a>
+    
+    <div class="r-info">
+        <h3><a class="link--pale_orange" target="_self" href="/site/12068847#granica_imperii-bumbazik-amx_50_b">разрабы охУЕли</a></h3>
+        <ul class="r-info_ri">
+            <li><i class="i-16_frags"></i> 6</li>
+            <li><i class="i-16_exp"></i> 1209</li>
+            <li><i class="i-16_cr"></i> 52580</li>
+                            <li><i class="i-16_dmg"></i> 5214</li>
+                        <li><i class="i-16_assist"></i> 1396</li>
+            <li><i class="i-16_block"></i> 1180</li>
+                            <li><i class="i-16_master"></i> Мастер</li>
+                    </ul>
+        <ul class="r-info_ci">
+            <li><b>Танк:</b> <a class="link--white" href="/site/index/tank/360/version/75">AMX 50 B</a></li>
+            <li><b>Карта:</b> <a class="link--white" href="/site/index/map/59/version/75">Граница империи</a>, Встречный бой</li>
+            <li><b>Залит:</b> <span class="b-date">2019-03-24 20:05</span></li>
+            <li><b>Играл:</b> bumbazik</li>
+                    </ul>
+    </div>
+    <div class="r-act">
+        <a target="_self" href="/site/download/12068847" class="btn_l-grey">Скачать реплей</a>
+        <div class="r-act_soc">
+                        <a class="r-act_soc-dl">
+                <ins></ins>
+                <span>4</span>
+            </a>
+                        <span>
+                <i class="i-24_like" data-target="12068847" data-ng-click="like($event)"></i>
+                <span>0</span>
+            </span>
+            <a target="_self" href="/site/12068847#granica_imperii-bumbazik-amx_50_b" class="r-act_soc-com"><ins></ins> 1</a>
+        </div>
+    </div>
+</li>
+</ul>        </div>
+
+
+
+        <ul class="r_list" data-ng-if="!dataInitial" data-ng-cloak>
+            <li class="clearfix" data-ng-repeat="replay in replays.data">
+                <a
+                    target="_self"
+                    class="r-map_85"
+                    back-img="{{ replay.map_url }}"
+                    data-ng-href="{{ replay.link }}"
+                    data-ng-if="replay.video === false"
+                    title="{{ replay.common_info.map_title }}{{replay.common_info.battle_type ? (', '+replay.common_info.battle_type) : ''}}"
+                ></a>
+
+                <a
+                    class="r-map_85"
+                    back-img="{{ replay.map_url }}"
+                    data-ng-if="replay.video === true"
+                >
+                    <ins class="showVideo" title="Показать видео" data-target="{{ replay.replay_info.id }}"></ins>
+                </a>
+
+                <div class="r-info">
+                    <h3>
+                        <a class="link--pale_orange" target="_self" data-ng-href="{{ replay.link }}">
+                            {{ replay.title }}
+                        </a>
+                    </h3>
+                    <ul class="r-info_ri">
+                        <li><i class="i-16_frags"></i> {{replay.replay_info.frags}}</li>
+                        <li><i class="i-16_exp"></i> {{replay.replay_info.exp}}</li>
+                        <li><i class="i-16_cr"></i> {{replay.replay_info.creds}}</li>
+                        <li ng-if="replay.replay_info.dmg !== null"><i class="i-16_dmg"></i> {{replay.replay_info.dmg}}</li>
+                        <li><i class="i-16_assist"></i> {{replay.replay_info.assisted_damage}}</li>
+                        <li><i class="i-16_block"></i> {{replay.replay_info.blocked_damage}}</li>
+                        <li ng-if="replay.replay_info.master !== null"><i class="i-16_master"></i> Мастер</li>
+                    </ul>
+                    <ul class="r-info_ci">
+                        <li><b>Танк:</b> <a class="link--white" target="_self" data-ng-href="{{replay.common_info.tank_link}}">{{replay.common_info.tank_title}}</a></li>
+                        <li><b>Карта:</b> <a class="link--white" target="_self" data-ng-href="{{replay.common_info.map_link}}">{{replay.common_info.map_title}}</a>{{replay.common_info.battle_type ? (', '+replay.common_info.battle_type) : ''}}</li>
+                        <li><b>Залит:</b>  <span class="b-date">{{replay.common_info.uploaded_at}}</span></li>
+                        <li><b>Играл:</b>  {{replay.replay_info.player_username}}</li>
+                    </ul>
+                </div>
+                <div class="r-act">
+                    <a target="_self" data-ng-href="{{replay.dl_link}}" class="btn_l-grey">Скачать реплей</a>
+                    <div class="r-act_soc">
+                        <a class="r-act_soc-dl"  data-ng-if="::replay.dl_count !== null">
+                            <ins></ins>
+                            <span>{{ ::replay.dl_count }}</span>
+                        </a>
+                        <a>
+                            <i class="i-24_like" data-ng-click="like($event)" data-target="{{::replay.replay_info.id}}"></i>
+                            <span>{{::replay.replay_info.likes_count}}</span>
+                        </a>
+                        <a target="_self" data-ng-href="{{replay.link}}" class="r-act_soc-com">
+                            <ins></ins> {{replay.replay_info.comments_count}}
+                        </a>
+                    </div>
+                </div>
+            </li>
+            <span class="xx empty" ng-show="replays.data.length === 0">
+                Нет результатов.&nbsp;&nbsp;
+                <a ng-if="!currentFilter.areAllSelected('version')" data-ng-cloak ng-click="currentFilter.viewAllVersion();replays.get();">Показать реплеи всех версий.</a>
+            </span>
+        </ul>
+
+        <ul class="pagination replays-pagination" style="height: 29px; overflow: visible;">
+            <li class="pagination__item link--pale_orange link--small disabled" data-ng-click="pages.prevPage ? replays.get({page: pages.current - 1}) : return" data-ng-class="{disabled: !pages.prevPage}">
+                ← Назад            </li>
+            <!-- ngRepeat: page in pages.arr --><li class="pagination__item link--pale_orange link--small ng-binding ng-scope active" data-ng-click="pages.current != page ? replays.get({page: page}) : return" data-ng-repeat="page in pages.arr" data-ng-class="{active: page == pages.current}">
+            1
+        </li><!-- end ngRepeat: page in pages.arr --><li class="pagination__item link--pale_orange link--small ng-binding ng-scope" data-ng-click="pages.current != page ? replays.get({page: page}) : return" data-ng-repeat="page in pages.arr" data-ng-class="{active: page == pages.current}">
+            2
+        </li><!-- end ngRepeat: page in pages.arr -->
+            <li class="pagination__item link--pale_orange link--small" data-ng-click="pages.nextPage ? replays.get({page: pages.current + 1}) : return" data-ng-class="{disabled: !pages.nextPage}">
+                Вперёд →
+            </li>
+        </ul>
+
+    </div>
+</div>
+
+
+</div>
+
+<div class="footer">
+    <div class="footer__company text-md"><div>© ООО «Вотреплейс», <br> 2013–2019</div></div>
+
+    <div class="footer__copyright">
+        <a target="_blank" class="footer__link_wg" href="http://wargaming.net"></a>
+    </div>
+
+    <div class="footer__menu clearfix" id="yw0">
+            <a class="footer__link" href="/site/page/view/about">О проекте</a>
+            <a class="footer__link" href="/site/page/view/faq">Часто задаваемые вопросы</a>
+            <a class="footer__link" href="/streams/faq">Стримерам</a>
+    </div>
+</div>
+
+<script type="text/javascript">
+    var CONFIG = {
+        user: 316784,
+        user_name: 'Martens',
+        competitions: {"count":0,"competitions":[]},
+        forbidden_tanks: [708,735,538,503,444,462,465,449,398,646,549,401,636,645,641,643,639,640,482,851,866,875,943,944,936,945,946,947,948,938,949,941,950,942,770,904,897,909,905,987,1353,1007,1033,1034,1047,1137,1052,1252,1253,1352,517,667,670,1212,526,505,481,491,472,410,534,1209,1211,434,433,1206,533,1216,392,1215,1213,1263,1264,1260,395,1277,1279,1326,1285,1293,1284,1261,1324,1012,835,1383,1376]    };
+</script>
+
+
+<!--[if lt IE 9 ]><script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-ajaxtransport-xdomainrequest/1.0.2/jquery.xdomainrequest.min.js"></script><![endif]-->
+<!--[if IE 9 ]><script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-ajaxtransport-xdomainrequest/1.0.2/jquery.xdomainrequest.min.js"></script><![endif]-->
+<!--[if IE 8]>
+<script type="text/javascript">
+    $("label").on('click', function(){
+        if ($(this).attr("for") != "")
+            $("#" + $(this).attr("for")).click();
+    });
+</script>
+<![endif]-->
+
+
+<script type="text/javascript">
+    <!-- Google Analytics -->
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-27550388-1', 'auto');
+    ga('send', 'pageview');
+
+    <!-- /Google Analytics -->
+
+    <!-- Yandex.Metrika counter -->
+    (function (d, w, c) {
+        (w[c] = w[c] || []).push(function() {
+            try {
+                w.yaCounter12107782 = new Ya.Metrika({id:12107782,
+                    webvisor:true,
+                    clickmap:true,
+                    trackLinks:true,
+                    accurateTrackBounce:true});
+            } catch(e) { }
+        });
+
+        var n = d.getElementsByTagName("script")[0],
+            s = d.createElement("script"),
+            f = function () { n.parentNode.insertBefore(s, n); };
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js";
+
+        if (w.opera == "[object Opera]") {
+            d.addEventListener("DOMContentLoaded", f, false);
+        } else { f(); }
+    })(document, window, "yandex_metrika_callbacks");
+    <!-- /Yandex.Metrika counter -->
+</script>
+    <script src="https://cdn.ravenjs.com/3.5.1/raven.min.js"></script>
+    <script type="text/javascript">
+        var ravenOptions = {
+            whitelistUrls: ['zxc'],
+        };
+        Raven.config('http://f94400b556854dc396ec383c9c02813d@sentry.wotreplays.ru/5', ravenOptions).install();
+    </script>
+<script type="text/javascript">
+    var sentryEnabled = 1;
+</script>
+<noscript><div><img src="//mc.yandex.ru/watch/12107782" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+
+<script type="text/javascript">
+/*<![CDATA[*/
+var pages = {total:2,current:1}
+/*]]>*/
+</script>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"d1027cd5b3","applicationID":"129228246","transactionName":"ZVxSMktWWUEAWhJbDFwWcQVNXlhcTmoPRgZxVl4SS1hbXgRLSVsNVlxI","queueTime":0,"applicationTime":225,"atts":"SRtRRANMSk8=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>

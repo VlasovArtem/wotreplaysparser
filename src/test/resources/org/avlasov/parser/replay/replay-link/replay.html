@@ -1,0 +1,1931 @@
+<!DOCTYPE html>
+<html lang="ru">
+<!--[if lt IE 9 ]><html class="old-ie" lang="ru" ng-app="wotreplays"><![endif]-->
+<!--[if IE 9 ]><html class="old-ie" lang="ru" ng-app="wotreplays"><![endif]-->
+<head>
+    <meta property="og:image" content="http://wotreplays.ru/static/img/wot/dynamic/MapsSocial/31_airfield.png" />
+<link rel="stylesheet" type="text/css" href="/assets/6fbfcf85/wr.full.min.css" media="all" />
+<link rel="stylesheet" type="text/css" href="/assets/1692e8ab/replay-view-new.css" media="all" />
+<script type="text/javascript" src="/assets/cd74ad3a/ru.filters.js"></script>
+<script type="text/javascript" src="/assets/e2629cb9/wr.full.min.js"></script>
+<title>WoTReplays AMX 50 B crysis20 Аэродром</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" /><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o||n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({1:[function(e,n,t){function r(){}function o(e,n,t){return function(){return i(e,[c.now()].concat(u(arguments)),n?null:this,t),n?void 0:this}}var i=e("handle"),a=e(3),u=e(4),f=e("ee").get("tracer"),c=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,n){s[n]=o(d+n,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,o="function"==typeof n;return i(l+"tracer",[c.now(),e,t],r),function(){if(f.emit((o?"":"no-")+"fn-start",[c.now(),r,o],t),o)try{return n.apply(this,arguments)}catch(e){throw f.emit("fn-err",[arguments,this,e],t),e}finally{f.emit("fn-end",[c.now()],t)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=o(l+n)}),newrelic.noticeError=function(e,n){"string"==typeof e&&(e=new Error(e)),i("err",[e,c.now(),!1,n])}},{}],2:[function(e,n,t){function r(e,n){if(!o)return!1;if(e!==o)return!1;if(!n)return!0;if(!i)return!1;for(var t=i.split("."),r=n.split("."),a=0;a<r.length;a++)if(r[a]!==t[a])return!1;return!0}var o=null,i=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var u=navigator.userAgent,f=u.match(a);f&&u.indexOf("Chrome")===-1&&u.indexOf("Chromium")===-1&&(o="Safari",i=f[1])}n.exports={agent:o,version:i,match:r}},{}],3:[function(e,n,t){function r(e,n){var t=[],r="",i=0;for(r in e)o.call(e,r)&&(t[i]=n(r,e[r]),i+=1);return t}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],4:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(o<0?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=r},{}],5:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function o(e){function n(e){return e&&e instanceof r?e:e?f(e,u,i):i()}function t(t,r,o,i){if(!d.aborted||i){e&&e(t,r,o);for(var a=n(o),u=v(t),f=u.length,c=0;c<f;c++)u[c].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function l(e,n){h[e]=v(e).concat(n)}function m(e,n){var t=h[e];if(t)for(var r=0;r<t.length;r++)t[r]===n&&t.splice(r,1)}function v(e){return h[e]||[]}function g(e){return p[e]=p[e]||o(t)}function w(e,n){c(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var h={},y={},b={on:l,addEventListener:l,removeEventListener:m,emit:t,get:g,listeners:v,context:n,buffer:w,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",f=e("gos"),c=e(3),s={},p={},d=n.exports=o();d.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(o.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){o.buffer([e],r),o.emit(e,n,t)}var o=e("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!E++){var e=x.info=NREUM.info,n=l.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();c(y,function(n,t){e[n]||(e[n]=t)}),f("mark",["onload",a()+x.offset],null,"api");var t=l.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function o(){"complete"===l.readyState&&i()}function i(){f("mark",["domContent",a()+x.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-x.offset}var u=(new Date).getTime(),f=e("handle"),c=e(3),s=e("ee"),p=e(2),d=window,l=d.document,m="addEventListener",v="attachEvent",g=d.XMLHttpRequest,w=g&&g.prototype;NREUM.o={ST:setTimeout,SI:d.setImmediate,CT:clearTimeout,XHR:g,REQ:d.Request,EV:d.Event,PR:d.Promise,MO:d.MutationObserver};var h=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1118.min.js"},b=g&&w&&w[m]&&!/CriOS/.test(navigator.userAgent),x=n.exports={offset:u,now:a,origin:h,features:{},xhrWrappable:b,userAgent:p};e(1),l[m]?(l[m]("DOMContentLoaded",i,!1),d[m]("load",r,!1)):(l[v]("onreadystatechange",o),d[v]("onload",r)),f("mark",["firstbyte",u],null,"api");var E=0,O=e(5)},{}]},{},["loader"]);</script>
+    <meta charset="UTF-8">
+    <meta name="title" content="AMX 50 B Опыт:1187 Урон:6220 Фраги:5">
+    <meta name="description" content="Реплей World of Tanks на wotreplays.ru. crysis20">
+    <meta name="keywords" content="реплеи, демки, вот, wot, world of tanks replays, replays wot replays">
+    <link rel="shortcut icon" href="/favicon.ico" />
+
+    <style type="text/css">
+        [ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {display: none !important;}
+        .ui-effects-transfer { border: 2px dotted gray; }
+    </style>
+
+</head>
+
+
+<body data-ng-app="wotreplays">
+
+<div class="hat" data-ng-controller="headerCtrl">
+    <div class="header">
+        <div class="header__menu">
+                            <div class="header__dropdown" data-ng-class="{ active: dropdown.active }">
+                    <a class="header__label header__text" data-ng-click="dropdown.toggle();">
+                        Мои ссылки                        <i class="header__arrow"></i>
+                    </a>
+
+                    <div class="header__dropdown_content">
+                        <div class="header__dropdown_loading" data-ng-if="!dropdown.links.length"></div>
+
+                        <a
+                            class="header__text"
+                            data-ng-repeat="link in dropdown.links"
+                            data-ng-href="{{ link.url }}"
+                            target="_self"
+                        >{{ link.title }}</a>
+                    </div>
+                </div>
+            
+        </div>
+
+        <div class="header__login">
+                            <a class="header__text header__profile-link" href="/profile/notifications">
+                    Martens                </a>
+                <span class="header__notify-counter"></span>
+                <a class="header__text" href="/site/logout" style="margin-left: 20px;" target="_self">Выход</a>
+                        <a href="http://vk.com/wotreplays_official" class="vk-link" data-tooltip="Наша группа VK" target="_blank"></a>
+        </div>
+    </div>
+
+    <a href="/" class="hat__link" target="_self"></a>
+
+
+    <div class="hat__replay_count text-lg-bold" ng-cloak>
+                <span>Уже </span>
+        <span ng-bind="'11054520' | number"></span>
+        <a target="_self" class="link--underline" href="/site/index">
+            реплеев        </a>
+    </div>
+</div>
+
+<div class="main clearfix" id="baseCtrl" ng-controller="baseCtrl">
+
+    <!--   *********************   -->
+    <!--         MAIN MENU         -->
+    <!--   *********************   -->
+
+    <div class="main-menu clearfix" data-ng-style="{marginBottom: (30 + public.searchMenuHeight) + 'px'}">
+        <!--   *********************   -->
+        <!--          FILTERS          -->
+        <!--   *********************   -->
+
+        <div id="search-dropdown" class="m-item_dropdown collapsed" data-ng-class="public.isShownSearchMenu ? 'expanded' : 'collapsed'">
+
+            <div class="m-item_title"
+                 ng-class="{active: routing.active.item === 'search'}"
+                 style="width: 175px;"
+                 ng-click="toggleSearchMenu();">
+                Найти реплей            </div>
+
+            <div id="search-container" class="m-item_container" data-ng-style="{height: public.searchMenuHeight + 'px'}" data-ng-cloak>
+
+                <div class="tabs clearfix">
+
+                    <div class="t_labels">
+
+                        <div class="t_label"  data-ng-class="public.activeSearchTab == 'tab_0' ? 'active' : ''" data-ng-click="setActiveSearchTab('tab_0')">
+                            <i class="i-24_tank"></i>
+                            Танки                        </div>
+                        <div class="t_label" data-ng-class="public.activeSearchTab == 'tab_1' ? 'active' : ''" data-ng-click="setActiveSearchTab('tab_1')">
+                            <i class="i-24_map"></i>
+                            Карты                        </div>
+                        <div class="t_label" data-ng-class="public.activeSearchTab == 'tab_2' ? 'active' : ''" data-ng-click="setActiveSearchTab('tab_2')">
+                            <i class="i-24_medal2"></i>
+                            Медали                        </div>
+                        <div class="t_label" data-ng-class="public.activeSearchTab == 'tab_3' ? 'active' : ''" data-ng-click="setActiveSearchTab('tab_3')">
+                            <i class="i-24_ppl"></i>
+                            Игрок/клан                        </div>
+                        <div class="t_label" data-ng-class="public.activeSearchTab == 'tab_4' ? 'active' : ''" data-ng-click="setActiveSearchTab('tab_4')">
+                            <i class="i-24_gear"></i>
+                            Другое                        </div>
+
+                    </div>
+
+                    <div class="t_containers">
+
+                        <div class="t_container clearfix" data-ng-class="public.activeSearchTab == 'tab_0' ? 'active' : ''" style="padding: 0;">
+
+                            <div class="tank-filter clearfix">
+
+                                <div class="m_search-descr">
+                                    Уточните, какой именно танк вы хотите выбрать, с помощью фильтров                                    <i class="icon-info" data-tooltip="Вы можете отфильтровать список танков, <br/>используя фильтры по нациям, уровням и типу техники"></i>
+                                </div>
+
+                                <div
+                                    class="tf_filters"
+                                    ng-repeat="(key, filterType) in filter.data.tank.filters | orderObjectBy: 'position'"
+                                    >
+
+                                    <div class="tf_title">
+                                        <div class="first-letter">{{$index+1}}</div>
+                                        <div>{{filterType.title}}</div>
+                                    </div>
+
+                                    <ul ng-class="{'two-column': filterType.key == 'level'}">
+                                        <li ng-repeat="cbx in filterType.checkboxes">
+                                            <input
+                                                type="checkbox"
+                                                class="cbx"
+                                                id="{{key}}{{cbx.id}}"
+                                                ng-model="cbx.checked"
+                                                />
+                                            <label for="{{key}}{{cbx.id}}" ng-click="$event.stopPropagation(); $event.preventDefault(); filter.filterTanks(cbx, filterType);">{{cbx.title}}</label>
+                                        </li>
+                                    </ul>
+
+                                </div>
+
+                            </div>
+
+                            <div class="tf_slider">
+
+                                <div class="tf_s__head">
+                                    <input class="m_search" type="text" ng-model="tankSearch" ng-change="filter.update();" placeholder="введите название танка"/>
+                                    <span style="color: #6e6e6e">Танков:</span>
+                                    {{(filter.data.tank.checkboxes | filter: {show: true}).length}}
+
+                                    <!--<span
+                                        class="tf_s__selectall"
+                                        ng-if="(filter.getChecked(filter.data.tank)).length > 0"
+                                        ng-click="$event.stopPropagation(); filter.select.all(filter.data.tank,'deselect')"
+                                    >Сбросить</span>-->
+
+                                </div>
+
+                                <div class="frame loadingTanks">
+                                    <ul class="slider">
+                                        <li ng-repeat="cbx in filter.data.tank.checkboxes" ng-show="cbx.show">
+                                            <input type="checkbox" class="cbx" id="tank{{cbx.id}}" ng-model="cbx.checked" ng-change="filter.update('prevent tank slider update');"/>
+                                            <label for="tank{{cbx.id}}">{{cbx.title}}</label>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="scrollbar" data-ng-show="(filter.data.tank.checkboxes | filter: {show: true}).length > 10">
+                                    <div class="handle">
+                                        <div class="mousearea"></div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="t_container"  data-ng-class="public.activeSearchTab == 'tab_1' ? 'active' : ''">
+                            <div class="t_title">{{filter.data.map.title}}</div>
+                            <div class="column-content" ng-init="this.maps.checkboxes = (filter.data.map.checkboxes | orderByFirstLetter)">
+                                <div ng-repeat="(group, checkboxes) in this.maps.checkboxes">
+                                    <div class="first-letter">{{group}}</div>
+                                    <ul>
+                                        <li ng-repeat="cbx in checkboxes">
+                                            <input type="checkbox" class="cbx" id="map{{cbx.id}}" ng-model="cbx.checked" ng-change="filter.update();"/>
+                                            <label for="map{{cbx.id}}">{{cbx.title}}</label>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="t_container"  data-ng-class="public.activeSearchTab == 'tab_2' ? 'active' : ''">
+                            <div class="column-content" ng-init="this.medals = (filter.data.medals.checkboxes | orderByMedalType)">
+<!--                                <div style="display: none">{{this.medals}}</div>-->
+                                <div ng-repeat="group in this.medals | orderBy: 'position'" class="groups_medal">
+                                    <div class="t_title">{{group.title}}</div>
+                                    <ul>
+                                        <li ng-repeat="cbx in group.checkboxes">
+                                            <input type="checkbox" class="cbx" id="medal{{cbx.id}}" ng-model="cbx.checked" ng-change="filter.update();"/>
+                                            <label for="medal{{cbx.id}}">{{cbx.title}}</label>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="t_container"  data-ng-class="public.activeSearchTab == 'tab_3' ? 'active' : ''">
+
+                            <div ng-click="filter.search.selectedField = 1" class="searchTextFieldDiv">
+                                <div style="width: 20px; position: absolute; margin-left: -30px;margin-top:35px;"><input type="radio" name="player" ng-value="1"  ng-model="filter.search.selectedField"  ng-ckecked="filter.search.selectedField==1"></div>
+                                <div class="t_title">По игроку</div>
+                                <div class="m_search-container search-player">
+                                    <input
+                                        name="playerField"
+                                        class="m_search"
+                                        type="text"
+                                        ng-model="filter.search.player.query"
+                                        data-ng-class="filter.search.player.loading ? 'waiting' : ''"
+                                        ng-change="changeUserSearchInput('player', ['ru'])"
+                                        data-ng-model-options="{debounce:300}"
+                                        placeholder="введите имя игрока"
+                                        />
+                                    <nick-autocomplite
+                                        id="nick-autocomplite-player"
+                                        class="m_search-dropdown"
+                                        data-model="filter.search.player.query"
+                                        data-result="filter.search.player.results"
+                                        data-click-fn="[filter.setTextParam, 'player']"
+                                        data-path="nickname"
+                                        ></nick-autocomplite>
+                                </div>
+                            </div>
+
+                            <div ng-click="filter.search.selectedField = 2" class="searchTextFieldDiv">
+                                <div style="width: 20px; position: absolute; margin-left: -30px;margin-top:35px;"><input type="radio" name="player" ng-value="2"  ng-model="filter.search.selectedField"  ng-ckecked="filter.search.selectedField==2"></div>
+                                <div class="t_title">По участнику боя</div>
+                                <div style="display: none">{{filter.search.members}}</div>
+                                <div class="m_search-container search-members">
+                                    <input
+                                        name="membersField"
+                                        class="m_search"
+                                        type="text"
+                                        data-ng-model="filter.search.members.query"
+                                        data-ng-class="filter.search.members.loading ? 'waiting' : ''"
+                                        data-ng-change="changeUserSearchInput('members', ['ru'])"
+                                        data-ng-model-options="{debounce:300}"
+                                        placeholder="введите имя игрока"
+                                        />
+                                    <nick-autocomplite
+                                        id="nick-autocomplite-members"
+                                        class="m_search-dropdown"
+                                        data-model="filter.search.members.query"
+                                        data-result="filter.search.members.results"
+                                        data-click-fn="[filter.setTextParam, 'members']"
+                                        data-path="nickname"
+                                        ></nick-autocomplite>
+                                </div>
+                            </div>
+
+                            <div ng-click="filter.search.selectedField = 3" class="searchTextFieldDiv">
+                                <div style="width: 20px; position: absolute; margin-left: -30px;margin-top:35px;"><input type="radio" name="player" ng-value="3"  ng-model="filter.search.selectedField"  ng-ckecked="filter.search.selectedField==3"></div>
+                                <div class="t_title">По клану</div>
+                                <div style="display: none">{{filter.search.clan}}</div>
+                                <div class="m_search-container search-clan">
+                                    <input name="clanField"
+                                           class="m_search"
+                                           type="text" ng-model="filter.search.clan.query"
+                                           data-ng-class="filter.search.clan.loading ? 'waiting' : ''"
+                                           ng-change="changeUserSearchInput('clan')"
+                                           data-ng-model-options="{debounce:300}"
+                                           placeholder="введите название клана"
+                                        />
+                                    <nick-autocomplite
+                                        id="nick-autocomplite-clan"
+                                        class="m_search-dropdown"
+                                        data-model="filter.search.clan.query"
+                                        data-result="filter.search.clan.results"
+                                        data-click-fn="[filter.setTextParam, 'clan']"
+                                        ></nick-autocomplite>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="t_container"  data-ng-class="public.activeSearchTab == 'tab_4' ? 'active' : ''">
+                            <div class="tf_filters">
+                                <div class="t_title">{{filter.data.battle_type.title}}</div>
+                                <ul class="two-column">
+                                    <li ng-repeat="cbx in filter.data.battle_type.checkboxes">
+                                        <input type="checkbox" class="cbx" id="battle_type{{cbx.id}}" ng-model="cbx.checked" ng-change="filter.update();"/>
+                                        <label for="battle_type{{cbx.id}}">{{cbx.title}}</label>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="tf_filters">
+                                <div class="t_title">{{filter.data.respawn.title}}</div>
+                                <ul>
+                                    <li ng-repeat="cbx in filter.data.respawn.checkboxes">
+                                        <input type="checkbox" class="cbx" id="resp{{cbx.id}}" ng-model="cbx.checked" ng-change="filter.update();"/>
+                                        <label for="resp{{cbx.id}}">{{cbx.title}}</label>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="tf_filters">
+                                <div class="t_title">{{filter.data.ace.title}}</div>
+                                <ul>
+                                    <li ng-repeat="cbx in filter.data.ace.checkboxes">
+                                        <input type="checkbox" class="cbx" id="ace{{cbx.id}}" ng-model="cbx.checked" ng-change="filter.update();"/>
+                                        <label for="ace{{cbx.id}}">{{cbx.title}}</label>
+                                    </li>
+                                </ul>
+                                <br /><br />
+                                <div class="t_title">{{filter.data.popular.title}}</div>
+                                <ul>
+                                    <li ng-repeat="cbx in filter.data.popular.checkboxes">
+                                        <input type="checkbox" class="cbx" id="popular{{cbx.id}}" ng-model="cbx.checked" ng-change="filter.update();"/>
+                                        <label for="popular{{cbx.id}}">{{cbx.title}}</label>
+                                    </li>
+                                    <li ng-repeat="cbx in filter.data.epicbattle.checkboxes" ng-cloak="true" ng-hide="true">
+                                        <input type="checkbox" class="cbx" id="epicbattle{{cbx.id}}" ng-model="cbx.checked" ng-change="filter.update();"/>
+                                        <label for="epicbattle{{cbx.id}}">{{cbx.title}}</label>
+                                    </li>
+                                    <li ng-repeat="cbx in filter.data.ironleague.checkboxes" ng-cloak="true" ng-hide="true">
+                                        <input type="checkbox" class="cbx" id="ironleague{{cbx.id}}" ng-model="cbx.checked" ng-change="filter.update();"/>
+                                        <label for="ironleague{{cbx.id}}">{{cbx.title}}</label>
+                                    </li>
+                                    <li ng-repeat="cbx in filter.data.progamer.checkboxes" ng-cloak="true" ng-hide="true">
+                                        <input type="checkbox" class="cbx" id="ironleague{{cbx.id}}" ng-model="cbx.checked" ng-change="filter.update();"/>
+                                        <label for="ironleague{{cbx.id}}">{{cbx.title}}</label>
+                                    </li>
+                                </ul>
+                            </div>
+
+
+
+                            <!--<div class="tf_filters">
+                                <div class="t_title">Знак классности</div>
+                                <ul>
+                                    <li>
+                                        <input type="checkbox" class="cbx" id="mastery" ng-checked="routing.compilation.link == 'aceTanker'" ng-click="routing.compilation.change('aceTanker')"/>
+                                        <label for="mastery">Мастер</label>
+                                    </li>
+                                </ul>
+                            </div>-->
+
+                        </div>
+
+                    </div>
+
+                    <div class="tabs-bottom">
+                        <div class="clearfix">
+
+                            <div class="version-filter">
+                                Сортировка:
+                                <div class="version-select sort-select expanded" style="width: 135px;">
+
+                                    <div class="vs_label">
+                                        <span>{{filter.sort[filter.selected.sort.type] || filter.sort.uploaded_at}}</span>
+                                    </div>
+
+                                    <div class="vs_slider">
+                                        <div class="frame">
+                                            <ul class="slider">
+                                                <li
+                                                    ng-repeat="(key, title) in filter.sort"
+                                                    ng-click="filter.selected.sort = {type: key, direction: true}; filter.update();"
+                                                    >
+                                                    <label>{{title}}</label>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="version-filter">
+                                {{filter.data.version.title}}:
+                                <div class="version-select expanded">
+
+                                    <div class="vs_label">
+                                        <span ng-if="filter.areAllSelected(filter.data.version)">Все версии</span>
+
+                                        <span ng-if="!filter.areAllSelected(filter.data.version)">
+                                            <span ng-repeat="cbx in filter.getChecked(filter.data.version)">
+                                                <span ng-if="$index > 0">, </span>{{cbx.title}}
+                                            </span>
+                                        </span>
+                                    </div>
+
+                                    <div id="vs_slider" class="vs_slider">
+                                        <div class="frame">
+                                            <ul class="slider">
+                                                <li>
+                                                    <input type="checkbox"/>
+                                                    <label
+                                                        ng-click="$event.stopPropagation(); filter.select.all(filter.data.version, (filter.areAllSelected(filter.data.version) ? 'deselect' : 'select'));"
+                                                        >
+                                                        {{ filter.areAllSelected(filter.data.version) ? 'Сбросить' : 'Выбрать все' }}
+                                                    </label>
+                                                </li>
+                                                <li ng-repeat="cbx in filter.data.version.checkboxes">
+                                                    <input type="checkbox" id="version{{cbx.id}}" ng-model="cbx.checked" ng-change="filter.update();"/>
+                                                    <label for="version{{cbx.id}}">{{cbx.title}}</label>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="scrollbar">
+                                            <div class="handle">
+                                                <div class="mousearea"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="version-filter my-replays-filter" ng-show="user_id!=0">
+                                <input id="myReplaysFilter" type="checkbox" ng-model="filter.myReplays" ng-checked="filter.myReplays">
+                                <label for="myReplaysFilter">Искать среди моих реплеев</label>
+                            </div>
+
+
+                            <div class="filters_apply clearfix">
+                                <a
+                                    class="btn_s-orange"
+                                    ng-click="replays.get()"
+                                    >Показать</a>
+                                <a
+                                    class="btn_s-orange vod-button"
+                                    ng-click="replays.get({compilation: 'vod'})"
+                                    >Показать реплеи с видео<span>{{searchButton.video.replayCount}}</span></a>
+                            </div>
+                        </div>
+
+
+                        <div class="selected-filters search-filters">
+
+                            <span class="tf_s__selectall" ng-click="filter.select.all('all','deselect');">Очистить все фильтры</span>
+
+                            <div ng-repeat="(key, filterType) in filter.data.tank.filters"
+                                 ng-if="filter.selected[key]"
+                                 ng-class="{'disabled': filterType.disabled}"
+                                 class="search_filter_button animate"
+                                >
+                                <small>{{filterType.title}}:</small>
+                                <span
+                                    ng-if="!filter.areAllSelected(filterType)"
+                                    >
+                                    <a
+                                        title="Удалить фильтр"
+                                        ng-repeat="cbx in filter.getChecked(filterType)"
+                                        ng-click="$event.stopPropagation(); $event.preventDefault(); filter.filterTanks(cbx, filterType);"
+                                        ng-class="{'disabled': cbx.disabled}"
+                                        class="search_filter_button animate"
+                                        >{{cbx.title}}</a>
+                                </span>
+                                <a
+                                    title="Удалить фильтр"
+                                    ng-if="filter.areAllSelected(filterType)"
+                                    ng-click="$event.stopPropagation(); filter.select.all(filterType, 'deselect');"
+                                    >Все</a>
+                            </div>
+
+
+                            <!-- other filter -->
+                            <div
+                                ng-repeat="(key, filterType) in filter.data"
+                                ng-if="filter.selected[key]"
+                                id="{{key}}-filter-item"
+                                class="search_filter_button animate"
+                                >
+                                <small>{{filterType.title}}:</small>
+
+                                <span ng-if="!filter.areAllSelected(filterType)">
+                                    <a class="tankFilter{{cbx.id}} search_filter_button animate"
+                                       title="Удалить фильтр"
+                                       ng-repeat="cbx in filter.getChecked(filterType)"
+                                       ng-click="$event.stopPropagation(); cbx.checked = false; filter.update();"
+                                        >{{cbx.title}}</a>
+                                </span>
+
+                                <a
+                                    title="Удалить фильтр"
+                                    ng-if="filter.areAllSelected(filterType)"
+                                    ng-click="$event.stopPropagation(); filter.select.all(filterType, 'deselect');"
+                                    >Все</a>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+        <div class="m-item" style="width: 171px; height: 41px;">
+            <a
+                target="_self"
+                ng-href="/contest"
+                ng-class="{active: routing.active.item === 'contest'}"
+                class="m-item_title"
+                style="width: 171px;"
+            >конкурсы</a>
+
+        </div>
+
+        <div class="m-item" style="width: 153px;">
+            <a
+                target="_self"
+                href="/wgleague#?league=gold"
+                ng-class="{active: routing.active.item === 'wgleague'}"
+                class="m-item_title"
+                style="width: 162px;"
+            >WG League</a>
+
+        </div>
+
+        <div class="m-item">
+
+            <a
+                target="_self"
+                href="/streams"
+                ng-class="{active: routing.active.item === 'streams'}"
+                class="m-item_title"
+                style="width: 162px;"
+            >Трансляции</a>
+
+        </div>
+
+        <div id="compilations-dropdown" class="m-item_dropdown compilations collapsed" data-ng-class="public.isShowCompilationsMenu ? 'expanded' : 'collapsed'">
+
+            <div
+                class="m-item_title"
+                style="width: 162px;"
+                ng-class="{active: routing.active.item === 'compilations'}"
+                data-ng-click="toggleCompilationsMenu()"
+                >Подборки</div>
+
+            <div class="m-item_container" data-ng-style="{height: '453px'}" data-ng-cloak>
+                <div>
+                                        <a target="_self" href="/site/index/video/1/version/75,74,73,71,72,70,69,68,64,67,66,65,63,62,61,60,59,58,56,55,54,53,52,51,50,49,48,45,46,44,43,42,41,40,38,22,37,36,35,34,33,31,30,29,28,27,26,25,24,23,21,19,17,16,14,13,7,6,5,4,1,2,3,39,57,47,18,20,32">Реплеи с видео</a>
+                    <a ng-href="{{replays.getCompilationUrl('ace')}}">Знак классности "Мастер"</a>
+                    <a target="_self" href="/clans">Реплеи кланов</a>
+                    <a target="_self" href="/site/index/popular/1/version/75,74,73">Популярные реплеи за неделю</a>
+                    <a target="_self" href="/site/master">График опыта мастеров</a>
+                    <a target="_self" href="/site/index/epicbattle/1/version/75,74,73,71,72,70,69,68,64,67,66,65,63,62,61,60,59,58,56,55,54,53,52,51,50,49,48,45,46,44,43,42,41,40,38,22,37,36,35,34,33,31,30,29,28,27,26,25,24,23,21,19,17,16,14,13,7,6,5,4,1,2,3,39,57,47,18,20,32">Epic Battle</a>
+                    <a target="_self" href="/site/index/iron_league/1/version/75,74,73,71,72,70,69,68,64,67,66,65,63,62,61,60,59,58,56,55,54,53,52,51,50,49,48,45,46,44,43,42,41,40,38,22,37,36,35,34,33,31,30,29,28,27,26,25,24,23,21,19,17,16,14,13,7,6,5,4,1,2,3,39,57,47,18,20,32">Железная Лига</a>
+                    <a target="_self" href="/site/index/pro/1/version/75,74,73,71,72,70,69,68,64,67,66,65,63,62,61,60,59,58,56,55,54,53,52,51,50,49,48,45,46,44,43,42,41,40,38,22,37,36,35,34,33,31,30,29,28,27,26,25,24,23,21,19,17,16,14,13,7,6,5,4,1,2,3,39,57,47,18,20,32">Реплеи pro-игроков</a>
+                    <a ng-click="filter.select.all('all', 'deselect'); replays.get({compilation: 'site/index', sort: 'inflicted_damage.desc'})">Максимум урона</a>
+                    <a ng-click="filter.select.all('all', 'deselect'); replays.get({compilation: 'site/index', sort: 'xp.desc'})">Максимум опыта</a>
+                    <a ng-click="filter.select.all('all', 'deselect'); replays.get({compilation: 'site/index', sort: 'credits.desc'})">Максимум кредитов</a>
+                    <a ng-click="filter.select.all('all', 'deselect'); replays.get({compilation: 'site/index', sort: 'frags.desc'})">Максимум фрагов</a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="m-item">
+            <a
+                data-replay-upload
+                style="width: 175px;"
+                class="m-item_title orange"
+                data-logged-in="1"
+                data-popup-url="/popup/upload/cache/1"
+            >Залить реплей</a>
+        </div>
+    </div>
+
+
+    <!--   *********************   -->
+    <!--          CONTENT          -->
+    <!--   *********************   -->
+
+    
+
+
+
+
+
+<div class="replay" data-ng-controller="ReplayViewController as replay">
+
+    <div class="replay__hat">
+
+        <div class="replay__parent">
+            <a
+                target="_self"
+                class="link--pale_orange link--small"
+                href="/site/index"
+                >
+                Все реплеи            </a>
+            <i class="i-16_arr-ltb"></i>
+        </div>
+
+        <div class="clearfix">
+            <div class="replay__controls">
+                <a
+                    class="btn_l-grey"
+                    ng-click="replay.showLink()"
+                    >Ссылка на реплей</a>
+
+                
+                <a target="_self" href="/site/download/12109338" class="btn_l-orange">
+                    Скачать реплей                </a>
+            </div>
+
+            <div class="replay__title">
+                AMX 50 B, Аэродром, Стандартный бой            </div>
+
+            <input type="hidden" value="12109338" class="replay-id">
+            <div class="contest-your-result contest-your-result_replay-view" class="ng-cloak" style="display: none">
+                <div class="contest-your-result__title">Реплей участвует в конкурсах:</div>
+                <div class="contest-your-result__replay-nomination" data-ng-repeat="contestResult in contestResults">«<a href="/contest#{{contestResult.contest.id}}-{{contestResult.contest.title}}" ng-bind="contestResult.contest.title"></a>» номинация «<span ng-bind="contestResult.nomination.title"></span>», <span ng-bind="contestResult.result.place"></span> место</div>
+            </div>
+
+        </div>
+
+        <div class="replay-controls collapsed"></div>
+
+    </div>
+
+
+
+
+    <div ng-show="replay.public.replay_link" class="b-replay__descr b-replay__secret replay_link" ng-cloak>
+
+        <h2>
+                            Ссылка:
+                        <input type="text"
+                id="link_href"
+                class="b-textarea"
+                                    value="{{replay.public.location}}"
+                                onclick="this.select()"/>
+            <span class="replay_link__link_is_copy" ng-class="replay.public.replay_link ? 'active' : ''">Ссылка скопирована в буфер</span>
+        </h2>
+            </div>
+
+    
+    <div class="replay__tabs">
+                <div class="replay__tab_labels clearfix">
+            <div
+                id="stats"
+                class="replay__tab_label"
+                data-ng-click="replay.setActive('stats')"
+                data-ng-class="{ active: replay.isTabActive('stats') }"
+            >
+                Личный результат            </div>
+            <div
+                id="teams"
+                class="replay__tab_label"
+                data-ng-click="replay.setActive('teams')"
+                data-ng-class="{ active: replay.isTabActive('teams') }"
+            >
+                Командный результат            </div>
+            <div
+                id="details"
+                class="replay__tab_label"
+                data-ng-click="replay.setActive('details')"
+                data-ng-class="{ active: replay.isTabActive('details') }"
+            >
+                Подробный отчёт            </div>
+
+            <div class="replay__social">
+                    <span>
+                        <i class="i-24_download"></i> 1 раз                    </span>
+                    <span>
+                        <i class="i-24_like" data-target="12109338" data-ng-click="like($event)"></i>
+                        <span>0</span>
+                    </span>
+                    <span>
+                        <i class="i-24_comment"></i> 0                    </span>
+
+                <div class="addthis_toolbox addthis_default_style addthis_20x20_style">
+    <a class="addthis_button_facebook" style="cursor:pointer" addthis:title="AMX 50 B Опыт:1187 Урон:6220 Фраги:5"></a>
+    <a class="addthis_button_twitter" style="cursor:pointer"  addthis:title="AMX 50 B Опыт:1187 Урон:6220 Фраги:5 #wotreplays #worldoftanks" ></a>
+    <a class="addthis_button_vk" style="cursor:pointer" addthis:title="AMX 50 B Опыт:1187 Урон:6220 Фраги:5" ></a>
+    <a class="addthis_button_odnoklassniki_ru" style="cursor:pointer" addthis:title="AMX 50 B Опыт:1187 Урон:6220 Фраги:5"></a>
+</div>
+
+<script type="text/javascript">
+    var addthis_config = {
+        templates: {
+            twitter:  'WoTReplays AMX 50 B crysis20 Аэродром {{url}} #wotreplays #worldoftanks'
+        },
+        data_track_addressbar: false,
+        ui_language: "ru",
+        services_exclude : 'print'
+    };
+</script>
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-55efdc446079cd42" async="async"></script>
+            </div>
+        </div>
+        
+        <div class="replay__tab replay-stats" data-ng-hide="!replay.isTabActive('stats')">
+
+            <div class="replay-stats__hat replay-stats__hat--win">
+                <div class="replay-stats__title">Победа</div>
+
+                <div class="replay-stats__ribbon">
+
+                    <table class="replay-stats__medals">
+                        <tbody>
+                        <tr>
+                                                                                                                                                <td>
+                                    <div class="medal">
+                                        <img src="/static/img/wot/results/MarksOfMastery/MarkOfMastery4.png"
+                                             alt="Мастер"
+                                             title="Мастер"
+                                            >
+                                                                                    <div class="medal__ribbon"></div>
+                                                                            </div>
+                                </td>
+                            
+                                                                                                <td>
+                                        <div class="medal">
+                                            <img
+                                                src="/static/img/wot/results/Medals/charmed.png"
+                                                alt="Заговорённый"
+                                                >
+                                            
+                                            <div class="medal__tooltip animationDelay">
+                                                <div class="medal__title">Заговорённый</div>
+                                                <div class="medal__info">
+                                                    Выжить в победном бою, получив повреждения от не менее чем 4 разных игроков команды противника.<br>
+    • Засчитываются только попадания, нанёсшие урон.<br>
+    • Выдаётся только в случайных боях.                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                                                    <td>
+                                        <div class="medal">
+                                            <img
+                                                src="/static/img/wot/results/Medals/bonecrusher.png"
+                                                alt="Костолом"
+                                                >
+                                            
+                                            <div class="medal__tooltip animationDelay">
+                                                <div class="medal__title">Костолом</div>
+                                                <div class="medal__info">
+                                                    Повредить в бою не менее 5 модулей или членов экипажа противника.<br>
+    • Засчитываются также модули, повреждённые в результате пожара.<br>
+    • Выдаётся только в случайных боях.                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                                                    <td>
+                                        <div class="medal">
+                                            <img
+                                                src="/static/img/wot/results/Medals/fighter.png"
+                                                alt="Боец"
+                                                >
+                                            
+                                            <div class="medal__tooltip animationDelay">
+                                                <div class="medal__title">Боец</div>
+                                                <div class="medal__info">
+                                                    Уничтожить 4-5 машин противника в одном бою.<br>
+    • Выдаётся только в случайных боях.                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                                                    <td>
+                                        <div class="medal">
+                                            <img
+                                                src="/static/img/wot/results/Medals/shootToKill.png"
+                                                alt="Огонь на поражение"
+                                                >
+                                            
+                                            <div class="medal__tooltip animationDelay">
+                                                <div class="medal__title">Огонь на поражение</div>
+                                                <div class="medal__info">
+                                                    Нанести противнику урона больше, чем прочность собственной машины.<br>
+    • Засчитывается также урон, нанесённый тараном и поджогом.<br>
+    • Не выдаётся при игре на САУ.<br>
+    • Выдаётся только в случайных боях.                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                                                                    </tr>
+                        </tbody>
+                    </table>
+
+                    <div class="replay-stats__earnings replay-stats__earnings-grand_battle">
+                        <div class="replay-stats__earnings_credits">
+                            129 999                        </div>
+                        <div class="replay-stats__earnings_experience">
+                            1 781                        </div>
+                                                    <div class="replay-stats__earnings_crystal">
+                                2                            </div>
+                                            </div>
+
+                    <table class="replay-stats__medals">
+                        <tbody>
+                        <tr>
+                                                                                                <td>
+                                        <div class="medal">
+                                            <img
+                                                src="/static/img/wot/results/Medals/mainGun.png"
+                                                alt="Основной калибр"
+                                                >
+                                            
+                                            <div class="medal__tooltip animationDelay">
+                                                <div class="medal__title">Основной калибр</div>
+                                                <div class="medal__info">
+                                                    • Нанесённый урон должен составлять не менее 20% от суммарной прочности
+техники противника.<br>
+• Нанесённый урон должен составлять не менее 1000 единиц.<br>
+• Нельзя задевать союзников прямыми выстрелами.<br>
+• При равном количестве нанесённого урона награждается игрок, получивший
+наибольшее количество очков опыта за бой.<br>
+• Выдаётся только в случайных боях.
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                                                                    </tr>
+                        </tbody>
+                    </table>
+
+                </div>
+            </div>
+
+                        <div class="clearfix">
+                <div class="replay-stats__basic">
+                    <div class="replay-stats__subtitle">
+                        Аэродром – Стандартный бой                    </div>
+
+                    <div class="replay-stats__info clearfix">
+                        <div class="replay-stats__map">
+                            <img src="/static/img/wot/dynamic/Maps/31_airfield.png" alt="Аэродром"/>
+                        </div>
+
+                        <div class="replay-stats__tank">
+                            <img src="/static/img/wot/dynamic/Tanks_big/france-F10_AMX_50B.png" alt="AMX 50 B">
+                            <div class="replay-stats__tank_title">AMX 50 B</div>
+                        </div>
+
+                        <div class="replay-stats__match">
+                            <div class="replay-stats__username" title="crysis20 [38RUS]">crysis20 [38RUS]</div>
+                            <div class="replay-stats__timestamp">27.03.2019 09:54</div>
+                        </div>
+                    </div>
+
+                    <table class="replay-stats__earnings_table replay-stats__earnings_table--premium">
+                        <colgroup>
+                            <col width="260px">
+                            <col width="104px">
+                            <col width="104px">
+                        </colgroup>
+                        <thead>
+                        <tr>
+                            <th></th>
+                            <th>Без премиума</th>
+                            <th>С премиумом</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <th>Кредиты</th>
+                            <td>57 777<i class="i-16_cr"></i></td>
+                            <td>86 666<i class="i-16_cr"></i></td>
+                        </tr>
+                        <tr>
+                            <th>Опыт </th>
+                            <td>1187<i class="i-16_exp"></i></td>
+                            <td>1781<i class="i-16_exp"></i></td>
+                        </tr>
+                        </tbody>
+                    </table>
+
+                    <div class="clearfix">
+                        <div class="replay__button replay-stats__button" data-ng-click="replay.setActive('details')">
+                            Подробный отчёт                        </div>
+                    </div>
+
+                    
+                                            <div class="replay-stats__subtitle" style="margin-top:30px;">Статистика игрока crysis20</div>
+
+                        <div class="stats-links" data-ng-show="replay.showStatomer && replay.winRate" style="border: gray 0.3px solid; border-radius: 2px; background: linear-gradient(to right, #403a2e, #16130f)">
+                            <div class="stats-links__item" style="font-size:14px; ">
+                                <a
+                                    class="link--hover statomer-icon"
+                                    target="_blank"
+                                    href="http://statomer.ru/profile/3312629"
+                                >Statomer.ru
+                                <span style="color: #b1b4b6; font-size:12px;">%побед:</span> <span id="statomer_winrate" style="color: white; font-weight: 700">{{replay.winRate}}</span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="stats-links">
+                            <div class="stats-links__item">
+                                <a
+                                    class="link--hover wotomatic-icon"
+                                    target="_blank"
+                                    href="http://wotomatic.net/?search=crysis20#"
+                                >WOT-O-Matic</a>
+                            </div>
+
+                            <div class="stats-links__item">
+                                <a
+                                    class="link--hover wot-icon"
+                                    target="_blank"
+                                    href="https://worldoftanks.ru/ru/community/accounts/3312629-crysis20/"
+                                >World of Tanks</a>
+                            </div>
+
+                            <div class="stats-links__item">
+                                <a
+                                    class="link--hover wgstat-icon"
+                                    target="_blank"
+                                    href="http://wgstat.ru/wot/users/crysis20"
+                                >WGSTAT</a>
+                            </div>
+                        </div>
+                    
+
+                </div>
+
+                <div class="replay-stats__efficiency">
+                                        <div class="replay-stats__subtitle">
+                        Боевая эффективность                        <span class="replay-stats__summary_effective_block">
+                            <span style="padding-right: 5px">&Sigma;:</span>
+                            <span class="replay-stats__summary_effective">5</span>
+                            <span class="replay-stats__summary_effective">6220</span>
+                            <span class="replay-stats__summary_effective">9</span>
+                            <span class="replay-stats__summary_effective">1320</span>
+                            <span class="replay-stats__summary_effective">365</span>
+                            <span class="replay-stats__summary_effective">-</span>
+                                                            <span class="replay-stats__summary_effective">-</span>
+                                                    </span>
+                    </div>
+
+                    <ul class="replay-affected">
+                                                                            <li class="replay-affected__killed">
+                                <span class="replay-affected__username" title="Nuzzle ">Nuzzle </span>
+
+                                    <span class="replay-affected__tank" style="background-image: url(/static/img/wot/dynamic/Tanks_small/ussr-R45_IS-7.png)" title="ИС-7">
+                                        ИС-7                                    </span>
+
+                                                                                                            <span class="replay-affected__assisted_stun" style="opacity: 0.1"></span>
+                                                                    
+                                                                    <span class="replay-affected__spotted" style="opacity: 0.1"></span>
+                                
+                                                                    <span class="replay-affected__assisted" title="По вашим разведданным союзники нанесли очков урона: 153"></span>
+                                
+                                                                                                        <span class="replay-affected__blocked" title="Рикошетов: 0, Непробитий: 1, Заблокированно броней: 490(ед.)">
+                                                                                            <span class="count">1</span>
+                                                                                    </span>
+                                
+
+
+                                                                    <span class="replay-affected__critical_hits" title="Вы нанесли критических повреждений: 1">
+                                                                                        <span class="count">1</span>
+                                                                                </span>
+                                
+                                                                    <span class="replay-affected__damage"
+                                          title="Вы нанесли урона: 249"
+                                          >
+                                                                                        <span class="count">1</span>
+                                                                                </span>
+                                
+                                                                                                                                            <span class="replay-affected__frag" title="Вы уничтожили этот танк противника"></span>
+                                                            </li>
+                                                    <li>
+                                <span class="replay-affected__username" title="stalker2501 [B_OOM]">stalker2501 [B_OOM]</span>
+
+                                    <span class="replay-affected__tank" style="background-image: url(/static/img/wot/dynamic/Tanks_small/ussr-R60_Object416.png)" title="Объект 416">
+                                        Объект 416                                    </span>
+
+                                                                                                            <span class="replay-affected__assisted_stun" style="opacity: 0.1"></span>
+                                                                    
+                                                                    <span class="replay-affected__spotted" style="opacity: 0.1"></span>
+                                
+                                                                    <span class="replay-affected__assisted" style="opacity: 0.1"></span>
+                                
+                                                                    <span class="replay-affected__blocked" style="opacity: 0.1"></span>
+                                
+
+
+                                                                    <span class="replay-affected__critical_hits" style="opacity: 0.1"></span>
+                                
+                                                                    <span class="replay-affected__damage"
+                                          title="Вы нанесли урона: 400"
+                                          >
+                                                                                        <span class="count">1</span>
+                                                                                </span>
+                                
+                                                                    <span class="replay-affected__frag" style="opacity: 0.1"></span>
+                                                            </li>
+                                                    <li class="replay-affected__killed">
+                                <span class="replay-affected__username" title="Nekit_249 [FEIQ]">Nekit_249 [FEIQ]</span>
+
+                                    <span class="replay-affected__tank" style="background-image: url(/static/img/wot/dynamic/Tanks_small/ussr-R19_IS-3.png)" title="ИС-3">
+                                        ИС-3                                    </span>
+
+                                                                                                            <span class="replay-affected__assisted_stun" style="opacity: 0.1"></span>
+                                                                    
+                                                                    <span class="replay-affected__spotted" style="opacity: 0.1"></span>
+                                
+                                                                    <span class="replay-affected__assisted" style="opacity: 0.1"></span>
+                                
+                                                                                                        <span class="replay-affected__blocked" title="Рикошетов: 0, Непробитий: 1, Заблокированно броней: 390(ед.)">
+                                                                                            <span class="count">1</span>
+                                                                                    </span>
+                                
+
+
+                                                                    <span class="replay-affected__critical_hits" title="Вы нанесли критических повреждений: 1">
+                                                                                        <span class="count">1</span>
+                                                                                </span>
+                                
+                                                                    <span class="replay-affected__damage"
+                                          title="Вы нанесли урона: 800"
+                                          >
+                                                                                        <span class="count">2</span>
+                                                                                </span>
+                                
+                                                                                                                                            <span class="replay-affected__frag" title="Вы уничтожили этот танк противника"></span>
+                                                            </li>
+                                                    <li>
+                                <span class="replay-affected__username" title="kiiier_2016 [Z1PP0]">kiiier_2016 [Z1PP0]</span>
+
+                                    <span class="replay-affected__tank" style="background-image: url(/static/img/wot/dynamic/Tanks_small/ussr-R148_Object_430_U.png)" title="Объект 430У">
+                                        Объект 430У                                    </span>
+
+                                                                                                            <span class="replay-affected__assisted_stun" style="opacity: 0.1"></span>
+                                                                    
+                                                                    <span class="replay-affected__spotted" style="opacity: 0.1"></span>
+                                
+                                                                    <span class="replay-affected__assisted" title="По вашим разведданным союзники нанесли очков урона: 49"></span>
+                                
+                                                                                                        <span class="replay-affected__blocked" title="Рикошетов: 0, Непробитий: 1, Заблокированно броней: 440(ед.)">
+                                                                                            <span class="count">1</span>
+                                                                                    </span>
+                                
+
+
+                                                                    <span class="replay-affected__critical_hits" style="opacity: 0.1"></span>
+                                
+                                                                    <span class="replay-affected__damage" style="opacity: 0.1"></span>
+                                
+                                                                    <span class="replay-affected__frag" style="opacity: 0.1"></span>
+                                                            </li>
+                                                    <li class="replay-affected__killed">
+                                <span class="replay-affected__username" title="kokakola211 [UBRO]">kokakola211 [UBRO]</span>
+
+                                    <span class="replay-affected__tank" style="background-image: url(/static/img/wot/dynamic/Tanks_small/italy-It12_Prototipo_Standard_B.png)" title="Prototipo Standard B">
+                                        Prototipo Standard B                                    </span>
+
+                                                                                                            <span class="replay-affected__assisted_stun" style="opacity: 0.1"></span>
+                                                                    
+                                                                    <span class="replay-affected__spotted" style="opacity: 0.1"></span>
+                                
+                                                                    <span class="replay-affected__assisted" style="opacity: 0.1"></span>
+                                
+                                                                    <span class="replay-affected__blocked" style="opacity: 0.1"></span>
+                                
+
+
+                                                                    <span class="replay-affected__critical_hits" title="Вы нанесли критических повреждений: 3">
+                                                                                        <span class="count">3</span>
+                                                                                </span>
+                                
+                                                                    <span class="replay-affected__damage"
+                                          title="Вы нанесли урона: 1101"
+                                          >
+                                                                                        <span class="count">3</span>
+                                                                                </span>
+                                
+                                                                                                                                            <span class="replay-affected__frag" title="Вы уничтожили этот танк противника"></span>
+                                                            </li>
+                                                    <li>
+                                <span class="replay-affected__username" title="pros100_pros100i ">pros100_pros100i </span>
+
+                                    <span class="replay-affected__tank" style="background-image: url(/static/img/wot/dynamic/Tanks_small/china-Ch12_111_1_2_3.png)" title="WZ-111 model 1-4">
+                                        WZ-111 model 1-4                                    </span>
+
+                                                                                                            <span class="replay-affected__assisted_stun" style="opacity: 0.1"></span>
+                                                                    
+                                                                    <span class="replay-affected__spotted" style="opacity: 0.1"></span>
+                                
+                                                                    <span class="replay-affected__assisted" title="По вашим разведданным союзники нанесли очков урона: 9"></span>
+                                
+                                                                    <span class="replay-affected__blocked" style="opacity: 0.1"></span>
+                                
+
+
+                                                                    <span class="replay-affected__critical_hits" style="opacity: 0.1"></span>
+                                
+                                                                    <span class="replay-affected__damage"
+                                          title="Вы нанесли урона: 837"
+                                          >
+                                                                                        <span class="count">2</span>
+                                                                                </span>
+                                
+                                                                    <span class="replay-affected__frag" style="opacity: 0.1"></span>
+                                                            </li>
+                                                    <li>
+                                <span class="replay-affected__username" title="Mit9iy [GARRI]">Mit9iy [GARRI]</span>
+
+                                    <span class="replay-affected__tank" style="background-image: url(/static/img/wot/dynamic/Tanks_small/france-F71_AMX_30_prototype.png)" title="AMX 30 1er prototype">
+                                        AMX 30 1er prototype                                    </span>
+
+                                                                                                            <span class="replay-affected__assisted_stun" style="opacity: 0.1"></span>
+                                                                    
+                                                                    <span class="replay-affected__spotted" style="opacity: 0.1"></span>
+                                
+                                                                    <span class="replay-affected__assisted" title="По вашим разведданным союзники нанесли очков урона: 140"></span>
+                                
+                                                                    <span class="replay-affected__blocked" style="opacity: 0.1"></span>
+                                
+
+
+                                                                    <span class="replay-affected__critical_hits" title="Вы нанесли критических повреждений: 1">
+                                                                                        <span class="count">1</span>
+                                                                                </span>
+                                
+                                                                    <span class="replay-affected__damage"
+                                          title="Вы нанесли урона: 389"
+                                          >
+                                                                                        <span class="count">1</span>
+                                                                                </span>
+                                
+                                                                    <span class="replay-affected__frag" style="opacity: 0.1"></span>
+                                                            </li>
+                                                    <li class="replay-affected__killed">
+                                <span class="replay-affected__username" title="adserben [SIEGL]">adserben [SIEGL]</span>
+
+                                    <span class="replay-affected__tank" style="background-image: url(/static/img/wot/dynamic/Tanks_small/poland-Pl13_53TP_Markowskiego.png)" title="53TP Markowskiego">
+                                        53TP Markowskiego                                    </span>
+
+                                                                                                            <span class="replay-affected__assisted_stun" style="opacity: 0.1"></span>
+                                                                    
+                                                                    <span class="replay-affected__spotted" style="opacity: 0.1"></span>
+                                
+                                                                    <span class="replay-affected__assisted" style="opacity: 0.1"></span>
+                                
+                                                                    <span class="replay-affected__blocked" style="opacity: 0.1"></span>
+                                
+
+
+                                                                    <span class="replay-affected__critical_hits" title="Вы нанесли критических повреждений: 1">
+                                                                                        <span class="count">1</span>
+                                                                                </span>
+                                
+                                                                    <span class="replay-affected__damage"
+                                          title="Вы нанесли урона: 590"
+                                          >
+                                                                                        <span class="count">2</span>
+                                                                                </span>
+                                
+                                                                                                                                            <span class="replay-affected__frag" title="Вы уничтожили этот танк противника"></span>
+                                                            </li>
+                                                    <li>
+                                <span class="replay-affected__username" title="iilllllllllllllll ">iilllllllllllllll </span>
+
+                                    <span class="replay-affected__tank" style="background-image: url(/static/img/wot/dynamic/Tanks_small/usa-A116_XM551.png)" title="XM551 Sheridan">
+                                        XM551 Sheridan                                    </span>
+
+                                                                                                            <span class="replay-affected__assisted_stun" style="opacity: 0.1"></span>
+                                                                    
+                                                                    <span class="replay-affected__spotted" style="opacity: 0.1"></span>
+                                
+                                                                    <span class="replay-affected__assisted" style="opacity: 0.1"></span>
+                                
+                                                                    <span class="replay-affected__blocked" style="opacity: 0.1"></span>
+                                
+
+
+                                                                    <span class="replay-affected__critical_hits" title="Вы нанесли критических повреждений: 1">
+                                                                                        <span class="count">1</span>
+                                                                                </span>
+                                
+                                                                    <span class="replay-affected__damage"
+                                          title="Вы нанесли урона: 796"
+                                          >
+                                                                                        <span class="count">2</span>
+                                                                                </span>
+                                
+                                                                    <span class="replay-affected__frag" style="opacity: 0.1"></span>
+                                                            </li>
+                                                    <li class="replay-affected__killed">
+                                <span class="replay-affected__username" title="funtik_T34 [DEOH]">funtik_T34 [DEOH]</span>
+
+                                    <span class="replay-affected__tank" style="background-image: url(/static/img/wot/dynamic/Tanks_small/sweden-S17_EMIL_1952_E2.png)" title="Emil II">
+                                        Emil II                                    </span>
+
+                                                                                                            <span class="replay-affected__assisted_stun" style="opacity: 0.1"></span>
+                                                                    
+                                                                    <span class="replay-affected__spotted" style="opacity: 0.1"></span>
+                                
+                                                                    <span class="replay-affected__assisted" title="По вашим разведданным союзники нанесли очков урона: 14"></span>
+                                
+                                                                    <span class="replay-affected__blocked" style="opacity: 0.1"></span>
+                                
+
+
+                                                                    <span class="replay-affected__critical_hits" title="Вы нанесли критических повреждений: 1">
+                                                                                        <span class="count">1</span>
+                                                                                </span>
+                                
+                                                                    <span class="replay-affected__damage"
+                                          title="Вы нанесли урона: 1058"
+                                          >
+                                                                                        <span class="count">3</span>
+                                                                                </span>
+                                
+                                                                                                                                            <span class="replay-affected__frag" title="Вы уничтожили этот танк противника"></span>
+                                                            </li>
+                                            </ul>
+                </div>
+            </div>
+            
+        </div>
+
+                <div
+            data-ng-cloak
+            class="replay__tab replay-teams clearfix"
+            data-ng-show="replay.isTabActive('teams')"
+        >
+
+            <div
+                class="replay-teams__team"
+                data-ng-class="'replay-teams__team--' + teamKey"
+                data-ng-repeat="(teamKey, team) in replay.teams"
+                >
+                <div class="replay-teams__title">{{ ::replay.translations.teams[teamKey] }}</div>
+
+                <table class="team-table">
+                    <colgroup>
+                        <col width="30px"/>
+                        <col width="110px"/>
+                        <col width="140px"/>
+                        <col width="50px"/>
+                        <col width="45px"/>
+                        <col width="60px"/>
+                        <col width="40px"/>
+                    </colgroup>
+                    <thead class="team-table__header">
+                    <tr>
+                        <th
+                            data-ng-repeat="th in replay.tableHeadItems"
+                            class="team-table__{{ th.type }}"
+                            data-ng-click="replay.setTeamsOrder(th.type)"
+                            data-ng-class="replay.getTableHeadItemClass(th.type)"
+                            title="{{ ::replay.translations.tableHeader[th.translation || th.type] }}"
+                            ></th>
+                    </tr>
+                    </thead>
+
+                    <tbody class="team-table__body">
+                    <tr
+                        data-ng-class="{ died: player.died, owner: replay.replayViewWgId == player.global_id }"
+                        data-ng-click="replay.detailedPerformance = player"
+                        data-ng-repeat="player in team | orderBy : replay.teamsOrder.by : replay.teamsOrder.direction"
+                        >
+                        <td ng-if="!player.ranked" class="team-table__platoon">
+                            <span data-ng-if="player.platoon">{{ ::player.platoon }}</span>
+                        </td>
+                        <td ng-if="player.ranked" class="team-table__rank">
+                            <span ng-class="'rank_' + player.ranked[0]"></span>
+                        </td>
+                        <td class="team-table__username" title="{{ ::player.username }}">{{ ::player.username }}</td>
+                        <td class="team-table__tank" title="{{ ::player.tank }}" back-img="{{ ::player.vehicleIcon_small }}">{{ ::player.tank }}</td>
+                        <td class="team-table__damageDealt">{{ ::player.damageDealt }}</td>
+                        <td class="team-table__frags">{{ ::player.frags }}</td>
+                        <td class="team-table__xp">{{ ::player.xp }} <i class="i-16_exp"></i></td>
+                        <td data-ng-if="replay.canDisplayMedals" class="team-table__achievements">
+                            <i
+                                class="team-table__achievements_icon"
+                                data-ng-if="player.achievements.length"
+                                data-tooltip="{{ ::replay.getAchievementsTooltip(player) }}"
+                                >
+                                <span class="count" data-ng-if="player.achievements.length > 1">{{ ::player.achievements.length }}</span>
+                            </i>
+                        </td>
+                    </tr>
+                    </tbody>
+
+                </table>
+            </div>
+            <div
+                class="player-performance"
+                data-ng-show="replay.detailedPerformance"
+                data-ng-class="'player-performance--' + (replay.detailedPerformance.ally ? 'ally' : 'enemy')"
+                >
+
+                <div
+                    class="player-performance__player_info"
+                    data-ng-class="{ died: replay.detailedPerformance.died }"
+                    >
+                    <div class="player-performance__tank" back-img="{{ replay.detailedPerformance.vehicleIcon_big }}"></div>
+                    <div class="player-performance__username">{{ replay.detailedPerformance.username }}</div>
+                    <div class="player-performance__tank_title">{{ replay.detailedPerformance.tank }}</div>
+                    <div class="player-performance__status">{{ replay.detailedPerformance.resultMapSurviveString }}</div>
+                </div>
+
+                <ul class="replay__performance">
+                    <li class="clearfix">
+                        {{ ::replay.translations.shots.fired }}
+                        <span data-ng-class="replay.getPlayerPerformanceStatClass('vehicleShots')">{{ replay.detailedPerformance.vehicleShots }}</span>
+                    </li>
+                    <li class="replay__performance--offset clearfix">
+                        {{ ::replay.translations.shots.hits }}
+                        <span data-ng-class="replay.getPlayerPerformanceStatClass('vehicleHits')">{{ replay.detailedPerformance.vehicleHits }}/{{ replay.detailedPerformance.vehiclePierces }}</span>
+                    </li>
+                    <li class="replay__performance--offset clearfix">
+                        {{ ::replay.translations.shots.heHits }}
+                        <span data-ng-class="replay.getPlayerPerformanceStatClass('vehicleHeHits')">{{ replay.detailedPerformance. vehicleHeHits}}</span>
+                    </li>
+                    <li class="clearfix">
+                        {{ ::replay.translations.damageDealt.total }}
+                        <span data-ng-class="replay.getPlayerPerformanceStatClass('damageDealt')">{{ replay.detailedPerformance.damageDealt }}</span>
+                    </li>
+                    <li class="replay__performance--offset clearfix">
+                        {{ ::replay.translations.damageDealt.sniper }}
+                        <span data-ng-class="replay.getPlayerPerformanceStatClass('sniperDamageDealt')">{{ replay.detailedPerformance.sniperDamageDealt }}</span>
+                    </li>
+                    <li class="clearfix">
+                        {{ ::replay.translations.received.label }}
+                        <span data-ng-class="replay.getPlayerPerformanceStatClass('vehicleIncomingHits')">{{ replay.detailedPerformance.vehicleIncomingHits }}</span>
+                    </li>
+                    <li class="replay__performance--offset clearfix">
+                        {{ ::replay.translations.received.pierces }}
+                        <span data-ng-class="replay.getPlayerPerformanceStatClass('piercedReceived')">{{ replay.detailedPerformance.piercedReceived }}</span>
+                    </li>
+                    <li class="replay__performance--offset clearfix" data-ng-if="replay.detailedPerformance.noDamageShotsReceived + ''">
+                        {{ ::replay.translations.received.noDamage }}
+                        <span data-ng-class="replay.getPlayerPerformanceStatClass('noDamageShotsReceived')">{{ replay.detailedPerformance.noDamageShotsReceived }}</span>
+                    </li>
+                    <li class="clearfix">
+                        {{ ::replay.translations.received.he }}
+                        <span data-ng-class="replay.getPlayerPerformanceStatClass('heHitsReceived')">{{ replay.detailedPerformance.heHitsReceived }}</span>
+                    </li>
+                    <li class="clearfix">
+                        {{ ::replay.translations.received.blocked }}
+                        <span data-ng-class="replay.getPlayerPerformanceStatClass('damageBlockedByArmor')">{{ replay.detailedPerformance.damageBlockedByArmor }}</span>
+                    </li>
+                    <li class="clearfix">
+                        {{ ::replay.translations.friendlyFire }}
+                        <span data-ng-class="replay.getPlayerPerformanceStatClass('vehicleTKString')">{{ replay.detailedPerformance.vehicleTKString }}</span>
+                    </li>
+                    <li class="clearfix">
+                        {{ ::replay.translations.spotted }}
+                        <span data-ng-class="replay.getPlayerPerformanceStatClass('vehicleSpotted')">{{ replay.detailedPerformance.vehicleSpotted }}</span>
+                    </li>
+                    <li class="clearfix">
+                        {{ ::replay.translations.damaged }}
+                        <span data-ng-class="replay.getPlayerPerformanceStatClass('vehicleDamaged')">{{ replay.detailedPerformance.vehicleDamaged }}/{{ replay.detailedPerformance.vehicleKilled }}</span>
+                    </li>
+                    <li class="clearfix">
+                        {{ ::replay.translations.damageAssisted.label }}
+                        <span data-ng-class="replay.getPlayerPerformanceStatClass('vehicleDamageAssist')">{{ replay.detailedPerformance.vehicleDamageAssist }}</span>
+                    </li>
+                                            <li class="clearfix">
+                            {{ ::replay.translations.damageStunned.label }}
+                            <span data-ng-class="replay.getPlayerPerformanceStatClass('vehicleDamageAssistStun')">{{ replay.detailedPerformance.vehicleDamageAssistStun }}</span>
+                        </li>
+                        <li class="clearfix">
+                            {{ ::replay.translations.stunsCaused }}
+                            <span data-ng-class="replay.getPlayerPerformanceStatClass('vehicleStunsCaused')">{{ replay.detailedPerformance.vehicleStunsCaused }}</span>
+                        </li>
+                                        <li class="clearfix">
+                        {{ ::replay.translations.capture }}
+                            <span>
+                                <span data-ng-class="replay.getPlayerPerformanceStatClass('vehicleBaseCapture')">{{ replay.detailedPerformance.vehicleBaseCapture }}</span><span class="inactive">/</span><span data-ng-class="replay.getPlayerPerformanceStatClass('vehicleBaseDef')">{{ replay.detailedPerformance.vehicleBaseDef }}</span>
+                            </span>
+                    </li>
+                    <li class="clearfix">
+                        {{ ::replay.translations.mileage.label }}
+                        <span data-ng-class="replay.getPlayerPerformanceStatClass('vehicleMileage')">{{ replay.detailedPerformance.vehicleMileage }}</span>
+                    </li>
+                </ul>
+
+                <div class="player-performance__button">
+                    <div class="replay__button" data-ng-click="replay.detailedPerformance = false;">{{ ::replay.translations.close }}</div>
+                </div>
+
+            </div>
+
+        </div>
+        
+                <div
+            data-ng-cloak
+            class="replay__tab replay-details replay__performance clearfix"
+            data-ng-show="replay.isTabActive('details')"
+        >
+            <div class="clearfix replay-details__first_div">
+                <div class="replay-details__performance">
+                    <div class="replay-details__title">Статистика</div>
+                    <div class="replay-details__table_shell">
+                        <ul class="replay-details__table">
+                            <li>
+                                {{ ::replay.translations.shots.fired }}
+                                    <span>20</span>
+                            </li>
+                            <li class="replay__performance--offset">
+                                {{ ::replay.translations.shots.hits }}
+                                    <span>19/17</span>
+                            </li>
+                            <li class="replay__performance--offset">
+                                {{ ::replay.translations.shots.heHits }}
+                                    <span class="inactive">0</span>
+                            </li>
+                            <li>
+                                {{ ::replay.translations.damageDealt.total }}
+                                    <span>6220</span>
+                            </li>
+                            <li class="replay__performance--offset">
+                                {{ ::replay.translations.damageDealt.sniper }}
+                                    <span>389</span>
+                            </li>
+                            <li>
+                                {{ ::replay.translations.received.label }}
+                                    <span>7</span>
+                            </li>
+
+                                                            <li class="replay__performance--offset">
+                                    {{ ::replay.translations.received.pierces }}
+                                        <span>4</span>
+                                </li>
+                            
+                                                            <li class="replay__performance--offset">
+                                    {{ ::replay.translations.received.noDamage }}
+                                        <span>3</span>
+                                </li>
+                            
+                                                            <li>
+                                    {{ ::replay.translations.received.he }}
+                                    <span class="inactive">0</span>
+                                </li>
+                            
+                            <li>
+                                                                    {{ ::replay.translations.received.blocked }}
+                                    <span>1320</span>
+                                                            </li>
+
+                            <li>
+                                {{ ::replay.translations.friendlyFire }}
+                                <span class="inactive">
+                                    0/0                                </span>
+                            </li>
+                            <li>
+                                {{ ::replay.translations.spotted }}
+                                <span class="inactive">0</span>
+                            </li>
+                            <li>
+                                {{ ::replay.translations.damaged }}
+                                <span>9/5</span>
+                            </li>
+                            <li>
+                                {{ ::replay.translations.damageAssisted.ownLabel }}
+                                <span>365</span>
+                            </li>
+                                                            <li>
+                                    {{ ::replay.translations.damageStunned.ownLabel }}
+                                    <span class="inactive">0</span>
+                                </li>
+                                <li>
+                                    {{ ::replay.translations.stunsCaused }}
+                                    <span class="inactive">0</span>
+                                </li>
+                                                        <li>
+                                {{ ::replay.translations.capture }}
+                                <span class="inactive">0/0</span>
+                            </li>
+                            <li>
+                                {{ ::replay.translations.mileage.label }}
+                                <span>1,3</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="replay-details__credits">
+                    <div class="replay-details__title">Кредиты                        <span class="replay-details__title--premium ">
+                                С премиумом                            </span></div>
+                    <div class="replay-details__table_shell">
+                        <table class="replay-details__table">
+                            <tbody>
+                            <tr>
+                                <td class="replay-details__td--underline">Начислено за бой</td>
+                                <td class="replay-details__td--text_right replay-details__td--silver replay-details__td--underline inactive">
+                                    57 777                                </td>
+                                <td></td>
+                                <td class="replay-details__td--left_column"></td>
+                                <td class="replay-details__td--right_column"></td>
+                                <td class="replay-details__td--text_right replay-details__td--silver replay-details__td--underline ">
+                                    86 666                                </td>
+                                <td></td>
+                            </tr>
+                                                            <tr>
+                                    <td class="replay-details__td--underline">Эффект от личных резервов</td>
+                                    <td class="replay-details__td--text_right replay-details__td--silver replay-details__td--underline inactive">28 888</td>
+                                    <td></td>
+                                    <td class="replay-details__td--left_column"></td>
+                                    <td class="replay-details__td--right_column"></td>
+                                    <td class="replay-details__td--text_right replay-details__td--silver replay-details__td--underline ">43 332</td>
+                                    <td></td>
+                                </tr>
+                                                                                                                                            <tr>
+                                <td>&nbsp;</td>
+                                <td></td>
+                                <td></td>
+                                <td class="replay-details__td--left_column"></td>
+                                <td class="replay-details__td--right_column"></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                                                <td class="replay-details__td--underline">Штраф за урон союзникам</td>
+                                <td class="replay-details__td--text_right replay-details__td--silver replay-details__td--underline inactive  inactive">0</td>
+                                <td></td>
+                                <td class="replay-details__td--left_column"></td>
+                                <td class="replay-details__td--right_column"></td>
+                                <td class="replay-details__td--text_right replay-details__td--silver replay-details__td--underline inactive ">0</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td class="replay-details__td--underline">Компенсация за урон от союзников</td>
+                                <td class="replay-details__td--text_right replay-details__td--silver replay-details__td--underline inactive">0</td>
+                                <td></td>
+                                <td class="replay-details__td--left_column"></td>
+                                <td class="replay-details__td--right_column"></td>
+                                <td class="replay-details__td--text_right replay-details__td--silver replay-details__td--underline inactive">0</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>&nbsp;</td>
+                                <td></td>
+                                <td></td>
+                                <td class="replay-details__td--left_column"></td>
+                                <td class="replay-details__td--right_column"></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                                                            <tr>
+                                    <td class="replay-details__td--underline">Итого за бой:</td>
+                                    <td class="replay-details__td--text_right replay-details__td--silver replay-details__td--underline inactive">
+                                        86 665                                    </td>
+                                    <td></td>
+                                    <td class="replay-details__td--left_column"></td>
+                                    <td class="replay-details__td--right_column"></td>
+                                    <td class="replay-details__td--text_right replay-details__td--silver replay-details__td--underline ">
+                                        129 999                                    </td>
+                                    <td></td>
+                                </tr>
+
+                                <tr>
+                                    <td>&nbsp;</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td class="replay-details__td--left_column"></td>
+                                    <td class="replay-details__td--right_column"></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                            
+                            <tr>
+                                                                <td class="replay-details__td--underline">Автоматический ремонт техники</td>
+                                <td class="replay-details__td--red replay-details__td--text_right replay-details__td--silver replay-details__td--underline inactive">-16 413</td>
+                                <td></td>
+                                <td class="replay-details__td--left_column"></td>
+                                <td class="replay-details__td--right_column"></td>
+                                <td class="replay-details__td--red replay-details__td--text_right replay-details__td--silver replay-details__td--underline ">-16 413</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                
+                                <td class="replay-details__td--underline">Автопополнение боекомплекта</td>
+                                <td class="replay-details__td--red replay-details__td--text_right replay-details__td--silver replay-details__td--underline inactive">-96 000</td>
+                                <td class="replay-details__td--text_right replay-details__td--gold replay-details__td--underline inactive">0</td>
+                                <td class="replay-details__td--left_column"></td>
+                                <td class="replay-details__td--right_column"></td>
+                                <td class="replay-details__td--red replay-details__td--text_right replay-details__td--silver replay-details__td--underline ">-96 000</td>
+                                <td class="replay-details__td--text_right replay-details__td--gold replay-details__td--underline inactive">0</td>
+                            </tr>
+                            <tr>
+                                                                <td class="replay-details__td--underline">Автопополнение снаряжения</td>
+                                <td class="replay-details__td--text_right replay-details__td--silver replay-details__td--underline replay-details__td--red  inactive">-20 000</td>
+                                <td class="replay-details__td--text_right replay-details__td--gold replay-details__td--underline inactive">0</td>
+                                <td class="replay-details__td--left_column"></td>
+                                <td class="replay-details__td--right_column"></td>
+                                <td class="replay-details__td--text_right replay-details__td--silver replay-details__td--underline replay-details__td--red ">-20 000</td>
+                                <td class="replay-details__td--text_right replay-details__td--gold replay-details__td--underline inactive">0</td>
+                            </tr>
+                            <tr class="t_div">
+                                <td>&nbsp;</td>
+                                <td></td>
+                                <td></td>
+                                <td class="replay-details__td--left_column"></td>
+                                <td class="replay-details__td--right_column"></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                                                                                <td class="replay-details__td--underline replay-details__td--resulr">Итого:</td>
+                                <td class="replay-details__td--red replay-details__td--text_right replay-details__td--silver replay-details__td--underline inactive">-45 748</td>
+                                <td class="replay-details__td--text_right replay-details__td--gold replay-details__td--underline inactive">0</td>
+                                <td class="replay-details__td--left_column"></td>
+                                <td class="replay-details__td--right_column"></td>
+                                <td class="replay-details__td--text_right replay-details__td--silver replay-details__td--underline replay-details__td--red ">-2 414</td>
+                                <td class="replay-details__td--text_right replay-details__td--gold replay-details__td--underline  inactive">0</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="clearfix">
+                <div class="replay-details__timings">
+                    <div class="replay-details__title">Время</div>
+                    <div class="replay-details__table_shell">
+                        <ul class="replay-details__table">
+                            <li>
+                                Начало боя                                <span>09:54</span>
+                            </li>
+                            <li>
+                                Продолжительность боя                                <span>5 мин 10 с</span>
+                            </li>
+                            <li>
+                                Время в бою до уничтожения                                <span>5 мин 9 с</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="replay-details__xp">
+                    <div class="replay-details__title">Опыт</div>
+                    <div class="replay-details__table_shell">
+                        <table class="replay-details__table">
+                            <tbody>
+                            <tr>
+                                <td class="replay-details__td--underline">Начислено за бой</td>
+                                <td class="replay-details__td--text_right replay-details__td--underline replay-details__td--xp inactive">
+                                    1 187                                </td>
+                                <td class="replay-details__td--text_right replay-details__td--underline replay-details__td--free_xp inactive">
+                                    59                                </td>
+                                <td class="replay-details__td--left_column">&nbsp;</td>
+                                <td class="replay-details__td--right_column">&nbsp;</td>
+                                <td class="replay-details__td--text_right replay-details__td--underline replay-details__td--xp ">
+                                    1 781                                </td>
+                                <td class="replay-details__td--text_right replay-details__td--underline replay-details__td--free_xp ">
+                                    89                                </td>
+                            </tr>
+                            
+                            <tr>
+                                                                <td class="replay-details__td--underline">Штраф за урон союзникам</td>
+                                <td class="replay-details__td--text_right replay-details__td--underline replay-details__td--xp inactive inactive">
+                                    0                                </td>
+                                <td></td>
+                                <td class="replay-details__td--left_column"></td>
+                                <td class="replay-details__td--right_column"></td>
+                                <td class="replay-details__td--text_right replay-details__td--underline replay-details__td--xp  inactive">
+                                    0                                </td>
+                                <td></td>
+                            </tr>
+                                                        
+                            
+                            
+                            
+                            
+                                                        
+                            <tr>
+                                <td>&nbsp;</td>
+                                <td></td>
+                                <td></td>
+                                <td class="replay-details__td--left_column"></td>
+                                <td class="replay-details__td--right_column"></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>&nbsp;</td>
+                                <td></td>
+                                <td></td>
+                                <td class="replay-details__td--left_column"></td>
+                                <td class="replay-details__td--right_column"></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td class="replay-details__td--underline replay-details__td--result">Итого:</td>
+                                <td class="replay-details__td--text_right replay-details__td--underline replay-details__td--xp inactive">
+                                    1 187                                </td>
+                                <td class="replay-details__td--text_right replay-details__td--underline replay-details__td--free_xp inactive">
+                                    59                                </td>
+                                <td class="replay-details__td--left_column"></td>
+                                <td class="replay-details__td--right_column"></td>
+                                <td class="replay-details__td--text_right replay-details__td--underline replay-details__td--xp ">
+                                    1 781                                </td>
+                                <td class="replay-details__td--text_right replay-details__td--underline replay-details__td--free_xp ">
+                                    89                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <ul class="replay__info clearfix">
+            <li>
+                <span class="b-label">Версия:</span>
+                1.4.1            </li>
+            <li>
+                <span class="b-label">Серв. вр. игры:</span>
+                2019-03-27 в 09:54            </li>
+            <li class="b-replay__img_wrap">
+                <img src="/static/img/wot/dynamic/mediaMaps/big/31_airfield.jpg" alt="" class="b-replay__img"/>
+                    <span style="white-space: nowrap">
+                        <span class="b-label">Респ: </span>II                    </span>
+            </li>
+                                    <li>
+                <span class="b-label">Тип боя:</span>
+                Случайный бой            </li>
+            <li class="uploader">
+                <span class="b-label">Отправил:</span>
+                <span><a class="link--white" href="/uploader/crysis20/id/468033">crysis20</a></span>
+            </li>
+        </ul>
+    </div>
+    
+    <div class="replay__description">
+        <h2>Описание реплея</h2>
+
+        <p id="descriptionContainer"  >
+                            Нет описания.                    </p>
+    </div>
+
+
+
+            <div class="replay__comments">
+            <h2 class="h2-replay">Комментарии к реплею                (0)</h2>
+
+            <ul class="comments__list">
+                <!-- b-comment -->
+                
+
+
+                
+            </ul>
+
+                            <div class="comments__add">
+                    <form class="b-form" name="commentForm" id="comment-form" action="/site/12109338" method="post">
+                    <textarea required="" data-ng-model="dummy" minlength="3" maxlength="1000" resize="" class="textarea__dark textarea-resize" cols="30" rows="10" placeholder="Ваш комментарий, Martens" name="ReplayComment[text]" id="ReplayComment_text"></textarea>                    <div class="comments__descr">
+                        <h3 class="">Напоминаем о правилах:</h3>
+                        <ul class="b-list">
+                            <li class="b-list__item">не используйте мат;</li>
+                                                    </ul>
+                    </div>
+
+                    <button
+                        type="submit"
+                        class="btn_l-orange"
+                        style="width: 160px;"
+                        data-ng-disabled="!commentForm.$valid"
+                    >Отправить</button>
+                    <div class="actions">
+                    </div>
+
+                    </form>
+                </div>
+
+                    </div>
+    
+</div>
+
+<script type="text/javascript">
+    var isReplayComplete = true;
+    var canDisplayMedals = true;
+    var roster = [{"green":{"nation":"france","id":10721171,"died":false,"clan":"38RUS","vehicleType":"france:F10_AMX_50B","tank":"AMX 50 B","name":"crysis20","platoon":0,"global_id":3312629,"local_id":10721171,"team":2,"frags":5,"xp":1187,"vehicleShots":20,"vehicleHits":19,"vehicleHeHits":0,"vehiclePierces":17,"damageDealt":6220,"sniperDamageDealt":389,"vehicleIncomingHits":7,"piercedReceived":4,"heHitsReceived":0,"noDamageShotsReceived":3,"potentialDamageReceived":2890,"damageBlockedByArmor":1320,"vehicleTKString":"0\/0","vehicleSpotted":0,"vehicleDamaged":9,"vehicleKilled":5,"vehicleDamageAssist":365,"vehicleDamageAssistStun":0,"vehicleStunsCaused":0,"vehicleBaseCapture":0,"vehicleBaseDef":0,"vehicleMileage":"1.29","resultMapSurviveString":"\u0412\u044b\u0436\u0438\u043b","achievements":[521,526,522,527,228],"achievementsToolTip":"\"\u041e\u0433\u043e\u043d\u044c \u043d\u0430 \u043f\u043e\u0440\u0430\u0436\u0435\u043d\u0438\u0435\"<br>\"\u041a\u043e\u0441\u0442\u043e\u043b\u043e\u043c\"<br>\"\u0411\u043e\u0435\u0446\"<br>\"\u0417\u0430\u0433\u043e\u0432\u043e\u0440\u0451\u043d\u043d\u044b\u0439\"<br>\"\u041e\u0441\u043d\u043e\u0432\u043d\u043e\u0439 \u043a\u0430\u043b\u0438\u0431\u0440\"","ranked":null},"red":{"nation":"usa","id":10721149,"died":true,"clan":"","vehicleType":"usa:A116_XM551","tank":"XM551 Sheridan","name":"iilllllllllllllll","platoon":0,"global_id":7855511,"local_id":10721149,"team":1,"frags":0,"xp":282,"vehicleShots":8,"vehicleHits":7,"vehicleHeHits":0,"vehiclePierces":6,"damageDealt":2278,"sniperDamageDealt":0,"vehicleIncomingHits":5,"piercedReceived":5,"heHitsReceived":0,"noDamageShotsReceived":0,"potentialDamageReceived":1810,"damageBlockedByArmor":0,"vehicleTKString":"0\/0","vehicleSpotted":2,"vehicleDamaged":5,"vehicleKilled":0,"vehicleDamageAssist":845,"vehicleDamageAssistStun":0,"vehicleStunsCaused":0,"vehicleBaseCapture":0,"vehicleBaseDef":0,"vehicleMileage":"1.16","resultMapSurviveString":"\u0423\u043d\u0438\u0447\u0442\u043e\u0436\u0435\u043d (Nafarik55)","achievements":[521],"achievementsToolTip":"\"\u041e\u0433\u043e\u043d\u044c \u043d\u0430 \u043f\u043e\u0440\u0430\u0436\u0435\u043d\u0438\u0435\"","ranked":null}},{"green":{"nation":"france","id":10721152,"died":false,"clan":"","vehicleType":"france:F18_Bat_Chatillon25t","tank":"Bat.-Ch\u00e2tillon 25 t","name":"Skripka03rus","platoon":0,"global_id":74267740,"local_id":10721152,"team":2,"frags":2,"xp":583,"vehicleShots":5,"vehicleHits":4,"vehicleHeHits":0,"vehiclePierces":4,"damageDealt":856,"sniperDamageDealt":20,"vehicleIncomingHits":4,"piercedReceived":2,"heHitsReceived":0,"noDamageShotsReceived":2,"potentialDamageReceived":430,"damageBlockedByArmor":0,"vehicleTKString":"0\/0","vehicleSpotted":0,"vehicleDamaged":3,"vehicleKilled":2,"vehicleDamageAssist":476,"vehicleDamageAssistStun":0,"vehicleStunsCaused":0,"vehicleBaseCapture":0,"vehicleBaseDef":0,"vehicleMileage":"2.39","resultMapSurviveString":"\u0412\u044b\u0436\u0438\u043b","achievements":[],"achievementsToolTip":"","ranked":null},"red":{"nation":"ussr","id":10721164,"died":true,"clan":"Z1PP0","vehicleType":"ussr:R148_Object_430_U","tank":"\u041e\u0431\u044a\u0435\u043a\u0442 430\u0423","name":"kiiier_2016","platoon":0,"global_id":72624086,"local_id":10721164,"team":1,"frags":1,"xp":335,"vehicleShots":6,"vehicleHits":6,"vehicleHeHits":0,"vehiclePierces":5,"damageDealt":2226,"sniperDamageDealt":0,"vehicleIncomingHits":6,"piercedReceived":5,"heHitsReceived":2,"noDamageShotsReceived":1,"potentialDamageReceived":2000,"damageBlockedByArmor":400,"vehicleTKString":"0\/0","vehicleSpotted":1,"vehicleDamaged":3,"vehicleKilled":1,"vehicleDamageAssist":459,"vehicleDamageAssistStun":0,"vehicleStunsCaused":0,"vehicleBaseCapture":0,"vehicleBaseDef":0,"vehicleMileage":"0.64","resultMapSurviveString":"\u0423\u043d\u0438\u0447\u0442\u043e\u0436\u0435\u043d (PREDATORS_07 [KBRS])","achievements":[521],"achievementsToolTip":"\"\u041e\u0433\u043e\u043d\u044c \u043d\u0430 \u043f\u043e\u0440\u0430\u0436\u0435\u043d\u0438\u0435\"","ranked":null}},{"green":{"nation":"ussr","id":10721155,"died":false,"clan":"","vehicleType":"ussr:R132_VNII_100LT","tank":"\u0422-100 \u041b\u0422","name":"Nafarik55","platoon":0,"global_id":40044597,"local_id":10721155,"team":2,"frags":1,"xp":753,"vehicleShots":12,"vehicleHits":11,"vehicleHeHits":0,"vehiclePierces":8,"damageDealt":2170,"sniperDamageDealt":0,"vehicleIncomingHits":0,"piercedReceived":0,"heHitsReceived":0,"noDamageShotsReceived":0,"potentialDamageReceived":0,"damageBlockedByArmor":0,"vehicleTKString":"0\/0","vehicleSpotted":1,"vehicleDamaged":5,"vehicleKilled":1,"vehicleDamageAssist":1225,"vehicleDamageAssistStun":0,"vehicleStunsCaused":0,"vehicleBaseCapture":0,"vehicleBaseDef":0,"vehicleMileage":"2.00","resultMapSurviveString":"\u0412\u044b\u0436\u0438\u043b","achievements":[521,526,524],"achievementsToolTip":"\"\u041e\u0433\u043e\u043d\u044c \u043d\u0430 \u043f\u043e\u0440\u0430\u0436\u0435\u043d\u0438\u0435\"<br>\"\u041a\u043e\u0441\u0442\u043e\u043b\u043e\u043c\"<br>\"\u0412\u0437\u0440\u044b\u0432\u043e\u0442\u0435\u0445\u043d\u0438\u043a\"","ranked":null},"red":{"nation":"ussr","id":10721159,"died":true,"clan":"","vehicleType":"ussr:R45_IS-7","tank":"\u0418\u0421-7","name":"Nuzzle","platoon":0,"global_id":15619904,"local_id":10721159,"team":1,"frags":2,"xp":300,"vehicleShots":7,"vehicleHits":7,"vehicleHeHits":0,"vehiclePierces":5,"damageDealt":1770,"sniperDamageDealt":0,"vehicleIncomingHits":11,"piercedReceived":4,"heHitsReceived":2,"noDamageShotsReceived":5,"potentialDamageReceived":3700,"damageBlockedByArmor":2140,"vehicleTKString":"0\/0","vehicleSpotted":0,"vehicleDamaged":4,"vehicleKilled":2,"vehicleDamageAssist":0,"vehicleDamageAssistStun":0,"vehicleStunsCaused":0,"vehicleBaseCapture":0,"vehicleBaseDef":0,"vehicleMileage":"1.19","resultMapSurviveString":"\u0423\u043d\u0438\u0447\u0442\u043e\u0436\u0435\u043d (crysis20 [38RUS])","achievements":[],"achievementsToolTip":"","ranked":null}},{"green":{"nation":"germany","id":10721145,"died":false,"clan":"","vehicleType":"germany:G97_Waffentrager_IV","tank":"Waffentr\u00e4ger auf Pz. IV","name":"mokin_zahvatchik","platoon":0,"global_id":46780299,"local_id":10721145,"team":2,"frags":2,"xp":849,"vehicleShots":11,"vehicleHits":10,"vehicleHeHits":0,"vehiclePierces":6,"damageDealt":3189,"sniperDamageDealt":3189,"vehicleIncomingHits":0,"piercedReceived":0,"heHitsReceived":0,"noDamageShotsReceived":0,"potentialDamageReceived":0,"damageBlockedByArmor":0,"vehicleTKString":"0\/0","vehicleSpotted":2,"vehicleDamaged":5,"vehicleKilled":2,"vehicleDamageAssist":153,"vehicleDamageAssistStun":0,"vehicleStunsCaused":0,"vehicleBaseCapture":0,"vehicleBaseDef":0,"vehicleMileage":"0.63","resultMapSurviveString":"\u0412\u044b\u0436\u0438\u043b","achievements":[521],"achievementsToolTip":"\"\u041e\u0433\u043e\u043d\u044c \u043d\u0430 \u043f\u043e\u0440\u0430\u0436\u0435\u043d\u0438\u0435\"","ranked":null},"red":{"nation":"usa","id":10721160,"died":true,"clan":"AZIHO","vehicleType":"usa:A40_T95","tank":"T95","name":"Listyagi","platoon":0,"global_id":6674955,"local_id":10721160,"team":1,"frags":0,"xp":314,"vehicleShots":7,"vehicleHits":4,"vehicleHeHits":0,"vehiclePierces":3,"damageDealt":2218,"sniperDamageDealt":0,"vehicleIncomingHits":7,"piercedReceived":4,"heHitsReceived":0,"noDamageShotsReceived":3,"potentialDamageReceived":2460,"damageBlockedByArmor":560,"vehicleTKString":"0\/0","vehicleSpotted":0,"vehicleDamaged":2,"vehicleKilled":0,"vehicleDamageAssist":531,"vehicleDamageAssistStun":0,"vehicleStunsCaused":0,"vehicleBaseCapture":0,"vehicleBaseDef":0,"vehicleMileage":"0.67","resultMapSurviveString":"\u0423\u043d\u0438\u0447\u0442\u043e\u0436\u0435\u043d (Hotaka125rus)","achievements":[521],"achievementsToolTip":"\"\u041e\u0433\u043e\u043d\u044c \u043d\u0430 \u043f\u043e\u0440\u0430\u0436\u0435\u043d\u0438\u0435\"","ranked":null}},{"green":{"nation":"usa","id":10721163,"died":false,"clan":"KBRS","vehicleType":"usa:A37_M40M43","tank":"M40\/M43","name":"PREDATORS_07","platoon":0,"global_id":94874579,"local_id":10721163,"team":2,"frags":1,"xp":761,"vehicleShots":6,"vehicleHits":2,"vehicleHeHits":7,"vehiclePierces":0,"damageDealt":1425,"sniperDamageDealt":1425,"vehicleIncomingHits":0,"piercedReceived":0,"heHitsReceived":0,"noDamageShotsReceived":0,"potentialDamageReceived":0,"damageBlockedByArmor":0,"vehicleTKString":"0\/0","vehicleSpotted":0,"vehicleDamaged":5,"vehicleKilled":1,"vehicleDamageAssist":0,"vehicleDamageAssistStun":672,"vehicleStunsCaused":6,"vehicleBaseCapture":0,"vehicleBaseDef":0,"vehicleMileage":"0.50","resultMapSurviveString":"\u0412\u044b\u0436\u0438\u043b","achievements":[526],"achievementsToolTip":"\"\u041a\u043e\u0441\u0442\u043e\u043b\u043e\u043c\"","ranked":null},"red":{"nation":"china","id":10721167,"died":true,"clan":"","vehicleType":"china:Ch12_111_1_2_3","tank":"WZ-111 model 1-4","name":"pros100_pros100i","platoon":0,"global_id":96144866,"local_id":10721167,"team":1,"frags":1,"xp":376,"vehicleShots":6,"vehicleHits":5,"vehicleHeHits":0,"vehiclePierces":5,"damageDealt":2448,"sniperDamageDealt":0,"vehicleIncomingHits":7,"piercedReceived":5,"heHitsReceived":2,"noDamageShotsReceived":1,"potentialDamageReceived":1820,"damageBlockedByArmor":0,"vehicleTKString":"0\/0","vehicleSpotted":0,"vehicleDamaged":3,"vehicleKilled":1,"vehicleDamageAssist":0,"vehicleDamageAssistStun":0,"vehicleStunsCaused":0,"vehicleBaseCapture":0,"vehicleBaseDef":0,"vehicleMileage":"1.19","resultMapSurviveString":"\u0423\u043d\u0438\u0447\u0442\u043e\u0436\u0435\u043d (mokin_zahvatchik)","achievements":[521],"achievementsToolTip":"\"\u041e\u0433\u043e\u043d\u044c \u043d\u0430 \u043f\u043e\u0440\u0430\u0436\u0435\u043d\u0438\u0435\"","ranked":null}},{"green":{"nation":"czech","id":10721166,"died":false,"clan":"RTU_","vehicleType":"czech:Cz07_TVP_46","tank":"TVP VTU Koncept","name":"bax_86","platoon":1,"global_id":75153373,"local_id":10721166,"team":2,"frags":1,"xp":606,"vehicleShots":5,"vehicleHits":4,"vehicleHeHits":0,"vehiclePierces":3,"damageDealt":739,"sniperDamageDealt":411,"vehicleIncomingHits":6,"piercedReceived":4,"heHitsReceived":0,"noDamageShotsReceived":2,"potentialDamageReceived":1820,"damageBlockedByArmor":400,"vehicleTKString":"0\/0","vehicleSpotted":1,"vehicleDamaged":2,"vehicleKilled":1,"vehicleDamageAssist":0,"vehicleDamageAssistStun":0,"vehicleStunsCaused":0,"vehicleBaseCapture":18,"vehicleBaseDef":0,"vehicleMileage":"1.51","resultMapSurviveString":"\u0412\u044b\u0436\u0438\u043b","achievements":[],"achievementsToolTip":"","ranked":null},"red":{"nation":"france","id":10721169,"died":true,"clan":"GARRI","vehicleType":"france:F71_AMX_30_prototype","tank":"AMX 30 1er prototype","name":"Mit9iy","platoon":0,"global_id":1068392,"local_id":10721169,"team":1,"frags":0,"xp":141,"vehicleShots":2,"vehicleHits":2,"vehicleHeHits":0,"vehiclePierces":0,"damageDealt":0,"sniperDamageDealt":0,"vehicleIncomingHits":5,"piercedReceived":4,"heHitsReceived":1,"noDamageShotsReceived":0,"potentialDamageReceived":1480,"damageBlockedByArmor":0,"vehicleTKString":"0\/0","vehicleSpotted":3,"vehicleDamaged":0,"vehicleKilled":0,"vehicleDamageAssist":0,"vehicleDamageAssistStun":0,"vehicleStunsCaused":0,"vehicleBaseCapture":0,"vehicleBaseDef":0,"vehicleMileage":"0.70","resultMapSurviveString":"\u0423\u043d\u0438\u0447\u0442\u043e\u0436\u0435\u043d (JoomRullez)","achievements":[],"achievementsToolTip":"","ranked":null}},{"green":{"nation":"ussr","id":10721143,"died":false,"clan":"BICMA","vehicleType":"ussr:R134_Object_252K","tank":"\u041e\u0431\u044a\u0435\u043a\u0442 252\u0423 \u0417\u0430\u0449\u0438\u0442\u043d\u0438\u043a","name":"bismark1941irkutck","platoon":0,"global_id":8057608,"local_id":10721143,"team":2,"frags":0,"xp":416,"vehicleShots":0,"vehicleHits":0,"vehicleHeHits":0,"vehiclePierces":0,"damageDealt":0,"sniperDamageDealt":0,"vehicleIncomingHits":2,"piercedReceived":0,"heHitsReceived":0,"noDamageShotsReceived":2,"potentialDamageReceived":400,"damageBlockedByArmor":400,"vehicleTKString":"0\/0","vehicleSpotted":0,"vehicleDamaged":0,"vehicleKilled":0,"vehicleDamageAssist":0,"vehicleDamageAssistStun":0,"vehicleStunsCaused":0,"vehicleBaseCapture":67,"vehicleBaseDef":0,"vehicleMileage":"1.60","resultMapSurviveString":"\u0412\u044b\u0436\u0438\u043b","achievements":[],"achievementsToolTip":"","ranked":null},"red":{"nation":"italy","id":10721148,"died":true,"clan":"UBRO","vehicleType":"italy:It12_Prototipo_Standard_B","tank":"Prototipo Standard B","name":"kokakola211","platoon":0,"global_id":3836049,"local_id":10721148,"team":1,"frags":0,"xp":177,"vehicleShots":3,"vehicleHits":2,"vehicleHeHits":0,"vehiclePierces":1,"damageDealt":287,"sniperDamageDealt":0,"vehicleIncomingHits":5,"piercedReceived":5,"heHitsReceived":0,"noDamageShotsReceived":0,"potentialDamageReceived":1660,"damageBlockedByArmor":0,"vehicleTKString":"0\/27","vehicleSpotted":0,"vehicleDamaged":1,"vehicleKilled":0,"vehicleDamageAssist":0,"vehicleDamageAssistStun":0,"vehicleStunsCaused":0,"vehicleBaseCapture":0,"vehicleBaseDef":0,"vehicleMileage":"0.87","resultMapSurviveString":"\u0423\u043d\u0438\u0447\u0442\u043e\u0436\u0435\u043d (crysis20 [38RUS])","achievements":[],"achievementsToolTip":"","ranked":null}},{"green":{"nation":"usa","id":10721157,"died":true,"clan":"","vehicleType":"usa:A89_T54E1","tank":"T54E1","name":"Hotaka125rus","platoon":0,"global_id":24509118,"local_id":10721157,"team":2,"frags":2,"xp":758,"vehicleShots":11,"vehicleHits":8,"vehicleHeHits":0,"vehiclePierces":7,"damageDealt":2260,"sniperDamageDealt":817,"vehicleIncomingHits":8,"piercedReceived":5,"heHitsReceived":0,"noDamageShotsReceived":3,"potentialDamageReceived":2280,"damageBlockedByArmor":390,"vehicleTKString":"0\/0","vehicleSpotted":1,"vehicleDamaged":5,"vehicleKilled":2,"vehicleDamageAssist":169,"vehicleDamageAssistStun":0,"vehicleStunsCaused":0,"vehicleBaseCapture":0,"vehicleBaseDef":0,"vehicleMileage":"1.21","resultMapSurviveString":"\u0423\u043d\u0438\u0447\u0442\u043e\u0436\u0435\u043d (stalker2501 [B_OOM])","achievements":[521],"achievementsToolTip":"\"\u041e\u0433\u043e\u043d\u044c \u043d\u0430 \u043f\u043e\u0440\u0430\u0436\u0435\u043d\u0438\u0435\"","ranked":null},"red":{"nation":"sweden","id":10721156,"died":true,"clan":"DEOH","vehicleType":"sweden:S17_EMIL_1952_E2","tank":"Emil II","name":"funtik_T34","platoon":0,"global_id":38745145,"local_id":10721156,"team":1,"frags":0,"xp":247,"vehicleShots":9,"vehicleHits":6,"vehicleHeHits":0,"vehiclePierces":3,"damageDealt":1109,"sniperDamageDealt":349,"vehicleIncomingHits":8,"piercedReceived":5,"heHitsReceived":1,"noDamageShotsReceived":3,"potentialDamageReceived":2660,"damageBlockedByArmor":860,"vehicleTKString":"0\/0","vehicleSpotted":0,"vehicleDamaged":3,"vehicleKilled":0,"vehicleDamageAssist":210,"vehicleDamageAssistStun":0,"vehicleStunsCaused":0,"vehicleBaseCapture":0,"vehicleBaseDef":0,"vehicleMileage":"0.85","resultMapSurviveString":"\u0423\u043d\u0438\u0447\u0442\u043e\u0436\u0435\u043d (crysis20 [38RUS])","achievements":[526],"achievementsToolTip":"\"\u041a\u043e\u0441\u0442\u043e\u043b\u043e\u043c\"","ranked":null}},{"green":{"nation":"japan","id":10721170,"died":true,"clan":"","vehicleType":"japan:J25_Type_4","tank":"Type 4 Heavy","name":"JoomRullez","platoon":0,"global_id":23250515,"local_id":10721170,"team":2,"frags":1,"xp":635,"vehicleShots":4,"vehicleHits":3,"vehicleHeHits":3,"vehiclePierces":0,"damageDealt":969,"sniperDamageDealt":182,"vehicleIncomingHits":5,"piercedReceived":5,"heHitsReceived":0,"noDamageShotsReceived":0,"potentialDamageReceived":2210,"damageBlockedByArmor":0,"vehicleTKString":"0\/0","vehicleSpotted":0,"vehicleDamaged":3,"vehicleKilled":1,"vehicleDamageAssist":331,"vehicleDamageAssistStun":0,"vehicleStunsCaused":0,"vehicleBaseCapture":0,"vehicleBaseDef":0,"vehicleMileage":"0.61","resultMapSurviveString":"\u0423\u043d\u0438\u0447\u0442\u043e\u0436\u0435\u043d (Nuzzle)","achievements":[],"achievementsToolTip":"","ranked":null},"red":{"nation":"china","id":10721144,"died":true,"clan":"","vehicleType":"china:Ch11_110","tank":"110","name":"za_rodinu_734","platoon":0,"global_id":77793033,"local_id":10721144,"team":1,"frags":1,"xp":267,"vehicleShots":3,"vehicleHits":2,"vehicleHeHits":0,"vehiclePierces":2,"damageDealt":612,"sniperDamageDealt":0,"vehicleIncomingHits":7,"piercedReceived":6,"heHitsReceived":0,"noDamageShotsReceived":1,"potentialDamageReceived":2040,"damageBlockedByArmor":230,"vehicleTKString":"0\/0","vehicleSpotted":0,"vehicleDamaged":2,"vehicleKilled":1,"vehicleDamageAssist":57,"vehicleDamageAssistStun":0,"vehicleStunsCaused":0,"vehicleBaseCapture":0,"vehicleBaseDef":0,"vehicleMileage":"1.11","resultMapSurviveString":"\u0423\u043d\u0438\u0447\u0442\u043e\u0436\u0435\u043d (mokin_zahvatchik)","achievements":[],"achievementsToolTip":"","ranked":null}},{"green":{"nation":"ussr","id":10721172,"died":true,"clan":"","vehicleType":"ussr:R40_T-54","tank":"\u0422-54","name":"Destroyer124rus","platoon":0,"global_id":48254,"local_id":10721172,"team":2,"frags":0,"xp":899,"vehicleShots":9,"vehicleHits":8,"vehicleHeHits":0,"vehiclePierces":7,"damageDealt":2237,"sniperDamageDealt":0,"vehicleIncomingHits":6,"piercedReceived":4,"heHitsReceived":0,"noDamageShotsReceived":2,"potentialDamageReceived":2750,"damageBlockedByArmor":910,"vehicleTKString":"0\/0","vehicleSpotted":3,"vehicleDamaged":4,"vehicleKilled":0,"vehicleDamageAssist":642,"vehicleDamageAssistStun":0,"vehicleStunsCaused":0,"vehicleBaseCapture":0,"vehicleBaseDef":0,"vehicleMileage":"0.78","resultMapSurviveString":"\u0423\u043d\u0438\u0447\u0442\u043e\u0436\u0435\u043d (adserben [SIEGL])","achievements":[521,526],"achievementsToolTip":"\"\u041e\u0433\u043e\u043d\u044c \u043d\u0430 \u043f\u043e\u0440\u0430\u0436\u0435\u043d\u0438\u0435\"<br>\"\u041a\u043e\u0441\u0442\u043e\u043b\u043e\u043c\"","ranked":null},"red":{"nation":"germany","id":10721161,"died":true,"clan":"","vehicleType":"germany:G88_Indien_Panzer","tank":"Indien-Panzer","name":"poceidoh","platoon":0,"global_id":494916,"local_id":10721161,"team":1,"frags":0,"xp":186,"vehicleShots":5,"vehicleHits":2,"vehicleHeHits":0,"vehiclePierces":1,"damageDealt":259,"sniperDamageDealt":259,"vehicleIncomingHits":8,"piercedReceived":5,"heHitsReceived":0,"noDamageShotsReceived":3,"potentialDamageReceived":1750,"damageBlockedByArmor":240,"vehicleTKString":"0\/0","vehicleSpotted":3,"vehicleDamaged":1,"vehicleKilled":0,"vehicleDamageAssist":57,"vehicleDamageAssistStun":0,"vehicleStunsCaused":0,"vehicleBaseCapture":0,"vehicleBaseDef":0,"vehicleMileage":"0.29","resultMapSurviveString":"\u0423\u043d\u0438\u0447\u0442\u043e\u0436\u0435\u043d (bax_86 [RTU_])","achievements":[],"achievementsToolTip":"","ranked":null}},{"green":{"nation":"ussr","id":10721151,"died":true,"clan":"DRST-","vehicleType":"ussr:R81_IS8","tank":"\u0422-10","name":"Slava_BDB_","platoon":0,"global_id":14564389,"local_id":10721151,"team":2,"frags":0,"xp":512,"vehicleShots":2,"vehicleHits":1,"vehicleHeHits":0,"vehiclePierces":1,"damageDealt":469,"sniperDamageDealt":0,"vehicleIncomingHits":4,"piercedReceived":4,"heHitsReceived":1,"noDamageShotsReceived":0,"potentialDamageReceived":1740,"damageBlockedByArmor":0,"vehicleTKString":"0\/0","vehicleSpotted":2,"vehicleDamaged":1,"vehicleKilled":0,"vehicleDamageAssist":189,"vehicleDamageAssistStun":0,"vehicleStunsCaused":0,"vehicleBaseCapture":0,"vehicleBaseDef":0,"vehicleMileage":"0.55","resultMapSurviveString":"\u0423\u043d\u0438\u0447\u0442\u043e\u0436\u0435\u043d (kiiier_2016 [Z1PP0])","achievements":[],"achievementsToolTip":"","ranked":null},"red":{"nation":"germany","id":10721165,"died":true,"clan":"","vehicleType":"germany:G94_GW_Tiger_P","tank":"G.W. Tiger (P)","name":"alterss","platoon":0,"global_id":5086172,"local_id":10721165,"team":1,"frags":0,"xp":127,"vehicleShots":1,"vehicleHits":0,"vehicleHeHits":1,"vehiclePierces":0,"damageDealt":0,"sniperDamageDealt":0,"vehicleIncomingHits":2,"piercedReceived":2,"heHitsReceived":0,"noDamageShotsReceived":0,"potentialDamageReceived":780,"damageBlockedByArmor":0,"vehicleTKString":"0\/0","vehicleSpotted":0,"vehicleDamaged":0,"vehicleKilled":0,"vehicleDamageAssist":0,"vehicleDamageAssistStun":0,"vehicleStunsCaused":1,"vehicleBaseCapture":0,"vehicleBaseDef":0,"vehicleMileage":"0.82","resultMapSurviveString":"\u0423\u043d\u0438\u0447\u0442\u043e\u0436\u0435\u043d (Skripka03rus)","achievements":[],"achievementsToolTip":"","ranked":null}},{"green":{"nation":"france","id":10721168,"died":true,"clan":"IO-NI","vehicleType":"france:F106_Panhard_EBR_75_Mle1954","tank":"Panhard EBR 75 (FL 10)","name":"Demon5_strelok","platoon":0,"global_id":80827927,"local_id":10721168,"team":2,"frags":0,"xp":471,"vehicleShots":5,"vehicleHits":2,"vehicleHeHits":0,"vehiclePierces":2,"damageDealt":339,"sniperDamageDealt":0,"vehicleIncomingHits":3,"piercedReceived":3,"heHitsReceived":0,"noDamageShotsReceived":0,"potentialDamageReceived":950,"damageBlockedByArmor":0,"vehicleTKString":"0\/0","vehicleSpotted":5,"vehicleDamaged":1,"vehicleKilled":0,"vehicleDamageAssist":0,"vehicleDamageAssistStun":0,"vehicleStunsCaused":0,"vehicleBaseCapture":0,"vehicleBaseDef":0,"vehicleMileage":"1.61","resultMapSurviveString":"\u0423\u043d\u0438\u0447\u0442\u043e\u0436\u0435\u043d (za_rodinu_734)","achievements":[],"achievementsToolTip":"","ranked":null},"red":{"nation":"poland","id":10721158,"died":true,"clan":"SIEGL","vehicleType":"poland:Pl13_53TP_Markowskiego","tank":"53TP Markowskiego","name":"adserben","platoon":0,"global_id":7662655,"local_id":10721158,"team":1,"frags":1,"xp":303,"vehicleShots":4,"vehicleHits":4,"vehicleHeHits":0,"vehiclePierces":3,"damageDealt":1054,"sniperDamageDealt":0,"vehicleIncomingHits":4,"piercedReceived":3,"heHitsReceived":2,"noDamageShotsReceived":0,"potentialDamageReceived":1030,"damageBlockedByArmor":0,"vehicleTKString":"0\/0","vehicleSpotted":0,"vehicleDamaged":3,"vehicleKilled":1,"vehicleDamageAssist":0,"vehicleDamageAssistStun":0,"vehicleStunsCaused":0,"vehicleBaseCapture":0,"vehicleBaseDef":0,"vehicleMileage":"0.90","resultMapSurviveString":"\u0423\u043d\u0438\u0447\u0442\u043e\u0436\u0435\u043d (crysis20 [38RUS])","achievements":[],"achievementsToolTip":"","ranked":null}},{"green":{"nation":"germany","id":10721150,"died":true,"clan":"","vehicleType":"germany:G16_PzVIB_Tiger_II","tank":"Tiger II","name":"Cer9l","platoon":0,"global_id":92651428,"local_id":10721150,"team":2,"frags":0,"xp":569,"vehicleShots":3,"vehicleHits":3,"vehicleHeHits":0,"vehiclePierces":1,"damageDealt":296,"sniperDamageDealt":296,"vehicleIncomingHits":8,"piercedReceived":3,"heHitsReceived":0,"noDamageShotsReceived":5,"potentialDamageReceived":3030,"damageBlockedByArmor":1280,"vehicleTKString":"0\/0","vehicleSpotted":0,"vehicleDamaged":2,"vehicleKilled":0,"vehicleDamageAssist":840,"vehicleDamageAssistStun":0,"vehicleStunsCaused":0,"vehicleBaseCapture":0,"vehicleBaseDef":0,"vehicleMileage":"0.47","resultMapSurviveString":"\u0423\u043d\u0438\u0447\u0442\u043e\u0436\u0435\u043d (stalker2501 [B_OOM])","achievements":[],"achievementsToolTip":"","ranked":null},"red":{"nation":"ussr","id":10721154,"died":true,"clan":"","vehicleType":"ussr:R107_LTB","tank":"\u041b\u0422\u0422\u0411","name":"2525_4","platoon":0,"global_id":26391214,"local_id":10721154,"team":1,"frags":0,"xp":206,"vehicleShots":3,"vehicleHits":3,"vehicleHeHits":0,"vehiclePierces":2,"damageDealt":398,"sniperDamageDealt":0,"vehicleIncomingHits":4,"piercedReceived":4,"heHitsReceived":0,"noDamageShotsReceived":0,"potentialDamageReceived":1410,"damageBlockedByArmor":0,"vehicleTKString":"0\/0","vehicleSpotted":2,"vehicleDamaged":2,"vehicleKilled":0,"vehicleDamageAssist":231,"vehicleDamageAssistStun":0,"vehicleStunsCaused":0,"vehicleBaseCapture":0,"vehicleBaseDef":0,"vehicleMileage":"1.15","resultMapSurviveString":"\u0423\u043d\u0438\u0447\u0442\u043e\u0436\u0435\u043d (Hotaka125rus)","achievements":[],"achievementsToolTip":"","ranked":null}},{"green":{"nation":"uk","id":10721162,"died":true,"clan":"JEANS","vehicleType":"uk:GB70_N_FV4202_105","tank":"FV4202","name":"yes_no_10","platoon":0,"global_id":48042577,"local_id":10721162,"team":2,"frags":0,"xp":719,"vehicleShots":11,"vehicleHits":7,"vehicleHeHits":0,"vehiclePierces":5,"damageDealt":1097,"sniperDamageDealt":0,"vehicleIncomingHits":4,"piercedReceived":3,"heHitsReceived":0,"noDamageShotsReceived":1,"potentialDamageReceived":1710,"damageBlockedByArmor":240,"vehicleTKString":"0\/0","vehicleSpotted":0,"vehicleDamaged":4,"vehicleKilled":0,"vehicleDamageAssist":260,"vehicleDamageAssistStun":0,"vehicleStunsCaused":0,"vehicleBaseCapture":0,"vehicleBaseDef":0,"vehicleMileage":"0.92","resultMapSurviveString":"\u0423\u043d\u0438\u0447\u0442\u043e\u0436\u0435\u043d (pros100_pros100i)","achievements":[],"achievementsToolTip":"","ranked":null},"red":{"nation":"ussr","id":10721153,"died":true,"clan":"FEIQ","vehicleType":"ussr:R19_IS-3","tank":"\u0418\u0421-3","name":"Nekit_249","platoon":0,"global_id":86878636,"local_id":10721153,"team":1,"frags":0,"xp":142,"vehicleShots":1,"vehicleHits":1,"vehicleHeHits":0,"vehiclePierces":0,"damageDealt":0,"sniperDamageDealt":0,"vehicleIncomingHits":4,"piercedReceived":3,"heHitsReceived":0,"noDamageShotsReceived":1,"potentialDamageReceived":1920,"damageBlockedByArmor":560,"vehicleTKString":"0\/0","vehicleSpotted":0,"vehicleDamaged":0,"vehicleKilled":0,"vehicleDamageAssist":0,"vehicleDamageAssistStun":0,"vehicleStunsCaused":0,"vehicleBaseCapture":0,"vehicleBaseDef":0,"vehicleMileage":"0.75","resultMapSurviveString":"\u0423\u043d\u0438\u0447\u0442\u043e\u0436\u0435\u043d (crysis20 [38RUS])","achievements":[],"achievementsToolTip":"","ranked":null}},{"green":{"nation":"italy","id":10721147,"died":true,"clan":"RTU_","vehicleType":"italy:It14_P44_Pantera","tank":"P.44 Pantera","name":"baleykin","platoon":1,"global_id":24090511,"local_id":10721147,"team":2,"frags":0,"xp":498,"vehicleShots":6,"vehicleHits":5,"vehicleHeHits":0,"vehiclePierces":3,"damageDealt":747,"sniperDamageDealt":492,"vehicleIncomingHits":6,"piercedReceived":5,"heHitsReceived":0,"noDamageShotsReceived":1,"potentialDamageReceived":1860,"damageBlockedByArmor":0,"vehicleTKString":"0\/0","vehicleSpotted":0,"vehicleDamaged":2,"vehicleKilled":0,"vehicleDamageAssist":0,"vehicleDamageAssistStun":0,"vehicleStunsCaused":0,"vehicleBaseCapture":0,"vehicleBaseDef":0,"vehicleMileage":"1.06","resultMapSurviveString":"\u0423\u043d\u0438\u0447\u0442\u043e\u0436\u0435\u043d (Nuzzle)","achievements":[],"achievementsToolTip":"","ranked":null},"red":{"nation":"ussr","id":10721146,"died":true,"clan":"B_OOM","vehicleType":"ussr:R60_Object416","tank":"\u041e\u0431\u044a\u0435\u043a\u0442 416","name":"stalker2501","platoon":1,"global_id":559117,"local_id":10721146,"team":1,"frags":2,"xp":437,"vehicleShots":13,"vehicleHits":12,"vehicleHeHits":0,"vehiclePierces":6,"damageDealt":1227,"sniperDamageDealt":990,"vehicleIncomingHits":4,"piercedReceived":4,"heHitsReceived":0,"noDamageShotsReceived":0,"potentialDamageReceived":1500,"damageBlockedByArmor":0,"vehicleTKString":"0\/0","vehicleSpotted":2,"vehicleDamaged":5,"vehicleKilled":2,"vehicleDamageAssist":1592,"vehicleDamageAssistStun":0,"vehicleStunsCaused":0,"vehicleBaseCapture":0,"vehicleBaseDef":0,"vehicleMileage":"1.00","resultMapSurviveString":"\u0423\u043d\u0438\u0447\u0442\u043e\u0436\u0435\u043d (Skripka03rus)","achievements":[521,526],"achievementsToolTip":"\"\u041e\u0433\u043e\u043d\u044c \u043d\u0430 \u043f\u043e\u0440\u0430\u0436\u0435\u043d\u0438\u0435\"<br>\"\u041a\u043e\u0441\u0442\u043e\u043b\u043e\u043c\"","ranked":null}}];
+    var replayViewWgId = 3312629;
+    var replayViewRealm = "ru";
+
+    var translations = {
+        teams: {
+            ally: 'Наши',
+            enemy: 'Враги'
+        },
+        tableHeader: {
+            platoon: 'Взвод',
+            player: 'Игрок',
+            tank: 'Танк',
+            damageDealt: 'Урон',
+            frags: 'Уничтожил танков',
+            xp: 'Опыт'
+        },
+        shots: {
+            fired: 'Произведено выстрелов',
+            hits: 'прямых попаданий/пробитий',
+            penetrations: 'пробитий',
+            heHits: 'осколочно-фугасных повреждений'
+        },
+        damageDealt: {
+            total: 'Нанесено урона',
+            sniper: 'c дистанции свыше 300м'
+        },
+        received: {
+            label: 'Получено попаданий',
+            pierces: 'пробитий',
+            noDamage: 'не нанесших урон',
+            he: 'Получено попаданий осколками',
+            blocked: 'Урон, заблокированный броней',
+            potential: 'Потенциальный полученный урон'
+        },
+        friendlyFire: 'Урон союзникам (уничтожено/повреждений)',
+        spotted: 'Обнаружено машин противника',
+        damaged: 'Повреждено/уничтожено машин противника',
+        killed: 'Уничтожено машин противника',
+        damageAssisted: {
+            label: 'Урон, нанесённый с помощью данного игрока',
+            ownLabel: 'Урон по вашим разведданным'
+        },
+        damageStunned: {
+            label: 'Урон по оглушённым игроком целям',
+            ownLabel: 'Урон по оглушённым вами целям'
+        },
+        stunsCaused: 'Нанесено оглушений',
+        capture: 'Очки захвата/защиты базы',
+        defence: 'Очки защиты базы',
+        mileage: {
+            label: 'Пройдено километров',
+            unit: 'км'
+        },
+        close: 'Закрыть'
+    };
+</script>
+
+</div>
+
+<div class="footer">
+    <div class="footer__company text-md"><div>© ООО «Вотреплейс», <br> 2013–2019</div></div>
+
+    <div class="footer__copyright">
+        <a target="_blank" class="footer__link_wg" href="http://wargaming.net"></a>
+    </div>
+
+    <div class="footer__menu clearfix" id="yw0">
+            <a class="footer__link" href="/site/page/view/about">О проекте</a>
+            <a class="footer__link" href="/site/page/view/faq">Часто задаваемые вопросы</a>
+            <a class="footer__link" href="/streams/faq">Стримерам</a>
+    </div>
+</div>
+
+<script type="text/javascript">
+    var CONFIG = {
+        user: 316784,
+        user_name: 'Martens',
+        competitions: {"count":0,"competitions":[]},
+        forbidden_tanks: [708,735,538,503,444,462,465,449,398,646,549,401,636,645,641,643,639,640,482,851,866,875,943,944,936,945,946,947,948,938,949,941,950,942,770,904,897,909,905,987,1353,1007,1033,1034,1047,1137,1052,1252,1253,1352,517,667,670,1212,526,505,481,491,472,410,534,1209,1211,434,433,1206,533,1216,392,1215,1213,1263,1264,1260,395,1277,1279,1326,1285,1293,1284,1261,1324,1012,835,1383,1376]    };
+</script>
+
+
+<!--[if lt IE 9 ]><script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-ajaxtransport-xdomainrequest/1.0.2/jquery.xdomainrequest.min.js"></script><![endif]-->
+<!--[if IE 9 ]><script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-ajaxtransport-xdomainrequest/1.0.2/jquery.xdomainrequest.min.js"></script><![endif]-->
+<!--[if IE 8]>
+<script type="text/javascript">
+    $("label").on('click', function(){
+        if ($(this).attr("for") != "")
+            $("#" + $(this).attr("for")).click();
+    });
+</script>
+<![endif]-->
+
+
+<script type="text/javascript">
+    <!-- Google Analytics -->
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-27550388-1', 'auto');
+    ga('send', 'pageview');
+
+    <!-- /Google Analytics -->
+
+    <!-- Yandex.Metrika counter -->
+    (function (d, w, c) {
+        (w[c] = w[c] || []).push(function() {
+            try {
+                w.yaCounter12107782 = new Ya.Metrika({id:12107782,
+                    webvisor:true,
+                    clickmap:true,
+                    trackLinks:true,
+                    accurateTrackBounce:true});
+            } catch(e) { }
+        });
+
+        var n = d.getElementsByTagName("script")[0],
+            s = d.createElement("script"),
+            f = function () { n.parentNode.insertBefore(s, n); };
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js";
+
+        if (w.opera == "[object Opera]") {
+            d.addEventListener("DOMContentLoaded", f, false);
+        } else { f(); }
+    })(document, window, "yandex_metrika_callbacks");
+    <!-- /Yandex.Metrika counter -->
+</script>
+    <script src="https://cdn.ravenjs.com/3.5.1/raven.min.js"></script>
+    <script type="text/javascript">
+        var ravenOptions = {
+            whitelistUrls: ['zxc'],
+        };
+        Raven.config('http://f94400b556854dc396ec383c9c02813d@sentry.wotreplays.ru/5', ravenOptions).install();
+    </script>
+<script type="text/javascript">
+    var sentryEnabled = 1;
+</script>
+<noscript><div><img src="//mc.yandex.ru/watch/12107782" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"d1027cd5b3","applicationID":"129228246","transactionName":"ZVxSMktWWUEAWhJbDFwWcQVNXlhcTmoPRgZxVl4SS1hbXgRLSUQKV04=","queueTime":0,"applicationTime":28,"atts":"SRtRRANMSk8=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>

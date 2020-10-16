@@ -1,0 +1,89 @@
+{
+  "statistic_vehicle": {
+    "name": "Объект 260",
+    "nation": "ussr",
+    "short_name": "Об. 260",
+    "tag": "R110_Object_260",
+    "tank_id": 58369,
+    "tier": 10,
+    "type": "HEAVY_TANK"
+  },
+  "statistic_arena_infos": [
+    {
+      "statistic_arena": {
+        "name_i18n": "Аэродром",
+        "arena_id": "31_airfield"
+      },
+      "battles": 1,
+      "wins": 1,
+      "lose": 0,
+      "efficiency": 816.0,
+      "win_percentage": 1.0,
+      "death_percentage": 0.0,
+      "frag_average": 3.0,
+      "damage_dealt_average": 2997.0,
+      "xp_average": 816.0,
+      "damage_received_average": 883.0,
+      "spotted_average": 1.0,
+      "damage_assisted_average": 1166.0,
+      "dropped_capture_points_average": 0.0
+    },
+    {
+      "statistic_arena": {
+        "name_i18n": "Линия Маннергейма",
+        "arena_id": "38_mannerheim_line"
+      },
+      "battles": 10,
+      "wins": 8,
+      "lose": 2,
+      "efficiency": 1068.3,
+      "win_percentage": 0.8,
+      "death_percentage": 0.0,
+      "frag_average": 4.4,
+      "damage_dealt_average": 5497.8,
+      "xp_average": 1068.3,
+      "damage_received_average": 1653.7,
+      "spotted_average": 3.5,
+      "damage_assisted_average": 1233.6,
+      "dropped_capture_points_average": 0.0
+    },
+    {
+      "statistic_arena": {
+        "name_i18n": "Вестфилд",
+        "arena_id": "23_westfeld"
+      },
+      "battles": 2,
+      "wins": 2,
+      "lose": 0,
+      "efficiency": 1287.5,
+      "win_percentage": 1.0,
+      "death_percentage": 0.0,
+      "frag_average": 5.0,
+      "damage_dealt_average": 5709.5,
+      "xp_average": 1287.5,
+      "damage_received_average": 1463.5,
+      "spotted_average": 3.0,
+      "damage_assisted_average": 1370.0,
+      "dropped_capture_points_average": 0.0
+    },
+    {
+      "statistic_arena": {
+        "name_i18n": "Граница империи",
+        "arena_id": "59_asia_great_wall"
+      },
+      "battles": 4,
+      "wins": 3,
+      "lose": 1,
+      "efficiency": 1336.25,
+      "win_percentage": 0.75,
+      "death_percentage": 0.0,
+      "frag_average": 7.75,
+      "damage_dealt_average": 7600.75,
+      "xp_average": 1336.25,
+      "damage_received_average": 1891.5,
+      "spotted_average": 1.75,
+      "damage_assisted_average": 128.25,
+      "dropped_capture_points_average": 21.5
+    }
+  ]
+}

@@ -1,0 +1,1913 @@
+<!DOCTYPE html><html lang="ru"><!--[if lt IE 9 ]><html class="old-ie" lang="ru" ng-app="wotreplays"><![endif]--><!--[if IE 9 ]><html class="old-ie" lang="ru" ng-app="wotreplays"><![endif]--><head><style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\:form{display:block;}</style>
+    <link rel="stylesheet" type="text/css" href="/assets/6fbfcf85/wr.full.min.css" media="all">
+    <link rel="stylesheet" type="text/css" href="/assets/7c603215/replay-list.css" media="all">
+    <script type="text/javascript" src="https://bam.nr-data.net/1/d1027cd5b3?a=129228246&amp;v=1118.0c07c19&amp;to=ZVxSMktWWUEAWhJbDFwWcQVNXlhcTmoPRgZxVl4SS1hbXgRLSVsNVlxI&amp;rst=2083&amp;ref=http://wotreplays.ru/site/index/version/75/nation/1/level/10/tank/773/map/31,105,23,84,103,94,59,60,38,86/sort/uploaded_at.desc/page/1&amp;ap=299&amp;be=987&amp;fe=1919&amp;dc=1526&amp;perf=%7B%22timing%22:%7B%22of%22:1555492144059,%22n%22:0,%22f%22:0,%22dn%22:0,%22dne%22:0,%22c%22:0,%22ce%22:0,%22rq%22:0,%22rp%22:0,%22rpe%22:509,%22dl%22:505,%22di%22:1102,%22ds%22:1102,%22de%22:1526,%22dc%22:1919,%22l%22:1919,%22le%22:1920%7D,%22navigation%22:%7B%7D%7D&amp;at=SRtRRANMSk8%3D&amp;jsonp=NREUM.setToken"></script><script src="https://js-agent.newrelic.com/nr-1118.min.js"></script><script type="text/javascript" async="" src="http://mc.yandex.ru/metrika/watch.js"></script><script async="" src="https://www.google-analytics.com/analytics.js"></script><script type="text/javascript" src="/assets/2b7fe0d5/ru.filters.js"></script>
+    <script type="text/javascript" src="/assets/e2629cb9/wr.full.min.js"></script>
+    <title>WoTReplays</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o||n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({1:[function(e,n,t){function r(){}function o(e,n,t){return function(){return i(e,[c.now()].concat(u(arguments)),n?null:this,t),n?void 0:this}}var i=e("handle"),a=e(3),u=e(4),f=e("ee").get("tracer"),c=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,n){s[n]=o(d+n,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,o="function"==typeof n;return i(l+"tracer",[c.now(),e,t],r),function(){if(f.emit((o?"":"no-")+"fn-start",[c.now(),r,o],t),o)try{return n.apply(this,arguments)}catch(e){throw f.emit("fn-err",[arguments,this,e],t),e}finally{f.emit("fn-end",[c.now()],t)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=o(l+n)}),newrelic.noticeError=function(e,n){"string"==typeof e&&(e=new Error(e)),i("err",[e,c.now(),!1,n])}},{}],2:[function(e,n,t){function r(e,n){if(!o)return!1;if(e!==o)return!1;if(!n)return!0;if(!i)return!1;for(var t=i.split("."),r=n.split("."),a=0;a<r.length;a++)if(r[a]!==t[a])return!1;return!0}var o=null,i=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var u=navigator.userAgent,f=u.match(a);f&&u.indexOf("Chrome")===-1&&u.indexOf("Chromium")===-1&&(o="Safari",i=f[1])}n.exports={agent:o,version:i,match:r}},{}],3:[function(e,n,t){function r(e,n){var t=[],r="",i=0;for(r in e)o.call(e,r)&&(t[i]=n(r,e[r]),i+=1);return t}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],4:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(o<0?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=r},{}],5:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function o(e){function n(e){return e&&e instanceof r?e:e?f(e,u,i):i()}function t(t,r,o,i){if(!d.aborted||i){e&&e(t,r,o);for(var a=n(o),u=v(t),f=u.length,c=0;c<f;c++)u[c].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function l(e,n){h[e]=v(e).concat(n)}function m(e,n){var t=h[e];if(t)for(var r=0;r<t.length;r++)t[r]===n&&t.splice(r,1)}function v(e){return h[e]||[]}function g(e){return p[e]=p[e]||o(t)}function w(e,n){c(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var h={},y={},b={on:l,addEventListener:l,removeEventListener:m,emit:t,get:g,listeners:v,context:n,buffer:w,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",f=e("gos"),c=e(3),s={},p={},d=n.exports=o();d.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(o.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){o.buffer([e],r),o.emit(e,n,t)}var o=e("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!E++){var e=x.info=NREUM.info,n=l.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();c(y,function(n,t){e[n]||(e[n]=t)}),f("mark",["onload",a()+x.offset],null,"api");var t=l.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function o(){"complete"===l.readyState&&i()}function i(){f("mark",["domContent",a()+x.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-x.offset}var u=(new Date).getTime(),f=e("handle"),c=e(3),s=e("ee"),p=e(2),d=window,l=d.document,m="addEventListener",v="attachEvent",g=d.XMLHttpRequest,w=g&&g.prototype;NREUM.o={ST:setTimeout,SI:d.setImmediate,CT:clearTimeout,XHR:g,REQ:d.Request,EV:d.Event,PR:d.Promise,MO:d.MutationObserver};var h=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1118.min.js"},b=g&&w&&w[m]&&!/CriOS/.test(navigator.userAgent),x=n.exports={offset:u,now:a,origin:h,features:{},xhrWrappable:b,userAgent:p};e(1),l[m]?(l[m]("DOMContentLoaded",i,!1),d[m]("load",r,!1)):(l[v]("onreadystatechange",o),d[v]("onload",r)),f("mark",["firstbyte",u],null,"api");var E=0,O=e(5)},{}]},{},["loader"]);</script>
+    <meta charset="UTF-8">
+    <meta name="title" content="Реплеи World of Tanks">
+    <meta name="description" content="Удобный поиск позволяет найти именно те реплеи, которые ищете. Тут вы сможете отправить свои неповторимые реплеи на передачу ЛРН или ВБР, а также посмотреть трансляции известных стримеров. Кроме того, КАЖДЫЙ, кто заливает реплей участвует в конкурсах и имеет шанс выиграть игровое золото.">
+    <meta name="keywords" content="реплеи, демки, вот, wot, world of tanks replays, replays wot replays">
+    <link rel="shortcut icon" href="/favicon.ico">
+
+    <style type="text/css">
+        [ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {display: none !important;}
+        .ui-effects-transfer { border: 2px dotted gray; }
+    </style>
+
+</head>
+
+
+<body data-ng-app="wotreplays" class="ng-scope">
+
+<div class="hat ng-scope" data-ng-controller="headerCtrl">
+    <div class="header">
+        <div class="header__menu">
+
+        </div>
+
+        <div class="header__login">
+            <a class="header__text ng-isolate-scope" popup="{templateUrl:'/popup/login'}">Войти</a>
+            или                <a class="header__text" href="https://worldoftanks.ru/registration/ru/" target="_self">создать аккаунт</a>
+            <a href="http://vk.com/wotreplays_official" class="vk-link ng-isolate-scope" data-tooltip="Наша группа VK" target="_blank"></a>
+        </div>
+    </div>
+
+    <a href="/" class="hat__link" target="_self"></a>
+
+
+    <div class="hat__replay_count text-lg-bold">
+        <span>Уже </span>
+        <span ng-bind="'11064329' | number" class="ng-binding">11&nbsp;064&nbsp;329</span>
+        <a target="_self" class="link--underline" href="/site/index">
+            реплеев        </a>
+    </div>
+</div>
+
+<div class="main clearfix ng-scope" id="baseCtrl" ng-controller="baseCtrl">
+
+    <!--   *********************   -->
+    <!--         MAIN MENU         -->
+    <!--   *********************   -->
+
+    <div class="main-menu clearfix" data-ng-style="{marginBottom: (30 + public.searchMenuHeight) + 'px'}" style="margin-bottom: 30px;">
+        <!--   *********************   -->
+        <!--          FILTERS          -->
+        <!--   *********************   -->
+
+        <div id="search-dropdown" class="m-item_dropdown collapsed" data-ng-class="public.isShownSearchMenu ? 'expanded' : 'collapsed'">
+
+            <div class="m-item_title" ng-class="{active: routing.active.item === 'search'}" style="width: 175px;" ng-click="toggleSearchMenu();">
+                Найти реплей            </div>
+
+            <div id="search-container" class="m-item_container" data-ng-style="{height: public.searchMenuHeight + 'px'}" style="height: 0px;">
+
+                <div class="tabs clearfix">
+
+                    <div class="t_labels">
+
+                        <div class="t_label active" data-ng-class="public.activeSearchTab == 'tab_0' ? 'active' : ''" data-ng-click="setActiveSearchTab('tab_0')">
+                            <i class="i-24_tank"></i>
+                            Танки                        </div>
+                        <div class="t_label" data-ng-class="public.activeSearchTab == 'tab_1' ? 'active' : ''" data-ng-click="setActiveSearchTab('tab_1')">
+                            <i class="i-24_map"></i>
+                            Карты                        </div>
+                        <div class="t_label" data-ng-class="public.activeSearchTab == 'tab_2' ? 'active' : ''" data-ng-click="setActiveSearchTab('tab_2')">
+                            <i class="i-24_medal2"></i>
+                            Медали                        </div>
+                        <div class="t_label" data-ng-class="public.activeSearchTab == 'tab_3' ? 'active' : ''" data-ng-click="setActiveSearchTab('tab_3')">
+                            <i class="i-24_ppl"></i>
+                            Игрок/клан                        </div>
+                        <div class="t_label" data-ng-class="public.activeSearchTab == 'tab_4' ? 'active' : ''" data-ng-click="setActiveSearchTab('tab_4')">
+                            <i class="i-24_gear"></i>
+                            Другое                        </div>
+
+                    </div>
+
+                    <div class="t_containers">
+
+                        <div class="t_container clearfix active" data-ng-class="public.activeSearchTab == 'tab_0' ? 'active' : ''" style="padding: 0;">
+
+                            <div class="tank-filter clearfix">
+
+                                <div class="m_search-descr">
+                                    Уточните, какой именно танк вы хотите выбрать, с помощью фильтров                                    <i class="icon-info ng-isolate-scope" data-tooltip="Вы можете отфильтровать список танков, &lt;br/&gt;используя фильтры по нациям, уровням и типу техники"></i>
+                                </div>
+
+                                <!-- ngRepeat: (key, filterType) in filter.data.tank.filters | orderObjectBy: 'position' --><div class="tf_filters ng-scope" ng-repeat="(key, filterType) in filter.data.tank.filters | orderObjectBy: 'position'">
+
+                                <div class="tf_title">
+                                    <div class="first-letter ng-binding">1</div>
+                                    <div class="ng-binding">Нации</div>
+                                </div>
+
+                                <ul ng-class="{'two-column': filterType.key == 'level'}">
+                                    <!-- ngRepeat: cbx in filterType.checkboxes --><li ng-repeat="cbx in filterType.checkboxes" class="ng-scope">
+                                    <input type="checkbox" class="cbx ng-pristine ng-untouched ng-valid" id="01" ng-model="cbx.checked">
+                                    <label for="01" ng-click="$event.stopPropagation(); $event.preventDefault(); filter.filterTanks(cbx, filterType);" class="ng-binding">СССР</label>
+                                </li><!-- end ngRepeat: cbx in filterType.checkboxes --><li ng-repeat="cbx in filterType.checkboxes" class="ng-scope">
+                                    <input type="checkbox" class="cbx ng-pristine ng-untouched ng-valid" id="02" ng-model="cbx.checked">
+                                    <label for="02" ng-click="$event.stopPropagation(); $event.preventDefault(); filter.filterTanks(cbx, filterType);" class="ng-binding">Германия</label>
+                                </li><!-- end ngRepeat: cbx in filterType.checkboxes --><li ng-repeat="cbx in filterType.checkboxes" class="ng-scope">
+                                    <input type="checkbox" class="cbx ng-pristine ng-untouched ng-valid" id="03" ng-model="cbx.checked">
+                                    <label for="03" ng-click="$event.stopPropagation(); $event.preventDefault(); filter.filterTanks(cbx, filterType);" class="ng-binding">Америка</label>
+                                </li><!-- end ngRepeat: cbx in filterType.checkboxes --><li ng-repeat="cbx in filterType.checkboxes" class="ng-scope">
+                                    <input type="checkbox" class="cbx ng-pristine ng-untouched ng-valid" id="04" ng-model="cbx.checked">
+                                    <label for="04" ng-click="$event.stopPropagation(); $event.preventDefault(); filter.filterTanks(cbx, filterType);" class="ng-binding">Китай</label>
+                                </li><!-- end ngRepeat: cbx in filterType.checkboxes --><li ng-repeat="cbx in filterType.checkboxes" class="ng-scope">
+                                    <input type="checkbox" class="cbx ng-pristine ng-untouched ng-valid" id="05" ng-model="cbx.checked">
+                                    <label for="05" ng-click="$event.stopPropagation(); $event.preventDefault(); filter.filterTanks(cbx, filterType);" class="ng-binding">Франция</label>
+                                </li><!-- end ngRepeat: cbx in filterType.checkboxes --><li ng-repeat="cbx in filterType.checkboxes" class="ng-scope">
+                                    <input type="checkbox" class="cbx ng-pristine ng-untouched ng-valid" id="06" ng-model="cbx.checked">
+                                    <label for="06" ng-click="$event.stopPropagation(); $event.preventDefault(); filter.filterTanks(cbx, filterType);" class="ng-binding">Англия</label>
+                                </li><!-- end ngRepeat: cbx in filterType.checkboxes --><li ng-repeat="cbx in filterType.checkboxes" class="ng-scope">
+                                    <input type="checkbox" class="cbx ng-pristine ng-untouched ng-valid" id="07" ng-model="cbx.checked">
+                                    <label for="07" ng-click="$event.stopPropagation(); $event.preventDefault(); filter.filterTanks(cbx, filterType);" class="ng-binding">Япония</label>
+                                </li><!-- end ngRepeat: cbx in filterType.checkboxes --><li ng-repeat="cbx in filterType.checkboxes" class="ng-scope">
+                                    <input type="checkbox" class="cbx ng-pristine ng-untouched ng-valid" id="08" ng-model="cbx.checked">
+                                    <label for="08" ng-click="$event.stopPropagation(); $event.preventDefault(); filter.filterTanks(cbx, filterType);" class="ng-binding">Чехословакия</label>
+                                </li><!-- end ngRepeat: cbx in filterType.checkboxes --><li ng-repeat="cbx in filterType.checkboxes" class="ng-scope">
+                                    <input type="checkbox" class="cbx ng-pristine ng-untouched ng-valid" id="09" ng-model="cbx.checked">
+                                    <label for="09" ng-click="$event.stopPropagation(); $event.preventDefault(); filter.filterTanks(cbx, filterType);" class="ng-binding">Швеция</label>
+                                </li><!-- end ngRepeat: cbx in filterType.checkboxes --><li ng-repeat="cbx in filterType.checkboxes" class="ng-scope">
+                                    <input type="checkbox" class="cbx ng-pristine ng-untouched ng-valid" id="010" ng-model="cbx.checked">
+                                    <label for="010" ng-click="$event.stopPropagation(); $event.preventDefault(); filter.filterTanks(cbx, filterType);" class="ng-binding">Польша</label>
+                                </li><!-- end ngRepeat: cbx in filterType.checkboxes --><li ng-repeat="cbx in filterType.checkboxes" class="ng-scope">
+                                    <input type="checkbox" class="cbx ng-pristine ng-untouched ng-valid" id="011" ng-model="cbx.checked">
+                                    <label for="011" ng-click="$event.stopPropagation(); $event.preventDefault(); filter.filterTanks(cbx, filterType);" class="ng-binding">Италия</label>
+                                </li><!-- end ngRepeat: cbx in filterType.checkboxes -->
+                                </ul>
+
+                            </div><!-- end ngRepeat: (key, filterType) in filter.data.tank.filters | orderObjectBy: 'position' --><div class="tf_filters ng-scope" ng-repeat="(key, filterType) in filter.data.tank.filters | orderObjectBy: 'position'">
+
+                                <div class="tf_title">
+                                    <div class="first-letter ng-binding">2</div>
+                                    <div class="ng-binding">Типы</div>
+                                </div>
+
+                                <ul ng-class="{'two-column': filterType.key == 'level'}">
+                                    <!-- ngRepeat: cbx in filterType.checkboxes --><li ng-repeat="cbx in filterType.checkboxes" class="ng-scope">
+                                    <input type="checkbox" class="cbx ng-pristine ng-untouched ng-valid" id="11" ng-model="cbx.checked">
+                                    <label for="11" ng-click="$event.stopPropagation(); $event.preventDefault(); filter.filterTanks(cbx, filterType);" class="ng-binding">ЛТ</label>
+                                </li><!-- end ngRepeat: cbx in filterType.checkboxes --><li ng-repeat="cbx in filterType.checkboxes" class="ng-scope">
+                                    <input type="checkbox" class="cbx ng-pristine ng-untouched ng-valid" id="12" ng-model="cbx.checked">
+                                    <label for="12" ng-click="$event.stopPropagation(); $event.preventDefault(); filter.filterTanks(cbx, filterType);" class="ng-binding">СТ</label>
+                                </li><!-- end ngRepeat: cbx in filterType.checkboxes --><li ng-repeat="cbx in filterType.checkboxes" class="ng-scope">
+                                    <input type="checkbox" class="cbx ng-pristine ng-untouched ng-valid" id="13" ng-model="cbx.checked">
+                                    <label for="13" ng-click="$event.stopPropagation(); $event.preventDefault(); filter.filterTanks(cbx, filterType);" class="ng-binding">ТТ</label>
+                                </li><!-- end ngRepeat: cbx in filterType.checkboxes --><li ng-repeat="cbx in filterType.checkboxes" class="ng-scope">
+                                    <input type="checkbox" class="cbx ng-pristine ng-untouched ng-valid" id="14" ng-model="cbx.checked">
+                                    <label for="14" ng-click="$event.stopPropagation(); $event.preventDefault(); filter.filterTanks(cbx, filterType);" class="ng-binding">ПТ</label>
+                                </li><!-- end ngRepeat: cbx in filterType.checkboxes --><li ng-repeat="cbx in filterType.checkboxes" class="ng-scope">
+                                    <input type="checkbox" class="cbx ng-pristine ng-untouched ng-valid" id="15" ng-model="cbx.checked">
+                                    <label for="15" ng-click="$event.stopPropagation(); $event.preventDefault(); filter.filterTanks(cbx, filterType);" class="ng-binding">Арта</label>
+                                </li><!-- end ngRepeat: cbx in filterType.checkboxes -->
+                                </ul>
+
+                            </div><!-- end ngRepeat: (key, filterType) in filter.data.tank.filters | orderObjectBy: 'position' --><div class="tf_filters ng-scope" ng-repeat="(key, filterType) in filter.data.tank.filters | orderObjectBy: 'position'">
+
+                                <div class="tf_title">
+                                    <div class="first-letter ng-binding">3</div>
+                                    <div class="ng-binding">Уровни</div>
+                                </div>
+
+                                <ul ng-class="{'two-column': filterType.key == 'level'}" class="two-column">
+                                    <!-- ngRepeat: cbx in filterType.checkboxes --><li ng-repeat="cbx in filterType.checkboxes" class="ng-scope">
+                                    <input type="checkbox" class="cbx ng-pristine ng-untouched ng-valid" id="21" ng-model="cbx.checked">
+                                    <label for="21" ng-click="$event.stopPropagation(); $event.preventDefault(); filter.filterTanks(cbx, filterType);" class="ng-binding">1</label>
+                                </li><!-- end ngRepeat: cbx in filterType.checkboxes --><li ng-repeat="cbx in filterType.checkboxes" class="ng-scope">
+                                    <input type="checkbox" class="cbx ng-pristine ng-untouched ng-valid" id="22" ng-model="cbx.checked">
+                                    <label for="22" ng-click="$event.stopPropagation(); $event.preventDefault(); filter.filterTanks(cbx, filterType);" class="ng-binding">2</label>
+                                </li><!-- end ngRepeat: cbx in filterType.checkboxes --><li ng-repeat="cbx in filterType.checkboxes" class="ng-scope">
+                                    <input type="checkbox" class="cbx ng-pristine ng-untouched ng-valid" id="23" ng-model="cbx.checked">
+                                    <label for="23" ng-click="$event.stopPropagation(); $event.preventDefault(); filter.filterTanks(cbx, filterType);" class="ng-binding">3</label>
+                                </li><!-- end ngRepeat: cbx in filterType.checkboxes --><li ng-repeat="cbx in filterType.checkboxes" class="ng-scope">
+                                    <input type="checkbox" class="cbx ng-pristine ng-untouched ng-valid" id="24" ng-model="cbx.checked">
+                                    <label for="24" ng-click="$event.stopPropagation(); $event.preventDefault(); filter.filterTanks(cbx, filterType);" class="ng-binding">4</label>
+                                </li><!-- end ngRepeat: cbx in filterType.checkboxes --><li ng-repeat="cbx in filterType.checkboxes" class="ng-scope">
+                                    <input type="checkbox" class="cbx ng-pristine ng-untouched ng-valid" id="25" ng-model="cbx.checked">
+                                    <label for="25" ng-click="$event.stopPropagation(); $event.preventDefault(); filter.filterTanks(cbx, filterType);" class="ng-binding">5</label>
+                                </li><!-- end ngRepeat: cbx in filterType.checkboxes --><li ng-repeat="cbx in filterType.checkboxes" class="ng-scope">
+                                    <input type="checkbox" class="cbx ng-pristine ng-untouched ng-valid" id="26" ng-model="cbx.checked">
+                                    <label for="26" ng-click="$event.stopPropagation(); $event.preventDefault(); filter.filterTanks(cbx, filterType);" class="ng-binding">6</label>
+                                </li><!-- end ngRepeat: cbx in filterType.checkboxes --><li ng-repeat="cbx in filterType.checkboxes" class="ng-scope">
+                                    <input type="checkbox" class="cbx ng-pristine ng-untouched ng-valid" id="27" ng-model="cbx.checked">
+                                    <label for="27" ng-click="$event.stopPropagation(); $event.preventDefault(); filter.filterTanks(cbx, filterType);" class="ng-binding">7</label>
+                                </li><!-- end ngRepeat: cbx in filterType.checkboxes --><li ng-repeat="cbx in filterType.checkboxes" class="ng-scope">
+                                    <input type="checkbox" class="cbx ng-pristine ng-untouched ng-valid" id="28" ng-model="cbx.checked">
+                                    <label for="28" ng-click="$event.stopPropagation(); $event.preventDefault(); filter.filterTanks(cbx, filterType);" class="ng-binding">8</label>
+                                </li><!-- end ngRepeat: cbx in filterType.checkboxes --><li ng-repeat="cbx in filterType.checkboxes" class="ng-scope">
+                                    <input type="checkbox" class="cbx ng-pristine ng-untouched ng-valid" id="29" ng-model="cbx.checked">
+                                    <label for="29" ng-click="$event.stopPropagation(); $event.preventDefault(); filter.filterTanks(cbx, filterType);" class="ng-binding">9</label>
+                                </li><!-- end ngRepeat: cbx in filterType.checkboxes --><li ng-repeat="cbx in filterType.checkboxes" class="ng-scope">
+                                    <input type="checkbox" class="cbx ng-pristine ng-untouched ng-valid" id="210" ng-model="cbx.checked">
+                                    <label for="210" ng-click="$event.stopPropagation(); $event.preventDefault(); filter.filterTanks(cbx, filterType);" class="ng-binding">10</label>
+                                </li><!-- end ngRepeat: cbx in filterType.checkboxes -->
+                                </ul>
+
+                            </div><!-- end ngRepeat: (key, filterType) in filter.data.tank.filters | orderObjectBy: 'position' -->
+
+                            </div>
+
+                            <div class="tf_slider">
+
+                                <div class="tf_s__head ng-binding">
+                                    <input class="m_search ng-pristine ng-untouched ng-valid" type="text" ng-model="tankSearch" ng-change="filter.update();" placeholder="введите название танка">
+                                    <span style="color: #6e6e6e">Танков:</span>
+
+
+                                    <!--<span
+                                        class="tf_s__selectall"
+                                        ng-if="(filter.getChecked(filter.data.tank)).length > 0"
+                                        ng-click="$event.stopPropagation(); filter.select.all(filter.data.tank,'deselect')"
+                                    >Сбросить</span>-->
+
+                                </div>
+
+                                <div class="frame loadingTanks">
+                                    <ul class="slider">
+                                        <!-- ngRepeat: cbx in filter.data.tank.checkboxes -->
+                                    </ul>
+                                </div>
+
+                                <div class="scrollbar ng-hide" data-ng-show="(filter.data.tank.checkboxes | filter: {show: true}).length &gt; 10">
+                                    <div class="handle">
+                                        <div class="mousearea"></div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="t_container" data-ng-class="public.activeSearchTab == 'tab_1' ? 'active' : ''">
+                            <div class="t_title ng-binding">Карты</div>
+                            <div class="column-content" ng-init="this.maps.checkboxes = (filter.data.map.checkboxes | orderByFirstLetter)">
+                                <!-- ngRepeat: (group, checkboxes) in this.maps.checkboxes --><div ng-repeat="(group, checkboxes) in this.maps.checkboxes" class="ng-scope">
+                                <div class="first-letter ng-binding">А</div>
+                                <ul>
+                                    <!-- ngRepeat: cbx in checkboxes --><li ng-repeat="cbx in checkboxes" class="ng-scope">
+                                    <input type="checkbox" class="cbx ng-pristine ng-untouched ng-valid" id="map31" ng-model="cbx.checked" ng-change="filter.update();">
+                                    <label for="map31" class="ng-binding">Аэродром</label>
+                                </li><!-- end ngRepeat: cbx in checkboxes -->
+                                </ul>
+                            </div><!-- end ngRepeat: (group, checkboxes) in this.maps.checkboxes --><div ng-repeat="(group, checkboxes) in this.maps.checkboxes" class="ng-scope">
+                                <div class="first-letter ng-binding">Б</div>
+                                <ul>
+                                    <!-- ngRepeat: cbx in checkboxes --><li ng-repeat="cbx in checkboxes" class="ng-scope">
+                                    <input type="checkbox" class="cbx ng-pristine ng-untouched ng-valid" id="map105" ng-model="cbx.checked" ng-change="filter.update();">
+                                    <label for="map105" class="ng-binding">Берлин</label>
+                                </li><!-- end ngRepeat: cbx in checkboxes -->
+                                </ul>
+                            </div><!-- end ngRepeat: (group, checkboxes) in this.maps.checkboxes --><div ng-repeat="(group, checkboxes) in this.maps.checkboxes" class="ng-scope">
+                                <div class="first-letter ng-binding">В</div>
+                                <ul>
+                                    <!-- ngRepeat: cbx in checkboxes --><li ng-repeat="cbx in checkboxes" class="ng-scope">
+                                    <input type="checkbox" class="cbx ng-pristine ng-untouched ng-valid" id="map23" ng-model="cbx.checked" ng-change="filter.update();">
+                                    <label for="map23" class="ng-binding">Вестфилд</label>
+                                </li><!-- end ngRepeat: cbx in checkboxes --><li ng-repeat="cbx in checkboxes" class="ng-scope">
+                                    <input type="checkbox" class="cbx ng-pristine ng-untouched ng-valid" id="map84" ng-model="cbx.checked" ng-change="filter.update();">
+                                    <label for="map84" class="ng-binding">Виндсторм</label>
+                                </li><!-- end ngRepeat: cbx in checkboxes --><li ng-repeat="cbx in checkboxes" class="ng-scope">
+                                    <input type="checkbox" class="cbx ng-pristine ng-untouched ng-valid" id="map94" ng-model="cbx.checked" ng-change="filter.update();">
+                                    <label for="map94" class="ng-binding">Восьмибитная история</label>
+                                </li><!-- end ngRepeat: cbx in checkboxes --><li ng-repeat="cbx in checkboxes" class="ng-scope">
+                                    <input type="checkbox" class="cbx ng-pristine ng-untouched ng-valid" id="map103" ng-model="cbx.checked" ng-change="filter.update();">
+                                    <label for="map103" class="ng-binding">Винтерберг</label>
+                                </li><!-- end ngRepeat: cbx in checkboxes -->
+                                </ul>
+                            </div><!-- end ngRepeat: (group, checkboxes) in this.maps.checkboxes --><div ng-repeat="(group, checkboxes) in this.maps.checkboxes" class="ng-scope">
+                                <div class="first-letter ng-binding">Г</div>
+                                <ul>
+                                    <!-- ngRepeat: cbx in checkboxes --><li ng-repeat="cbx in checkboxes" class="ng-scope">
+                                    <input type="checkbox" class="cbx ng-pristine ng-untouched ng-valid" id="map59" ng-model="cbx.checked" ng-change="filter.update();">
+                                    <label for="map59" class="ng-binding">Граница империи</label>
+                                </li><!-- end ngRepeat: cbx in checkboxes -->
+                                </ul>
+                            </div><!-- end ngRepeat: (group, checkboxes) in this.maps.checkboxes --><div ng-repeat="(group, checkboxes) in this.maps.checkboxes" class="ng-scope">
+                                <div class="first-letter ng-binding">Ж</div>
+                                <ul>
+                                    <!-- ngRepeat: cbx in checkboxes --><li ng-repeat="cbx in checkboxes" class="ng-scope">
+                                    <input type="checkbox" class="cbx ng-pristine ng-untouched ng-valid" id="map60" ng-model="cbx.checked" ng-change="filter.update();">
+                                    <label for="map60" class="ng-binding">Жемчужная река</label>
+                                </li><!-- end ngRepeat: cbx in checkboxes -->
+                                </ul>
+                            </div><!-- end ngRepeat: (group, checkboxes) in this.maps.checkboxes --><div ng-repeat="(group, checkboxes) in this.maps.checkboxes" class="ng-scope">
+                                <div class="first-letter ng-binding">З</div>
+                                <ul>
+                                    <!-- ngRepeat: cbx in checkboxes --><li ng-repeat="cbx in checkboxes" class="ng-scope">
+                                    <input type="checkbox" class="cbx ng-pristine ng-untouched ng-valid" id="map38" ng-model="cbx.checked" ng-change="filter.update();">
+                                    <label for="map38" class="ng-binding">Заполярье</label>
+                                </li><!-- end ngRepeat: cbx in checkboxes --><li ng-repeat="cbx in checkboxes" class="ng-scope">
+                                    <input type="checkbox" class="cbx ng-pristine ng-untouched ng-valid" id="map86" ng-model="cbx.checked" ng-change="filter.update();">
+                                    <label for="map86" class="ng-binding">Зимний Химмельсдорф</label>
+                                </li><!-- end ngRepeat: cbx in checkboxes --><li ng-repeat="cbx in checkboxes" class="ng-scope">
+                                    <input type="checkbox" class="cbx ng-pristine ng-untouched ng-valid" id="map95" ng-model="cbx.checked" ng-change="filter.update();">
+                                    <label for="map95" class="ng-binding">Затерянный город</label>
+                                </li><!-- end ngRepeat: cbx in checkboxes --><li ng-repeat="cbx in checkboxes" class="ng-scope">
+                                    <input type="checkbox" class="cbx ng-pristine ng-untouched ng-valid" id="map109" ng-model="cbx.checked" ng-change="filter.update();">
+                                    <label for="map109" class="ng-binding">Зимняя битва</label>
+                                </li><!-- end ngRepeat: cbx in checkboxes --><li ng-repeat="cbx in checkboxes" class="ng-scope">
+                                    <input type="checkbox" class="cbx ng-pristine ng-untouched ng-valid" id="map118" ng-model="cbx.checked" ng-change="filter.update();">
+                                    <label for="map118" class="ng-binding">Заброшенный стадион</label>
+                                </li><!-- end ngRepeat: cbx in checkboxes -->
+                                </ul>
+                            </div><!-- end ngRepeat: (group, checkboxes) in this.maps.checkboxes --><div ng-repeat="(group, checkboxes) in this.maps.checkboxes" class="ng-scope">
+                                <div class="first-letter ng-binding">К</div>
+                                <ul>
+                                    <!-- ngRepeat: cbx in checkboxes --><li ng-repeat="cbx in checkboxes" class="ng-scope">
+                                    <input type="checkbox" class="cbx ng-pristine ng-untouched ng-valid" id="map1" ng-model="cbx.checked" ng-change="filter.update();">
+                                    <label for="map1" class="ng-binding">Карелия</label>
+                                </li><!-- end ngRepeat: cbx in checkboxes --><li ng-repeat="cbx in checkboxes" class="ng-scope">
+                                    <input type="checkbox" class="cbx ng-pristine ng-untouched ng-valid" id="map15" ng-model="cbx.checked" ng-change="filter.update();">
+                                    <label for="map15" class="ng-binding">Комарин</label>
+                                </li><!-- end ngRepeat: cbx in checkboxes --><li ng-repeat="cbx in checkboxes" class="ng-scope">
+                                    <input type="checkbox" class="cbx ng-pristine ng-untouched ng-valid" id="map217" ng-model="cbx.checked" ng-change="filter.update();">
+                                    <label for="map217" class="ng-binding">Клондайк</label>
+                                </li><!-- end ngRepeat: cbx in checkboxes -->
+                                </ul>
+                            </div><!-- end ngRepeat: (group, checkboxes) in this.maps.checkboxes --><div ng-repeat="(group, checkboxes) in this.maps.checkboxes" class="ng-scope">
+                                <div class="first-letter ng-binding">Л</div>
+                                <ul>
+                                    <!-- ngRepeat: cbx in checkboxes --><li ng-repeat="cbx in checkboxes" class="ng-scope">
+                                    <input type="checkbox" class="cbx ng-pristine ng-untouched ng-valid" id="map7" ng-model="cbx.checked" ng-change="filter.update();">
+                                    <label for="map7" class="ng-binding">Ласвилль</label>
+                                </li><!-- end ngRepeat: cbx in checkboxes --><li ng-repeat="cbx in checkboxes" class="ng-scope">
+                                    <input type="checkbox" class="cbx ng-pristine ng-untouched ng-valid" id="map14" ng-model="cbx.checked" ng-change="filter.update();">
+                                    <label for="map14" class="ng-binding">Л. Зигфрида</label>
+                                </li><!-- end ngRepeat: cbx in checkboxes --><li ng-repeat="cbx in checkboxes" class="ng-scope">
+                                    <input type="checkbox" class="cbx ng-pristine ng-untouched ng-valid" id="map44" ng-model="cbx.checked" ng-change="filter.update();">
+                                    <label for="map44" class="ng-binding">Лайв Окс</label>
+                                </li><!-- end ngRepeat: cbx in checkboxes --><li ng-repeat="cbx in checkboxes" class="ng-scope">
+                                    <input type="checkbox" class="cbx ng-pristine ng-untouched ng-valid" id="map119" ng-model="cbx.checked" ng-change="filter.update();">
+                                    <label for="map119" class="ng-binding">Лунопарк</label>
+                                </li><!-- end ngRepeat: cbx in checkboxes --><li ng-repeat="cbx in checkboxes" class="ng-scope">
+                                    <input type="checkbox" class="cbx ng-pristine ng-untouched ng-valid" id="map208" ng-model="cbx.checked" ng-change="filter.update();">
+                                    <label for="map208" class="ng-binding">Линия фронта</label>
+                                </li><!-- end ngRepeat: cbx in checkboxes -->
+                                </ul>
+                            </div><!-- end ngRepeat: (group, checkboxes) in this.maps.checkboxes --><div ng-repeat="(group, checkboxes) in this.maps.checkboxes" class="ng-scope">
+                                <div class="first-letter ng-binding">М</div>
+                                <ul>
+                                    <!-- ngRepeat: cbx in checkboxes --><li ng-repeat="cbx in checkboxes" class="ng-scope">
+                                    <input type="checkbox" class="cbx ng-pristine ng-untouched ng-valid" id="map2" ng-model="cbx.checked" ng-change="filter.update();">
+                                    <label for="map2" class="ng-binding">Малиновка</label>
+                                </li><!-- end ngRepeat: cbx in checkboxes --><li ng-repeat="cbx in checkboxes" class="ng-scope">
+                                    <input type="checkbox" class="cbx ng-pristine ng-untouched ng-valid" id="map11" ng-model="cbx.checked" ng-change="filter.update();">
+                                    <label for="map11" class="ng-binding">Мурованка</label>
+                                </li><!-- end ngRepeat: cbx in checkboxes --><li ng-repeat="cbx in checkboxes" class="ng-scope">
+                                    <input type="checkbox" class="cbx ng-pristine ng-untouched ng-valid" id="map19" ng-model="cbx.checked" ng-change="filter.update();">
+                                    <label for="map19" class="ng-binding">Монастырь</label>
+                                </li><!-- end ngRepeat: cbx in checkboxes --><li ng-repeat="cbx in checkboxes" class="ng-scope">
+                                    <input type="checkbox" class="cbx ng-pristine ng-untouched ng-valid" id="map90" ng-model="cbx.checked" ng-change="filter.update();">
+                                    <label for="map90" class="ng-binding">Минск</label>
+                                </li><!-- end ngRepeat: cbx in checkboxes --><li ng-repeat="cbx in checkboxes" class="ng-scope">
+                                    <input type="checkbox" class="cbx ng-pristine ng-untouched ng-valid" id="map100" ng-model="cbx.checked" ng-change="filter.update();">
+                                    <label for="map100" class="ng-binding">Миттенгард</label>
+                                </li><!-- end ngRepeat: cbx in checkboxes --><li ng-repeat="cbx in checkboxes" class="ng-scope">
+                                    <input type="checkbox" class="cbx ng-pristine ng-untouched ng-valid" id="map111" ng-model="cbx.checked" ng-change="filter.update();">
+                                    <label for="map111" class="ng-binding">Монте-Роза</label>
+                                </li><!-- end ngRepeat: cbx in checkboxes -->
+                                </ul>
+                            </div><!-- end ngRepeat: (group, checkboxes) in this.maps.checkboxes --><div ng-repeat="(group, checkboxes) in this.maps.checkboxes" class="ng-scope">
+                                <div class="first-letter ng-binding">Н</div>
+                                <ul>
+                                    <!-- ngRepeat: cbx in checkboxes --><li ng-repeat="cbx in checkboxes" class="ng-scope">
+                                    <input type="checkbox" class="cbx ng-pristine ng-untouched ng-valid" id="map122" ng-model="cbx.checked" ng-change="filter.update();">
+                                    <label for="map122" class="ng-binding">Начало эпохи</label>
+                                </li><!-- end ngRepeat: cbx in checkboxes --><li ng-repeat="cbx in checkboxes" class="ng-scope">
+                                    <input type="checkbox" class="cbx ng-pristine ng-untouched ng-valid" id="map212" ng-model="cbx.checked" ng-change="filter.update();">
+                                    <label for="map212" class="ng-binding">Небельбург</label>
+                                </li><!-- end ngRepeat: cbx in checkboxes -->
+                                </ul>
+                            </div><!-- end ngRepeat: (group, checkboxes) in this.maps.checkboxes --><div ng-repeat="(group, checkboxes) in this.maps.checkboxes" class="ng-scope">
+                                <div class="first-letter ng-binding">О</div>
+                                <ul>
+                                    <!-- ngRepeat: cbx in checkboxes --><li ng-repeat="cbx in checkboxes" class="ng-scope">
+                                    <input type="checkbox" class="cbx ng-pristine ng-untouched ng-valid" id="map96" ng-model="cbx.checked" ng-change="filter.update();">
+                                    <label for="map96" class="ng-binding">Огненная дуга</label>
+                                </li><!-- end ngRepeat: cbx in checkboxes --><li ng-repeat="cbx in checkboxes" class="ng-scope">
+                                    <input type="checkbox" class="cbx ng-pristine ng-untouched ng-valid" id="map101" ng-model="cbx.checked" ng-change="filter.update();">
+                                    <label for="map101" class="ng-binding">Оверлорд</label>
+                                </li><!-- end ngRepeat: cbx in checkboxes --><li ng-repeat="cbx in checkboxes" class="ng-scope">
+                                    <input type="checkbox" class="cbx ng-pristine ng-untouched ng-valid" id="map222" ng-model="cbx.checked" ng-change="filter.update();">
+                                    <label for="map222" class="ng-binding">Орловский выступ</label>
+                                </li><!-- end ngRepeat: cbx in checkboxes -->
+                                </ul>
+                            </div><!-- end ngRepeat: (group, checkboxes) in this.maps.checkboxes --><div ng-repeat="(group, checkboxes) in this.maps.checkboxes" class="ng-scope">
+                                <div class="first-letter ng-binding">П</div>
+                                <ul>
+                                    <!-- ngRepeat: cbx in checkboxes --><li ng-repeat="cbx in checkboxes" class="ng-scope">
+                                    <input type="checkbox" class="cbx ng-pristine ng-untouched ng-valid" id="map3" ng-model="cbx.checked" ng-change="filter.update();">
+                                    <label for="map3" class="ng-binding">Провинция</label>
+                                </li><!-- end ngRepeat: cbx in checkboxes --><li ng-repeat="cbx in checkboxes" class="ng-scope">
+                                    <input type="checkbox" class="cbx ng-pristine ng-untouched ng-valid" id="map5" ng-model="cbx.checked" ng-change="filter.update();">
+                                    <label for="map5" class="ng-binding">Прохоровка</label>
+                                </li><!-- end ngRepeat: cbx in checkboxes --><li ng-repeat="cbx in checkboxes" class="ng-scope">
+                                    <input type="checkbox" class="cbx ng-pristine ng-untouched ng-valid" id="map28" ng-model="cbx.checked" ng-change="filter.update();">
+                                    <label for="map28" class="ng-binding">Песчаная река</label>
+                                </li><!-- end ngRepeat: cbx in checkboxes --><li ng-repeat="cbx in checkboxes" class="ng-scope">
+                                    <input type="checkbox" class="cbx ng-pristine ng-untouched ng-valid" id="map37" ng-model="cbx.checked" ng-change="filter.update();">
+                                    <label for="map37" class="ng-binding">Перевал</label>
+                                </li><!-- end ngRepeat: cbx in checkboxes --><li ng-repeat="cbx in checkboxes" class="ng-scope">
+                                    <input type="checkbox" class="cbx ng-pristine ng-untouched ng-valid" id="map42" ng-model="cbx.checked" ng-change="filter.update();">
+                                    <label for="map42" class="ng-binding">Порт</label>
+                                </li><!-- end ngRepeat: cbx in checkboxes --><li ng-repeat="cbx in checkboxes" class="ng-scope">
+                                    <input type="checkbox" class="cbx ng-pristine ng-untouched ng-valid" id="map112" ng-model="cbx.checked" ng-change="filter.update();">
+                                    <label for="map112" class="ng-binding">Париж</label>
+                                </li><!-- end ngRepeat: cbx in checkboxes --><li ng-repeat="cbx in checkboxes" class="ng-scope">
+                                    <input type="checkbox" class="cbx ng-pristine ng-untouched ng-valid" id="map114" ng-model="cbx.checked" ng-change="filter.update();">
+                                    <label for="map114" class="ng-binding">Промзона</label>
+                                </li><!-- end ngRepeat: cbx in checkboxes -->
+                                </ul>
+                            </div><!-- end ngRepeat: (group, checkboxes) in this.maps.checkboxes --><div ng-repeat="(group, checkboxes) in this.maps.checkboxes" class="ng-scope">
+                                <div class="first-letter ng-binding">Р</div>
+                                <ul>
+                                    <!-- ngRepeat: cbx in checkboxes --><li ng-repeat="cbx in checkboxes" class="ng-scope">
+                                    <input type="checkbox" class="cbx ng-pristine ng-untouched ng-valid" id="map8" ng-model="cbx.checked" ng-change="filter.update();">
+                                    <label for="map8" class="ng-binding">Руинберг</label>
+                                </li><!-- end ngRepeat: cbx in checkboxes --><li ng-repeat="cbx in checkboxes" class="ng-scope">
+                                    <input type="checkbox" class="cbx ng-pristine ng-untouched ng-valid" id="map10" ng-model="cbx.checked" ng-change="filter.update();">
+                                    <label for="map10" class="ng-binding">Рудники</label>
+                                </li><!-- end ngRepeat: cbx in checkboxes --><li ng-repeat="cbx in checkboxes" class="ng-scope">
+                                    <input type="checkbox" class="cbx ng-pristine ng-untouched ng-valid" id="map34" ng-model="cbx.checked" ng-change="filter.update();">
+                                    <label for="map34" class="ng-binding">Редшир</label>
+                                </li><!-- end ngRepeat: cbx in checkboxes --><li ng-repeat="cbx in checkboxes" class="ng-scope">
+                                    <input type="checkbox" class="cbx ng-pristine ng-untouched ng-valid" id="map36" ng-model="cbx.checked" ng-change="filter.update();">
+                                    <label for="map36" class="ng-binding">Рыбацкая бухта</label>
+                                </li><!-- end ngRepeat: cbx in checkboxes --><li ng-repeat="cbx in checkboxes" class="ng-scope">
+                                    <input type="checkbox" class="cbx ng-pristine ng-untouched ng-valid" id="map87" ng-model="cbx.checked" ng-change="filter.update();">
+                                    <label for="map87" class="ng-binding">Руинберг в огне</label>
+                                </li><!-- end ngRepeat: cbx in checkboxes -->
+                                </ul>
+                            </div><!-- end ngRepeat: (group, checkboxes) in this.maps.checkboxes --><div ng-repeat="(group, checkboxes) in this.maps.checkboxes" class="ng-scope">
+                                <div class="first-letter ng-binding">С</div>
+                                <ul>
+                                    <!-- ngRepeat: cbx in checkboxes --><li ng-repeat="cbx in checkboxes" class="ng-scope">
+                                    <input type="checkbox" class="cbx ng-pristine ng-untouched ng-valid" id="map35" ng-model="cbx.checked" ng-change="filter.update();">
+                                    <label for="map35" class="ng-binding">Степи</label>
+                                </li><!-- end ngRepeat: cbx in checkboxes --><li ng-repeat="cbx in checkboxes" class="ng-scope">
+                                    <input type="checkbox" class="cbx ng-pristine ng-untouched ng-valid" id="map43" ng-model="cbx.checked" ng-change="filter.update();">
+                                    <label for="map43" class="ng-binding">Северо-Запад</label>
+                                </li><!-- end ngRepeat: cbx in checkboxes --><li ng-repeat="cbx in checkboxes" class="ng-scope">
+                                    <input type="checkbox" class="cbx ng-pristine ng-untouched ng-valid" id="map53" ng-model="cbx.checked" ng-change="filter.update();">
+                                    <label for="map53" class="ng-binding">Скрытая деревня</label>
+                                </li><!-- end ngRepeat: cbx in checkboxes --><li ng-repeat="cbx in checkboxes" class="ng-scope">
+                                    <input type="checkbox" class="cbx ng-pristine ng-untouched ng-valid" id="map73" ng-model="cbx.checked" ng-change="filter.update();">
+                                    <label for="map73" class="ng-binding">Священная долина</label>
+                                </li><!-- end ngRepeat: cbx in checkboxes --><li ng-repeat="cbx in checkboxes" class="ng-scope">
+                                    <input type="checkbox" class="cbx ng-pristine ng-untouched ng-valid" id="map85" ng-model="cbx.checked" ng-change="filter.update();">
+                                    <label for="map85" class="ng-binding">Северогорск</label>
+                                </li><!-- end ngRepeat: cbx in checkboxes --><li ng-repeat="cbx in checkboxes" class="ng-scope">
+                                    <input type="checkbox" class="cbx ng-pristine ng-untouched ng-valid" id="map92" ng-model="cbx.checked" ng-change="filter.update();">
+                                    <label for="map92" class="ng-binding">Сталинград</label>
+                                </li><!-- end ngRepeat: cbx in checkboxes --><li ng-repeat="cbx in checkboxes" class="ng-scope">
+                                    <input type="checkbox" class="cbx ng-pristine ng-untouched ng-valid" id="map99" ng-model="cbx.checked" ng-change="filter.update();">
+                                    <label for="map99" class="ng-binding">Студзянки</label>
+                                </li><!-- end ngRepeat: cbx in checkboxes --><li ng-repeat="cbx in checkboxes" class="ng-scope">
+                                    <input type="checkbox" class="cbx ng-pristine ng-untouched ng-valid" id="map117" ng-model="cbx.checked" ng-change="filter.update();">
+                                    <label for="map117" class="ng-binding">Стад Эйфель</label>
+                                </li><!-- end ngRepeat: cbx in checkboxes --><li ng-repeat="cbx in checkboxes" class="ng-scope">
+                                    <input type="checkbox" class="cbx ng-pristine ng-untouched ng-valid" id="map120" ng-model="cbx.checked" ng-change="filter.update();">
+                                    <label for="map120" class="ng-binding">Стадион им. Яшина</label>
+                                </li><!-- end ngRepeat: cbx in checkboxes -->
+                                </ul>
+                            </div><!-- end ngRepeat: (group, checkboxes) in this.maps.checkboxes --><div ng-repeat="(group, checkboxes) in this.maps.checkboxes" class="ng-scope">
+                                <div class="first-letter ng-binding">Т</div>
+                                <ul>
+                                    <!-- ngRepeat: cbx in checkboxes --><li ng-repeat="cbx in checkboxes" class="ng-scope">
+                                    <input type="checkbox" class="cbx ng-pristine ng-untouched ng-valid" id="map22" ng-model="cbx.checked" ng-change="filter.update();">
+                                    <label for="map22" class="ng-binding">Топь</label>
+                                </li><!-- end ngRepeat: cbx in checkboxes --><li ng-repeat="cbx in checkboxes" class="ng-scope">
+                                    <input type="checkbox" class="cbx ng-pristine ng-untouched ng-valid" id="map47" ng-model="cbx.checked" ng-change="filter.update();">
+                                    <label for="map47" class="ng-binding">Тихий берег</label>
+                                </li><!-- end ngRepeat: cbx in checkboxes --><li ng-repeat="cbx in checkboxes" class="ng-scope">
+                                    <input type="checkbox" class="cbx ng-pristine ng-untouched ng-valid" id="map63" ng-model="cbx.checked" ng-change="filter.update();">
+                                    <label for="map63" class="ng-binding">Тундра</label>
+                                </li><!-- end ngRepeat: cbx in checkboxes --><li ng-repeat="cbx in checkboxes" class="ng-scope">
+                                    <input type="checkbox" class="cbx ng-pristine ng-untouched ng-valid" id="map102" ng-model="cbx.checked" ng-change="filter.update();">
+                                    <label for="map102" class="ng-binding">Танковые гонки</label>
+                                </li><!-- end ngRepeat: cbx in checkboxes --><li ng-repeat="cbx in checkboxes" class="ng-scope">
+                                    <input type="checkbox" class="cbx ng-pristine ng-untouched ng-valid" id="map1212" ng-model="cbx.checked" ng-change="filter.update();">
+                                    <label for="map1212" class="ng-binding">Тёмный фронт</label>
+                                </li><!-- end ngRepeat: cbx in checkboxes -->
+                                </ul>
+                            </div><!-- end ngRepeat: (group, checkboxes) in this.maps.checkboxes --><div ng-repeat="(group, checkboxes) in this.maps.checkboxes" class="ng-scope">
+                                <div class="first-letter ng-binding">У</div>
+                                <ul>
+                                    <!-- ngRepeat: cbx in checkboxes --><li ng-repeat="cbx in checkboxes" class="ng-scope">
+                                    <input type="checkbox" class="cbx ng-pristine ng-untouched ng-valid" id="map17" ng-model="cbx.checked" ng-change="filter.update();">
+                                    <label for="map17" class="ng-binding">Уайдпарк</label>
+                                </li><!-- end ngRepeat: cbx in checkboxes --><li ng-repeat="cbx in checkboxes" class="ng-scope">
+                                    <input type="checkbox" class="cbx ng-pristine ng-untouched ng-valid" id="map18" ng-model="cbx.checked" ng-change="filter.update();">
+                                    <label for="map18" class="ng-binding">Утёс</label>
+                                </li><!-- end ngRepeat: cbx in checkboxes -->
+                                </ul>
+                            </div><!-- end ngRepeat: (group, checkboxes) in this.maps.checkboxes --><div ng-repeat="(group, checkboxes) in this.maps.checkboxes" class="ng-scope">
+                                <div class="first-letter ng-binding">Ф</div>
+                                <ul>
+                                    <!-- ngRepeat: cbx in checkboxes --><li ng-repeat="cbx in checkboxes" class="ng-scope">
+                                    <input type="checkbox" class="cbx ng-pristine ng-untouched ng-valid" id="map33" ng-model="cbx.checked" ng-change="filter.update();">
+                                    <label for="map33" class="ng-binding">Фьорды</label>
+                                </li><!-- end ngRepeat: cbx in checkboxes --><li ng-repeat="cbx in checkboxes" class="ng-scope">
+                                    <input type="checkbox" class="cbx ng-pristine ng-untouched ng-valid" id="map1001" ng-model="cbx.checked" ng-change="filter.update();">
+                                    <label for="map1001" class="ng-binding">Фронтлайн</label>
+                                </li><!-- end ngRepeat: cbx in checkboxes -->
+                                </ul>
+                            </div><!-- end ngRepeat: (group, checkboxes) in this.maps.checkboxes --><div ng-repeat="(group, checkboxes) in this.maps.checkboxes" class="ng-scope">
+                                <div class="first-letter ng-binding">Х</div>
+                                <ul>
+                                    <!-- ngRepeat: cbx in checkboxes --><li ng-repeat="cbx in checkboxes" class="ng-scope">
+                                    <input type="checkbox" class="cbx ng-pristine ng-untouched ng-valid" id="map4" ng-model="cbx.checked" ng-change="filter.update();">
+                                    <label for="map4" class="ng-binding">Химмельсдорф</label>
+                                </li><!-- end ngRepeat: cbx in checkboxes --><li ng-repeat="cbx in checkboxes" class="ng-scope">
+                                    <input type="checkbox" class="cbx ng-pristine ng-untouched ng-valid" id="map45" ng-model="cbx.checked" ng-change="filter.update();">
+                                    <label for="map45" class="ng-binding">Хайвей</label>
+                                </li><!-- end ngRepeat: cbx in checkboxes --><li ng-repeat="cbx in checkboxes" class="ng-scope">
+                                    <input type="checkbox" class="cbx ng-pristine ng-untouched ng-valid" id="map51" ng-model="cbx.checked" ng-change="filter.update();">
+                                    <label for="map51" class="ng-binding">Хребет Дракона</label>
+                                </li><!-- end ngRepeat: cbx in checkboxes --><li ng-repeat="cbx in checkboxes" class="ng-scope">
+                                    <input type="checkbox" class="cbx ng-pristine ng-untouched ng-valid" id="map83" ng-model="cbx.checked" ng-change="filter.update();">
+                                    <label for="map83" class="ng-binding">Харьков</label>
+                                </li><!-- end ngRepeat: cbx in checkboxes --><li ng-repeat="cbx in checkboxes" class="ng-scope">
+                                    <input type="checkbox" class="cbx ng-pristine ng-untouched ng-valid" id="map116" ng-model="cbx.checked" ng-change="filter.update();">
+                                    <label for="map116" class="ng-binding">Химмельштадион</label>
+                                </li><!-- end ngRepeat: cbx in checkboxes -->
+                                </ul>
+                            </div><!-- end ngRepeat: (group, checkboxes) in this.maps.checkboxes --><div ng-repeat="(group, checkboxes) in this.maps.checkboxes" class="ng-scope">
+                                <div class="first-letter ng-binding">Ч</div>
+                                <ul>
+                                    <!-- ngRepeat: cbx in checkboxes --><li ng-repeat="cbx in checkboxes" class="ng-scope">
+                                    <input type="checkbox" class="cbx ng-pristine ng-untouched ng-valid" id="map1099" ng-model="cbx.checked" ng-change="filter.update();">
+                                    <label for="map1099" class="ng-binding">Чемпионат Химмельсдорфа</label>
+                                </li><!-- end ngRepeat: cbx in checkboxes -->
+                                </ul>
+                            </div><!-- end ngRepeat: (group, checkboxes) in this.maps.checkboxes --><div ng-repeat="(group, checkboxes) in this.maps.checkboxes" class="ng-scope">
+                                <div class="first-letter ng-binding">Ш</div>
+                                <ul>
+                                    <!-- ngRepeat: cbx in checkboxes --><li ng-repeat="cbx in checkboxes" class="ng-scope">
+                                    <input type="checkbox" class="cbx ng-pristine ng-untouched ng-valid" id="map115" ng-model="cbx.checked" ng-change="filter.update();">
+                                    <label for="map115" class="ng-binding">Штиль</label>
+                                </li><!-- end ngRepeat: cbx in checkboxes -->
+                                </ul>
+                            </div><!-- end ngRepeat: (group, checkboxes) in this.maps.checkboxes --><div ng-repeat="(group, checkboxes) in this.maps.checkboxes" class="ng-scope">
+                                <div class="first-letter ng-binding">Э</div>
+                                <ul>
+                                    <!-- ngRepeat: cbx in checkboxes --><li ng-repeat="cbx in checkboxes" class="ng-scope">
+                                    <input type="checkbox" class="cbx ng-pristine ng-untouched ng-valid" id="map6" ng-model="cbx.checked" ng-change="filter.update();">
+                                    <label for="map6" class="ng-binding">Энск</label>
+                                </li><!-- end ngRepeat: cbx in checkboxes --><li ng-repeat="cbx in checkboxes" class="ng-scope">
+                                    <input type="checkbox" class="cbx ng-pristine ng-untouched ng-valid" id="map13" ng-model="cbx.checked" ng-change="filter.update();">
+                                    <label for="map13" class="ng-binding">Эрленберг</label>
+                                </li><!-- end ngRepeat: cbx in checkboxes --><li ng-repeat="cbx in checkboxes" class="ng-scope">
+                                    <input type="checkbox" class="cbx ng-pristine ng-untouched ng-valid" id="map29" ng-model="cbx.checked" ng-change="filter.update();">
+                                    <label for="map29" class="ng-binding">Эль-Халлуф</label>
+                                </li><!-- end ngRepeat: cbx in checkboxes -->
+                                </ul>
+                            </div><!-- end ngRepeat: (group, checkboxes) in this.maps.checkboxes --><div ng-repeat="(group, checkboxes) in this.maps.checkboxes" class="ng-scope">
+                                <div class="first-letter ng-binding">Ю</div>
+                                <ul>
+                                    <!-- ngRepeat: cbx in checkboxes --><li ng-repeat="cbx in checkboxes" class="ng-scope">
+                                    <input type="checkbox" class="cbx ng-pristine ng-untouched ng-valid" id="map39" ng-model="cbx.checked" ng-change="filter.update();">
+                                    <label for="map39" class="ng-binding">Южный берег</label>
+                                </li><!-- end ngRepeat: cbx in checkboxes -->
+                                </ul>
+                            </div><!-- end ngRepeat: (group, checkboxes) in this.maps.checkboxes -->
+                            </div>
+                        </div>
+
+                        <div class="t_container" data-ng-class="public.activeSearchTab == 'tab_2' ? 'active' : ''">
+                            <div class="column-content" ng-init="this.medals = (filter.data.medals.checkboxes | orderByMedalType)">
+                                <!--                                <div style="display: none">{{this.medals}}</div>-->
+                                <!-- ngRepeat: group in this.medals | orderBy: 'position' --><div ng-repeat="group in this.medals | orderBy: 'position'" class="groups_medal ng-scope">
+                                <div class="t_title ng-binding">Эпические достижения</div>
+                                <ul>
+                                    <!-- ngRepeat: cbx in group.checkboxes --><li ng-repeat="cbx in group.checkboxes" class="ng-scope">
+                                    <input type="checkbox" class="cbx ng-pristine ng-untouched ng-valid" id="medal50" ng-model="cbx.checked" ng-change="filter.update();">
+                                    <label for="medal50" class="ng-binding">Медаль Орлика</label>
+                                </li><!-- end ngRepeat: cbx in group.checkboxes --><li ng-repeat="cbx in group.checkboxes" class="ng-scope">
+                                    <input type="checkbox" class="cbx ng-pristine ng-untouched ng-valid" id="medal51" ng-model="cbx.checked" ng-change="filter.update();">
+                                    <label for="medal51" class="ng-binding">Медаль Оськина</label>
+                                </li><!-- end ngRepeat: cbx in group.checkboxes --><li ng-repeat="cbx in group.checkboxes" class="ng-scope">
+                                    <input type="checkbox" class="cbx ng-pristine ng-untouched ng-valid" id="medal52" ng-model="cbx.checked" ng-change="filter.update();">
+                                    <label for="medal52" class="ng-binding">Медаль Халонена</label>
+                                </li><!-- end ngRepeat: cbx in group.checkboxes --><li ng-repeat="cbx in group.checkboxes" class="ng-scope">
+                                    <input type="checkbox" class="cbx ng-pristine ng-untouched ng-valid" id="medal53" ng-model="cbx.checked" ng-change="filter.update();">
+                                    <label for="medal53" class="ng-binding">Медаль Бурды</label>
+                                </li><!-- end ngRepeat: cbx in group.checkboxes --><li ng-repeat="cbx in group.checkboxes" class="ng-scope">
+                                    <input type="checkbox" class="cbx ng-pristine ng-untouched ng-valid" id="medal54" ng-model="cbx.checked" ng-change="filter.update();">
+                                    <label for="medal54" class="ng-binding">Медаль Бийота</label>
+                                </li><!-- end ngRepeat: cbx in group.checkboxes --><li ng-repeat="cbx in group.checkboxes" class="ng-scope">
+                                    <input type="checkbox" class="cbx ng-pristine ng-untouched ng-valid" id="medal55" ng-model="cbx.checked" ng-change="filter.update();">
+                                    <label for="medal55" class="ng-binding">Медаль Колобанова</label>
+                                </li><!-- end ngRepeat: cbx in group.checkboxes --><li ng-repeat="cbx in group.checkboxes" class="ng-scope">
+                                    <input type="checkbox" class="cbx ng-pristine ng-untouched ng-valid" id="medal56" ng-model="cbx.checked" ng-change="filter.update();">
+                                    <label for="medal56" class="ng-binding">Медаль Фадина</label>
+                                </li><!-- end ngRepeat: cbx in group.checkboxes --><li ng-repeat="cbx in group.checkboxes" class="ng-scope">
+                                    <input type="checkbox" class="cbx ng-pristine ng-untouched ng-valid" id="medal73" ng-model="cbx.checked" ng-change="filter.update();">
+                                    <label for="medal73" class="ng-binding">Медаль Рэдли-Уолтерса</label>
+                                </li><!-- end ngRepeat: cbx in group.checkboxes --><li ng-repeat="cbx in group.checkboxes" class="ng-scope">
+                                    <input type="checkbox" class="cbx ng-pristine ng-untouched ng-valid" id="medal74" ng-model="cbx.checked" ng-change="filter.update();">
+                                    <label for="medal74" class="ng-binding">Медаль Пула</label>
+                                </li><!-- end ngRepeat: cbx in group.checkboxes --><li ng-repeat="cbx in group.checkboxes" class="ng-scope">
+                                    <input type="checkbox" class="cbx ng-pristine ng-untouched ng-valid" id="medal75" ng-model="cbx.checked" ng-change="filter.update();">
+                                    <label for="medal75" class="ng-binding">Медаль Бруно</label>
+                                </li><!-- end ngRepeat: cbx in group.checkboxes --><li ng-repeat="cbx in group.checkboxes" class="ng-scope">
+                                    <input type="checkbox" class="cbx ng-pristine ng-untouched ng-valid" id="medal76" ng-model="cbx.checked" ng-change="filter.update();">
+                                    <label for="medal76" class="ng-binding">Медаль Тарцая</label>
+                                </li><!-- end ngRepeat: cbx in group.checkboxes --><li ng-repeat="cbx in group.checkboxes" class="ng-scope">
+                                    <input type="checkbox" class="cbx ng-pristine ng-untouched ng-valid" id="medal77" ng-model="cbx.checked" ng-change="filter.update();">
+                                    <label for="medal77" class="ng-binding">Медаль Паскуччи</label>
+                                </li><!-- end ngRepeat: cbx in group.checkboxes --><li ng-repeat="cbx in group.checkboxes" class="ng-scope">
+                                    <input type="checkbox" class="cbx ng-pristine ng-untouched ng-valid" id="medal78" ng-model="cbx.checked" ng-change="filter.update();">
+                                    <label for="medal78" class="ng-binding">Медаль Думитру</label>
+                                </li><!-- end ngRepeat: cbx in group.checkboxes --><li ng-repeat="cbx in group.checkboxes" class="ng-scope">
+                                    <input type="checkbox" class="cbx ng-pristine ng-untouched ng-valid" id="medal106" ng-model="cbx.checked" ng-change="filter.update();">
+                                    <label for="medal106" class="ng-binding">Медаль Лехвеслайхо</label>
+                                </li><!-- end ngRepeat: cbx in group.checkboxes --><li ng-repeat="cbx in group.checkboxes" class="ng-scope">
+                                    <input type="checkbox" class="cbx ng-pristine ng-untouched ng-valid" id="medal107" ng-model="cbx.checked" ng-change="filter.update();">
+                                    <label for="medal107" class="ng-binding">Медаль Николса</label>
+                                </li><!-- end ngRepeat: cbx in group.checkboxes --><li ng-repeat="cbx in group.checkboxes" class="ng-scope">
+                                    <input type="checkbox" class="cbx ng-pristine ng-untouched ng-valid" id="medal110" ng-model="cbx.checked" ng-change="filter.update();">
+                                    <label for="medal110" class="ng-binding">Медаль героев Расейняя</label>
+                                </li><!-- end ngRepeat: cbx in group.checkboxes --><li ng-repeat="cbx in group.checkboxes" class="ng-scope">
+                                    <input type="checkbox" class="cbx ng-pristine ng-untouched ng-valid" id="medal145" ng-model="cbx.checked" ng-change="filter.update();">
+                                    <label for="medal145" class="ng-binding">Медаль де Ланглада</label>
+                                </li><!-- end ngRepeat: cbx in group.checkboxes --><li ng-repeat="cbx in group.checkboxes" class="ng-scope">
+                                    <input type="checkbox" class="cbx ng-pristine ng-untouched ng-valid" id="medal146" ng-model="cbx.checked" ng-change="filter.update();">
+                                    <label for="medal146" class="ng-binding">Медаль Йошио Тамада</label>
+                                </li><!-- end ngRepeat: cbx in group.checkboxes --><li ng-repeat="cbx in group.checkboxes" class="ng-scope">
+                                    <input type="checkbox" class="cbx ng-pristine ng-untouched ng-valid" id="medal148" ng-model="cbx.checked" ng-change="filter.update();">
+                                    <label for="medal148" class="ng-binding">Медаль Найдина</label>
+                                </li><!-- end ngRepeat: cbx in group.checkboxes --><li ng-repeat="cbx in group.checkboxes" class="ng-scope">
+                                    <input type="checkbox" class="cbx ng-pristine ng-untouched ng-valid" id="medal305" ng-model="cbx.checked" ng-change="filter.update();">
+                                    <label for="medal305" class="ng-binding">Медаль «Поле боя: Арденнская операция 1944 года»</label>
+                                </li><!-- end ngRepeat: cbx in group.checkboxes --><li ng-repeat="cbx in group.checkboxes" class="ng-scope">
+                                    <input type="checkbox" class="cbx ng-pristine ng-untouched ng-valid" id="medal301" ng-model="cbx.checked" ng-change="filter.update();">
+                                    <label for="medal301" class="ng-binding">Медаль «Поле боя: бои у озера Балатон»</label>
+                                </li><!-- end ngRepeat: cbx in group.checkboxes --><li ng-repeat="cbx in group.checkboxes" class="ng-scope">
+                                    <input type="checkbox" class="cbx ng-pristine ng-untouched ng-valid" id="medal303" ng-model="cbx.checked" ng-change="filter.update();">
+                                    <label for="medal303" class="ng-binding">Медаль «Поле боя: битва на Курской дуге»</label>
+                                </li><!-- end ngRepeat: cbx in group.checkboxes --><li ng-repeat="cbx in group.checkboxes" class="ng-scope">
+                                    <input type="checkbox" class="cbx ng-pristine ng-untouched ng-valid" id="medal298" ng-model="cbx.checked" ng-change="filter.update();">
+                                    <label for="medal298" class="ng-binding">Медаль Гора</label>
+                                </li><!-- end ngRepeat: cbx in group.checkboxes --><li ng-repeat="cbx in group.checkboxes" class="ng-scope">
+                                    <input type="checkbox" class="cbx ng-pristine ng-untouched ng-valid" id="medal300" ng-model="cbx.checked" ng-change="filter.update();">
+                                    <label for="medal300" class="ng-binding">Медаль Старка</label>
+                                </li><!-- end ngRepeat: cbx in group.checkboxes -->
+                                </ul>
+                            </div><!-- end ngRepeat: group in this.medals | orderBy: 'position' --><div ng-repeat="group in this.medals | orderBy: 'position'" class="groups_medal ng-scope">
+                                <div class="t_title ng-binding">Герой битвы</div>
+                                <ul>
+                                    <!-- ngRepeat: cbx in group.checkboxes --><li ng-repeat="cbx in group.checkboxes" class="ng-scope">
+                                    <input type="checkbox" class="cbx ng-pristine ng-untouched ng-valid" id="medal34" ng-model="cbx.checked" ng-change="filter.update();">
+                                    <label for="medal34" class="ng-binding">Воин</label>
+                                </li><!-- end ngRepeat: cbx in group.checkboxes --><li ng-repeat="cbx in group.checkboxes" class="ng-scope">
+                                    <input type="checkbox" class="cbx ng-pristine ng-untouched ng-valid" id="medal35" ng-model="cbx.checked" ng-change="filter.update();">
+                                    <label for="medal35" class="ng-binding">Захватчик</label>
+                                </li><!-- end ngRepeat: cbx in group.checkboxes --><li ng-repeat="cbx in group.checkboxes" class="ng-scope">
+                                    <input type="checkbox" class="cbx ng-pristine ng-untouched ng-valid" id="medal37" ng-model="cbx.checked" ng-change="filter.update();">
+                                    <label for="medal37" class="ng-binding">Защитник</label>
+                                </li><!-- end ngRepeat: cbx in group.checkboxes --><li ng-repeat="cbx in group.checkboxes" class="ng-scope">
+                                    <input type="checkbox" class="cbx ng-pristine ng-untouched ng-valid" id="medal38" ng-model="cbx.checked" ng-change="filter.update();">
+                                    <label for="medal38" class="ng-binding">Стальная стена</label>
+                                </li><!-- end ngRepeat: cbx in group.checkboxes --><li ng-repeat="cbx in group.checkboxes" class="ng-scope">
+                                    <input type="checkbox" class="cbx ng-pristine ng-untouched ng-valid" id="medal39" ng-model="cbx.checked" ng-change="filter.update();">
+                                    <label for="medal39" class="ng-binding">Поддержка</label>
+                                </li><!-- end ngRepeat: cbx in group.checkboxes --><li ng-repeat="cbx in group.checkboxes" class="ng-scope">
+                                    <input type="checkbox" class="cbx ng-pristine ng-untouched ng-valid" id="medal40" ng-model="cbx.checked" ng-change="filter.update();">
+                                    <label for="medal40" class="ng-binding">Разведчик</label>
+                                </li><!-- end ngRepeat: cbx in group.checkboxes --><li ng-repeat="cbx in group.checkboxes" class="ng-scope">
+                                    <input type="checkbox" class="cbx ng-pristine ng-untouched ng-valid" id="medal72" ng-model="cbx.checked" ng-change="filter.update();">
+                                    <label for="medal72" class="ng-binding">Дозорный</label>
+                                </li><!-- end ngRepeat: cbx in group.checkboxes --><li ng-repeat="cbx in group.checkboxes" class="ng-scope">
+                                    <input type="checkbox" class="cbx ng-pristine ng-untouched ng-valid" id="medal227" ng-model="cbx.checked" ng-change="filter.update();">
+                                    <label for="medal227" class="ng-binding">Танкист-снайпер</label>
+                                </li><!-- end ngRepeat: cbx in group.checkboxes --><li ng-repeat="cbx in group.checkboxes" class="ng-scope">
+                                    <input type="checkbox" class="cbx ng-pristine ng-untouched ng-valid" id="medal228" ng-model="cbx.checked" ng-change="filter.update();">
+                                    <label for="medal228" class="ng-binding">Основной калибр</label>
+                                </li><!-- end ngRepeat: cbx in group.checkboxes --><li ng-repeat="cbx in group.checkboxes" class="ng-scope">
+                                    <input type="checkbox" class="cbx ng-pristine ng-untouched ng-valid" id="medal232" ng-model="cbx.checked" ng-change="filter.update();">
+                                    <label for="medal232" class="ng-binding">Отличник боевой подготовки</label>
+                                </li><!-- end ngRepeat: cbx in group.checkboxes --><li ng-repeat="cbx in group.checkboxes" class="ng-scope">
+                                    <input type="checkbox" class="cbx ng-pristine ng-untouched ng-valid" id="medal230" ng-model="cbx.checked" ng-change="filter.update();">
+                                    <label for="medal230" class="ng-binding">За отличную стрельбу</label>
+                                </li><!-- end ngRepeat: cbx in group.checkboxes -->
+                                </ul>
+                            </div><!-- end ngRepeat: group in this.medals | orderBy: 'position' --><div ng-repeat="group in this.medals | orderBy: 'position'" class="groups_medal ng-scope">
+                                <div class="t_title ng-binding">Групповые достижения</div>
+                                <ul>
+                                    <!-- ngRepeat: cbx in group.checkboxes --><li ng-repeat="cbx in group.checkboxes" class="ng-scope">
+                                    <input type="checkbox" class="cbx ng-pristine ng-untouched ng-valid" id="medal143" ng-model="cbx.checked" ng-change="filter.update();">
+                                    <label for="medal143" class="ng-binding">Братья по оружию</label>
+                                </li><!-- end ngRepeat: cbx in group.checkboxes --><li ng-repeat="cbx in group.checkboxes" class="ng-scope">
+                                    <input type="checkbox" class="cbx ng-pristine ng-untouched ng-valid" id="medal144" ng-model="cbx.checked" ng-change="filter.update();">
+                                    <label for="medal144" class="ng-binding">Решающий вклад</label>
+                                </li><!-- end ngRepeat: cbx in group.checkboxes --><li ng-repeat="cbx in group.checkboxes" class="ng-scope">
+                                    <input type="checkbox" class="cbx ng-pristine ng-untouched ng-valid" id="medal236" ng-model="cbx.checked" ng-change="filter.update();">
+                                    <label for="medal236" class="ng-binding">Бронетанковый кулак</label>
+                                </li><!-- end ngRepeat: cbx in group.checkboxes -->
+                                </ul>
+                            </div><!-- end ngRepeat: group in this.medals | orderBy: 'position' --><div ng-repeat="group in this.medals | orderBy: 'position'" class="groups_medal ng-scope">
+                                <div class="t_title ng-binding">Почётные звания</div>
+                                <ul>
+                                    <!-- ngRepeat: cbx in group.checkboxes --><li ng-repeat="cbx in group.checkboxes" class="ng-scope">
+                                    <input type="checkbox" class="cbx ng-pristine ng-untouched ng-valid" id="medal61" ng-model="cbx.checked" ng-change="filter.update();">
+                                    <label for="medal61" class="ng-binding">Рейдер</label>
+                                </li><!-- end ngRepeat: cbx in group.checkboxes --><li ng-repeat="cbx in group.checkboxes" class="ng-scope">
+                                    <input type="checkbox" class="cbx ng-pristine ng-untouched ng-valid" id="medal62" ng-model="cbx.checked" ng-change="filter.update();">
+                                    <label for="medal62" class="ng-binding">Коса смерти</label>
+                                </li><!-- end ngRepeat: cbx in group.checkboxes --><li ng-repeat="cbx in group.checkboxes" class="ng-scope">
+                                    <input type="checkbox" class="cbx ng-pristine ng-untouched ng-valid" id="medal64" ng-model="cbx.checked" ng-change="filter.update();">
+                                    <label for="medal64" class="ng-binding">Камикадзе</label>
+                                </li><!-- end ngRepeat: cbx in group.checkboxes --><li ng-repeat="cbx in group.checkboxes" class="ng-scope">
+                                    <input type="checkbox" class="cbx ng-pristine ng-untouched ng-valid" id="medal147" ng-model="cbx.checked" ng-change="filter.update();">
+                                    <label for="medal147" class="ng-binding">Бомбардир</label>
+                                </li><!-- end ngRepeat: cbx in group.checkboxes --><li ng-repeat="cbx in group.checkboxes" class="ng-scope">
+                                    <input type="checkbox" class="cbx ng-pristine ng-untouched ng-valid" id="medal237" ng-model="cbx.checked" ng-change="filter.update();">
+                                    <label for="medal237" class="ng-binding">Тактик</label>
+                                </li><!-- end ngRepeat: cbx in group.checkboxes --><li ng-repeat="cbx in group.checkboxes" class="ng-scope">
+                                    <input type="checkbox" class="cbx ng-pristine ng-untouched ng-valid" id="medal306" ng-model="cbx.checked" ng-change="filter.update();">
+                                    <label for="medal306" class="ng-binding">Уроки истории: Арденнская операция 1944 года</label>
+                                </li><!-- end ngRepeat: cbx in group.checkboxes --><li ng-repeat="cbx in group.checkboxes" class="ng-scope">
+                                    <input type="checkbox" class="cbx ng-pristine ng-untouched ng-valid" id="medal302" ng-model="cbx.checked" ng-change="filter.update();">
+                                    <label for="medal302" class="ng-binding">Уроки истории: бои у озера Балатон</label>
+                                </li><!-- end ngRepeat: cbx in group.checkboxes --><li ng-repeat="cbx in group.checkboxes" class="ng-scope">
+                                    <input type="checkbox" class="cbx ng-pristine ng-untouched ng-valid" id="medal304" ng-model="cbx.checked" ng-change="filter.update();">
+                                    <label for="medal304" class="ng-binding">Уроки истории: битва на Курской дуге</label>
+                                </li><!-- end ngRepeat: cbx in group.checkboxes --><li ng-repeat="cbx in group.checkboxes" class="ng-scope">
+                                    <input type="checkbox" class="cbx ng-pristine ng-untouched ng-valid" id="medal297" ng-model="cbx.checked" ng-change="filter.update();">
+                                    <label for="medal297" class="ng-binding">За контрбатарейную стрельбу</label>
+                                </li><!-- end ngRepeat: cbx in group.checkboxes --><li ng-repeat="cbx in group.checkboxes" class="ng-scope">
+                                    <input type="checkbox" class="cbx ng-pristine ng-untouched ng-valid" id="medal299" ng-model="cbx.checked" ng-change="filter.update();">
+                                    <label for="medal299" class="ng-binding">Хладнокровный</label>
+                                </li><!-- end ngRepeat: cbx in group.checkboxes --><li ng-repeat="cbx in group.checkboxes" class="ng-scope">
+                                    <input type="checkbox" class="cbx ng-pristine ng-untouched ng-valid" id="medal289" ng-model="cbx.checked" ng-change="filter.update();">
+                                    <label for="medal289" class="ng-binding">За волю к победе</label>
+                                </li><!-- end ngRepeat: cbx in group.checkboxes --><li ng-repeat="cbx in group.checkboxes" class="ng-scope">
+                                    <input type="checkbox" class="cbx ng-pristine ng-untouched ng-valid" id="medal523" ng-model="cbx.checked" ng-change="filter.update();">
+                                    <label for="medal523" class="ng-binding">Дуэлянт</label>
+                                </li><!-- end ngRepeat: cbx in group.checkboxes --><li ng-repeat="cbx in group.checkboxes" class="ng-scope">
+                                    <input type="checkbox" class="cbx ng-pristine ng-untouched ng-valid" id="medal522" ng-model="cbx.checked" ng-change="filter.update();">
+                                    <label for="medal522" class="ng-binding">Боец</label>
+                                </li><!-- end ngRepeat: cbx in group.checkboxes --><li ng-repeat="cbx in group.checkboxes" class="ng-scope">
+                                    <input type="checkbox" class="cbx ng-pristine ng-untouched ng-valid" id="medal517" ng-model="cbx.checked" ng-change="filter.update();">
+                                    <label for="medal517" class="ng-binding">Непробиваемый</label>
+                                </li><!-- end ngRepeat: cbx in group.checkboxes --><li ng-repeat="cbx in group.checkboxes" class="ng-scope">
+                                    <input type="checkbox" class="cbx ng-pristine ng-untouched ng-valid" id="medal521" ng-model="cbx.checked" ng-change="filter.update();">
+                                    <label for="medal521" class="ng-binding">Огонь на поражение</label>
+                                </li><!-- end ngRepeat: cbx in group.checkboxes --><li ng-repeat="cbx in group.checkboxes" class="ng-scope">
+                                    <input type="checkbox" class="cbx ng-pristine ng-untouched ng-valid" id="medal529" ng-model="cbx.checked" ng-change="filter.update();">
+                                    <label for="medal529" class="ng-binding">«Целеуказатель»</label>
+                                </li><!-- end ngRepeat: cbx in group.checkboxes -->
+                                </ul>
+                            </div><!-- end ngRepeat: group in this.medals | orderBy: 'position' --><div ng-repeat="group in this.medals | orderBy: 'position'" class="groups_medal ng-scope">
+                                <div class="t_title ng-binding">Памятные знаки</div>
+                                <ul>
+                                    <!-- ngRepeat: cbx in group.checkboxes --><li ng-repeat="cbx in group.checkboxes" class="ng-scope">
+                                    <input type="checkbox" class="cbx ng-pristine ng-untouched ng-valid" id="medal150" ng-model="cbx.checked" ng-change="filter.update();">
+                                    <label for="medal150" class="ng-binding">Спартанец</label>
+                                </li><!-- end ngRepeat: cbx in group.checkboxes --><li ng-repeat="cbx in group.checkboxes" class="ng-scope">
+                                    <input type="checkbox" class="cbx ng-pristine ng-untouched ng-valid" id="medal151" ng-model="cbx.checked" ng-change="filter.update();">
+                                    <label for="medal151" class="ng-binding">Невозмутимый</label>
+                                </li><!-- end ngRepeat: cbx in group.checkboxes --><li ng-repeat="cbx in group.checkboxes" class="ng-scope">
+                                    <input type="checkbox" class="cbx ng-pristine ng-untouched ng-valid" id="medal152" ng-model="cbx.checked" ng-change="filter.update();">
+                                    <label for="medal152" class="ng-binding">Счастливчик</label>
+                                </li><!-- end ngRepeat: cbx in group.checkboxes --><li ng-repeat="cbx in group.checkboxes" class="ng-scope">
+                                    <input type="checkbox" class="cbx ng-pristine ng-untouched ng-valid" id="medal233" ng-model="cbx.checked" ng-change="filter.update();">
+                                    <label for="medal233" class="ng-binding">Царь горы</label>
+                                </li><!-- end ngRepeat: cbx in group.checkboxes --><li ng-repeat="cbx in group.checkboxes" class="ng-scope">
+                                    <input type="checkbox" class="cbx ng-pristine ng-untouched ng-valid" id="medal286" ng-model="cbx.checked" ng-change="filter.update();">
+                                    <label for="medal286" class="ng-binding">Бог войны</label>
+                                </li><!-- end ngRepeat: cbx in group.checkboxes --><li ng-repeat="cbx in group.checkboxes" class="ng-scope">
+                                    <input type="checkbox" class="cbx ng-pristine ng-untouched ng-valid" id="medal296" ng-model="cbx.checked" ng-change="filter.update();">
+                                    <label for="medal296" class="ng-binding">Монолит</label>
+                                </li><!-- end ngRepeat: cbx in group.checkboxes --><li ng-repeat="cbx in group.checkboxes" class="ng-scope">
+                                    <input type="checkbox" class="cbx ng-pristine ng-untouched ng-valid" id="medal479" ng-model="cbx.checked" ng-change="filter.update();">
+                                    <label for="medal479" class="ng-binding">Бой до последнего</label>
+                                </li><!-- end ngRepeat: cbx in group.checkboxes --><li ng-repeat="cbx in group.checkboxes" class="ng-scope">
+                                    <input type="checkbox" class="cbx ng-pristine ng-untouched ng-valid" id="medal525" ng-model="cbx.checked" ng-change="filter.update();">
+                                    <label for="medal525" class="ng-binding">Поджигатель</label>
+                                </li><!-- end ngRepeat: cbx in group.checkboxes --><li ng-repeat="cbx in group.checkboxes" class="ng-scope">
+                                    <input type="checkbox" class="cbx ng-pristine ng-untouched ng-valid" id="medal526" ng-model="cbx.checked" ng-change="filter.update();">
+                                    <label for="medal526" class="ng-binding">Костолом</label>
+                                </li><!-- end ngRepeat: cbx in group.checkboxes --><li ng-repeat="cbx in group.checkboxes" class="ng-scope">
+                                    <input type="checkbox" class="cbx ng-pristine ng-untouched ng-valid" id="medal527" ng-model="cbx.checked" ng-change="filter.update();">
+                                    <label for="medal527" class="ng-binding">Заговорённый</label>
+                                </li><!-- end ngRepeat: cbx in group.checkboxes --><li ng-repeat="cbx in group.checkboxes" class="ng-scope">
+                                    <input type="checkbox" class="cbx ng-pristine ng-untouched ng-valid" id="medal524" ng-model="cbx.checked" ng-change="filter.update();">
+                                    <label for="medal524" class="ng-binding">Взрывотехник</label>
+                                </li><!-- end ngRepeat: cbx in group.checkboxes --><li ng-repeat="cbx in group.checkboxes" class="ng-scope">
+                                    <input type="checkbox" class="cbx ng-pristine ng-untouched ng-valid" id="medal528" ng-model="cbx.checked" ng-change="filter.update();">
+                                    <label for="medal528" class="ng-binding">В расчёте!</label>
+                                </li><!-- end ngRepeat: cbx in group.checkboxes --><li ng-repeat="cbx in group.checkboxes" class="ng-scope">
+                                    <input type="checkbox" class="cbx ng-pristine ng-untouched ng-valid" id="medal536" ng-model="cbx.checked" ng-change="filter.update();">
+                                    <label for="medal536" class="ng-binding">«Первая заслуга»</label>
+                                </li><!-- end ngRepeat: cbx in group.checkboxes --><li ng-repeat="cbx in group.checkboxes" class="ng-scope">
+                                    <input type="checkbox" class="cbx ng-pristine ng-untouched ng-valid" id="medal588" ng-model="cbx.checked" ng-change="filter.update();">
+                                    <label for="medal588" class="ng-binding">Операция «Зима»</label>
+                                </li><!-- end ngRepeat: cbx in group.checkboxes --><li ng-repeat="cbx in group.checkboxes" class="ng-scope">
+                                    <input type="checkbox" class="cbx ng-pristine ng-untouched ng-valid" id="medal589" ng-model="cbx.checked" ng-change="filter.update();">
+                                    <label for="medal589" class="ng-binding">«Тактическое преимущество»</label>
+                                </li><!-- end ngRepeat: cbx in group.checkboxes --><li ng-repeat="cbx in group.checkboxes" class="ng-scope">
+                                    <input type="checkbox" class="cbx ng-pristine ng-untouched ng-valid" id="medal591" ng-model="cbx.checked" ng-change="filter.update();">
+                                    <label for="medal591" class="ng-binding">«Тактическое мастерство»</label>
+                                </li><!-- end ngRepeat: cbx in group.checkboxes --><li ng-repeat="cbx in group.checkboxes" class="ng-scope">
+                                    <input type="checkbox" class="cbx ng-pristine ng-untouched ng-valid" id="medal592" ng-model="cbx.checked" ng-change="filter.update();">
+                                    <label for="medal592" class="ng-binding">«Секретные операции»</label>
+                                </li><!-- end ngRepeat: cbx in group.checkboxes --><li ng-repeat="cbx in group.checkboxes" class="ng-scope">
+                                    <input type="checkbox" class="cbx ng-pristine ng-untouched ng-valid" id="medal599" ng-model="cbx.checked" ng-change="filter.update();">
+                                    <label for="medal599" class="ng-binding">«Артиллерист-испытатель 80 уровня»</label>
+                                </li><!-- end ngRepeat: cbx in group.checkboxes -->
+                                </ul>
+                            </div><!-- end ngRepeat: group in this.medals | orderBy: 'position' -->
+                            </div>
+                        </div>
+
+                        <div class="t_container" data-ng-class="public.activeSearchTab == 'tab_3' ? 'active' : ''">
+
+                            <div ng-click="filter.search.selectedField = 1" class="searchTextFieldDiv">
+                                <div style="width: 20px; position: absolute; margin-left: -30px;margin-top:35px;"><input type="radio" name="player" ng-value="1" ng-model="filter.search.selectedField" ng-ckecked="filter.search.selectedField==1" class="ng-pristine ng-untouched ng-valid" value="1"></div>
+                                <div class="t_title">По игроку</div>
+                                <div class="m_search-container search-player">
+                                    <input name="playerField" class="m_search ng-pristine ng-untouched ng-valid" type="text" ng-model="filter.search.player.query" data-ng-class="filter.search.player.loading ? 'waiting' : ''" ng-change="changeUserSearchInput('player', ['ru'])" data-ng-model-options="{debounce:300}" placeholder="введите имя игрока">
+                                    <div data-ng-show="result.length &amp;&amp; model.length" id="nick-autocomplite-player" class="m_search-dropdown ng-isolate-scope ng-hide" data-model="filter.search.player.query" data-result="filter.search.player.results" data-click-fn="[filter.setTextParam, 'player']" data-path="nickname"><!-- ngRepeat: a in result --></div>
+                                </div>
+                            </div>
+
+                            <div ng-click="filter.search.selectedField = 2" class="searchTextFieldDiv">
+                                <div style="width: 20px; position: absolute; margin-left: -30px;margin-top:35px;"><input type="radio" name="player" ng-value="2" ng-model="filter.search.selectedField" ng-ckecked="filter.search.selectedField==2" class="ng-pristine ng-untouched ng-valid" value="2"></div>
+                                <div class="t_title">По участнику боя</div>
+                                <div style="display: none" class="ng-binding">{"query":null,"results":null}</div>
+                                <div class="m_search-container search-members">
+                                    <input name="membersField" class="m_search ng-pristine ng-untouched ng-valid" type="text" data-ng-model="filter.search.members.query" data-ng-class="filter.search.members.loading ? 'waiting' : ''" data-ng-change="changeUserSearchInput('members', ['ru'])" data-ng-model-options="{debounce:300}" placeholder="введите имя игрока">
+                                    <div data-ng-show="result.length &amp;&amp; model.length" id="nick-autocomplite-members" class="m_search-dropdown ng-isolate-scope ng-hide" data-model="filter.search.members.query" data-result="filter.search.members.results" data-click-fn="[filter.setTextParam, 'members']" data-path="nickname"><!-- ngRepeat: a in result --></div>
+                                </div>
+                            </div>
+
+                            <div ng-click="filter.search.selectedField = 3" class="searchTextFieldDiv">
+                                <div style="width: 20px; position: absolute; margin-left: -30px;margin-top:35px;"><input type="radio" name="player" ng-value="3" ng-model="filter.search.selectedField" ng-ckecked="filter.search.selectedField==3" class="ng-pristine ng-untouched ng-valid" value="3"></div>
+                                <div class="t_title">По клану</div>
+                                <div style="display: none" class="ng-binding">{"query":null,"results":null}</div>
+                                <div class="m_search-container search-clan">
+                                    <input name="clanField" class="m_search ng-pristine ng-untouched ng-valid" type="text" ng-model="filter.search.clan.query" data-ng-class="filter.search.clan.loading ? 'waiting' : ''" ng-change="changeUserSearchInput('clan')" data-ng-model-options="{debounce:300}" placeholder="введите название клана">
+                                    <div data-ng-show="result.length &amp;&amp; model.length" id="nick-autocomplite-clan" class="m_search-dropdown ng-isolate-scope ng-hide" data-model="filter.search.clan.query" data-result="filter.search.clan.results" data-click-fn="[filter.setTextParam, 'clan']"><!-- ngRepeat: a in result --></div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="t_container" data-ng-class="public.activeSearchTab == 'tab_4' ? 'active' : ''">
+                            <div class="tf_filters">
+                                <div class="t_title ng-binding">Тип боя</div>
+                                <ul class="two-column">
+                                    <!-- ngRepeat: cbx in filter.data.battle_type.checkboxes --><li ng-repeat="cbx in filter.data.battle_type.checkboxes" class="ng-scope">
+                                    <input type="checkbox" class="cbx ng-pristine ng-untouched ng-valid" id="battle_type1" ng-model="cbx.checked" ng-change="filter.update();">
+                                    <label for="battle_type1" class="ng-binding">Случайный бой</label>
+                                </li><!-- end ngRepeat: cbx in filter.data.battle_type.checkboxes --><li ng-repeat="cbx in filter.data.battle_type.checkboxes" class="ng-scope">
+                                    <input type="checkbox" class="cbx ng-pristine ng-untouched ng-valid" id="battle_type2" ng-model="cbx.checked" ng-change="filter.update();">
+                                    <label for="battle_type2" class="ng-binding">Тренировка</label>
+                                </li><!-- end ngRepeat: cbx in filter.data.battle_type.checkboxes --><li ng-repeat="cbx in filter.data.battle_type.checkboxes" class="ng-scope">
+                                    <input type="checkbox" class="cbx ng-pristine ng-untouched ng-valid" id="battle_type3" ng-model="cbx.checked" ng-change="filter.update();">
+                                    <label for="battle_type3" class="ng-binding">Ротный бой</label>
+                                </li><!-- end ngRepeat: cbx in filter.data.battle_type.checkboxes --><li ng-repeat="cbx in filter.data.battle_type.checkboxes" class="ng-scope">
+                                    <input type="checkbox" class="cbx ng-pristine ng-untouched ng-valid" id="battle_type6" ng-model="cbx.checked" ng-change="filter.update();">
+                                    <label for="battle_type6" class="ng-binding">Боевое обучение</label>
+                                </li><!-- end ngRepeat: cbx in filter.data.battle_type.checkboxes --><li ng-repeat="cbx in filter.data.battle_type.checkboxes" class="ng-scope">
+                                    <input type="checkbox" class="cbx ng-pristine ng-untouched ng-valid" id="battle_type7" ng-model="cbx.checked" ng-change="filter.update();">
+                                    <label for="battle_type7" class="ng-binding">Командный бой</label>
+                                </li><!-- end ngRepeat: cbx in filter.data.battle_type.checkboxes --><li ng-repeat="cbx in filter.data.battle_type.checkboxes" class="ng-scope">
+                                    <input type="checkbox" class="cbx ng-pristine ng-untouched ng-valid" id="battle_type8" ng-model="cbx.checked" ng-change="filter.update();">
+                                    <label for="battle_type8" class="ng-binding">Исторические бои</label>
+                                </li><!-- end ngRepeat: cbx in filter.data.battle_type.checkboxes --><li ng-repeat="cbx in filter.data.battle_type.checkboxes" class="ng-scope">
+                                    <input type="checkbox" class="cbx ng-pristine ng-untouched ng-valid" id="battle_type9" ng-model="cbx.checked" ng-change="filter.update();">
+                                    <label for="battle_type9" class="ng-binding">Танковый футбол</label>
+                                </li><!-- end ngRepeat: cbx in filter.data.battle_type.checkboxes --><li ng-repeat="cbx in filter.data.battle_type.checkboxes" class="ng-scope">
+                                    <input type="checkbox" class="cbx ng-pristine ng-untouched ng-valid" id="battle_type10" ng-model="cbx.checked" ng-change="filter.update();">
+                                    <label for="battle_type10" class="ng-binding">Вылазка</label>
+                                </li><!-- end ngRepeat: cbx in filter.data.battle_type.checkboxes --><li ng-repeat="cbx in filter.data.battle_type.checkboxes" class="ng-scope">
+                                    <input type="checkbox" class="cbx ng-pristine ng-untouched ng-valid" id="battle_type11" ng-model="cbx.checked" ng-change="filter.update();">
+                                    <label for="battle_type11" class="ng-binding">Битва за Укрепрайон</label>
+                                </li><!-- end ngRepeat: cbx in filter.data.battle_type.checkboxes --><li ng-repeat="cbx in filter.data.battle_type.checkboxes" class="ng-scope">
+                                    <input type="checkbox" class="cbx ng-pristine ng-untouched ng-valid" id="battle_type12" ng-model="cbx.checked" ng-change="filter.update();">
+                                    <label for="battle_type12" class="ng-binding">Ладдер</label>
+                                </li><!-- end ngRepeat: cbx in filter.data.battle_type.checkboxes --><li ng-repeat="cbx in filter.data.battle_type.checkboxes" class="ng-scope">
+                                    <input type="checkbox" class="cbx ng-pristine ng-untouched ng-valid" id="battle_type1009" ng-model="cbx.checked" ng-change="filter.update();">
+                                    <label for="battle_type1009" class="ng-binding">Бой до последнего</label>
+                                </li><!-- end ngRepeat: cbx in filter.data.battle_type.checkboxes --><li ng-repeat="cbx in filter.data.battle_type.checkboxes" class="ng-scope">
+                                    <input type="checkbox" class="cbx ng-pristine ng-untouched ng-valid" id="battle_type22" ng-model="cbx.checked" ng-change="filter.update();">
+                                    <label for="battle_type22" class="ng-binding">Ранговый бой</label>
+                                </li><!-- end ngRepeat: cbx in filter.data.battle_type.checkboxes --><li ng-repeat="cbx in filter.data.battle_type.checkboxes" class="ng-scope">
+                                    <input type="checkbox" class="cbx ng-pristine ng-untouched ng-valid" id="battle_type24" ng-model="cbx.checked" ng-change="filter.update();">
+                                    <label for="battle_type24" class="ng-binding">Генеральное сражение</label>
+                                </li><!-- end ngRepeat: cbx in filter.data.battle_type.checkboxes --><li ng-repeat="cbx in filter.data.battle_type.checkboxes" class="ng-scope">
+                                    <input type="checkbox" class="cbx ng-pristine ng-untouched ng-valid" id="battle_type27" ng-model="cbx.checked" ng-change="filter.update();">
+                                    <label for="battle_type27" class="ng-binding">Линия фронта</label>
+                                </li><!-- end ngRepeat: cbx in filter.data.battle_type.checkboxes --><li ng-repeat="cbx in filter.data.battle_type.checkboxes" class="ng-scope">
+                                    <input type="checkbox" class="cbx ng-pristine ng-untouched ng-valid" id="battle_type1001" ng-model="cbx.checked" ng-change="filter.update();">
+                                    <label for="battle_type1001" class="ng-binding">Бои против ИИ</label>
+                                </li><!-- end ngRepeat: cbx in filter.data.battle_type.checkboxes --><li ng-repeat="cbx in filter.data.battle_type.checkboxes" class="ng-scope">
+                                    <input type="checkbox" class="cbx ng-pristine ng-untouched ng-valid" id="battle_type4-14" ng-model="cbx.checked" ng-change="filter.update();">
+                                    <label for="battle_type4-14" class="ng-binding">Турнир</label>
+                                </li><!-- end ngRepeat: cbx in filter.data.battle_type.checkboxes --><li ng-repeat="cbx in filter.data.battle_type.checkboxes" class="ng-scope">
+                                    <input type="checkbox" class="cbx ng-pristine ng-untouched ng-valid" id="battle_type5-13" ng-model="cbx.checked" ng-change="filter.update();">
+                                    <label for="battle_type5-13" class="ng-binding">ГК</label>
+                                </li><!-- end ngRepeat: cbx in filter.data.battle_type.checkboxes --><li ng-repeat="cbx in filter.data.battle_type.checkboxes" class="ng-scope">
+                                    <input type="checkbox" class="cbx ng-pristine ng-untouched ng-valid" id="battle_type16-17" ng-model="cbx.checked" ng-change="filter.update();">
+                                    <label for="battle_type16-17" class="ng-binding">Учебный бой</label>
+                                </li><!-- end ngRepeat: cbx in filter.data.battle_type.checkboxes -->
+                                </ul>
+                            </div>
+
+                            <div class="tf_filters">
+                                <div class="t_title ng-binding">Респ</div>
+                                <ul>
+                                    <!-- ngRepeat: cbx in filter.data.respawn.checkboxes --><li ng-repeat="cbx in filter.data.respawn.checkboxes" class="ng-scope">
+                                    <input type="checkbox" class="cbx ng-pristine ng-untouched ng-valid" id="resp1" ng-model="cbx.checked" ng-change="filter.update();">
+                                    <label for="resp1" class="ng-binding">1</label>
+                                </li><!-- end ngRepeat: cbx in filter.data.respawn.checkboxes --><li ng-repeat="cbx in filter.data.respawn.checkboxes" class="ng-scope">
+                                    <input type="checkbox" class="cbx ng-pristine ng-untouched ng-valid" id="resp2" ng-model="cbx.checked" ng-change="filter.update();">
+                                    <label for="resp2" class="ng-binding">2</label>
+                                </li><!-- end ngRepeat: cbx in filter.data.respawn.checkboxes -->
+                                </ul>
+                            </div>
+
+                            <div class="tf_filters">
+                                <div class="t_title ng-binding">Знак классности</div>
+                                <ul>
+                                    <!-- ngRepeat: cbx in filter.data.ace.checkboxes --><li ng-repeat="cbx in filter.data.ace.checkboxes" class="ng-scope">
+                                    <input type="checkbox" class="cbx ng-pristine ng-untouched ng-valid" id="ace1" ng-model="cbx.checked" ng-change="filter.update();">
+                                    <label for="ace1" class="ng-binding">Мастер</label>
+                                </li><!-- end ngRepeat: cbx in filter.data.ace.checkboxes -->
+                                </ul>
+                                <br><br>
+                                <div class="t_title ng-binding">Популярные</div>
+                                <ul>
+                                    <!-- ngRepeat: cbx in filter.data.popular.checkboxes --><li ng-repeat="cbx in filter.data.popular.checkboxes" class="ng-scope">
+                                    <input type="checkbox" class="cbx ng-pristine ng-untouched ng-valid" id="popular1" ng-model="cbx.checked" ng-change="filter.update();">
+                                    <label for="popular1" class="ng-binding">За неделю</label>
+                                </li><!-- end ngRepeat: cbx in filter.data.popular.checkboxes -->
+                                    <!-- ngRepeat: cbx in filter.data.epicbattle.checkboxes --><li ng-repeat="cbx in filter.data.epicbattle.checkboxes" ng-hide="true" class="ng-scope ng-hide">
+                                    <input type="checkbox" class="cbx ng-pristine ng-untouched ng-valid" id="epicbattle1" ng-model="cbx.checked" ng-change="filter.update();">
+                                    <label for="epicbattle1" class="ng-binding">epic battle</label>
+                                </li><!-- end ngRepeat: cbx in filter.data.epicbattle.checkboxes -->
+                                    <!-- ngRepeat: cbx in filter.data.ironleague.checkboxes -->
+                                    <!-- ngRepeat: cbx in filter.data.progamer.checkboxes -->
+                                </ul>
+                            </div>
+
+
+
+                            <!--<div class="tf_filters">
+                                <div class="t_title">Знак классности</div>
+                                <ul>
+                                    <li>
+                                        <input type="checkbox" class="cbx" id="mastery" ng-checked="routing.compilation.link == 'aceTanker'" ng-click="routing.compilation.change('aceTanker')"/>
+                                        <label for="mastery">Мастер</label>
+                                    </li>
+                                </ul>
+                            </div>-->
+
+                        </div>
+
+                    </div>
+
+                    <div class="tabs-bottom">
+                        <div class="clearfix">
+
+                            <div class="version-filter">
+                                Сортировка:
+                                <div class="version-select sort-select expanded" style="width: 135px;">
+
+                                    <div class="vs_label">
+                                        <span class="ng-binding">дате</span>
+                                    </div>
+
+                                    <div class="vs_slider">
+                                        <div class="frame">
+                                            <ul class="slider">
+                                                <!-- ngRepeat: (key, title) in filter.sort --><li ng-repeat="(key, title) in filter.sort" ng-click="filter.selected.sort = {type: key, direction: true}; filter.update();" class="ng-scope">
+                                                <label class="ng-binding">ассисту</label>
+                                            </li><!-- end ngRepeat: (key, title) in filter.sort --><li ng-repeat="(key, title) in filter.sort" ng-click="filter.selected.sort = {type: key, direction: true}; filter.update();" class="ng-scope">
+                                                <label class="ng-binding">заблокированному урону</label>
+                                            </li><!-- end ngRepeat: (key, title) in filter.sort --><li ng-repeat="(key, title) in filter.sort" ng-click="filter.selected.sort = {type: key, direction: true}; filter.update();" class="ng-scope">
+                                                <label class="ng-binding">кредитам</label>
+                                            </li><!-- end ngRepeat: (key, title) in filter.sort --><li ng-repeat="(key, title) in filter.sort" ng-click="filter.selected.sort = {type: key, direction: true}; filter.update();" class="ng-scope">
+                                                <label class="ng-binding">скачиваниям</label>
+                                            </li><!-- end ngRepeat: (key, title) in filter.sort --><li ng-repeat="(key, title) in filter.sort" ng-click="filter.selected.sort = {type: key, direction: true}; filter.update();" class="ng-scope">
+                                                <label class="ng-binding">фрагам</label>
+                                            </li><!-- end ngRepeat: (key, title) in filter.sort --><li ng-repeat="(key, title) in filter.sort" ng-click="filter.selected.sort = {type: key, direction: true}; filter.update();" class="ng-scope">
+                                                <label class="ng-binding">урону</label>
+                                            </li><!-- end ngRepeat: (key, title) in filter.sort --><li ng-repeat="(key, title) in filter.sort" ng-click="filter.selected.sort = {type: key, direction: true}; filter.update();" class="ng-scope">
+                                                <label class="ng-binding">дате</label>
+                                            </li><!-- end ngRepeat: (key, title) in filter.sort --><li ng-repeat="(key, title) in filter.sort" ng-click="filter.selected.sort = {type: key, direction: true}; filter.update();" class="ng-scope">
+                                                <label class="ng-binding">опыту</label>
+                                            </li><!-- end ngRepeat: (key, title) in filter.sort -->
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="version-filter ng-binding">
+                                Версии:
+                                <div class="version-select expanded">
+
+                                    <div class="vs_label">
+                                        <!-- ngIf: filter.areAllSelected(filter.data.version) -->
+
+                                        <!-- ngIf: !filter.areAllSelected(filter.data.version) --><span ng-if="!filter.areAllSelected(filter.data.version)" class="ng-scope">
+                                            <!-- ngRepeat: cbx in filter.getChecked(filter.data.version) -->
+                                        </span><!-- end ngIf: !filter.areAllSelected(filter.data.version) -->
+                                    </div>
+
+                                    <div id="vs_slider" class="vs_slider">
+                                        <div class="frame">
+                                            <ul class="slider">
+                                                <li>
+                                                    <input type="checkbox">
+                                                    <label ng-click="$event.stopPropagation(); filter.select.all(filter.data.version, (filter.areAllSelected(filter.data.version) ? 'deselect' : 'select'));" class="ng-binding">
+                                                        Выбрать все
+                                                    </label>
+                                                </li>
+                                                <!-- ngRepeat: cbx in filter.data.version.checkboxes --><li ng-repeat="cbx in filter.data.version.checkboxes" class="ng-scope">
+                                                <input type="checkbox" id="version75" ng-model="cbx.checked" ng-change="filter.update();" class="ng-pristine ng-untouched ng-valid">
+                                                <label for="version75" class="ng-binding">1.4.1</label>
+                                            </li><!-- end ngRepeat: cbx in filter.data.version.checkboxes --><li ng-repeat="cbx in filter.data.version.checkboxes" class="ng-scope">
+                                                <input type="checkbox" id="version74" ng-model="cbx.checked" ng-change="filter.update();" class="ng-pristine ng-untouched ng-valid">
+                                                <label for="version74" class="ng-binding">1.4.0</label>
+                                            </li><!-- end ngRepeat: cbx in filter.data.version.checkboxes --><li ng-repeat="cbx in filter.data.version.checkboxes" class="ng-scope">
+                                                <input type="checkbox" id="version73" ng-model="cbx.checked" ng-change="filter.update();" class="ng-pristine ng-untouched ng-valid">
+                                                <label for="version73" class="ng-binding">1.3.0.1</label>
+                                            </li><!-- end ngRepeat: cbx in filter.data.version.checkboxes --><li ng-repeat="cbx in filter.data.version.checkboxes" class="ng-scope">
+                                                <input type="checkbox" id="version71" ng-model="cbx.checked" ng-change="filter.update();" class="ng-pristine ng-untouched ng-valid">
+                                                <label for="version71" class="ng-binding">1.3.0</label>
+                                            </li><!-- end ngRepeat: cbx in filter.data.version.checkboxes --><li ng-repeat="cbx in filter.data.version.checkboxes" class="ng-scope">
+                                                <input type="checkbox" id="version72" ng-model="cbx.checked" ng-change="filter.update();" class="ng-pristine ng-untouched ng-valid">
+                                                <label for="version72" class="ng-binding">1.2.0.2</label>
+                                            </li><!-- end ngRepeat: cbx in filter.data.version.checkboxes --><li ng-repeat="cbx in filter.data.version.checkboxes" class="ng-scope">
+                                                <input type="checkbox" id="version70" ng-model="cbx.checked" ng-change="filter.update();" class="ng-pristine ng-untouched ng-valid">
+                                                <label for="version70" class="ng-binding">1.2.0.1</label>
+                                            </li><!-- end ngRepeat: cbx in filter.data.version.checkboxes --><li ng-repeat="cbx in filter.data.version.checkboxes" class="ng-scope">
+                                                <input type="checkbox" id="version69" ng-model="cbx.checked" ng-change="filter.update();" class="ng-pristine ng-untouched ng-valid">
+                                                <label for="version69" class="ng-binding">1.2.0</label>
+                                            </li><!-- end ngRepeat: cbx in filter.data.version.checkboxes --><li ng-repeat="cbx in filter.data.version.checkboxes" class="ng-scope">
+                                                <input type="checkbox" id="version68" ng-model="cbx.checked" ng-change="filter.update();" class="ng-pristine ng-untouched ng-valid">
+                                                <label for="version68" class="ng-binding">1.1.0</label>
+                                            </li><!-- end ngRepeat: cbx in filter.data.version.checkboxes --><li ng-repeat="cbx in filter.data.version.checkboxes" class="ng-scope">
+                                                <input type="checkbox" id="version64" ng-model="cbx.checked" ng-change="filter.update();" class="ng-pristine ng-untouched ng-valid">
+                                                <label for="version64" class="ng-binding">1.0.2</label>
+                                            </li><!-- end ngRepeat: cbx in filter.data.version.checkboxes --><li ng-repeat="cbx in filter.data.version.checkboxes" class="ng-scope">
+                                                <input type="checkbox" id="version67" ng-model="cbx.checked" ng-change="filter.update();" class="ng-pristine ng-untouched ng-valid">
+                                                <label for="version67" class="ng-binding">1.0.2.3</label>
+                                            </li><!-- end ngRepeat: cbx in filter.data.version.checkboxes --><li ng-repeat="cbx in filter.data.version.checkboxes" class="ng-scope">
+                                                <input type="checkbox" id="version66" ng-model="cbx.checked" ng-change="filter.update();" class="ng-pristine ng-untouched ng-valid">
+                                                <label for="version66" class="ng-binding">1.0.2.2</label>
+                                            </li><!-- end ngRepeat: cbx in filter.data.version.checkboxes --><li ng-repeat="cbx in filter.data.version.checkboxes" class="ng-scope">
+                                                <input type="checkbox" id="version65" ng-model="cbx.checked" ng-change="filter.update();" class="ng-pristine ng-untouched ng-valid">
+                                                <label for="version65" class="ng-binding">1.0.2.1</label>
+                                            </li><!-- end ngRepeat: cbx in filter.data.version.checkboxes --><li ng-repeat="cbx in filter.data.version.checkboxes" class="ng-scope">
+                                                <input type="checkbox" id="version63" ng-model="cbx.checked" ng-change="filter.update();" class="ng-pristine ng-untouched ng-valid">
+                                                <label for="version63" class="ng-binding">1.0.1.1</label>
+                                            </li><!-- end ngRepeat: cbx in filter.data.version.checkboxes --><li ng-repeat="cbx in filter.data.version.checkboxes" class="ng-scope">
+                                                <input type="checkbox" id="version62" ng-model="cbx.checked" ng-change="filter.update();" class="ng-pristine ng-untouched ng-valid">
+                                                <label for="version62" class="ng-binding">1.0.1</label>
+                                            </li><!-- end ngRepeat: cbx in filter.data.version.checkboxes --><li ng-repeat="cbx in filter.data.version.checkboxes" class="ng-scope">
+                                                <input type="checkbox" id="version61" ng-model="cbx.checked" ng-change="filter.update();" class="ng-pristine ng-untouched ng-valid">
+                                                <label for="version61" class="ng-binding">1.0.0.3</label>
+                                            </li><!-- end ngRepeat: cbx in filter.data.version.checkboxes --><li ng-repeat="cbx in filter.data.version.checkboxes" class="ng-scope">
+                                                <input type="checkbox" id="version60" ng-model="cbx.checked" ng-change="filter.update();" class="ng-pristine ng-untouched ng-valid">
+                                                <label for="version60" class="ng-binding">1.0.0.2</label>
+                                            </li><!-- end ngRepeat: cbx in filter.data.version.checkboxes --><li ng-repeat="cbx in filter.data.version.checkboxes" class="ng-scope">
+                                                <input type="checkbox" id="version59" ng-model="cbx.checked" ng-change="filter.update();" class="ng-pristine ng-untouched ng-valid">
+                                                <label for="version59" class="ng-binding">1.0.0.1</label>
+                                            </li><!-- end ngRepeat: cbx in filter.data.version.checkboxes --><li ng-repeat="cbx in filter.data.version.checkboxes" class="ng-scope">
+                                                <input type="checkbox" id="version58" ng-model="cbx.checked" ng-change="filter.update();" class="ng-pristine ng-untouched ng-valid">
+                                                <label for="version58" class="ng-binding">1.0.0</label>
+                                            </li><!-- end ngRepeat: cbx in filter.data.version.checkboxes --><li ng-repeat="cbx in filter.data.version.checkboxes" class="ng-scope">
+                                                <input type="checkbox" id="version56" ng-model="cbx.checked" ng-change="filter.update();" class="ng-pristine ng-untouched ng-valid">
+                                                <label for="version56" class="ng-binding">0.9.22</label>
+                                            </li><!-- end ngRepeat: cbx in filter.data.version.checkboxes --><li ng-repeat="cbx in filter.data.version.checkboxes" class="ng-scope">
+                                                <input type="checkbox" id="version55" ng-model="cbx.checked" ng-change="filter.update();" class="ng-pristine ng-untouched ng-valid">
+                                                <label for="version55" class="ng-binding">0.9.21</label>
+                                            </li><!-- end ngRepeat: cbx in filter.data.version.checkboxes --><li ng-repeat="cbx in filter.data.version.checkboxes" class="ng-scope">
+                                                <input type="checkbox" id="version54" ng-model="cbx.checked" ng-change="filter.update();" class="ng-pristine ng-untouched ng-valid">
+                                                <label for="version54" class="ng-binding">0.9.20.1</label>
+                                            </li><!-- end ngRepeat: cbx in filter.data.version.checkboxes --><li ng-repeat="cbx in filter.data.version.checkboxes" class="ng-scope">
+                                                <input type="checkbox" id="version53" ng-model="cbx.checked" ng-change="filter.update();" class="ng-pristine ng-untouched ng-valid">
+                                                <label for="version53" class="ng-binding">0.9.20</label>
+                                            </li><!-- end ngRepeat: cbx in filter.data.version.checkboxes --><li ng-repeat="cbx in filter.data.version.checkboxes" class="ng-scope">
+                                                <input type="checkbox" id="version52" ng-model="cbx.checked" ng-change="filter.update();" class="ng-pristine ng-untouched ng-valid">
+                                                <label for="version52" class="ng-binding">0.9.19.1</label>
+                                            </li><!-- end ngRepeat: cbx in filter.data.version.checkboxes --><li ng-repeat="cbx in filter.data.version.checkboxes" class="ng-scope">
+                                                <input type="checkbox" id="version51" ng-model="cbx.checked" ng-change="filter.update();" class="ng-pristine ng-untouched ng-valid">
+                                                <label for="version51" class="ng-binding">0.9.19</label>
+                                            </li><!-- end ngRepeat: cbx in filter.data.version.checkboxes --><li ng-repeat="cbx in filter.data.version.checkboxes" class="ng-scope">
+                                                <input type="checkbox" id="version50" ng-model="cbx.checked" ng-change="filter.update();" class="ng-pristine ng-untouched ng-valid">
+                                                <label for="version50" class="ng-binding">0.9.18</label>
+                                            </li><!-- end ngRepeat: cbx in filter.data.version.checkboxes --><li ng-repeat="cbx in filter.data.version.checkboxes" class="ng-scope">
+                                                <input type="checkbox" id="version49" ng-model="cbx.checked" ng-change="filter.update();" class="ng-pristine ng-untouched ng-valid">
+                                                <label for="version49" class="ng-binding">0.9.17.1</label>
+                                            </li><!-- end ngRepeat: cbx in filter.data.version.checkboxes --><li ng-repeat="cbx in filter.data.version.checkboxes" class="ng-scope">
+                                                <input type="checkbox" id="version48" ng-model="cbx.checked" ng-change="filter.update();" class="ng-pristine ng-untouched ng-valid">
+                                                <label for="version48" class="ng-binding">0.9.17</label>
+                                            </li><!-- end ngRepeat: cbx in filter.data.version.checkboxes --><li ng-repeat="cbx in filter.data.version.checkboxes" class="ng-scope">
+                                                <input type="checkbox" id="version45" ng-model="cbx.checked" ng-change="filter.update();" class="ng-pristine ng-untouched ng-valid">
+                                                <label for="version45" class="ng-binding">0.9.16</label>
+                                            </li><!-- end ngRepeat: cbx in filter.data.version.checkboxes --><li ng-repeat="cbx in filter.data.version.checkboxes" class="ng-scope">
+                                                <input type="checkbox" id="version46" ng-model="cbx.checked" ng-change="filter.update();" class="ng-pristine ng-untouched ng-valid">
+                                                <label for="version46" class="ng-binding">0.9.15.2</label>
+                                            </li><!-- end ngRepeat: cbx in filter.data.version.checkboxes --><li ng-repeat="cbx in filter.data.version.checkboxes" class="ng-scope">
+                                                <input type="checkbox" id="version44" ng-model="cbx.checked" ng-change="filter.update();" class="ng-pristine ng-untouched ng-valid">
+                                                <label for="version44" class="ng-binding">0.9.15.1</label>
+                                            </li><!-- end ngRepeat: cbx in filter.data.version.checkboxes --><li ng-repeat="cbx in filter.data.version.checkboxes" class="ng-scope">
+                                                <input type="checkbox" id="version43" ng-model="cbx.checked" ng-change="filter.update();" class="ng-pristine ng-untouched ng-valid">
+                                                <label for="version43" class="ng-binding">0.9.15</label>
+                                            </li><!-- end ngRepeat: cbx in filter.data.version.checkboxes --><li ng-repeat="cbx in filter.data.version.checkboxes" class="ng-scope">
+                                                <input type="checkbox" id="version42" ng-model="cbx.checked" ng-change="filter.update();" class="ng-pristine ng-untouched ng-valid">
+                                                <label for="version42" class="ng-binding">0.9.14</label>
+                                            </li><!-- end ngRepeat: cbx in filter.data.version.checkboxes --><li ng-repeat="cbx in filter.data.version.checkboxes" class="ng-scope">
+                                                <input type="checkbox" id="version41" ng-model="cbx.checked" ng-change="filter.update();" class="ng-pristine ng-untouched ng-valid">
+                                                <label for="version41" class="ng-binding">0.9.13</label>
+                                            </li><!-- end ngRepeat: cbx in filter.data.version.checkboxes --><li ng-repeat="cbx in filter.data.version.checkboxes" class="ng-scope">
+                                                <input type="checkbox" id="version40" ng-model="cbx.checked" ng-change="filter.update();" class="ng-pristine ng-untouched ng-valid">
+                                                <label for="version40" class="ng-binding">0.9.12</label>
+                                            </li><!-- end ngRepeat: cbx in filter.data.version.checkboxes --><li ng-repeat="cbx in filter.data.version.checkboxes" class="ng-scope">
+                                                <input type="checkbox" id="version38" ng-model="cbx.checked" ng-change="filter.update();" class="ng-pristine ng-untouched ng-valid">
+                                                <label for="version38" class="ng-binding">0.9.10</label>
+                                            </li><!-- end ngRepeat: cbx in filter.data.version.checkboxes --><li ng-repeat="cbx in filter.data.version.checkboxes" class="ng-scope">
+                                                <input type="checkbox" id="version22" ng-model="cbx.checked" ng-change="filter.update();" class="ng-pristine ng-untouched ng-valid">
+                                                <label for="version22" class="ng-binding">0.9.9</label>
+                                            </li><!-- end ngRepeat: cbx in filter.data.version.checkboxes --><li ng-repeat="cbx in filter.data.version.checkboxes" class="ng-scope">
+                                                <input type="checkbox" id="version37" ng-model="cbx.checked" ng-change="filter.update();" class="ng-pristine ng-untouched ng-valid">
+                                                <label for="version37" class="ng-binding">0.9.8</label>
+                                            </li><!-- end ngRepeat: cbx in filter.data.version.checkboxes --><li ng-repeat="cbx in filter.data.version.checkboxes" class="ng-scope">
+                                                <input type="checkbox" id="version36" ng-model="cbx.checked" ng-change="filter.update();" class="ng-pristine ng-untouched ng-valid">
+                                                <label for="version36" class="ng-binding">0.9.7</label>
+                                            </li><!-- end ngRepeat: cbx in filter.data.version.checkboxes --><li ng-repeat="cbx in filter.data.version.checkboxes" class="ng-scope">
+                                                <input type="checkbox" id="version35" ng-model="cbx.checked" ng-change="filter.update();" class="ng-pristine ng-untouched ng-valid">
+                                                <label for="version35" class="ng-binding">0.9.6</label>
+                                            </li><!-- end ngRepeat: cbx in filter.data.version.checkboxes --><li ng-repeat="cbx in filter.data.version.checkboxes" class="ng-scope">
+                                                <input type="checkbox" id="version34" ng-model="cbx.checked" ng-change="filter.update();" class="ng-pristine ng-untouched ng-valid">
+                                                <label for="version34" class="ng-binding">0.9.5</label>
+                                            </li><!-- end ngRepeat: cbx in filter.data.version.checkboxes --><li ng-repeat="cbx in filter.data.version.checkboxes" class="ng-scope">
+                                                <input type="checkbox" id="version33" ng-model="cbx.checked" ng-change="filter.update();" class="ng-pristine ng-untouched ng-valid">
+                                                <label for="version33" class="ng-binding">0.9.4</label>
+                                            </li><!-- end ngRepeat: cbx in filter.data.version.checkboxes --><li ng-repeat="cbx in filter.data.version.checkboxes" class="ng-scope">
+                                                <input type="checkbox" id="version31" ng-model="cbx.checked" ng-change="filter.update();" class="ng-pristine ng-untouched ng-valid">
+                                                <label for="version31" class="ng-binding">0.9.3</label>
+                                            </li><!-- end ngRepeat: cbx in filter.data.version.checkboxes --><li ng-repeat="cbx in filter.data.version.checkboxes" class="ng-scope">
+                                                <input type="checkbox" id="version30" ng-model="cbx.checked" ng-change="filter.update();" class="ng-pristine ng-untouched ng-valid">
+                                                <label for="version30" class="ng-binding">0.9.2</label>
+                                            </li><!-- end ngRepeat: cbx in filter.data.version.checkboxes --><li ng-repeat="cbx in filter.data.version.checkboxes" class="ng-scope">
+                                                <input type="checkbox" id="version29" ng-model="cbx.checked" ng-change="filter.update();" class="ng-pristine ng-untouched ng-valid">
+                                                <label for="version29" class="ng-binding">0.9.1</label>
+                                            </li><!-- end ngRepeat: cbx in filter.data.version.checkboxes --><li ng-repeat="cbx in filter.data.version.checkboxes" class="ng-scope">
+                                                <input type="checkbox" id="version28" ng-model="cbx.checked" ng-change="filter.update();" class="ng-pristine ng-untouched ng-valid">
+                                                <label for="version28" class="ng-binding">0.9.0</label>
+                                            </li><!-- end ngRepeat: cbx in filter.data.version.checkboxes --><li ng-repeat="cbx in filter.data.version.checkboxes" class="ng-scope">
+                                                <input type="checkbox" id="version27" ng-model="cbx.checked" ng-change="filter.update();" class="ng-pristine ng-untouched ng-valid">
+                                                <label for="version27" class="ng-binding">0.8.11</label>
+                                            </li><!-- end ngRepeat: cbx in filter.data.version.checkboxes --><li ng-repeat="cbx in filter.data.version.checkboxes" class="ng-scope">
+                                                <input type="checkbox" id="version26" ng-model="cbx.checked" ng-change="filter.update();" class="ng-pristine ng-untouched ng-valid">
+                                                <label for="version26" class="ng-binding">0.8.10</label>
+                                            </li><!-- end ngRepeat: cbx in filter.data.version.checkboxes --><li ng-repeat="cbx in filter.data.version.checkboxes" class="ng-scope">
+                                                <input type="checkbox" id="version25" ng-model="cbx.checked" ng-change="filter.update();" class="ng-pristine ng-untouched ng-valid">
+                                                <label for="version25" class="ng-binding">0.8.9</label>
+                                            </li><!-- end ngRepeat: cbx in filter.data.version.checkboxes --><li ng-repeat="cbx in filter.data.version.checkboxes" class="ng-scope">
+                                                <input type="checkbox" id="version24" ng-model="cbx.checked" ng-change="filter.update();" class="ng-pristine ng-untouched ng-valid">
+                                                <label for="version24" class="ng-binding">0.8.8</label>
+                                            </li><!-- end ngRepeat: cbx in filter.data.version.checkboxes --><li ng-repeat="cbx in filter.data.version.checkboxes" class="ng-scope">
+                                                <input type="checkbox" id="version23" ng-model="cbx.checked" ng-change="filter.update();" class="ng-pristine ng-untouched ng-valid">
+                                                <label for="version23" class="ng-binding">0.8.7</label>
+                                            </li><!-- end ngRepeat: cbx in filter.data.version.checkboxes --><li ng-repeat="cbx in filter.data.version.checkboxes" class="ng-scope">
+                                                <input type="checkbox" id="version21" ng-model="cbx.checked" ng-change="filter.update();" class="ng-pristine ng-untouched ng-valid">
+                                                <label for="version21" class="ng-binding">0.8.6</label>
+                                            </li><!-- end ngRepeat: cbx in filter.data.version.checkboxes --><li ng-repeat="cbx in filter.data.version.checkboxes" class="ng-scope">
+                                                <input type="checkbox" id="version19" ng-model="cbx.checked" ng-change="filter.update();" class="ng-pristine ng-untouched ng-valid">
+                                                <label for="version19" class="ng-binding">0.8.5</label>
+                                            </li><!-- end ngRepeat: cbx in filter.data.version.checkboxes --><li ng-repeat="cbx in filter.data.version.checkboxes" class="ng-scope">
+                                                <input type="checkbox" id="version17" ng-model="cbx.checked" ng-change="filter.update();" class="ng-pristine ng-untouched ng-valid">
+                                                <label for="version17" class="ng-binding">0.8.4</label>
+                                            </li><!-- end ngRepeat: cbx in filter.data.version.checkboxes --><li ng-repeat="cbx in filter.data.version.checkboxes" class="ng-scope">
+                                                <input type="checkbox" id="version16" ng-model="cbx.checked" ng-change="filter.update();" class="ng-pristine ng-untouched ng-valid">
+                                                <label for="version16" class="ng-binding">0.8.3</label>
+                                            </li><!-- end ngRepeat: cbx in filter.data.version.checkboxes --><li ng-repeat="cbx in filter.data.version.checkboxes" class="ng-scope">
+                                                <input type="checkbox" id="version14" ng-model="cbx.checked" ng-change="filter.update();" class="ng-pristine ng-untouched ng-valid">
+                                                <label for="version14" class="ng-binding">0.8.2</label>
+                                            </li><!-- end ngRepeat: cbx in filter.data.version.checkboxes --><li ng-repeat="cbx in filter.data.version.checkboxes" class="ng-scope">
+                                                <input type="checkbox" id="version13" ng-model="cbx.checked" ng-change="filter.update();" class="ng-pristine ng-untouched ng-valid">
+                                                <label for="version13" class="ng-binding">0.8.1</label>
+                                            </li><!-- end ngRepeat: cbx in filter.data.version.checkboxes --><li ng-repeat="cbx in filter.data.version.checkboxes" class="ng-scope">
+                                                <input type="checkbox" id="version7" ng-model="cbx.checked" ng-change="filter.update();" class="ng-pristine ng-untouched ng-valid">
+                                                <label for="version7" class="ng-binding">0.8.0</label>
+                                            </li><!-- end ngRepeat: cbx in filter.data.version.checkboxes --><li ng-repeat="cbx in filter.data.version.checkboxes" class="ng-scope">
+                                                <input type="checkbox" id="version6" ng-model="cbx.checked" ng-change="filter.update();" class="ng-pristine ng-untouched ng-valid">
+                                                <label for="version6" class="ng-binding">0.7.5</label>
+                                            </li><!-- end ngRepeat: cbx in filter.data.version.checkboxes --><li ng-repeat="cbx in filter.data.version.checkboxes" class="ng-scope">
+                                                <input type="checkbox" id="version5" ng-model="cbx.checked" ng-change="filter.update();" class="ng-pristine ng-untouched ng-valid">
+                                                <label for="version5" class="ng-binding">0.7.4</label>
+                                            </li><!-- end ngRepeat: cbx in filter.data.version.checkboxes --><li ng-repeat="cbx in filter.data.version.checkboxes" class="ng-scope">
+                                                <input type="checkbox" id="version4" ng-model="cbx.checked" ng-change="filter.update();" class="ng-pristine ng-untouched ng-valid">
+                                                <label for="version4" class="ng-binding">0.7.3</label>
+                                            </li><!-- end ngRepeat: cbx in filter.data.version.checkboxes --><li ng-repeat="cbx in filter.data.version.checkboxes" class="ng-scope">
+                                                <input type="checkbox" id="version1" ng-model="cbx.checked" ng-change="filter.update();" class="ng-pristine ng-untouched ng-valid">
+                                                <label for="version1" class="ng-binding">0.7.2</label>
+                                            </li><!-- end ngRepeat: cbx in filter.data.version.checkboxes --><li ng-repeat="cbx in filter.data.version.checkboxes" class="ng-scope">
+                                                <input type="checkbox" id="version2" ng-model="cbx.checked" ng-change="filter.update();" class="ng-pristine ng-untouched ng-valid">
+                                                <label for="version2" class="ng-binding">0.7.1</label>
+                                            </li><!-- end ngRepeat: cbx in filter.data.version.checkboxes --><li ng-repeat="cbx in filter.data.version.checkboxes" class="ng-scope">
+                                                <input type="checkbox" id="version3" ng-model="cbx.checked" ng-change="filter.update();" class="ng-pristine ng-untouched ng-valid">
+                                                <label for="version3" class="ng-binding">0.6.6</label>
+                                            </li><!-- end ngRepeat: cbx in filter.data.version.checkboxes --><li ng-repeat="cbx in filter.data.version.checkboxes" class="ng-scope">
+                                                <input type="checkbox" id="version18" ng-model="cbx.checked" ng-change="filter.update();" class="ng-pristine ng-untouched ng-valid">
+                                                <label for="version18" class="ng-binding">1.0.4</label>
+                                            </li><!-- end ngRepeat: cbx in filter.data.version.checkboxes --><li ng-repeat="cbx in filter.data.version.checkboxes" class="ng-scope">
+                                                <input type="checkbox" id="version20" ng-model="cbx.checked" ng-change="filter.update();" class="ng-pristine ng-untouched ng-valid">
+                                                <label for="version20" class="ng-binding">0.4.5</label>
+                                            </li><!-- end ngRepeat: cbx in filter.data.version.checkboxes --><li ng-repeat="cbx in filter.data.version.checkboxes" class="ng-scope">
+                                                <input type="checkbox" id="version39" ng-model="cbx.checked" ng-change="filter.update();" class="ng-pristine ng-untouched ng-valid">
+                                                <label for="version39" class="ng-binding">0.10.0</label>
+                                            </li><!-- end ngRepeat: cbx in filter.data.version.checkboxes --><li ng-repeat="cbx in filter.data.version.checkboxes" class="ng-scope">
+                                                <input type="checkbox" id="version57" ng-model="cbx.checked" ng-change="filter.update();" class="ng-pristine ng-untouched ng-valid">
+                                                <label for="version57" class="ng-binding">0.9.23</label>
+                                            </li><!-- end ngRepeat: cbx in filter.data.version.checkboxes --><li ng-repeat="cbx in filter.data.version.checkboxes" class="ng-scope">
+                                                <input type="checkbox" id="version32" ng-model="cbx.checked" ng-change="filter.update();" class="ng-pristine ng-untouched ng-valid">
+                                                <label for="version32" class="ng-binding">0.0.0</label>
+                                            </li><!-- end ngRepeat: cbx in filter.data.version.checkboxes --><li ng-repeat="cbx in filter.data.version.checkboxes" class="ng-scope">
+                                                <input type="checkbox" id="version47" ng-model="cbx.checked" ng-change="filter.update();" class="ng-pristine ng-untouched ng-valid">
+                                                <label for="version47" class="ng-binding">0.9.14.1</label>
+                                            </li><!-- end ngRepeat: cbx in filter.data.version.checkboxes --><li ng-repeat="cbx in filter.data.version.checkboxes" class="ng-scope">
+                                                <input type="checkbox" id="version76" ng-model="cbx.checked" ng-change="filter.update();" class="ng-pristine ng-untouched ng-valid">
+                                                <label for="version76" class="ng-binding">1.5.0</label>
+                                            </li><!-- end ngRepeat: cbx in filter.data.version.checkboxes -->
+                                            </ul>
+                                        </div>
+                                        <div class="scrollbar">
+                                            <div class="handle">
+                                                <div class="mousearea"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="version-filter my-replays-filter ng-hide" ng-show="user_id!=0">
+                                <input id="myReplaysFilter" type="checkbox" ng-model="filter.myReplays" ng-checked="filter.myReplays" class="ng-pristine ng-untouched ng-valid">
+                                <label for="myReplaysFilter">Искать среди моих реплеев</label>
+                            </div>
+
+
+                            <div class="filters_apply clearfix">
+                                <a class="btn_s-orange" ng-click="replays.get()">Показать</a>
+                                <a class="btn_s-orange vod-button" ng-click="replays.get({compilation: 'vod'})">Показать реплеи с видео<span class="ng-binding">0</span></a>
+                            </div>
+                        </div>
+
+
+                        <div class="selected-filters search-filters">
+
+                            <span class="tf_s__selectall" ng-click="filter.select.all('all','deselect');">Очистить все фильтры</span>
+
+                            <!-- ngRepeat: (key, filterType) in filter.data.tank.filters --><!-- ngIf: filter.selected[key] --><!-- end ngRepeat: (key, filterType) in filter.data.tank.filters --><!-- ngIf: filter.selected[key] --><!-- end ngRepeat: (key, filterType) in filter.data.tank.filters --><!-- ngIf: filter.selected[key] --><!-- end ngRepeat: (key, filterType) in filter.data.tank.filters -->
+
+
+                            <!-- other filter -->
+                            <!-- ngRepeat: (key, filterType) in filter.data --><!-- ngIf: filter.selected[key] --><!-- end ngRepeat: (key, filterType) in filter.data --><!-- ngIf: filter.selected[key] --><!-- end ngRepeat: (key, filterType) in filter.data --><!-- ngIf: filter.selected[key] --><!-- end ngRepeat: (key, filterType) in filter.data --><!-- ngIf: filter.selected[key] --><!-- end ngRepeat: (key, filterType) in filter.data --><!-- ngIf: filter.selected[key] --><!-- end ngRepeat: (key, filterType) in filter.data --><!-- ngIf: filter.selected[key] --><!-- end ngRepeat: (key, filterType) in filter.data --><!-- ngIf: filter.selected[key] --><!-- end ngRepeat: (key, filterType) in filter.data --><!-- ngIf: filter.selected[key] --><!-- end ngRepeat: (key, filterType) in filter.data --><!-- ngIf: filter.selected[key] --><!-- end ngRepeat: (key, filterType) in filter.data --><!-- ngIf: filter.selected[key] --><!-- end ngRepeat: (key, filterType) in filter.data --><!-- ngIf: filter.selected[key] --><!-- end ngRepeat: (key, filterType) in filter.data --><!-- ngIf: filter.selected[key] --><!-- end ngRepeat: (key, filterType) in filter.data --><!-- ngIf: filter.selected[key] --><!-- end ngRepeat: (key, filterType) in filter.data --><!-- ngIf: filter.selected[key] --><!-- end ngRepeat: (key, filterType) in filter.data --><!-- ngIf: filter.selected[key] --><!-- end ngRepeat: (key, filterType) in filter.data -->
+
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+        <div class="m-item" style="width: 171px; height: 41px;">
+            <a target="_self" ng-href="/contest" ng-class="{active: routing.active.item === 'contest'}" class="m-item_title" style="width: 171px;" href="/contest">конкурсы</a>
+
+        </div>
+
+        <div class="m-item" style="width: 153px;">
+            <a target="_self" href="/wgleague#?league=gold" ng-class="{active: routing.active.item === 'wgleague'}" class="m-item_title" style="width: 162px;">WG League</a>
+
+        </div>
+
+        <div class="m-item">
+
+            <a target="_self" href="/streams" ng-class="{active: routing.active.item === 'streams'}" class="m-item_title" style="width: 162px;">Трансляции</a>
+
+        </div>
+
+        <div id="compilations-dropdown" class="m-item_dropdown compilations collapsed" data-ng-class="public.isShowCompilationsMenu ? 'expanded' : 'collapsed'">
+
+            <div class="m-item_title" style="width: 162px;" ng-class="{active: routing.active.item === 'compilations'}" data-ng-click="toggleCompilationsMenu()">Подборки</div>
+
+            <div class="m-item_container" data-ng-style="{height: '453px'}" style="height: 453px;">
+                <div>
+                    <a target="_self" href="/site/index/video/1/version/75,74,73,71,72,70,69,68,64,67,66,65,63,62,61,60,59,58,56,55,54,53,52,51,50,49,48,45,46,44,43,42,41,40,38,22,37,36,35,34,33,31,30,29,28,27,26,25,24,23,21,19,17,16,14,13,7,6,5,4,1,2,3,18,20,39,57,32,47,76">Реплеи с видео</a>
+                    <a ng-href="/site/index/ace/1/" href="/site/index/ace/1/">Знак классности "Мастер"</a>
+                    <a target="_self" href="/clans">Реплеи кланов</a>
+                    <a target="_self" href="/site/index/popular/1/version/75,74,73">Популярные реплеи за неделю</a>
+                    <a target="_self" href="/site/master">График опыта мастеров</a>
+                    <a target="_self" href="/site/index/epicbattle/1/version/75,74,73,71,72,70,69,68,64,67,66,65,63,62,61,60,59,58,56,55,54,53,52,51,50,49,48,45,46,44,43,42,41,40,38,22,37,36,35,34,33,31,30,29,28,27,26,25,24,23,21,19,17,16,14,13,7,6,5,4,1,2,3,18,20,39,57,32,47,76">Epic Battle</a>
+                    <a target="_self" href="/site/index/iron_league/1/version/75,74,73,71,72,70,69,68,64,67,66,65,63,62,61,60,59,58,56,55,54,53,52,51,50,49,48,45,46,44,43,42,41,40,38,22,37,36,35,34,33,31,30,29,28,27,26,25,24,23,21,19,17,16,14,13,7,6,5,4,1,2,3,18,20,39,57,32,47,76">Железная Лига</a>
+                    <a target="_self" href="/site/index/pro/1/version/75,74,73,71,72,70,69,68,64,67,66,65,63,62,61,60,59,58,56,55,54,53,52,51,50,49,48,45,46,44,43,42,41,40,38,22,37,36,35,34,33,31,30,29,28,27,26,25,24,23,21,19,17,16,14,13,7,6,5,4,1,2,3,18,20,39,57,32,47,76">Реплеи pro-игроков</a>
+                    <a ng-click="filter.select.all('all', 'deselect'); replays.get({compilation: 'site/index', sort: 'inflicted_damage.desc'})">Максимум урона</a>
+                    <a ng-click="filter.select.all('all', 'deselect'); replays.get({compilation: 'site/index', sort: 'xp.desc'})">Максимум опыта</a>
+                    <a ng-click="filter.select.all('all', 'deselect'); replays.get({compilation: 'site/index', sort: 'credits.desc'})">Максимум кредитов</a>
+                    <a ng-click="filter.select.all('all', 'deselect'); replays.get({compilation: 'site/index', sort: 'frags.desc'})">Максимум фрагов</a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="m-item">
+            <a data-replay-upload="" style="width: 175px;" class="m-item_title orange ng-isolate-scope" data-logged-in="" data-popup-url="/popup/upload/cache/1">Залить реплей</a>
+        </div>
+    </div>
+
+
+    <!--   *********************   -->
+    <!--          CONTENT          -->
+    <!--   *********************   -->
+
+
+    <!--   *********************   -->
+    <!--           NEWS            -->
+    <!--   *********************   -->
+
+    <div class="news news-widget"> <!--ng-cloak-->
+
+        <div>
+            <h3 class="n_title">Новости</h3>
+            <a class="n_moar" href="/news"><h6>Все новости</h6></a>
+        </div>
+
+        <a class="n_block" href="/news/564">
+            <div class="nb_image" style="background-image: url('/static/img/site/news/news_comp.jpg')"><div></div></div>
+            <div class="nb_title">
+                <div class="nbt_text text-lg">Конкурс реплеев от Канобу</div>
+                <div class="nbt_vertical-justify"></div>
+            </div>
+        </a>
+
+
+        <a class="n_block" href="/news/557">
+            <div class="nb_image" style="background-image: url('/static/img/site/news/logo_wotreplays.jpg')"><div></div></div>
+            <div class="nb_title">
+                <div class="nbt_text text-lg">Мод Replays Manager для v.1.4.1.1</div>
+                <div class="nbt_vertical-justify"></div>
+            </div>
+        </a>
+
+
+        <a class="n_block" href="/news/511">
+            <div class="nb_image" style="background-image: url('/static/img/site/news/mobile.png')"><div></div></div>
+            <div class="nb_title">
+                <div class="nbt_text text-lg">Мобильная версия сайта m.wotreplays.ru</div>
+                <div class="nbt_vertical-justify"></div>
+            </div>
+        </a>
+
+    </div>
+
+    <div class="">
+
+        <div data-ng-init="dataInitial = true">
+
+
+            <div class="replay-list-header">
+                <!-- ngIf: replays.list.getTitle() --><h2 class="b-replays__title ng-binding ng-scope" data-ng-if="replays.list.getTitle()" ng-bind="replays.list.getTitle()">Найденные реплеи</h2><!-- end ngIf: replays.list.getTitle() -->
+                <div class="sorter">
+                    <div class="sorter__label">Сортировать по</div>
+                    <ul class="sorter__list">
+                        <!-- ngRepeat: (key, title) in filter.sort --><li data-ng-click="replays.get({ sort: key })" data-ng-repeat="(key, title) in filter.sort" class="sorter__item ng-scope" data-ng-class="{ active: selected.filter.sort.type === key }">
+                        <span class="sorter__label ng-binding" ng-bind="title">ассисту</span>
+
+                        <!-- ngIf: selected.filter.sort.type === key -->
+                    </li><!-- end ngRepeat: (key, title) in filter.sort --><li data-ng-click="replays.get({ sort: key })" data-ng-repeat="(key, title) in filter.sort" class="sorter__item ng-scope" data-ng-class="{ active: selected.filter.sort.type === key }">
+                        <span class="sorter__label ng-binding" ng-bind="title">заблокированному урону</span>
+
+                        <!-- ngIf: selected.filter.sort.type === key -->
+                    </li><!-- end ngRepeat: (key, title) in filter.sort --><li data-ng-click="replays.get({ sort: key })" data-ng-repeat="(key, title) in filter.sort" class="sorter__item ng-scope" data-ng-class="{ active: selected.filter.sort.type === key }">
+                        <span class="sorter__label ng-binding" ng-bind="title">кредитам</span>
+
+                        <!-- ngIf: selected.filter.sort.type === key -->
+                    </li><!-- end ngRepeat: (key, title) in filter.sort --><li data-ng-click="replays.get({ sort: key })" data-ng-repeat="(key, title) in filter.sort" class="sorter__item ng-scope" data-ng-class="{ active: selected.filter.sort.type === key }">
+                        <span class="sorter__label ng-binding" ng-bind="title">скачиваниям</span>
+
+                        <!-- ngIf: selected.filter.sort.type === key -->
+                    </li><!-- end ngRepeat: (key, title) in filter.sort --><li data-ng-click="replays.get({ sort: key })" data-ng-repeat="(key, title) in filter.sort" class="sorter__item ng-scope" data-ng-class="{ active: selected.filter.sort.type === key }">
+                        <span class="sorter__label ng-binding" ng-bind="title">фрагам</span>
+
+                        <!-- ngIf: selected.filter.sort.type === key -->
+                    </li><!-- end ngRepeat: (key, title) in filter.sort --><li data-ng-click="replays.get({ sort: key })" data-ng-repeat="(key, title) in filter.sort" class="sorter__item ng-scope" data-ng-class="{ active: selected.filter.sort.type === key }">
+                        <span class="sorter__label ng-binding" ng-bind="title">урону</span>
+
+                        <!-- ngIf: selected.filter.sort.type === key -->
+                    </li><!-- end ngRepeat: (key, title) in filter.sort --><li data-ng-click="replays.get({ sort: key })" data-ng-repeat="(key, title) in filter.sort" class="sorter__item ng-scope" data-ng-class="{ active: selected.filter.sort.type === key }">
+                        <span class="sorter__label ng-binding" ng-bind="title">дате</span>
+
+                        <!-- ngIf: selected.filter.sort.type === key -->
+                    </li><!-- end ngRepeat: (key, title) in filter.sort --><li data-ng-click="replays.get({ sort: key })" data-ng-repeat="(key, title) in filter.sort" class="sorter__item ng-scope" data-ng-class="{ active: selected.filter.sort.type === key }">
+                        <span class="sorter__label ng-binding" ng-bind="title">опыту</span>
+
+                        <!-- ngIf: selected.filter.sort.type === key -->
+                    </li><!-- end ngRepeat: (key, title) in filter.sort -->
+                    </ul>
+                </div>
+
+                <div class="selected-filters replays-filters">
+                    <span class="tf_s__selectall" ng-click="filter.select.all('all','deselect');replays.get();">Очистить все фильтры</span>
+                    <!-- ngRepeat: (key, filterType) in selected.filter -->
+                </div>
+            </div>
+
+
+
+            <!-- ngIf: dataInitial --><div data-ng-if="dataInitial" class="ng-scope">
+            <ul class="r_list initial">
+                <li class="clearfix">
+
+                    <a target="_self" class="r-map_85" href="/site/12119766#granica_imperii-dimakvruslan-ob_ekt_260" title="Граница империи, Стандартный бой" style="background-image: url('/static/img/wot/dynamic/mediaMaps/59_asia_great_wall.jpg');"></a>
+
+                    <div class="r-info">
+                        <h3><a class="link--pale_orange" target="_self" href="/site/12119766#granica_imperii-dimakvruslan-ob_ekt_260">Мой рекорд 10,5к дамажки</a></h3>
+                        <ul class="r-info_ri">
+                            <li><i class="i-16_frags"></i> 6</li>
+                            <li><i class="i-16_exp"></i> 1513</li>
+                            <li><i class="i-16_cr"></i> 82816</li>
+                            <li><i class="i-16_dmg"></i> 10511</li>
+                            <li><i class="i-16_assist"></i> 0</li>
+                            <li><i class="i-16_block"></i> 1480</li>
+                            <li><i class="i-16_master"></i> Мастер</li>
+                        </ul>
+                        <ul class="r-info_ci">
+                            <li><b>Танк:</b> <a class="link--white" href="/site/index/tank/773/version/75">Объект 260</a></li>
+                            <li><b>Карта:</b> <a class="link--white" href="/site/index/map/59/version/75">Граница империи</a>, Стандартный бой</li>
+                            <li><b>Залит:</b> <span class="b-date">2019-04-15 07:23</span></li>
+                            <li><b>Играл:</b> dimakvruslan</li>
+                        </ul>
+                    </div>
+                    <div class="r-act">
+                        <a target="_self" href="/site/download/12119766" class="btn_l-grey">Скачать реплей</a>
+                        <div class="r-act_soc">
+                            <a class="r-act_soc-dl">
+                                <ins></ins>
+                                <span>5</span>
+                            </a>
+                            <span>
+                <i class="i-24_like" data-target="12119766" data-ng-click="like($event)"></i>
+                <span>0</span>
+            </span>
+                            <a target="_self" href="/site/12119766#granica_imperii-dimakvruslan-ob_ekt_260" class="r-act_soc-com"><ins></ins> 0</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="clearfix">
+
+                    <a target="_self" class="r-map_85" href="/site/12117649#zapolyar_e-ixot-ob_ekt_260" title="Заполярье, Стандартный бой" style="background-image: url('/static/img/wot/dynamic/mediaMaps/38_mannerheim_line.jpg');"></a>
+
+                    <div class="r-info">
+                        <h3><a class="link--pale_orange" target="_self" href="/site/12117649#zapolyar_e-ixot-ob_ekt_260">Остановили слив. Раш не удался)))</a></h3>
+                        <ul class="r-info_ri">
+                            <li><i class="i-16_frags"></i> 4</li>
+                            <li><i class="i-16_exp"></i> 1383</li>
+                            <li><i class="i-16_cr"></i> 58405</li>
+                            <li><i class="i-16_dmg"></i> 5346</li>
+                            <li><i class="i-16_assist"></i> 3458</li>
+                            <li><i class="i-16_block"></i> 5340</li>
+                            <li><i class="i-16_master"></i> Мастер</li>
+                        </ul>
+                        <ul class="r-info_ci">
+                            <li><b>Танк:</b> <a class="link--white" href="/site/index/tank/773/version/75">Объект 260</a></li>
+                            <li><b>Карта:</b> <a class="link--white" href="/site/index/map/38/version/75">Заполярье</a>, Стандартный бой</li>
+                            <li><b>Залит:</b> <span class="b-date">2019-04-14 14:17</span></li>
+                            <li><b>Играл:</b> ixot</li>
+                        </ul>
+                    </div>
+                    <div class="r-act">
+                        <a target="_self" href="/site/download/12117649" class="btn_l-grey">Скачать реплей</a>
+                        <div class="r-act_soc">
+                            <a class="r-act_soc-dl">
+                                <ins></ins>
+                                <span>1</span>
+                            </a>
+                            <span>
+                <i class="i-24_like" data-target="12117649" data-ng-click="like($event)"></i>
+                <span>0</span>
+            </span>
+                            <a target="_self" href="/site/12117649#zapolyar_e-ixot-ob_ekt_260" class="r-act_soc-com"><ins></ins> 0</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="clearfix">
+
+                    <a target="_self" class="r-map_85" href="/site/12115680#vestfild-wow41k92-ob_ekt_260" title="Вестфилд, Стандартный бой" style="background-image: url('/static/img/wot/dynamic/mediaMaps/23_westfeld.jpg');"></a>
+
+                    <div class="r-info">
+                        <h3><a class="link--pale_orange" target="_self" href="/site/12115680#vestfild-wow41k92-ob_ekt_260">проехал по голове</a></h3>
+                        <ul class="r-info_ri">
+                            <li><i class="i-16_frags"></i> 0</li>
+                            <li><i class="i-16_exp"></i> 747</li>
+                            <li><i class="i-16_cr"></i> 39765</li>
+                            <li><i class="i-16_dmg"></i> 2532</li>
+                            <li><i class="i-16_assist"></i> 488</li>
+                            <li><i class="i-16_block"></i> 440</li>
+                        </ul>
+                        <ul class="r-info_ci">
+                            <li><b>Танк:</b> <a class="link--white" href="/site/index/tank/773/version/75">Объект 260</a></li>
+                            <li><b>Карта:</b> <a class="link--white" href="/site/index/map/23/version/75">Вестфилд</a>, Стандартный бой</li>
+                            <li><b>Залит:</b> <span class="b-date">2019-04-13 19:30</span></li>
+                            <li><b>Играл:</b> wow41k92</li>
+                        </ul>
+                    </div>
+                    <div class="r-act">
+                        <a target="_self" href="/site/download/12115680" class="btn_l-grey">Скачать реплей</a>
+                        <div class="r-act_soc">
+                            <a class="r-act_soc-dl">
+                                <ins></ins>
+                                <span>2</span>
+                            </a>
+                            <span>
+                <i class="i-24_like" data-target="12115680" data-ng-click="like($event)"></i>
+                <span>0</span>
+            </span>
+                            <a target="_self" href="/site/12115680#vestfild-wow41k92-ob_ekt_260" class="r-act_soc-com"><ins></ins> 0</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="clearfix">
+
+                    <a target="_self" class="r-map_85" href="/site/12114952#granica_imperii-killer_21099-ob_ekt_260" title="Граница империи, Стандартный бой" style="background-image: url('/static/img/wot/dynamic/mediaMaps/59_asia_great_wall.jpg');"></a>
+
+                    <div class="r-info">
+                        <h3><a class="link--pale_orange" target="_self" href="/site/12114952#granica_imperii-killer_21099-ob_ekt_260">почти 7к, воин, редлик и много других наград</a></h3>
+                        <ul class="r-info_ri">
+                            <li><i class="i-16_frags"></i> 9</li>
+                            <li><i class="i-16_exp"></i> 1358</li>
+                            <li><i class="i-16_cr"></i> 59893</li>
+                            <li><i class="i-16_dmg"></i> 6904</li>
+                            <li><i class="i-16_assist"></i> 820</li>
+                            <li><i class="i-16_block"></i> 1790</li>
+                            <li><i class="i-16_master"></i> Мастер</li>
+                        </ul>
+                        <ul class="r-info_ci">
+                            <li><b>Танк:</b> <a class="link--white" href="/site/index/tank/773/version/75">Объект 260</a></li>
+                            <li><b>Карта:</b> <a class="link--white" href="/site/index/map/59/version/75">Граница империи</a>, Стандартный бой</li>
+                            <li><b>Залит:</b> <span class="b-date">2019-04-13 15:14</span></li>
+                            <li><b>Играл:</b> killer_21099</li>
+                        </ul>
+                    </div>
+                    <div class="r-act">
+                        <a target="_self" href="/site/download/12114952" class="btn_l-grey">Скачать реплей</a>
+                        <div class="r-act_soc">
+                            <a class="r-act_soc-dl">
+                                <ins></ins>
+                                <span>2</span>
+                            </a>
+                            <span>
+                <i class="i-24_like" data-target="12114952" data-ng-click="like($event)"></i>
+                <span>0</span>
+            </span>
+                            <a target="_self" href="/site/12114952#granica_imperii-killer_21099-ob_ekt_260" class="r-act_soc-com"><ins></ins> 0</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="clearfix">
+
+                    <a target="_self" class="r-map_85" href="/site/12113064#zapolyar_e-kirillserg-ob_ekt_260" title="Заполярье, Стандартный бой" style="background-image: url('/static/img/wot/dynamic/mediaMaps/38_mannerheim_line.jpg');"></a>
+
+                    <div class="r-info">
+                        <h3><a class="link--pale_orange" target="_self" href="/site/12113064#zapolyar_e-kirillserg-ob_ekt_260">Подставноцй бой (WG вы потом всетаки не вернете игроков)</a></h3>
+                        <ul class="r-info_ri">
+                            <li><i class="i-16_frags"></i> 2</li>
+                            <li><i class="i-16_exp"></i> 262</li>
+                            <li><i class="i-16_cr"></i> 19223</li>
+                            <li><i class="i-16_dmg"></i> 1332</li>
+                            <li><i class="i-16_assist"></i> 1467</li>
+                            <li><i class="i-16_block"></i> 1670</li>
+                        </ul>
+                        <ul class="r-info_ci">
+                            <li><b>Танк:</b> <a class="link--white" href="/site/index/tank/773/version/75">Объект 260</a></li>
+                            <li><b>Карта:</b> <a class="link--white" href="/site/index/map/38/version/75">Заполярье</a>, Стандартный бой</li>
+                            <li><b>Залит:</b> <span class="b-date">2019-04-12 20:51</span></li>
+                            <li><b>Играл:</b> KirillSerg</li>
+                        </ul>
+                    </div>
+                    <div class="r-act">
+                        <a target="_self" href="/site/download/12113064" class="btn_l-grey">Скачать реплей</a>
+                        <div class="r-act_soc">
+                            <a class="r-act_soc-dl">
+                                <ins></ins>
+                                <span>1</span>
+                            </a>
+                            <span>
+                <i class="i-24_like" data-target="12113064" data-ng-click="like($event)"></i>
+                <span>0</span>
+            </span>
+                            <a target="_self" href="/site/12113064#zapolyar_e-kirillserg-ob_ekt_260" class="r-act_soc-com"><ins></ins> 0</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="clearfix">
+
+                    <a target="_self" class="r-map_85" href="/site/12108147#zapolyar_e-vladislav_bombilov-ob_ekt_260" title="Заполярье, Стандартный бой" style="background-image: url('/static/img/wot/dynamic/mediaMaps/38_mannerheim_line.jpg');"></a>
+
+                    <div class="r-info">
+                        <h3><a class="link--pale_orange" target="_self" href="/site/12108147#zapolyar_e-vladislav_bombilov-ob_ekt_260">мастер 7500 дамага</a></h3>
+                        <ul class="r-info_ri">
+                            <li><i class="i-16_frags"></i> 5</li>
+                            <li><i class="i-16_exp"></i> 1323</li>
+                            <li><i class="i-16_cr"></i> 65074</li>
+                            <li><i class="i-16_dmg"></i> 7669</li>
+                            <li><i class="i-16_assist"></i> 1176</li>
+                            <li><i class="i-16_block"></i> 4560</li>
+                            <li><i class="i-16_master"></i> Мастер</li>
+                        </ul>
+                        <ul class="r-info_ci">
+                            <li><b>Танк:</b> <a class="link--white" href="/site/index/tank/773/version/75">Объект 260</a></li>
+                            <li><b>Карта:</b> <a class="link--white" href="/site/index/map/38/version/75">Заполярье</a>, Стандартный бой</li>
+                            <li><b>Залит:</b> <span class="b-date">2019-04-10 19:48</span></li>
+                            <li><b>Играл:</b> Vladislav_Bombilov</li>
+                        </ul>
+                    </div>
+                    <div class="r-act">
+                        <a target="_self" href="/site/download/12108147" class="btn_l-grey">Скачать реплей</a>
+                        <div class="r-act_soc">
+                            <a class="r-act_soc-dl">
+                                <ins></ins>
+                                <span>1</span>
+                            </a>
+                            <span>
+                <i class="i-24_like" data-target="12108147" data-ng-click="like($event)"></i>
+                <span>0</span>
+            </span>
+                            <a target="_self" href="/site/12108147#zapolyar_e-vladislav_bombilov-ob_ekt_260" class="r-act_soc-com"><ins></ins> 0</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="clearfix">
+
+                    <a target="_self" class="r-map_85" href="/site/12106366#aerodrom-baho3625-ob_ekt_260" title="Аэродром, Стандартный бой" style="background-image: url('/static/img/wot/dynamic/mediaMaps/31_airfield.jpg');"></a>
+
+                    <div class="r-info">
+                        <h3><a class="link--pale_orange" target="_self" href="/site/12106366#aerodrom-baho3625-ob_ekt_260">Об.260 </a></h3>
+                        <ul class="r-info_ri">
+                            <li><i class="i-16_frags"></i> 3</li>
+                            <li><i class="i-16_exp"></i> 816</li>
+                            <li><i class="i-16_cr"></i> 33765</li>
+                            <li><i class="i-16_dmg"></i> 2997</li>
+                            <li><i class="i-16_assist"></i> 1278</li>
+                            <li><i class="i-16_block"></i> 1140</li>
+                        </ul>
+                        <ul class="r-info_ci">
+                            <li><b>Танк:</b> <a class="link--white" href="/site/index/tank/773/version/75">Объект 260</a></li>
+                            <li><b>Карта:</b> <a class="link--white" href="/site/index/map/31/version/75">Аэродром</a>, Стандартный бой</li>
+                            <li><b>Залит:</b> <span class="b-date">2019-04-09 23:09</span></li>
+                            <li><b>Играл:</b> BAHO3625</li>
+                        </ul>
+                    </div>
+                    <div class="r-act">
+                        <a target="_self" href="/site/download/12106366" class="btn_l-grey">Скачать реплей</a>
+                        <div class="r-act_soc">
+                            <a class="r-act_soc-dl">
+                                <ins></ins>
+                                <span>1</span>
+                            </a>
+                            <span>
+                <i class="i-24_like" data-target="12106366" data-ng-click="like($event)"></i>
+                <span>0</span>
+            </span>
+                            <a target="_self" href="/site/12106366#aerodrom-baho3625-ob_ekt_260" class="r-act_soc-com"><ins></ins> 0</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="clearfix">
+
+                    <a target="_self" class="r-map_85" href="/site/12098611#zapolyar_e-c06a4uu_denytat-ob_ekt_260" title="Заполярье, Стандартный бой" style="background-image: url('/static/img/wot/dynamic/mediaMaps/38_mannerheim_line.jpg');"></a>
+
+                    <div class="r-info">
+                        <h3><a class="link--pale_orange" target="_self" href="/site/12098611#zapolyar_e-c06a4uu_denytat-ob_ekt_260">Объект 260, Заполярье, Стандартный бой</a></h3>
+                        <ul class="r-info_ri">
+                            <li><i class="i-16_frags"></i> 4</li>
+                            <li><i class="i-16_exp"></i> 1272</li>
+                            <li><i class="i-16_cr"></i> 61021</li>
+                            <li><i class="i-16_dmg"></i> 7051</li>
+                            <li><i class="i-16_assist"></i> 934</li>
+                            <li><i class="i-16_block"></i> 2320</li>
+                            <li><i class="i-16_master"></i> Мастер</li>
+                        </ul>
+                        <ul class="r-info_ci">
+                            <li><b>Танк:</b> <a class="link--white" href="/site/index/tank/773/version/75">Объект 260</a></li>
+                            <li><b>Карта:</b> <a class="link--white" href="/site/index/map/38/version/75">Заполярье</a>, Стандартный бой</li>
+                            <li><b>Залит:</b> <span class="b-date">2019-04-07 04:39</span></li>
+                            <li><b>Играл:</b> C06a4uu_DenyTaT</li>
+                        </ul>
+                    </div>
+                    <div class="r-act">
+                        <a target="_self" href="/site/download/12098611" class="btn_l-grey">Скачать реплей</a>
+                        <div class="r-act_soc">
+                            <a class="r-act_soc-dl">
+                                <ins></ins>
+                                <span>1</span>
+                            </a>
+                            <span>
+                <i class="i-24_like" data-target="12098611" data-ng-click="like($event)"></i>
+                <span>0</span>
+            </span>
+                            <a target="_self" href="/site/12098611#zapolyar_e-c06a4uu_denytat-ob_ekt_260" class="r-act_soc-com"><ins></ins> 0</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="clearfix">
+
+                    <a target="_self" class="r-map_85" href="/site/12087688#vestfild-d_lemma-ob_ekt_260" title="Вестфилд, Стандартный бой" style="background-image: url('/static/img/wot/dynamic/mediaMaps/23_westfeld.jpg');"></a>
+
+                    <div class="r-info">
+                        <h3><a class="link--pale_orange" target="_self" href="/site/12087688#vestfild-d_lemma-ob_ekt_260">Может разогрев?</a></h3>
+                        <ul class="r-info_ri">
+                            <li><i class="i-16_frags"></i> 8</li>
+                            <li><i class="i-16_exp"></i> 1244</li>
+                            <li><i class="i-16_cr"></i> 48702</li>
+                            <li><i class="i-16_dmg"></i> 5717</li>
+                            <li><i class="i-16_assist"></i> 0</li>
+                            <li><i class="i-16_block"></i> 1270</li>
+                        </ul>
+                        <ul class="r-info_ci">
+                            <li><b>Танк:</b> <a class="link--white" href="/site/index/tank/773/version/75">Объект 260</a></li>
+                            <li><b>Карта:</b> <a class="link--white" href="/site/index/map/23/version/75">Вестфилд</a>, Стандартный бой</li>
+                            <li><b>Залит:</b> <span class="b-date">2019-04-02 06:42</span></li>
+                            <li><b>Играл:</b> D_Lemma</li>
+                        </ul>
+                    </div>
+                    <div class="r-act">
+                        <a target="_self" href="/site/download/12087688" class="btn_l-grey">Скачать реплей</a>
+                        <div class="r-act_soc">
+                            <a class="r-act_soc-dl">
+                                <ins></ins>
+                                <span>4</span>
+                            </a>
+                            <span>
+                <i class="i-24_like" data-target="12087688" data-ng-click="like($event)"></i>
+                <span>0</span>
+            </span>
+                            <a target="_self" href="/site/12087688#vestfild-d_lemma-ob_ekt_260" class="r-act_soc-com"><ins></ins> 0</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="clearfix">
+
+                    <a target="_self" class="r-map_85" href="/site/12082862#vestfild-zlojjj-ob_ekt_260" title="Вестфилд, Стандартный бой" style="background-image: url('/static/img/wot/dynamic/mediaMaps/23_westfeld.jpg');"></a>
+
+                    <div class="r-info">
+                        <h3><a class="link--pale_orange" target="_self" href="/site/12082862#vestfild-zlojjj-ob_ekt_260">Объект 260, Вестфилд, Стандартный бой</a></h3>
+                        <ul class="r-info_ri">
+                            <li><i class="i-16_frags"></i> 0</li>
+                            <li><i class="i-16_exp"></i> 146</li>
+                            <li><i class="i-16_cr"></i> 8156</li>
+                            <li><i class="i-16_dmg"></i> 1735</li>
+                            <li><i class="i-16_assist"></i> 10</li>
+                            <li><i class="i-16_block"></i> 1720</li>
+                        </ul>
+                        <ul class="r-info_ci">
+                            <li><b>Танк:</b> <a class="link--white" href="/site/index/tank/773/version/75">Объект 260</a></li>
+                            <li><b>Карта:</b> <a class="link--white" href="/site/index/map/23/version/75">Вестфилд</a>, Стандартный бой</li>
+                            <li><b>Залит:</b> <span class="b-date">2019-03-31 00:47</span></li>
+                            <li><b>Играл:</b> zlojjj</li>
+                        </ul>
+                    </div>
+                    <div class="r-act">
+                        <a target="_self" href="/site/download/12082862" class="btn_l-grey">Скачать реплей</a>
+                        <div class="r-act_soc">
+                            <a class="r-act_soc-dl">
+                                <ins></ins>
+                                <span>2</span>
+                            </a>
+                            <span>
+                <i class="i-24_like" data-target="12082862" data-ng-click="like($event)"></i>
+                <span>0</span>
+            </span>
+                            <a target="_self" href="/site/12082862#vestfild-zlojjj-ob_ekt_260" class="r-act_soc-com"><ins></ins> 0</a>
+                        </div>
+                    </div>
+                </li>
+            </ul>        </div><!-- end ngIf: dataInitial -->
+
+
+
+            <!-- ngIf: !dataInitial -->
+
+            <ul class="pagination replays-pagination">
+                <li class="pagination__item link--pale_orange link--small disabled" data-ng-click="pages.prevPage ? replays.get({page: pages.current - 1}) : return" data-ng-class="{disabled: !pages.prevPage}">
+                    ← Назад            </li>
+                <!-- ngRepeat: page in pages.arr -->
+                <li class="pagination__item link--pale_orange link--small disabled" data-ng-click="pages.nextPage ? replays.get({page: pages.current + 1}) : return" data-ng-class="{disabled: !pages.nextPage}">
+                    Вперёд →
+                </li>
+            </ul>
+
+        </div>
+    </div>
+
+
+</div>
+
+<div class="footer">
+    <div class="footer__company text-md"><div>© ООО «Вотреплейс», <br> 2013–2019</div></div>
+
+    <div class="footer__copyright">
+        <a target="_blank" class="footer__link_wg" href="http://wargaming.net"></a>
+    </div>
+
+    <div class="footer__menu clearfix" id="yw0">
+        <a class="footer__link" href="/site/page/view/about">О проекте</a>
+        <a class="footer__link" href="/site/page/view/faq">Часто задаваемые вопросы</a>
+        <a class="footer__link" href="/streams/faq">Стримерам</a>
+    </div>
+</div>
+
+<script type="text/javascript">
+    var CONFIG = {
+        user: 0,
+        user_name: 'Guest',
+        competitions: {"count":0,"competitions":[]},
+        forbidden_tanks: [708,735,538,503,444,462,465,449,398,646,549,401,636,645,641,643,639,640,482,851,866,875,943,944,936,945,946,947,948,938,949,941,950,942,770,904,897,909,905,987,1353,1007,1033,1034,1047,1137,1052,1252,1253,1352,517,667,670,1212,526,505,481,491,472,410,534,1209,1211,434,433,1206,533,1216,392,1215,1213,1263,1264,1260,395,1277,1279,1326,1285,1293,1284,1261,1324,1012,835,1383,1376]    };
+</script>
+
+
+<!--[if lt IE 9 ]><script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-ajaxtransport-xdomainrequest/1.0.2/jquery.xdomainrequest.min.js"></script><![endif]-->
+<!--[if IE 9 ]><script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-ajaxtransport-xdomainrequest/1.0.2/jquery.xdomainrequest.min.js"></script><![endif]-->
+<!--[if IE 8]>
+<script type="text/javascript">
+    $("label").on('click', function(){
+        if ($(this).attr("for") != "")
+            $("#" + $(this).attr("for")).click();
+    });
+</script>
+<![endif]-->
+
+
+<script type="text/javascript">
+    <!-- Google Analytics -->
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-27550388-1', 'auto');
+    ga('send', 'pageview');
+
+    <!-- /Google Analytics -->
+
+    <!-- Yandex.Metrika counter -->
+    (function (d, w, c) {
+        (w[c] = w[c] || []).push(function() {
+            try {
+                w.yaCounter12107782 = new Ya.Metrika({id:12107782,
+                    webvisor:true,
+                    clickmap:true,
+                    trackLinks:true,
+                    accurateTrackBounce:true});
+            } catch(e) { }
+        });
+
+        var n = d.getElementsByTagName("script")[0],
+            s = d.createElement("script"),
+            f = function () { n.parentNode.insertBefore(s, n); };
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js";
+
+        if (w.opera == "[object Opera]") {
+            d.addEventListener("DOMContentLoaded", f, false);
+        } else { f(); }
+    })(document, window, "yandex_metrika_callbacks");
+    <!-- /Yandex.Metrika counter -->
+</script>
+<script src="https://cdn.ravenjs.com/3.5.1/raven.min.js"></script>
+<script type="text/javascript">
+    var ravenOptions = {
+        whitelistUrls: ['zxc'],
+    };
+    Raven.config('http://f94400b556854dc396ec383c9c02813d@sentry.wotreplays.ru/5', ravenOptions).install();
+</script>
+<script type="text/javascript">
+    var sentryEnabled = 1;
+</script>
+<noscript>&lt;div&gt;&lt;img src="//mc.yandex.ru/watch/12107782" style="position:absolute; left:-9999px;" alt="" /&gt;&lt;/div&gt;</noscript>
+
+<script type="text/javascript">
+    /*<![CDATA[*/
+    var pages = {total:2,current:1}
+    /*]]>*/
+</script>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"d1027cd5b3","applicationID":"129228246","transactionName":"ZVxSMktWWUEAWhJbDFwWcQVNXlhcTmoPRgZxVl4SS1hbXgRLSVsNVlxI","queueTime":0,"applicationTime":299,"atts":"SRtRRANMSk8=","errorBeacon":"bam.nr-data.net","agent":""}</script>
+
+<div class="tip"></div><div class="overlay fixed" id="loading" style="display: none;opacity: 0;"><div class="loading"></div></div></body></html>

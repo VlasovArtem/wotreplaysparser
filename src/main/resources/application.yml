@@ -1,0 +1,120 @@
+app:
+  supported-wot-version: '1.4.1'
+wot-replays:
+  link: 'http://wotreplays.ru'
+  download-link-base: 'http://wotreplays.ru/site/download/'
+  download-link-get-pattern: 'http://wotreplays.ru/site/download/%s'
+  download-link-pattern: 'http://wotreplays.ru/site/download/[0-9]+'
+  replay-link-get-pattern: 'http://wotreplays.ru/site/%s'
+  replay-link-pattern: 'http://wotreplays.ru/site/[0-9]+.*'
+  search-link-pattern: 'http://wotreplays.ru/site/index.*'
+  search-link: 'http://wotreplays.ru/site/index'
+  all-page-replays-data-filename: 'replays/all-page-replays.json'
+  search-link-replays-data-filename: 'replays/search-link-replays.json'
+  wot-versions-mapper:
+    "[1.4.1]": 75
+    "[1.4.0]": 74
+    "[1.3.0.1]": 73
+    "[1.3.0]": 72
+    "[1.2.0.2]": 71
+wot-api:
+  application-id: '1030be134549b3b3a406346863c398e4'
+  wot-api-data-information-filename: 'wot-data/wot-api-data-information.json'
+  tankopedia-api-url: 'https://api.worldoftanks.ru/wot/encyclopedia/info/'
+  tankopedia-data-filename: 'wot-data/tankopedia-info.json'
+  vehicles-api-url: 'https://api.worldoftanks.ru/wot/encyclopedia/vehicles/'
+  vehicles-data-filename: 'wot-data/vehicles.json'
+  arenas-api-url: 'https://api.worldoftanks.ru/wot/encyclopedia/arenas/'
+  arenas-data-filename: 'wot-data/arenas.json'
+statistic:
+  vehicle-type-arena-statistic-filename: 'statistic/vehicle-type-arena-statistic.json'
+  vehicle-arena-statistic-filename: 'statistic/vehicle-arena-statistic.json'
+  vehicle-type-arena-statistic-filename-pattern: 'statistic/vehicle-type-arena-statistic-%s.json'
+  vehicle-arena-statistic-filename-pattern: 'statistic/vehicle-arena-statistic-%s.json'
+tournament-config:
+  max-platoon-players: 3
+  required-number-of-replays: 40
+platoons:
+  - platoon-name: "Жижа"
+    players:
+      - name: Wilf_
+        draw-group: 1
+      - name: SILIK_
+        draw-group: 2
+      - name: Coca_Cola
+        draw-group: 3
+  - platoon-name: "Опорники"
+    players:
+      - name: Inspirer
+        draw-group: 1
+      - name: GodLikeII
+        draw-group: 2
+      - name: FlaberTV
+        draw-group: 3
+  - platoon-name: "Царь Булка"
+    players:
+      - name: __NIDIN__
+        draw-group: 1
+      - name: RhinoII
+        draw-group: 2
+      - name: Bullkin
+        draw-group: 3
+  - platoon-name: "Бабкин якорь"
+    players:
+      - name: EviL_GrannY
+        draw-group: 1
+      - name: MeeGo
+        draw-group: 2
+      - name: LeBwa
+        draw-group: 3
+  - platoon-name: "СКС"
+    players:
+      - name: Iiquidator
+        draw-group: 1
+      - name: Stelseries
+        draw-group: 2
+      - name: Liezell
+        draw-group: 3
+  - platoon-name: "Псевдо"
+    players:
+      - name: Straik
+        draw-group: 1
+      - name: FC_DYNAMO
+        draw-group: 2
+      - name: Insight
+        draw-group: 3
+  - platoon-name: "МДК"
+    players:
+      - name: Cresp1ks
+        draw-group: 1
+      - name: TheMontiablo
+        draw-group: 2
+      - name: Draizer
+        draw-group: 3
+  - platoon-name: "19+2"
+    players:
+      - name: ISERVERI
+        draw-group: 1
+      - name: 19CaHTuMeTPoB
+        draw-group: 2
+      - name: SlayerPro
+        draw-group: 3
+  - platoon-name: "Извинись"
+    players:
+      - name: Sh0tnik
+        draw-group: 1
+      - name: The_Invoker
+        draw-group: 2
+      - name: rulez1k
+        draw-group: 3
+  - platoon-name: "Эбба"
+    players:
+      - name: BEOWULF422
+        draw-group: 1
+      - name: Extreme_arm
+        draw-group: 2
+      - name: TheAnatolich
+        draw-group: 3
+
+
+

@@ -1,10 +1,10 @@
 package org.avlasov.utils;
 
-import org.avlasov.entity.match.Match;
-import org.avlasov.entity.match.Player;
-import org.avlasov.entity.match.PlayerMatch;
-import org.avlasov.entity.statistic.AbstractStatistic;
-import org.avlasov.entity.statistic.PlayerStatistic;
+import org.avlasov.chucktournament.entity.match.Match;
+import org.avlasov.chucktournament.entity.match.Player;
+import org.avlasov.chucktournament.entity.match.PlayerMatch;
+import org.avlasov.parser.entity.statistic.AbstractStatistic;
+import org.avlasov.parser.entity.statistic.PlayerStatistic;
 
 import java.util.*;
 import java.util.stream.Collectors;

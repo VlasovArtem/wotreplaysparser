@@ -1,13 +1,13 @@
 package org.avlasov.utils;
 
-import org.avlasov.entity.match.Match;
-import org.avlasov.entity.match.Platoon;
-import org.avlasov.entity.match.Player;
-import org.avlasov.entity.match.PlayerMatch;
-import org.avlasov.entity.match.enums.Result;
-import org.avlasov.entity.statistic.AbstractStatistic;
-import org.avlasov.entity.statistic.PlatoonPlayerStatistic;
-import org.avlasov.entity.statistic.PlatoonStatistic;
+import org.avlasov.chucktournament.entity.match.Match;
+import org.avlasov.chucktournament.entity.match.Platoon;
+import org.avlasov.chucktournament.entity.match.Player;
+import org.avlasov.chucktournament.entity.match.PlayerMatch;
+import org.avlasov.chucktournament.entity.match.enums.Result;
+import org.avlasov.parser.entity.statistic.AbstractStatistic;
+import org.avlasov.parser.entity.statistic.PlatoonPlayerStatistic;
+import org.avlasov.parser.entity.statistic.PlatoonStatistic;
 
 import java.util.*;
 

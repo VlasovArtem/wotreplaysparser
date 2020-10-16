@@ -1,6 +1,6 @@
 package org.avlasov.utils;
 
-import org.avlasov.entity.statistic.AbstractStatistic;
+import org.avlasov.parser.entity.statistic.AbstractStatistic;
 
 import java.util.Comparator;
 import java.util.List;
